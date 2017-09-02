@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lautajärvi (järvi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 725, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "725"
+        },
+        "keruukortinkuva": {
+            "value": "00000224_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lautajärvi"
+        },
+        "paikkatyyppi": {
+            "value": "järvi"
+        },
+        "karttaruutu-x": {
+            "value": "64"
+        },
+        "karttaruutu-y": {
+            "value": "47-48"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.62631873,
+                25.25338755,
+                1.0e-9
+            ]
+        }
+    }
+}

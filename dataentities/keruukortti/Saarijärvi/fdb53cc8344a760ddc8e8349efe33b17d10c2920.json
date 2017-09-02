@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lampinen (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 669, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "669"
+        },
+        "keruukortinkuva": {
+            "value": "00000168_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lampinen"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "55"
+        },
+        "karttaruutu-y": {
+            "value": "48"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8904"
+        },
+        "coordinates": {
+            "value": [
+                62.639275241,
+                25.085178351,
+                1.0e-9
+            ]
+        }
+    }
+}

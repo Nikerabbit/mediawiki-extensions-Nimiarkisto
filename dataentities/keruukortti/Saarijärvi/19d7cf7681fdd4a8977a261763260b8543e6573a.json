@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Salakkaniemi (niemi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1299, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1299"
+        },
+        "keruukortinkuva": {
+            "value": "00000102_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Salakkaniemi"
+        },
+        "paikkatyyppi": {
+            "value": "niemi"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "62"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.757974385,
+                24.98948574,
+                1.0e-9
+            ]
+        }
+    }
+}

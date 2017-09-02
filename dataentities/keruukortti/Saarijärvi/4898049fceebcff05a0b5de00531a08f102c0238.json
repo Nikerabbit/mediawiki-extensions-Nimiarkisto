@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Seppä-Veernen paja (M)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1526, Saarijärvi, "
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": null
+        },
+        "keruukortintunnus": {
+            "value": "1526"
+        },
+        "keruukortinkuva": {
+            "value": "00000329_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Seppä-Veernen paja"
+        },
+        "paikkatyyppi": {
+            "value": "M"
+        },
+        "karttaruutu-x": {
+            "value": null
+        },
+        "karttaruutu-y": {
+            "value": null
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        }
+    }
+}

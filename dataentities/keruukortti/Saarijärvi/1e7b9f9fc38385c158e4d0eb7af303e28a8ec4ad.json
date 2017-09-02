@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Myllytalo (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 242, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "242"
+        },
+        "keruukortinkuva": {
+            "value": "00000242_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Myllytalo"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "73"
+        },
+        "karttaruutu-y": {
+            "value": "36"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8896"
+        },
+        "coordinates": {
+            "value": [
+                62.525934572,
+                25.42395946,
+                1.0e-9
+            ]
+        }
+    }
+}

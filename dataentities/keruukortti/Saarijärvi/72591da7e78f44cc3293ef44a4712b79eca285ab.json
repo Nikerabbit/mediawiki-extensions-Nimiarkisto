@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vienola (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1283, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1283"
+        },
+        "keruukortinkuva": {
+            "value": "00000269_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vienola"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "59"
+        },
+        "karttaruutu-y": {
+            "value": "50"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8914"
+        },
+        "coordinates": {
+            "value": [
+                62.652863935,
+                25.157653599,
+                1.0e-9
+            ]
+        }
+    }
+}

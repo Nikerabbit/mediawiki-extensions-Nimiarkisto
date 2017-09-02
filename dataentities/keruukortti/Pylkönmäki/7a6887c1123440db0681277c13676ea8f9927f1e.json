@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pohjoiskuja (tienosa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 720, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "720"
+        },
+        "keruukortinkuva": {
+            "value": "00000090_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pohjoiskuja"
+        },
+        "paikkatyyppi": {
+            "value": "tienosa"
+        },
+        "karttaruutu-x": {
+            "value": "H"
+        },
+        "karttaruutu-y": {
+            "value": "3"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8358"
+        },
+        "coordinates": {
+            "value": [
+                62.719461954,
+                24.921725392,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "fi": "Saarijärvi"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/paikka"
+        }
+    }
+}

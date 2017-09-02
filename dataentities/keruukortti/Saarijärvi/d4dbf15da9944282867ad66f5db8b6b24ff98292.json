@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pekanlähde (lähde)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1094, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1094"
+        },
+        "keruukortinkuva": {
+            "value": "00000269_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pekanlähde"
+        },
+        "paikkatyyppi": {
+            "value": "lähde"
+        },
+        "karttaruutu-x": {
+            "value": "9"
+        },
+        "karttaruutu-y": {
+            "value": "T"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.729845888,
+                25.046801758,
+                1.0e-9
+            ]
+        }
+    }
+}

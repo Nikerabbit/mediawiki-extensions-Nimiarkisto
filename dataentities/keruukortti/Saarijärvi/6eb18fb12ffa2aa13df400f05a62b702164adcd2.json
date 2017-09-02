@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Joentaus (niitty)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 64, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "64"
+        },
+        "keruukortinkuva": {
+            "value": "00000064_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Joentaus"
+        },
+        "paikkatyyppi": {
+            "value": "niitty"
+        },
+        "karttaruutu-x": {
+            "value": "49"
+        },
+        "karttaruutu-y": {
+            "value": "64"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8890"
+        },
+        "coordinates": {
+            "value": [
+                62.777594465,
+                24.96075734,
+                1.0e-9
+            ]
+        }
+    }
+}

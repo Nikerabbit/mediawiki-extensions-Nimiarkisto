@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Karhunkangas (kangas)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 654, Saarijärvi, 1968"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1968-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "654"
+        },
+        "keruukortinkuva": {
+            "value": "00000368_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Karhunkangas"
+        },
+        "paikkatyyppi": {
+            "value": "kangas"
+        },
+        "karttaruutu-x": {
+            "value": "G"
+        },
+        "karttaruutu-y": {
+            "value": "c"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rainio,_Jussi"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/6787"
+        },
+        "coordinates": {
+            "value": [
+                62.581493885,
+                24.981219182,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lakkanevanpuro (puro)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 596, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "596"
+        },
+        "keruukortinkuva": {
+            "value": "00000095_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lakkanevanpuro"
+        },
+        "paikkatyyppi": {
+            "value": "puro"
+        },
+        "karttaruutu-x": {
+            "value": "54"
+        },
+        "karttaruutu-y": {
+            "value": "61"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.753628749,
+                25.076607681,
+                1.0e-9
+            ]
+        }
+    }
+}

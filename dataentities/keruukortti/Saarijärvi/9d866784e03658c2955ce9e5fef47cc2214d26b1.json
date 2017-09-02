@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Poliisikammari (paikka)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 45, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "45"
+        },
+        "keruukortinkuva": {
+            "value": "00000045_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Poliisikammari"
+        },
+        "paikkatyyppi": {
+            "value": "paikka"
+        },
+        "karttaruutu-x": {
+            "value": "67"
+        },
+        "karttaruutu-y": {
+            "value": "43"
+        },
+        "keruumerkintakartalla": {
+            "value": "12"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.593693923,
+                25.301198444,
+                1.0e-9
+            ]
+        }
+    }
+}

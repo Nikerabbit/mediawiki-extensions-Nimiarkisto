@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Järvensuu (lahti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 276, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "276"
+        },
+        "keruukortinkuva": {
+            "value": "00000276_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Järvensuu"
+        },
+        "paikkatyyppi": {
+            "value": "lahti"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "64"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.779115016,
+                24.988791825,
+                1.0e-9
+            ]
+        }
+    }
+}

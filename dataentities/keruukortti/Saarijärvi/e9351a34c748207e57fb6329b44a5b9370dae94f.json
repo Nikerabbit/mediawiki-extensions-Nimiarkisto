@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Limonhiekka (ranta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 947, Saarijärvi, 1969"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1969-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "947"
+        },
+        "keruukortinkuva": {
+            "value": "00000446_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Limonhiekka"
+        },
+        "paikkatyyppi": {
+            "value": "ranta"
+        },
+        "karttaruutu-x": {
+            "value": "68"
+        },
+        "karttaruutu-y": {
+            "value": "48"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.637926129,
+                25.334580815,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tuohimetsä (metsä)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 756, Saarijärvi, 1990"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1990-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "756"
+        },
+        "keruukortinkuva": {
+            "value": "00000375_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tuohimetsä"
+        },
+        "paikkatyyppi": {
+            "value": "metsä"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "51"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rintamäki,_Sari"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8919"
+        },
+        "coordinates": {
+            "value": [
+                62.662550147,
+                24.996703844,
+                1.0e-9
+            ]
+        }
+    }
+}

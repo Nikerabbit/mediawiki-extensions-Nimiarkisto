@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Sotamiehenmökki (asunto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 200, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "200"
+        },
+        "keruukortinkuva": {
+            "value": "00000200_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Sotamiehenmökki"
+        },
+        "paikkatyyppi": {
+            "value": "asunto"
+        },
+        "karttaruutu-x": {
+            "value": "72"
+        },
+        "karttaruutu-y": {
+            "value": "43"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.584760252,
+                25.408998962,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Rajala (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 537, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "537"
+        },
+        "keruukortinkuva": {
+            "value": "00000081_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Rajala"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "67"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.806014209,
+                24.986955995,
+                1.0e-9
+            ]
+        }
+    }
+}

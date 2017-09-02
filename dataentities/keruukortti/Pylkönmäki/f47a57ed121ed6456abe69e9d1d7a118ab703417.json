@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kovasenaho (maa-alue)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 382, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "382"
+        },
+        "keruukortinkuva": {
+            "value": "00000167_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kovasenaho"
+        },
+        "paikkatyyppi": {
+            "value": "maa-alue"
+        },
+        "karttaruutu-x": {
+            "value": "K"
+        },
+        "karttaruutu-y": {
+            "value": "3"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8358"
+        },
+        "coordinates": {
+            "value": [
+                62.725595998,
+                24.967333416,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pirunportti (kallioseinät)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1619, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1619"
+        },
+        "keruukortinkuva": {
+            "value": "00000794_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pirunportti"
+        },
+        "paikkatyyppi": {
+            "value": "kallioseinät"
+        },
+        "karttaruutu-x": {
+            "value": "72"
+        },
+        "karttaruutu-y": {
+            "value": "55"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8894"
+        },
+        "coordinates": {
+            "value": [
+                62.696518195,
+                25.412643956,
+                1.0e-9
+            ]
+        }
+    }
+}

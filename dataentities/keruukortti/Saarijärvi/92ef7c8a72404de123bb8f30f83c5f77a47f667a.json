@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pitkämännikkö (metsä)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1637, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1637"
+        },
+        "keruukortinkuva": {
+            "value": "00000812_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pitkämännikkö"
+        },
+        "paikkatyyppi": {
+            "value": "metsä"
+        },
+        "karttaruutu-x": {
+            "value": "24"
+        },
+        "karttaruutu-y": {
+            "value": "78"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8897"
+        },
+        "coordinates": {
+            "value": [
+                62.897160472,
+                25.518752193,
+                1.0e-9
+            ]
+        }
+    }
+}

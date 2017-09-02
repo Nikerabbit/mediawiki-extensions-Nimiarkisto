@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Hopeaniemi (niemi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1101, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1101"
+        },
+        "keruukortinkuva": {
+            "value": "00000677_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Hopeaniemi"
+        },
+        "paikkatyyppi": {
+            "value": "niemi"
+        },
+        "karttaruutu-x": {
+            "value": "51"
+        },
+        "karttaruutu-y": {
+            "value": "62"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.763832429,
+                25.010307461,
+                1.0e-9
+            ]
+        }
+    }
+}

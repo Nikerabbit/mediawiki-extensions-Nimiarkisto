@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Horonen (niittypelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1109, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1109"
+        },
+        "keruukortinkuva": {
+            "value": "00000685_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Horonen"
+        },
+        "paikkatyyppi": {
+            "value": "niittypelto"
+        },
+        "karttaruutu-x": {
+            "value": "74"
+        },
+        "karttaruutu-y": {
+            "value": "54"
+        },
+        "keruumerkintakartalla": {
+            "value": "10"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8894"
+        },
+        "coordinates": {
+            "value": [
+                62.690211099,
+                25.458265916,
+                1.0e-9
+            ]
+        }
+    }
+}

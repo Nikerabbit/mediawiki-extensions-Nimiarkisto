@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Aho (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 25, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "25"
+        },
+        "keruukortinkuva": {
+            "value": "00000025_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Aho"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "67"
+        },
+        "karttaruutu-y": {
+            "value": "58"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.725101991,
+                25.308951285,
+                1.0e-9
+            ]
+        }
+    }
+}

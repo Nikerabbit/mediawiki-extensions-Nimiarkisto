@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Isokivi (kivi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1372, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1372"
+        },
+        "keruukortinkuva": {
+            "value": "00000104_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Isokivi"
+        },
+        "paikkatyyppi": {
+            "value": "kivi"
+        },
+        "karttaruutu-x": {
+            "value": "52"
+        },
+        "karttaruutu-y": {
+            "value": "41"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8904"
+        },
+        "coordinates": {
+            "value": [
+                62.577439978,
+                25.02620572,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Sepänahonnenä (metsäniemeke)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 920, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "920"
+        },
+        "keruukortinkuva": {
+            "value": "00000037_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Sepänahonnenä"
+        },
+        "paikkatyyppi": {
+            "value": "metsäniemeke"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "7"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8365"
+        },
+        "coordinates": {
+            "value": [
+                62.69444415,
+                24.582805524,
+                1.0e-9
+            ]
+        }
+    }
+}

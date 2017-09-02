@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lahdenpohjanportti (portti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 545, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "545"
+        },
+        "keruukortinkuva": {
+            "value": "00000044_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lahdenpohjanportti"
+        },
+        "paikkatyyppi": {
+            "value": "portti"
+        },
+        "karttaruutu-x": {
+            "value": "75"
+        },
+        "karttaruutu-y": {
+            "value": "64"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.776295764,
+                25.478737525,
+                1.0e-9
+            ]
+        }
+    }
+}

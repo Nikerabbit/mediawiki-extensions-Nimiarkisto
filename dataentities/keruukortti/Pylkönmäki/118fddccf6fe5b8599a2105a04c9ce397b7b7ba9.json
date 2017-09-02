@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Jerentupa (torppa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 189, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "189"
+        },
+        "keruukortinkuva": {
+            "value": "00000008_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Jerentupa"
+        },
+        "paikkatyyppi": {
+            "value": "torppa"
+        },
+        "karttaruutu-x": {
+            "value": "C"
+        },
+        "karttaruutu-y": {
+            "value": "2"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8358"
+        },
+        "coordinates": {
+            "value": [
+                62.733242769,
+                24.828091328,
+                1.0e-9
+            ]
+        }
+    }
+}

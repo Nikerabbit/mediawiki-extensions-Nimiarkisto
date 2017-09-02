@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kujansuu (tienristeys)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 67, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "67"
+        },
+        "keruukortinkuva": {
+            "value": "00000067_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kujansuu"
+        },
+        "paikkatyyppi": {
+            "value": "tienristeys"
+        },
+        "karttaruutu-x": {
+            "value": "60"
+        },
+        "karttaruutu-y": {
+            "value": "59"
+        },
+        "keruumerkintakartalla": {
+            "value": "16"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.734139722,
+                25.186834448,
+                1.0e-9
+            ]
+        }
+    }
+}

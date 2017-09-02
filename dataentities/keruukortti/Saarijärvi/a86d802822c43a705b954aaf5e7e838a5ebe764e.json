@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vuosjoki (oja)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1421, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1421"
+        },
+        "keruukortinkuva": {
+            "value": "00000407_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vuosjoki"
+        },
+        "paikkatyyppi": {
+            "value": "oja"
+        },
+        "karttaruutu-x": {
+            "value": "68"
+        },
+        "karttaruutu-y": {
+            "value": "59"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.733235918,
+                25.336152925,
+                1.0e-9
+            ]
+        }
+    }
+}

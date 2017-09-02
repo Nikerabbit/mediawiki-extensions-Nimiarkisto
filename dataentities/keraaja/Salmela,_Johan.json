@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Salmela, Johan"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

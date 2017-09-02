@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Talvitienniitty (niitty)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 981, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "981"
+        },
+        "keruukortinkuva": {
+            "value": "00000013_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Talvitienniitty"
+        },
+        "paikkatyyppi": {
+            "value": "niitty"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "4"
+        },
+        "keruumerkintakartalla": {
+            "value": "9"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8358"
+        },
+        "coordinates": {
+            "value": [
+                62.71078497,
+                24.852399264,
+                1.0e-9
+            ]
+        }
+    }
+}

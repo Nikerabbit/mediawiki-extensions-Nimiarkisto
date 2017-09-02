@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vaarinlahti (niemi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1017, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1017"
+        },
+        "keruukortinkuva": {
+            "value": "00000003_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vaarinlahti"
+        },
+        "paikkatyyppi": {
+            "value": "niemi"
+        },
+        "karttaruutu-x": {
+            "value": "73"
+        },
+        "karttaruutu-y": {
+            "value": "39"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8896"
+        },
+        "coordinates": {
+            "value": [
+                62.550943393,
+                25.432100932,
+                1.0e-9
+            ]
+        }
+    }
+}

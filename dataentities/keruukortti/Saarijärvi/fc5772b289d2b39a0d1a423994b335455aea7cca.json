@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tenhulanmäki (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 544, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "544"
+        },
+        "keruukortinkuva": {
+            "value": "00000163_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tenhulanmäki"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "60"
+        },
+        "keruumerkintakartalla": {
+            "value": "14"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.745210045,
+                24.989875276,
+                1.0e-9
+            ]
+        }
+    }
+}

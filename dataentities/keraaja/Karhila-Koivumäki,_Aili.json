@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Karhila-Koivumäki, Aili"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

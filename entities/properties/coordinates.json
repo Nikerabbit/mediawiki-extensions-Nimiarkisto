@@ -1,0 +1,9 @@
+{
+	"datatype": "globe-coordinate",
+	"labels": {
+		"fi": "keruukoordinaatit"
+	},
+	"descriptions": {
+		"fi": "Keruukortin karttamerkinnän koordinaatit WGS84-koordinaatistossa"
+	}
+}

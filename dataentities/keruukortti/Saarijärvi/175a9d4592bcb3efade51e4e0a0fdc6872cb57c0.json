@@ -1,0 +1,51 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Ahola ()"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 40, Saarijärvi, 1970"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1970-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "40"
+        },
+        "keruukortinkuva": {
+            "value": "00000040_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Ahola"
+        },
+        "paikkatyyppi": {
+            "value": null
+        },
+        "karttaruutu-x": {
+            "value": null
+        },
+        "karttaruutu-y": {
+            "value": null
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        }
+    }
+}

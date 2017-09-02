@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Esala (huvila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 386, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "386"
+        },
+        "keruukortinkuva": {
+            "value": "00000082_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Esala"
+        },
+        "paikkatyyppi": {
+            "value": "huvila"
+        },
+        "karttaruutu-x": {
+            "value": "74"
+        },
+        "karttaruutu-y": {
+            "value": "42"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.576544186,
+                25.443899445,
+                1.0e-9
+            ]
+        }
+    }
+}

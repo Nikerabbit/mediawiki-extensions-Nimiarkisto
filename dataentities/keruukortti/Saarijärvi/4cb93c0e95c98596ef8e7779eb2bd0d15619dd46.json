@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Jokiniitty (niitty)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 118, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "118"
+        },
+        "keruukortinkuva": {
+            "value": "00000118_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Jokiniitty"
+        },
+        "paikkatyyppi": {
+            "value": "niitty"
+        },
+        "karttaruutu-x": {
+            "value": "54"
+        },
+        "karttaruutu-y": {
+            "value": "46"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Aromaa,_Vuokko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8902"
+        },
+        "coordinates": {
+            "value": [
+                62.616685843,
+                25.064329593,
+                1.0e-9
+            ]
+        }
+    }
+}

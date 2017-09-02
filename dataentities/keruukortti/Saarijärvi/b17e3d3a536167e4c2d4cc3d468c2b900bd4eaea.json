@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pitkätsarat (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1683, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1683"
+        },
+        "keruukortinkuva": {
+            "value": "00000858_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pitkätsarat"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "52"
+        },
+        "karttaruutu-y": {
+            "value": "67"
+        },
+        "keruumerkintakartalla": {
+            "value": "9"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.809703104,
+                25.032040917,
+                1.0e-9
+            ]
+        }
+    }
+}

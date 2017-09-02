@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kusiaispesienaho (aho)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 250, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "250"
+        },
+        "keruukortinkuva": {
+            "value": "00000250_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kusiaispesienaho"
+        },
+        "paikkatyyppi": {
+            "value": "aho"
+        },
+        "karttaruutu-x": {
+            "value": "71"
+        },
+        "karttaruutu-y": {
+            "value": "43"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.589469377,
+                25.379653225,
+                1.0e-9
+            ]
+        }
+    }
+}

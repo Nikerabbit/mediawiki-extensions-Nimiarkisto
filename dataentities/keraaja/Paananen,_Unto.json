@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Paananen, Unto"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

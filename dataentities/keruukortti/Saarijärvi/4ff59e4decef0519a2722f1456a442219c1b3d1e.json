@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pyykkiranta (ranta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 348, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "348"
+        },
+        "keruukortinkuva": {
+            "value": "00000348_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pyykkiranta"
+        },
+        "paikkatyyppi": {
+            "value": "ranta"
+        },
+        "karttaruutu-x": {
+            "value": "53"
+        },
+        "karttaruutu-y": {
+            "value": "68"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.813509407,
+                25.054704154,
+                1.0e-9
+            ]
+        }
+    }
+}

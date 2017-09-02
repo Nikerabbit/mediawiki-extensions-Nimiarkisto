@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Puromäki (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 205, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "205"
+        },
+        "keruukortinkuva": {
+            "value": "00000205_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Puromäki"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "4"
+        },
+        "karttaruutu-y": {
+            "value": "Ö"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.660622171,
+                24.946984326,
+                1.0e-9
+            ]
+        }
+    }
+}

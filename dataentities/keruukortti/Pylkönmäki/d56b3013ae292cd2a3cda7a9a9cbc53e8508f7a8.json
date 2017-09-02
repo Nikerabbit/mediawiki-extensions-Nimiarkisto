@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Hanskahiekka (ranta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 71, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "71"
+        },
+        "keruukortinkuva": {
+            "value": "00000025_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Hanskahiekka"
+        },
+        "paikkatyyppi": {
+            "value": "ranta"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "1"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8359"
+        },
+        "coordinates": {
+            "value": [
+                62.651004847,
+                24.848192158,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Hosia, Vuokko"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

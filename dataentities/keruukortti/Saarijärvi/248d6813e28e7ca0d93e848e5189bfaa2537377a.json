@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vilkkilänniemi (niemi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1339, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1339"
+        },
+        "keruukortinkuva": {
+            "value": "00000325_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vilkkilänniemi"
+        },
+        "paikkatyyppi": {
+            "value": "niemi"
+        },
+        "karttaruutu-x": {
+            "value": "7"
+        },
+        "karttaruutu-y": {
+            "value": "U"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.72441126,
+                25.002759932,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vehmaa (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1218, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1218"
+        },
+        "keruukortinkuva": {
+            "value": "00000204_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vehmaa"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "71"
+        },
+        "karttaruutu-y": {
+            "value": "38"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8896"
+        },
+        "coordinates": {
+            "value": [
+                62.544240941,
+                25.386012284,
+                1.0e-9
+            ]
+        }
+    }
+}

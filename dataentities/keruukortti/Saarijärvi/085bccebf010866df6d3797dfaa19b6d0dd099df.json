@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vanhamäki (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1112, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1112"
+        },
+        "keruukortinkuva": {
+            "value": "00000098_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vanhamäki"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "49"
+        },
+        "karttaruutu-y": {
+            "value": "68"
+        },
+        "keruumerkintakartalla": {
+            "value": "19"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8890"
+        },
+        "coordinates": {
+            "value": [
+                62.814806011,
+                24.97693571,
+                1.0e-9
+            ]
+        }
+    }
+}

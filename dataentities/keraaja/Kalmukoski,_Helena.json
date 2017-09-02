@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Kalmukoski, Helena"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pienikallio (metsä)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1301, Saarijärvi, 1969"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1969-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1301"
+        },
+        "keruukortinkuva": {
+            "value": "00000476_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pienikallio"
+        },
+        "paikkatyyppi": {
+            "value": "metsä"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "45"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.608619285,
+                25.372282247,
+                1.0e-9
+            ]
+        }
+    }
+}

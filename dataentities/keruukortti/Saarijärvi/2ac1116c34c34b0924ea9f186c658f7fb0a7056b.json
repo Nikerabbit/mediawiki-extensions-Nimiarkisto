@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Sarava (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1383, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1383"
+        },
+        "keruukortinkuva": {
+            "value": "00000186_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Sarava"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "27"
+        },
+        "karttaruutu-y": {
+            "value": "71"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8897"
+        },
+        "coordinates": {
+            "value": [
+                62.831096543,
+                25.574010308,
+                1.0e-9
+            ]
+        }
+    }
+}

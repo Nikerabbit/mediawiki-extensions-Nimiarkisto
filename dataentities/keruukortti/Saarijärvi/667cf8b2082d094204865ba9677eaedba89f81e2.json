@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pitkäneva (suo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1640, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1640"
+        },
+        "keruukortinkuva": {
+            "value": "00000815_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pitkäneva"
+        },
+        "paikkatyyppi": {
+            "value": "suo"
+        },
+        "karttaruutu-x": {
+            "value": "51"
+        },
+        "karttaruutu-y": {
+            "value": "44"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Aromaa,_Vuokko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8902"
+        },
+        "coordinates": {
+            "value": [
+                62.597852275,
+                25.007134687,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pettulato (lato)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1230, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1230"
+        },
+        "keruukortinkuva": {
+            "value": "00000405_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pettulato"
+        },
+        "paikkatyyppi": {
+            "value": "lato"
+        },
+        "karttaruutu-x": {
+            "value": null
+        },
+        "karttaruutu-y": {
+            "value": null
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        }
+    }
+}

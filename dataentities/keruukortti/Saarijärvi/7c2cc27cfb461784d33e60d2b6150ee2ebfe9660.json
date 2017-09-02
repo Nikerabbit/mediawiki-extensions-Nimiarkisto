@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Purola (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 183, Saarijärvi, 1990"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1990-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "183"
+        },
+        "keruukortinkuva": {
+            "value": "00000183_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Purola"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "96"
+        },
+        "karttaruutu-y": {
+            "value": "50"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rintamäki,_Sari"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8918"
+        },
+        "coordinates": {
+            "value": [
+                62.644316214,
+                24.979786262,
+                1.0e-9
+            ]
+        }
+    }
+}

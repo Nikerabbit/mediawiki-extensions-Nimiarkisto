@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Niemelä (torppa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 527, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "527"
+        },
+        "keruukortinkuva": {
+            "value": "00000103_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Niemelä"
+        },
+        "paikkatyyppi": {
+            "value": "torppa"
+        },
+        "karttaruutu-x": {
+            "value": "G"
+        },
+        "karttaruutu-y": {
+            "value": "V"
+        },
+        "keruumerkintakartalla": {
+            "value": "130"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.756191058,
+                25.048508123,
+                1.0e-9
+            ]
+        }
+    }
+}

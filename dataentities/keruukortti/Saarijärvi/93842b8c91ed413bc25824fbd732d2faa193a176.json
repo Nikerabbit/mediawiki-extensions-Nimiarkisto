@@ -1,0 +1,51 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Toro-Otto (H)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 716, Saarijärvi, 1965"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1965-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "716"
+        },
+        "keruukortinkuva": {
+            "value": "00000335_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Toro-Otto"
+        },
+        "paikkatyyppi": {
+            "value": "H"
+        },
+        "karttaruutu-x": {
+            "value": null
+        },
+        "karttaruutu-y": {
+            "value": null
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Hakala,_Paavotapio"
+        }
+    }
+}

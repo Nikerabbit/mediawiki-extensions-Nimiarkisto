@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Taaturi (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 969, Pylkönmäki, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "969"
+        },
+        "keruukortinkuva": {
+            "value": "00000001_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Taaturi"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "10"
+        },
+        "karttaruutu-y": {
+            "value": "G"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Korhonen,_Ritva"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8367"
+        },
+        "coordinates": {
+            "value": [
+                62.687730671,
+                24.564821994,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kekonmäki (M)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 284, Pylkönmäki, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "284"
+        },
+        "keruukortinkuva": {
+            "value": "00000069_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kekonmäki"
+        },
+        "paikkatyyppi": {
+            "value": "M"
+        },
+        "karttaruutu-x": {
+            "value": null
+        },
+        "karttaruutu-y": {
+            "value": null
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Saari,_Lempi"
+        }
+    }
+}

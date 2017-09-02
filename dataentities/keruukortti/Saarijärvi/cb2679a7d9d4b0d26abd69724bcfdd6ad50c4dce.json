@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Savikorpi (metsäalue)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1467, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1467"
+        },
+        "keruukortinkuva": {
+            "value": "00000270_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Savikorpi"
+        },
+        "paikkatyyppi": {
+            "value": "metsäalue"
+        },
+        "karttaruutu-x": {
+            "value": "4"
+        },
+        "karttaruutu-y": {
+            "value": "Ä"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.668422957,
+                24.953170369,
+                1.0e-9
+            ]
+        }
+    }
+}

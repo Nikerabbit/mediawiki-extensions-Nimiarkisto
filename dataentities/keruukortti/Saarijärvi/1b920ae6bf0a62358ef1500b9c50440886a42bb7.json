@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Aumamäki (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 277, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "277"
+        },
+        "keruukortinkuva": {
+            "value": "00000277_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Aumamäki"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "7"
+        },
+        "karttaruutu-y": {
+            "value": "Ö"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.660921627,
+                25.01175014,
+                1.0e-9
+            ]
+        }
+    }
+}

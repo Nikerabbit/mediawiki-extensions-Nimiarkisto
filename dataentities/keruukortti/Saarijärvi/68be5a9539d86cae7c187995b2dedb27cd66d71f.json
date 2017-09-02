@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Mäkelä (torppa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 293, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "293"
+        },
+        "keruukortinkuva": {
+            "value": "00000293_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Mäkelä"
+        },
+        "paikkatyyppi": {
+            "value": "torppa"
+        },
+        "karttaruutu-x": {
+            "value": "67"
+        },
+        "karttaruutu-y": {
+            "value": "41"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.571964773,
+                25.309458114,
+                1.0e-9
+            ]
+        }
+    }
+}

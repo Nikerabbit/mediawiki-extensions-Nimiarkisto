@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pitkäkangas (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1612, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1612"
+        },
+        "keruukortinkuva": {
+            "value": "00000787_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pitkäkangas"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "45-46"
+        },
+        "karttaruutu-y": {
+            "value": "66-67"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8890"
+        },
+        "coordinates": {
+            "value": [
+                62.795612539,
+                24.889641758,
+                1.0e-9
+            ]
+        }
+    }
+}

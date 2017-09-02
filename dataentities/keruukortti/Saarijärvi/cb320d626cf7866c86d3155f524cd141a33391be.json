@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lampienneva (suo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 665, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "665"
+        },
+        "keruukortinkuva": {
+            "value": "00000164_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lampienneva"
+        },
+        "paikkatyyppi": {
+            "value": "suo"
+        },
+        "karttaruutu-x": {
+            "value": "29"
+        },
+        "karttaruutu-y": {
+            "value": "66"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8898"
+        },
+        "coordinates": {
+            "value": [
+                62.786416281,
+                25.595673798,
+                1.0e-9
+            ]
+        }
+    }
+}

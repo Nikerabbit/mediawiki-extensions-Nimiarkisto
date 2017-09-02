@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kamarinvieruspelto (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 499, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "499"
+        },
+        "keruukortinkuva": {
+            "value": "00000213_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kamarinvieruspelto"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "38"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8896"
+        },
+        "coordinates": {
+            "value": [
+                62.544433515,
+                25.366537181,
+                1.0e-9
+            ]
+        }
+    }
+}

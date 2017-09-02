@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lapinkangas (kangas)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 438, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "438"
+        },
+        "keruukortinkuva": {
+            "value": "00000014_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lapinkangas"
+        },
+        "paikkatyyppi": {
+            "value": "kangas"
+        },
+        "karttaruutu-x": {
+            "value": "A"
+        },
+        "karttaruutu-y": {
+            "value": "8"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8359"
+        },
+        "coordinates": {
+            "value": [
+                62.591518008,
+                24.775149773,
+                1.0e-9
+            ]
+        }
+    }
+}

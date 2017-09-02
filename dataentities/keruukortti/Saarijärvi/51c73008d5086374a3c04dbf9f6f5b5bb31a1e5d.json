@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Karisyrjä (nuotta-apaja)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 684, Saarijärvi, 1969"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1969-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "684"
+        },
+        "keruukortinkuva": {
+            "value": "00000398_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Karisyrjä"
+        },
+        "paikkatyyppi": {
+            "value": "nuotta-apaja"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "48"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.630116572,
+                25.375157172,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Koutola (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1631, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1631"
+        },
+        "keruukortinkuva": {
+            "value": "00001345_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Koutola"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "55"
+        },
+        "karttaruutu-y": {
+            "value": "44"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8904"
+        },
+        "coordinates": {
+            "value": [
+                62.6008655,
+                25.077072323,
+                1.0e-9
+            ]
+        }
+    }
+}

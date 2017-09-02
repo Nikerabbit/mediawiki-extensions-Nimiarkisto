@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Saarekeneva (suo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 884, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "884"
+        },
+        "keruukortinkuva": {
+            "value": "00000001_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Saarekeneva"
+        },
+        "paikkatyyppi": {
+            "value": "suo"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "10"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8362"
+        },
+        "coordinates": {
+            "value": [
+                62.66062593,
+                24.67683255,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Riihipelto (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 859, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "859"
+        },
+        "keruukortinkuva": {
+            "value": "00000403_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Riihipelto"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "30"
+        },
+        "karttaruutu-y": {
+            "value": "69"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8898"
+        },
+        "coordinates": {
+            "value": [
+                62.814208012,
+                25.612115715,
+                1.0e-9
+            ]
+        }
+    }
+}

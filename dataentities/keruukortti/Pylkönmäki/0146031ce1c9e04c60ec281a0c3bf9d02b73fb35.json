@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Valkeisenjärvi (järvi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1049, Pylkönmäki, 1997"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1997-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1049"
+        },
+        "keruukortinkuva": {
+            "value": "00000009_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Valkeisenjärvi"
+        },
+        "paikkatyyppi": {
+            "value": "järvi"
+        },
+        "karttaruutu-x": {
+            "value": "73"
+        },
+        "karttaruutu-y": {
+            "value": "55-57"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Pitkänen,_Ritva_Liisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8368"
+        },
+        "coordinates": {
+            "value": [
+                62.681973723,
+                24.526646266,
+                1.0e-9
+            ]
+        }
+    }
+}

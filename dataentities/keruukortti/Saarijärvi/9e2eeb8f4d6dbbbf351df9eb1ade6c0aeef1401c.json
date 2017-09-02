@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kurttula (mökki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 241, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "241"
+        },
+        "keruukortinkuva": {
+            "value": "00000241_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kurttula"
+        },
+        "paikkatyyppi": {
+            "value": "mökki"
+        },
+        "karttaruutu-x": {
+            "value": "61"
+        },
+        "karttaruutu-y": {
+            "value": "58"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.726359951,
+                25.19666218,
+                1.0e-9
+            ]
+        }
+    }
+}

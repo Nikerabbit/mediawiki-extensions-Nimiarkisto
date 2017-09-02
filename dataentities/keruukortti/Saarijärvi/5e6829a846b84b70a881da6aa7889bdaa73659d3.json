@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Haasialehto (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 483, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "483"
+        },
+        "keruukortinkuva": {
+            "value": "00000059_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Haasialehto"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "63"
+        },
+        "karttaruutu-y": {
+            "value": "46"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.617521543,
+                25.233533925,
+                1.0e-9
+            ]
+        }
+    }
+}

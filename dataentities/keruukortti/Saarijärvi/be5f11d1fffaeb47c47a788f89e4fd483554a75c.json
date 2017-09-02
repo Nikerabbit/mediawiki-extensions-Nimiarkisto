@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Luha (niemi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1064, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1064"
+        },
+        "keruukortinkuva": {
+            "value": "00000563_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Luha"
+        },
+        "paikkatyyppi": {
+            "value": "niemi"
+        },
+        "karttaruutu-x": {
+            "value": "9"
+        },
+        "karttaruutu-y": {
+            "value": "Å"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.676151777,
+                25.050309924,
+                1.0e-9
+            ]
+        }
+    }
+}

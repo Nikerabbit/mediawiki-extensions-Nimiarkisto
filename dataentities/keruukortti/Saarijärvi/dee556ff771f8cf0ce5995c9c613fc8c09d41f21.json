@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Eräjärvi (lampi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 377, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "377"
+        },
+        "keruukortinkuva": {
+            "value": "00000073_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Eräjärvi"
+        },
+        "paikkatyyppi": {
+            "value": "lampi"
+        },
+        "karttaruutu-x": {
+            "value": "68"
+        },
+        "karttaruutu-y": {
+            "value": "43"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.589721062,
+                25.329704195,
+                1.0e-9
+            ]
+        }
+    }
+}

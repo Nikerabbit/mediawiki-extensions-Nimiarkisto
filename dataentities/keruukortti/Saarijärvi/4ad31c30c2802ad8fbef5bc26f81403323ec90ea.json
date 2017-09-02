@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Riihirinne (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 865, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "865"
+        },
+        "keruukortinkuva": {
+            "value": "00000409_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Riihirinne"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "54"
+        },
+        "karttaruutu-y": {
+            "value": "63"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.77010141,
+                25.063854089,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lähdenotko (notko)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1156, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1156"
+        },
+        "keruukortinkuva": {
+            "value": "00000655_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lähdenotko"
+        },
+        "paikkatyyppi": {
+            "value": "notko"
+        },
+        "karttaruutu-x": {
+            "value": "54"
+        },
+        "karttaruutu-y": {
+            "value": "66"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.802220991,
+                25.071585048,
+                1.0e-9
+            ]
+        }
+    }
+}

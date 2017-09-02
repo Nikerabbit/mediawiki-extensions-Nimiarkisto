@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Iso Lirpanneva (suo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1415, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1415"
+        },
+        "keruukortinkuva": {
+            "value": "00000147_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Iso Lirpanneva"
+        },
+        "paikkatyyppi": {
+            "value": "suo"
+        },
+        "karttaruutu-x": {
+            "value": "57"
+        },
+        "karttaruutu-y": {
+            "value": "50"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8914"
+        },
+        "coordinates": {
+            "value": [
+                62.658311511,
+                25.110729257,
+                1.0e-9
+            ]
+        }
+    }
+}

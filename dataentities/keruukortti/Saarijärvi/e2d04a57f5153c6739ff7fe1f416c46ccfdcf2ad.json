@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Männikkö (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 336, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "336"
+        },
+        "keruukortinkuva": {
+            "value": "00000336_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Männikkö"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "58"
+        },
+        "karttaruutu-y": {
+            "value": "51"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8914"
+        },
+        "coordinates": {
+            "value": [
+                62.663196889,
+                25.137871012,
+                1.0e-9
+            ]
+        }
+    }
+}

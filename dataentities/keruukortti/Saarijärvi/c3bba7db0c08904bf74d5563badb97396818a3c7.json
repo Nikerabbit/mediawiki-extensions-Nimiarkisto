@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Puromäki (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 202, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "202"
+        },
+        "keruukortinkuva": {
+            "value": "00000202_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Puromäki"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "54"
+        },
+        "karttaruutu-y": {
+            "value": "63"
+        },
+        "keruumerkintakartalla": {
+            "value": "20"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.769545437,
+                25.061145197,
+                1.0e-9
+            ]
+        }
+    }
+}

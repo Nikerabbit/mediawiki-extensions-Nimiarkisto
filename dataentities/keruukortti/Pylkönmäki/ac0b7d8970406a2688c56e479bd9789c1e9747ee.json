@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pyhäperä (kyläkunta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 752, Pylkönmäki, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "752"
+        },
+        "keruukortinkuva": {
+            "value": "00000122_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pyhäperä"
+        },
+        "paikkatyyppi": {
+            "value": "kyläkunta"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "5,6"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Seppälä,_Pirkko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/3879"
+        },
+        "coordinates": {
+            "value": [
+                62.754173888,
+                24.827785589,
+                1.0e-9
+            ]
+        }
+    }
+}

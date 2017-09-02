@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "fi": "Karttakuva 8896"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruukartta"
+        }
+    }
+}

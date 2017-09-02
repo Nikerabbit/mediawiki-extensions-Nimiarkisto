@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Valkealouhu (notko)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1053, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1053"
+        },
+        "keruukortinkuva": {
+            "value": "00000039_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Valkealouhu"
+        },
+        "paikkatyyppi": {
+            "value": "notko"
+        },
+        "karttaruutu-x": {
+            "value": "76"
+        },
+        "karttaruutu-y": {
+            "value": "40"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.565091344,
+                25.480356687,
+                1.0e-9
+            ]
+        }
+    }
+}

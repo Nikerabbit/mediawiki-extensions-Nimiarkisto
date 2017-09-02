@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Neittaanmäki (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 481, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "481"
+        },
+        "keruukortinkuva": {
+            "value": "00000057_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Neittaanmäki"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "52"
+        },
+        "karttaruutu-y": {
+            "value": "61"
+        },
+        "keruumerkintakartalla": {
+            "value": "9"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.753068327,
+                25.027431692,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"datatype": "string",
+	"labels": {
+		"fi": "keruumerkintä kartalla"
+	},
+	"descriptions": {
+		"fi": "mikä merkintä viittaa tähän keruumerkintään kerääjän kartalla"
+	}
+}

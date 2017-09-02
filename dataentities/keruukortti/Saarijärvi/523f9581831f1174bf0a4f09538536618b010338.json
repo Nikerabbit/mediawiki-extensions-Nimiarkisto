@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kellarimäki (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 821, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "821"
+        },
+        "keruukortinkuva": {
+            "value": "00000535_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kellarimäki"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "13"
+        },
+        "karttaruutu-y": {
+            "value": "Y"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.699891255,
+                25.112458968,
+                1.0e-9
+            ]
+        }
+    }
+}

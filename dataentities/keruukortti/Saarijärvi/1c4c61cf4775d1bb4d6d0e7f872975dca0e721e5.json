@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kallenvuori (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 386, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "386"
+        },
+        "keruukortinkuva": {
+            "value": "00000100_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kallenvuori"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "65"
+        },
+        "karttaruutu-y": {
+            "value": "48"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.633786504,
+                25.279820512,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Muittari (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 9, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "9"
+        },
+        "keruukortinkuva": {
+            "value": "00000009_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Muittari"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "H"
+        },
+        "karttaruutu-y": {
+            "value": "XI"
+        },
+        "keruumerkintakartalla": {
+            "value": "320"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.694476864,
+                25.057177692,
+                1.0e-9
+            ]
+        }
+    }
+}

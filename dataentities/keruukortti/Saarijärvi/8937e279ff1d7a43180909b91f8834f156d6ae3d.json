@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pässipuro (puro)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 414, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "414"
+        },
+        "keruukortinkuva": {
+            "value": "00000414_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pässipuro"
+        },
+        "paikkatyyppi": {
+            "value": "puro"
+        },
+        "karttaruutu-x": {
+            "value": "71"
+        },
+        "karttaruutu-y": {
+            "value": "42"
+        },
+        "keruumerkintakartalla": {
+            "value": "15"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.577201123,
+                25.392699473,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Rahjelampi (lampi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 466, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "466"
+        },
+        "keruukortinkuva": {
+            "value": "00000010_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Rahjelampi"
+        },
+        "paikkatyyppi": {
+            "value": "lampi"
+        },
+        "karttaruutu-x": {
+            "value": "72"
+        },
+        "karttaruutu-y": {
+            "value": "74"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8899"
+        },
+        "coordinates": {
+            "value": [
+                62.865332831,
+                25.415186569,
+                1.0e-9
+            ]
+        }
+    }
+}

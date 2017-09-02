@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Retula (torppa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 755, Saarijärvi, 1965"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1965-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "755"
+        },
+        "keruukortinkuva": {
+            "value": "00000299_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Retula"
+        },
+        "paikkatyyppi": {
+            "value": "torppa"
+        },
+        "karttaruutu-x": {
+            "value": "4"
+        },
+        "karttaruutu-y": {
+            "value": "E"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Hakala,_Paavotapio"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8878"
+        },
+        "coordinates": {
+            "value": [
+                62.609699144,
+                25.432360524,
+                1.0e-9
+            ]
+        }
+    }
+}

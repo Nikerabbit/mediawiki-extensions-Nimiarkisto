@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Heino, Katri"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

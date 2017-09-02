@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Hietalahti (lahti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 949, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "949"
+        },
+        "keruukortinkuva": {
+            "value": "00000525_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Hietalahti"
+        },
+        "paikkatyyppi": {
+            "value": "lahti"
+        },
+        "karttaruutu-x": {
+            "value": "55"
+        },
+        "karttaruutu-y": {
+            "value": "48-49"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8904"
+        },
+        "coordinates": {
+            "value": [
+                62.636747798,
+                25.078373436,
+                1.0e-9
+            ]
+        }
+    }
+}

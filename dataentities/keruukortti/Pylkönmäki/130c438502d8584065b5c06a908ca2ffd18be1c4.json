@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Munapohja (metsänotkelma)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 553, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "553"
+        },
+        "keruukortinkuva": {
+            "value": "00000047_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Munapohja"
+        },
+        "paikkatyyppi": {
+            "value": "metsänotkelma"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "3"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8358"
+        },
+        "coordinates": {
+            "value": [
+                62.721812752,
+                24.865906911,
+                1.0e-9
+            ]
+        }
+    }
+}

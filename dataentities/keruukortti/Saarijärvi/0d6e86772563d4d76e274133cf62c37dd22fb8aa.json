@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pukkihaka (haka)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 118, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "118"
+        },
+        "keruukortinkuva": {
+            "value": "00000118_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pukkihaka"
+        },
+        "paikkatyyppi": {
+            "value": "haka"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "VII"
+        },
+        "keruumerkintakartalla": {
+            "value": "202"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.734674151,
+                24.994744879,
+                1.0e-9
+            ]
+        }
+    }
+}

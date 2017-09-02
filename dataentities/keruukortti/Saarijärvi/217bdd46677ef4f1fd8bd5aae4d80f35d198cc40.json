@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Alaportti (portti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 184, Saarijärvi, 1970"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1970-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "184"
+        },
+        "keruukortinkuva": {
+            "value": "00000184_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Alaportti"
+        },
+        "paikkatyyppi": {
+            "value": "portti"
+        },
+        "karttaruutu-x": {
+            "value": "55"
+        },
+        "karttaruutu-y": {
+            "value": "67"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.803602785,
+                25.075853552,
+                1.0e-9
+            ]
+        }
+    }
+}

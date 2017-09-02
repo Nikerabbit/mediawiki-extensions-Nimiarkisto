@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Riihisuo (suoalue)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 869, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "869"
+        },
+        "keruukortinkuva": {
+            "value": "00000413_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Riihisuo"
+        },
+        "paikkatyyppi": {
+            "value": "suoalue"
+        },
+        "karttaruutu-x": {
+            "value": "6"
+        },
+        "karttaruutu-y": {
+            "value": "Ä"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.673659923,
+                24.979988557,
+                1.0e-9
+            ]
+        }
+    }
+}

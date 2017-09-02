@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Hännilänportti (portti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1224, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1224"
+        },
+        "keruukortinkuva": {
+            "value": "00000800_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Hännilänportti"
+        },
+        "paikkatyyppi": {
+            "value": "portti"
+        },
+        "karttaruutu-x": {
+            "value": "60"
+        },
+        "karttaruutu-y": {
+            "value": "52"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.671845198,
+                25.177238772,
+                1.0e-9
+            ]
+        }
+    }
+}

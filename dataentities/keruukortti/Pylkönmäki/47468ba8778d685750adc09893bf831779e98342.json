@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Hiekantakanen (lampi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 106, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "106"
+        },
+        "keruukortinkuva": {
+            "value": "00000060_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Hiekantakanen"
+        },
+        "paikkatyyppi": {
+            "value": "lampi"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "9"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8363"
+        },
+        "coordinates": {
+            "value": [
+                62.580285561,
+                24.672616716,
+                1.0e-9
+            ]
+        }
+    }
+}

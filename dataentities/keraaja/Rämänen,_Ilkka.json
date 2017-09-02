@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Rämänen, Ilkka"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

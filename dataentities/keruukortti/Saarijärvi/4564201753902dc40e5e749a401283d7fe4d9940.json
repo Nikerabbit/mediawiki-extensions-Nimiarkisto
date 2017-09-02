@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lepolahti (lahti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 839, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "839"
+        },
+        "keruukortinkuva": {
+            "value": "00000338_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lepolahti"
+        },
+        "paikkatyyppi": {
+            "value": "lahti"
+        },
+        "karttaruutu-x": {
+            "value": "64"
+        },
+        "karttaruutu-y": {
+            "value": "52"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.668283993,
+                25.248753843,
+                1.0e-9
+            ]
+        }
+    }
+}

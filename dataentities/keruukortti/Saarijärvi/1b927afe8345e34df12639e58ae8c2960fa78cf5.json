@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Mömmölä (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 419, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "419"
+        },
+        "keruukortinkuva": {
+            "value": "00000419_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Mömmölä"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "74"
+        },
+        "karttaruutu-y": {
+            "value": "65"
+        },
+        "keruumerkintakartalla": {
+            "value": "10"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.785224515,
+                25.458497228,
+                1.0e-9
+            ]
+        }
+    }
+}

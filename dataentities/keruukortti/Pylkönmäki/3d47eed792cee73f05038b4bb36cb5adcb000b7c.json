@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tarvaiskangas (kangas)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 986, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "986"
+        },
+        "keruukortinkuva": {
+            "value": "00000018_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tarvaiskangas"
+        },
+        "paikkatyyppi": {
+            "value": "kangas"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "1"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8362"
+        },
+        "coordinates": {
+            "value": [
+                62.742879819,
+                24.672398869,
+                1.0e-9
+            ]
+        }
+    }
+}

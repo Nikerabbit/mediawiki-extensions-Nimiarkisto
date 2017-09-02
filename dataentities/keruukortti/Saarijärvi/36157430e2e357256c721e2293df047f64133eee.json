@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Takaniitty (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 418, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "418"
+        },
+        "keruukortinkuva": {
+            "value": "00000037_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Takaniitty"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "63"
+        },
+        "keruumerkintakartalla": {
+            "value": "19"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.768406776,
+                25.380062624,
+                1.0e-9
+            ]
+        }
+    }
+}

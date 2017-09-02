@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Solmula (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 177, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "177"
+        },
+        "keruukortinkuva": {
+            "value": "00000177_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Solmula"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "65"
+        },
+        "karttaruutu-y": {
+            "value": "52"
+        },
+        "keruumerkintakartalla": {
+            "value": "16"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.672412347,
+                25.283317416,
+                1.0e-9
+            ]
+        }
+    }
+}

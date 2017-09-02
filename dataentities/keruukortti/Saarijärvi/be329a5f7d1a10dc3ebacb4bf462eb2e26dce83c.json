@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Hepopuro (puro)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 825, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "825"
+        },
+        "keruukortinkuva": {
+            "value": "00000401_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Hepopuro"
+        },
+        "paikkatyyppi": {
+            "value": "puro"
+        },
+        "karttaruutu-x": {
+            "value": "71"
+        },
+        "karttaruutu-y": {
+            "value": "42"
+        },
+        "keruumerkintakartalla": {
+            "value": "14"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.583874358,
+                25.383046349,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Konipelto (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1350, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1350"
+        },
+        "keruukortinkuva": {
+            "value": "00001064_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Konipelto"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "52"
+        },
+        "karttaruutu-y": {
+            "value": "68"
+        },
+        "keruumerkintakartalla": {
+            "value": "11"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.812848334,
+                25.018604685,
+                1.0e-9
+            ]
+        }
+    }
+}

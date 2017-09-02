@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Sepänsaari (saari)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 922, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "922"
+        },
+        "keruukortinkuva": {
+            "value": "00000039_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Sepänsaari"
+        },
+        "paikkatyyppi": {
+            "value": "saari"
+        },
+        "karttaruutu-x": {
+            "value": "K"
+        },
+        "karttaruutu-y": {
+            "value": "6"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8363"
+        },
+        "coordinates": {
+            "value": [
+                62.610668867,
+                24.753174948,
+                1.0e-9
+            ]
+        }
+    }
+}

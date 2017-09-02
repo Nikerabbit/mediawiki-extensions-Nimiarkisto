@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Ylimmäinen Jokilampi (lampi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1522, Saarijärvi, 1970"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1970-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1522"
+        },
+        "keruukortinkuva": {
+            "value": "00000010_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Ylimmäinen Jokilampi"
+        },
+        "paikkatyyppi": {
+            "value": "lampi"
+        },
+        "karttaruutu-x": {
+            "value": "56-57"
+        },
+        "karttaruutu-y": {
+            "value": "66"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.798680281,
+                25.105094022,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tinttilä (huvila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 642, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "642"
+        },
+        "keruukortinkuva": {
+            "value": "00000261_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tinttilä"
+        },
+        "paikkatyyppi": {
+            "value": "huvila"
+        },
+        "karttaruutu-x": {
+            "value": "73"
+        },
+        "karttaruutu-y": {
+            "value": "42"
+        },
+        "keruumerkintakartalla": {
+            "value": "7"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.577442339,
+                25.422807731,
+                1.0e-9
+            ]
+        }
+    }
+}

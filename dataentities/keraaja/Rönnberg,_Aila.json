@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Rönnberg, Aila"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

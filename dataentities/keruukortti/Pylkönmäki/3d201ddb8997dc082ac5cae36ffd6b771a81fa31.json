@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Niittyniemi (niemi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 603, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "603"
+        },
+        "keruukortinkuva": {
+            "value": "00000011_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Niittyniemi"
+        },
+        "paikkatyyppi": {
+            "value": "niemi"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "6"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8362"
+        },
+        "coordinates": {
+            "value": [
+                62.695395857,
+                24.666493402,
+                1.0e-9
+            ]
+        }
+    }
+}

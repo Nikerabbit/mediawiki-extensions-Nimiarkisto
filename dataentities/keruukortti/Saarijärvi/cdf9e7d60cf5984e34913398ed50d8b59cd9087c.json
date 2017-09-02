@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Mäntyaho (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 357, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "357"
+        },
+        "keruukortinkuva": {
+            "value": "00000357_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Mäntyaho"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "8"
+        },
+        "karttaruutu-y": {
+            "value": "X"
+        },
+        "keruumerkintakartalla": {
+            "value": "14"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.704438441,
+                25.023338171,
+                1.0e-9
+            ]
+        }
+    }
+}

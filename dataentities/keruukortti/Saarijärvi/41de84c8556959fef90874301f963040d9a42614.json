@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kylmäpuro (joki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 349, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "349"
+        },
+        "keruukortinkuva": {
+            "value": "00000349_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kylmäpuro"
+        },
+        "paikkatyyppi": {
+            "value": "joki"
+        },
+        "karttaruutu-x": {
+            "value": "59"
+        },
+        "karttaruutu-y": {
+            "value": "42"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8904"
+        },
+        "coordinates": {
+            "value": [
+                62.582304316,
+                25.154236856,
+                1.0e-9
+            ]
+        }
+    }
+}

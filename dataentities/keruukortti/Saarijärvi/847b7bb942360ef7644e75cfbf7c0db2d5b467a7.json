@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Väärämäki (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1501, Saarijärvi, 1970"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1970-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1501"
+        },
+        "keruukortinkuva": {
+            "value": "00000487_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Väärämäki"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "58"
+        },
+        "karttaruutu-y": {
+            "value": "67"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.808169838,
+                25.143707699,
+                1.0e-9
+            ]
+        }
+    }
+}

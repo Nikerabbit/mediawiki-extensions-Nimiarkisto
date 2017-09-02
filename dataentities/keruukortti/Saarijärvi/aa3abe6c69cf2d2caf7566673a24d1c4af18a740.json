@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Metsälähde (lähde)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1450, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1450"
+        },
+        "keruukortinkuva": {
+            "value": "00000224_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Metsälähde"
+        },
+        "paikkatyyppi": {
+            "value": "lähde"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "45"
+        },
+        "keruumerkintakartalla": {
+            "value": "10"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.605447635,
+                25.367809118,
+                1.0e-9
+            ]
+        }
+    }
+}

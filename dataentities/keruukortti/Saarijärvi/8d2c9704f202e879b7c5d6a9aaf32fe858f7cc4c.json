@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Rahasaari (saari)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 465, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "465"
+        },
+        "keruukortinkuva": {
+            "value": "00000009_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Rahasaari"
+        },
+        "paikkatyyppi": {
+            "value": "saari"
+        },
+        "karttaruutu-x": {
+            "value": "24"
+        },
+        "karttaruutu-y": {
+            "value": "76"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8897"
+        },
+        "coordinates": {
+            "value": [
+                62.875333134,
+                25.512924257,
+                1.0e-9
+            ]
+        }
+    }
+}

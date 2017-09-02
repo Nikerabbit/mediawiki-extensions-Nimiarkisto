@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Rantalanlahti (lahti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 622, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "622"
+        },
+        "keruukortinkuva": {
+            "value": "00000166_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Rantalanlahti"
+        },
+        "paikkatyyppi": {
+            "value": "lahti"
+        },
+        "karttaruutu-x": {
+            "value": "67"
+        },
+        "karttaruutu-y": {
+            "value": "53"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.679602382,
+                25.314210862,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Isomäki (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1449, Saarijärvi, 1970"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1970-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1449"
+        },
+        "keruukortinkuva": {
+            "value": "00000181_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Isomäki"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "53"
+        },
+        "karttaruutu-y": {
+            "value": "72"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8887"
+        },
+        "coordinates": {
+            "value": [
+                62.851676382,
+                25.042755925,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Ryysylä (asumus)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1150, Saarijärvi, 1965"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1965-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1150"
+        },
+        "keruukortinkuva": {
+            "value": "00000694_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Ryysylä"
+        },
+        "paikkatyyppi": {
+            "value": "asumus"
+        },
+        "karttaruutu-x": {
+            "value": "5"
+        },
+        "karttaruutu-y": {
+            "value": "E"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Hakala,_Paavotapio"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8878"
+        },
+        "coordinates": {
+            "value": [
+                62.609533967,
+                25.450149865,
+                1.0e-9
+            ]
+        }
+    }
+}

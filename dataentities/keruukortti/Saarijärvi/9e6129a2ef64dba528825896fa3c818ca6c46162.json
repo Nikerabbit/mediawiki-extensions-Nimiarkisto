@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Myllypuro (puro)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 226, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "226"
+        },
+        "keruukortinkuva": {
+            "value": "00000226_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Myllypuro"
+        },
+        "paikkatyyppi": {
+            "value": "puro"
+        },
+        "karttaruutu-x": {
+            "value": "59"
+        },
+        "karttaruutu-y": {
+            "value": "47-49"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8904"
+        },
+        "coordinates": {
+            "value": [
+                62.627156099,
+                25.155978996,
+                1.0e-9
+            ]
+        }
+    }
+}

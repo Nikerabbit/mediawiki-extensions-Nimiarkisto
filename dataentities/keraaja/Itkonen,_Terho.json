@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Itkonen, Terho"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

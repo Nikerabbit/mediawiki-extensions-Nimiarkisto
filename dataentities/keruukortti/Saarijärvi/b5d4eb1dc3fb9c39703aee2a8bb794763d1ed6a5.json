@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Salomaa (metsäkappale)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1341, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1341"
+        },
+        "keruukortinkuva": {
+            "value": "00000144_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Salomaa"
+        },
+        "paikkatyyppi": {
+            "value": "metsäkappale"
+        },
+        "karttaruutu-x": {
+            "value": "66"
+        },
+        "karttaruutu-y": {
+            "value": "40"
+        },
+        "keruumerkintakartalla": {
+            "value": "8"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8885"
+        },
+        "coordinates": {
+            "value": [
+                62.564799934,
+                25.29513127,
+                1.0e-9
+            ]
+        }
+    }
+}

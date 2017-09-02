@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Louhu (metsä)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1032, Saarijärvi, 1969"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1969-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1032"
+        },
+        "keruukortinkuva": {
+            "value": "00000531_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Louhu"
+        },
+        "paikkatyyppi": {
+            "value": "metsä"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "45"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.604353273,
+                25.363797153,
+                1.0e-9
+            ]
+        }
+    }
+}

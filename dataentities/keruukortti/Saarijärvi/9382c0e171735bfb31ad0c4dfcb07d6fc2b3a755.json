@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Leskelä (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 868, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "868"
+        },
+        "keruukortinkuva": {
+            "value": "00000367_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Leskelä"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "59"
+        },
+        "karttaruutu-y": {
+            "value": "61"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.754647599,
+                25.167060092,
+                1.0e-9
+            ]
+        }
+    }
+}

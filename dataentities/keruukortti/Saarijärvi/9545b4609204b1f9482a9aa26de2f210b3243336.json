@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Silmäneva (suo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 91, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "91"
+        },
+        "keruukortinkuva": {
+            "value": "00000091_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Silmäneva"
+        },
+        "paikkatyyppi": {
+            "value": "suo"
+        },
+        "karttaruutu-x": {
+            "value": "63"
+        },
+        "karttaruutu-y": {
+            "value": "39"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8895"
+        },
+        "coordinates": {
+            "value": [
+                62.556841125,
+                25.22361035,
+                1.0e-9
+            ]
+        }
+    }
+}

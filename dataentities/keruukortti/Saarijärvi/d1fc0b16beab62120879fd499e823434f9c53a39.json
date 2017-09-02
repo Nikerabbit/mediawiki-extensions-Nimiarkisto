@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Komumäki (asutusalue)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1336, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1336"
+        },
+        "keruukortinkuva": {
+            "value": "00001050_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Komumäki"
+        },
+        "paikkatyyppi": {
+            "value": "asutusalue"
+        },
+        "karttaruutu-x": {
+            "value": "61"
+        },
+        "karttaruutu-y": {
+            "value": "55"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.70177108,
+                25.202968904,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Töyrisaari (saari)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 866, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "866"
+        },
+        "keruukortinkuva": {
+            "value": "00000485_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Töyrisaari"
+        },
+        "paikkatyyppi": {
+            "value": "saari"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "62"
+        },
+        "keruumerkintakartalla": {
+            "value": "12"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.755293186,
+                25.384817859,
+                1.0e-9
+            ]
+        }
+    }
+}

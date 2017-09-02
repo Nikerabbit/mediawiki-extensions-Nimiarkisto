@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Oksanniemenapaa (apaja)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 774, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "774"
+        },
+        "keruukortinkuva": {
+            "value": "00000030_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Oksanniemenapaa"
+        },
+        "paikkatyyppi": {
+            "value": "apaja"
+        },
+        "karttaruutu-x": {
+            "value": "71"
+        },
+        "karttaruutu-y": {
+            "value": "63"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.766458142,
+                25.400914996,
+                1.0e-9
+            ]
+        }
+    }
+}

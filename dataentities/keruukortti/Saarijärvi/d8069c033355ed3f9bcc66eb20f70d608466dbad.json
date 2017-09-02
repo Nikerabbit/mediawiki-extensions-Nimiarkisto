@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Isohaka (maa-alue)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1336, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1336"
+        },
+        "keruukortinkuva": {
+            "value": "00000068_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Isohaka"
+        },
+        "paikkatyyppi": {
+            "value": "maa-alue"
+        },
+        "karttaruutu-x": {
+            "value": "52"
+        },
+        "karttaruutu-y": {
+            "value": "67"
+        },
+        "keruumerkintakartalla": {
+            "value": "7"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.804637777,
+                25.030728055,
+                1.0e-9
+            ]
+        }
+    }
+}

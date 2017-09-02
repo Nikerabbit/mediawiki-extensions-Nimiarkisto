@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kissakoski (koskenkynnäs)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 316, Pylkönmäki, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "316"
+        },
+        "keruukortinkuva": {
+            "value": "00000101_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kissakoski"
+        },
+        "paikkatyyppi": {
+            "value": "koskenkynnäs"
+        },
+        "karttaruutu-x": {
+            "value": "E"
+        },
+        "karttaruutu-y": {
+            "value": "2"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Seppälä,_Pirkko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/3879"
+        },
+        "coordinates": {
+            "value": [
+                62.781057879,
+                24.828439157,
+                1.0e-9
+            ]
+        }
+    }
+}

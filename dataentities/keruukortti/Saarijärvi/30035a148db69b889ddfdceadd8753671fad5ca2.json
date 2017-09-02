@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kivikkovalkama (ranta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1112, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1112"
+        },
+        "keruukortinkuva": {
+            "value": "00000826_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kivikkovalkama"
+        },
+        "paikkatyyppi": {
+            "value": "ranta"
+        },
+        "karttaruutu-x": {
+            "value": "49"
+        },
+        "karttaruutu-y": {
+            "value": "66"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8890"
+        },
+        "coordinates": {
+            "value": [
+                62.79972526,
+                24.965621321,
+                1.0e-9
+            ]
+        }
+    }
+}

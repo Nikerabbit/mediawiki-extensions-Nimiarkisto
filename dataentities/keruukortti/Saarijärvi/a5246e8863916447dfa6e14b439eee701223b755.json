@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kissakynnäs (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1020, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1020"
+        },
+        "keruukortinkuva": {
+            "value": "00000734_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kissakynnäs"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "75"
+        },
+        "karttaruutu-y": {
+            "value": "41"
+        },
+        "keruumerkintakartalla": {
+            "value": "13"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.571897094,
+                25.457906464,
+                1.0e-9
+            ]
+        }
+    }
+}

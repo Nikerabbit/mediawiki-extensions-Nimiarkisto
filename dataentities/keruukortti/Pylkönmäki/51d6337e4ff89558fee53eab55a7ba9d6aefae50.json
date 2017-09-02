@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Ristisuo (suo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 855, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "855"
+        },
+        "keruukortinkuva": {
+            "value": "00000070_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Ristisuo"
+        },
+        "paikkatyyppi": {
+            "value": "suo"
+        },
+        "karttaruutu-x": {
+            "value": "A"
+        },
+        "karttaruutu-y": {
+            "value": "6"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8359"
+        },
+        "coordinates": {
+            "value": [
+                62.604904961,
+                24.777558463,
+                1.0e-9
+            ]
+        }
+    }
+}

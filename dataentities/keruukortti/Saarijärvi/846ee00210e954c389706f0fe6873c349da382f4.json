@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lämpöisenleivänmäki (kangas)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1205, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1205"
+        },
+        "keruukortinkuva": {
+            "value": "00000704_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lämpöisenleivänmäki"
+        },
+        "paikkatyyppi": {
+            "value": "kangas"
+        },
+        "karttaruutu-x": {
+            "value": "51"
+        },
+        "karttaruutu-y": {
+            "value": "45"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Aromaa,_Vuokko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8902"
+        },
+        "coordinates": {
+            "value": [
+                62.609282195,
+                24.998659142,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Jyrkänkorvenraivio (viljelys)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 238, Saarijärvi, 1977"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1977-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "238"
+        },
+        "keruukortinkuva": {
+            "value": "00000238_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Jyrkänkorvenraivio"
+        },
+        "paikkatyyppi": {
+            "value": "viljelys"
+        },
+        "karttaruutu-x": {
+            "value": "73"
+        },
+        "karttaruutu-y": {
+            "value": "54"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8894"
+        },
+        "coordinates": {
+            "value": [
+                62.687534963,
+                25.437147204,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"datatype": "string",
+	"labels": {
+		"fi": "keruumerkinnän paikkatyyppi"
+	},
+	"descriptions": {
+		"fi": "merkintä paikkatyypistä alkuperäisasussa"
+	}
+}

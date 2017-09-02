@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Rajala (mökki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 540, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "540"
+        },
+        "keruukortinkuva": {
+            "value": "00000084_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Rajala"
+        },
+        "paikkatyyppi": {
+            "value": "mökki"
+        },
+        "karttaruutu-x": {
+            "value": "9"
+        },
+        "karttaruutu-y": {
+            "value": "V"
+        },
+        "keruumerkintakartalla": {
+            "value": "8"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.715491674,
+                25.048609269,
+                1.0e-9
+            ]
+        }
+    }
+}

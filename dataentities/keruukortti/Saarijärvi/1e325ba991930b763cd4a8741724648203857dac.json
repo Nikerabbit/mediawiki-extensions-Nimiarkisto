@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pieni Matinsaari (saari)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1358, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1358"
+        },
+        "keruukortinkuva": {
+            "value": "00000533_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pieni Matinsaari"
+        },
+        "paikkatyyppi": {
+            "value": "saari"
+        },
+        "karttaruutu-x": {
+            "value": "75"
+        },
+        "karttaruutu-y": {
+            "value": "63"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.767826276,
+                25.476195834,
+                1.0e-9
+            ]
+        }
+    }
+}

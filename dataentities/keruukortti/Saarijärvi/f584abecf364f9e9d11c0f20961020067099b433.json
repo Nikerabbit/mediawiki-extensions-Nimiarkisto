@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lammashaka (alue)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 607, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "607"
+        },
+        "keruukortinkuva": {
+            "value": "00000106_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lammashaka"
+        },
+        "paikkatyyppi": {
+            "value": "alue"
+        },
+        "karttaruutu-x": {
+            "value": "72"
+        },
+        "karttaruutu-y": {
+            "value": "45"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.605974246,
+                25.414920906,
+                1.0e-9
+            ]
+        }
+    }
+}

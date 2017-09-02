@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vilkkilä (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1337, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1337"
+        },
+        "keruukortinkuva": {
+            "value": "00000323_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vilkkilä"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "7"
+        },
+        "karttaruutu-y": {
+            "value": "U"
+        },
+        "keruumerkintakartalla": {
+            "value": "7"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.725384021,
+                25.000161056,
+                1.0e-9
+            ]
+        }
+    }
+}

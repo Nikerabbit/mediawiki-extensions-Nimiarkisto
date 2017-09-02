@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Liisanperse (joen osa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 918, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "918"
+        },
+        "keruukortinkuva": {
+            "value": "00000417_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Liisanperse"
+        },
+        "paikkatyyppi": {
+            "value": "joen osa"
+        },
+        "karttaruutu-x": {
+            "value": "31"
+        },
+        "karttaruutu-y": {
+            "value": "67"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8900"
+        },
+        "coordinates": {
+            "value": [
+                62.793556473,
+                25.634356025,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pienihiekka (poukama)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1285, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1285"
+        },
+        "keruukortinkuva": {
+            "value": "00000460_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pienihiekka"
+        },
+        "paikkatyyppi": {
+            "value": "poukama"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "IV"
+        },
+        "keruumerkintakartalla": {
+            "value": "76"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.762149937,
+                24.98393877,
+                1.0e-9
+            ]
+        }
+    }
+}

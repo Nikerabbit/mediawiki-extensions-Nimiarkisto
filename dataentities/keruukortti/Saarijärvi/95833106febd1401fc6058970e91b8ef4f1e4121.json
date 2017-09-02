@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Niemelä (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 518, Saarijärvi, 1979"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1979-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "518"
+        },
+        "keruukortinkuva": {
+            "value": "00000094_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Niemelä"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "56"
+        },
+        "karttaruutu-y": {
+            "value": "52"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8914"
+        },
+        "coordinates": {
+            "value": [
+                62.672478384,
+                25.099190716,
+                1.0e-9
+            ]
+        }
+    }
+}

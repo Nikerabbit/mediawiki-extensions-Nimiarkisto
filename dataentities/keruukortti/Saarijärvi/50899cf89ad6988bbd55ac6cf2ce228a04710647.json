@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Otralahti (lahti)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 822, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "822"
+        },
+        "keruukortinkuva": {
+            "value": "00000078_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Otralahti"
+        },
+        "paikkatyyppi": {
+            "value": "lahti"
+        },
+        "karttaruutu-x": {
+            "value": "71"
+        },
+        "karttaruutu-y": {
+            "value": "61"
+        },
+        "keruumerkintakartalla": {
+            "value": "10"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.74475442,
+                25.404769759,
+                1.0e-9
+            ]
+        }
+    }
+}

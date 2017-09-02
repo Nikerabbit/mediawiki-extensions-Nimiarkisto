@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Suilunpuro (puro)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 223, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "223"
+        },
+        "keruukortinkuva": {
+            "value": "00000223_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Suilunpuro"
+        },
+        "paikkatyyppi": {
+            "value": "puro"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "VII"
+        },
+        "keruumerkintakartalla": {
+            "value": "196"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.736082087,
+                24.990944973,
+                1.0e-9
+            ]
+        }
+    }
+}

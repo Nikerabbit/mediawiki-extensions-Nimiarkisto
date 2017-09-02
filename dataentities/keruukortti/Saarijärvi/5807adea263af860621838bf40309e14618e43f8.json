@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Arvola (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 262, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "262"
+        },
+        "keruukortinkuva": {
+            "value": "00000262_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Arvola"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "9"
+        },
+        "karttaruutu-y": {
+            "value": "Z"
+        },
+        "keruumerkintakartalla": {
+            "value": "11"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.69230502,
+                25.042601619,
+                1.0e-9
+            ]
+        }
+    }
+}

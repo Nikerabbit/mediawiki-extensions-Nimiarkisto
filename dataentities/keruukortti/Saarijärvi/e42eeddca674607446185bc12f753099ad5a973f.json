@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Metsäpirtti (tila)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1478, Saarijärvi, 1972"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1972-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1478"
+        },
+        "keruukortinkuva": {
+            "value": "00000252_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Metsäpirtti"
+        },
+        "paikkatyyppi": {
+            "value": "tila"
+        },
+        "karttaruutu-x": {
+            "value": "66"
+        },
+        "karttaruutu-y": {
+            "value": "39"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8895"
+        },
+        "coordinates": {
+            "value": [
+                62.554205452,
+                25.28923626,
+                1.0e-9
+            ]
+        }
+    }
+}

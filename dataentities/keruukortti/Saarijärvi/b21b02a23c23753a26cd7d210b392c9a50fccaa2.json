@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Ala-Laiha (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 132, Saarijärvi, 1969"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1969-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "132"
+        },
+        "keruukortinkuva": {
+            "value": "00000132_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Ala-Laiha"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "70"
+        },
+        "karttaruutu-y": {
+            "value": "47"
+        },
+        "keruumerkintakartalla": {
+            "value": "11"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rönnberg,_Aila"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8886"
+        },
+        "coordinates": {
+            "value": [
+                62.622304195,
+                25.378032354,
+                1.0e-9
+            ]
+        }
+    }
+}

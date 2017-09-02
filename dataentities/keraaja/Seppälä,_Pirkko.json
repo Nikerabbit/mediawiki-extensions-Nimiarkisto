@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Seppälä, Pirkko"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

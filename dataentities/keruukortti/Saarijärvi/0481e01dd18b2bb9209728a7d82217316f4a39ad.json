@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Berliini (tupa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 302, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "302"
+        },
+        "keruukortinkuva": {
+            "value": "00000001_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Berliini"
+        },
+        "paikkatyyppi": {
+            "value": "tupa"
+        },
+        "karttaruutu-x": {
+            "value": "25"
+        },
+        "karttaruutu-y": {
+            "value": "65"
+        },
+        "keruumerkintakartalla": {
+            "value": "9"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8898"
+        },
+        "coordinates": {
+            "value": [
+                62.776923084,
+                25.522023567,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tallinjalka (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 454, Saarijärvi, 1970"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1970-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "454"
+        },
+        "keruukortinkuva": {
+            "value": "00000073_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tallinjalka"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "51"
+        },
+        "karttaruutu-y": {
+            "value": "69"
+        },
+        "keruumerkintakartalla": {
+            "value": "11"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.821260609,
+                25.013992043,
+                1.0e-9
+            ]
+        }
+    }
+}

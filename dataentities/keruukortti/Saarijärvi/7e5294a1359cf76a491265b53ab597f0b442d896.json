@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lähdekytö (kytöpelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1132, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1132"
+        },
+        "keruukortinkuva": {
+            "value": "00000631_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lähdekytö"
+        },
+        "paikkatyyppi": {
+            "value": "kytöpelto"
+        },
+        "karttaruutu-x": {
+            "value": "61"
+        },
+        "karttaruutu-y": {
+            "value": "51"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.666088977,
+                25.195405001,
+                1.0e-9
+            ]
+        }
+    }
+}

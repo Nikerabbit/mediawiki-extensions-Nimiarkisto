@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tervatie (polku)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 595, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "595"
+        },
+        "keruukortinkuva": {
+            "value": "00000214_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tervatie"
+        },
+        "paikkatyyppi": {
+            "value": "polku"
+        },
+        "karttaruutu-x": {
+            "value": "65"
+        },
+        "karttaruutu-y": {
+            "value": "52"
+        },
+        "keruumerkintakartalla": {
+            "value": "9"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.672546706,
+                25.281101486,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Niemenpelto (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 554, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "554"
+        },
+        "keruukortinkuva": {
+            "value": "00000130_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Niemenpelto"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "48"
+        },
+        "karttaruutu-y": {
+            "value": "66"
+        },
+        "keruumerkintakartalla": {
+            "value": "18"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8890"
+        },
+        "coordinates": {
+            "value": [
+                62.794175654,
+                24.954763877,
+                1.0e-9
+            ]
+        }
+    }
+}

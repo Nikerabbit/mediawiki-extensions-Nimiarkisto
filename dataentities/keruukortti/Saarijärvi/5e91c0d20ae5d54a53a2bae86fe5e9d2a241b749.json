@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Martinmäki (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1345, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1345"
+        },
+        "keruukortinkuva": {
+            "value": "00000119_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Martinmäki"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "6"
+        },
+        "karttaruutu-y": {
+            "value": "U"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.726784784,
+                24.979710243,
+                1.0e-9
+            ]
+        }
+    }
+}

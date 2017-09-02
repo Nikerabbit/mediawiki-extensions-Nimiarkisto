@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vasikkakivi (kivi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1201, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1201"
+        },
+        "keruukortinkuva": {
+            "value": "00000187_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vasikkakivi"
+        },
+        "paikkatyyppi": {
+            "value": "kivi"
+        },
+        "karttaruutu-x": {
+            "value": "74"
+        },
+        "karttaruutu-y": {
+            "value": "64"
+        },
+        "keruumerkintakartalla": {
+            "value": "12"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8891"
+        },
+        "coordinates": {
+            "value": [
+                62.775329065,
+                25.463921985,
+                1.0e-9
+            ]
+        }
+    }
+}

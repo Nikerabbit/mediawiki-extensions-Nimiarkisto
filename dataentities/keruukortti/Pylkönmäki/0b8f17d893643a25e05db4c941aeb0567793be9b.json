@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Partajärvi (järvi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 654, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "654"
+        },
+        "keruukortinkuva": {
+            "value": "00000024_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Partajärvi"
+        },
+        "paikkatyyppi": {
+            "value": "järvi"
+        },
+        "karttaruutu-x": {
+            "value": "C"
+        },
+        "karttaruutu-y": {
+            "value": "9"
+        },
+        "keruumerkintakartalla": {
+            "value": "1"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8359"
+        },
+        "coordinates": {
+            "value": [
+                62.577736715,
+                24.827921394,
+                1.0e-9
+            ]
+        }
+    }
+}

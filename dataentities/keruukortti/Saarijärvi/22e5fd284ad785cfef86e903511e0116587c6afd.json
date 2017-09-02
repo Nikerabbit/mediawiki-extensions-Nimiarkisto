@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Korpihiekka (ranta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1459, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1459"
+        },
+        "keruukortinkuva": {
+            "value": "00001173_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Korpihiekka"
+        },
+        "paikkatyyppi": {
+            "value": "ranta"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "III"
+        },
+        "keruumerkintakartalla": {
+            "value": "29"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.769489382,
+                24.977075802,
+                1.0e-9
+            ]
+        }
+    }
+}

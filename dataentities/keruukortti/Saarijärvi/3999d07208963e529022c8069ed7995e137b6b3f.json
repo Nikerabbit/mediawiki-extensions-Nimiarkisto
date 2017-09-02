@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Ala-Puskala (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 189, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "189"
+        },
+        "keruukortinkuva": {
+            "value": "00000189_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Ala-Puskala"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "6"
+        },
+        "karttaruutu-y": {
+            "value": "U"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.725311346,
+                24.991881966,
+                1.0e-9
+            ]
+        }
+    }
+}

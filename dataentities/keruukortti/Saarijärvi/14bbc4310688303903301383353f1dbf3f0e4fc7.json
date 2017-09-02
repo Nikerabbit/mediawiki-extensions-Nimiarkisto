@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kalatupa (tupa)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 372, Saarijärvi, 1958"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1958-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "372"
+        },
+        "keruukortinkuva": {
+            "value": "00000086_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kalatupa"
+        },
+        "paikkatyyppi": {
+            "value": "tupa"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "V"
+        },
+        "keruumerkintakartalla": {
+            "value": "91"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Kalmukoski,_Helena"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8874"
+        },
+        "coordinates": {
+            "value": [
+                62.748847943,
+                24.986338482,
+                1.0e-9
+            ]
+        }
+    }
+}

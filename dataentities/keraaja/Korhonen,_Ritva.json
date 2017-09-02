@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Korhonen, Ritva"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

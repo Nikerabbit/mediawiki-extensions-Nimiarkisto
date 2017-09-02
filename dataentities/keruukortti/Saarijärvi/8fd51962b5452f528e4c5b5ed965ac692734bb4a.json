@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Kotiaho (asuinpaikka)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1552, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1552"
+        },
+        "keruukortinkuva": {
+            "value": "00001266_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Kotiaho"
+        },
+        "paikkatyyppi": {
+            "value": "asuinpaikka"
+        },
+        "karttaruutu-x": {
+            "value": "53"
+        },
+        "karttaruutu-y": {
+            "value": "60"
+        },
+        "keruumerkintakartalla": {
+            "value": "4"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.745947725,
+                25.045324557,
+                1.0e-9
+            ]
+        }
+    }
+}

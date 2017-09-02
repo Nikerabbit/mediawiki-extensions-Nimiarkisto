@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Pellampi (lampi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 666, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "666"
+        },
+        "keruukortinkuva": {
+            "value": "00000036_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Pellampi"
+        },
+        "paikkatyyppi": {
+            "value": "lampi"
+        },
+        "karttaruutu-x": {
+            "value": "K"
+        },
+        "karttaruutu-y": {
+            "value": "6"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8358"
+        },
+        "coordinates": {
+            "value": [
+                62.69965444,
+                24.969945005,
+                1.0e-9
+            ]
+        }
+    }
+}

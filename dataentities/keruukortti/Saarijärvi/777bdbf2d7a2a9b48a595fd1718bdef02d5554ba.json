@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Närhinotko (notko)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 738, Saarijärvi, 1971"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1971-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "738"
+        },
+        "keruukortinkuva": {
+            "value": "00000314_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Närhinotko"
+        },
+        "paikkatyyppi": {
+            "value": "notko"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "66"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Savolainen,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8888"
+        },
+        "coordinates": {
+            "value": [
+                62.797776839,
+                24.990909562,
+                1.0e-9
+            ]
+        }
+    }
+}

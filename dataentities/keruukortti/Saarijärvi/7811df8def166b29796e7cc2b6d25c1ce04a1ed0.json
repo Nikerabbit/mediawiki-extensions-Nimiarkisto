@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Rääseikkö (vetinen kohta)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1183, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1183"
+        },
+        "keruukortinkuva": {
+            "value": "00000727_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Rääseikkö"
+        },
+        "paikkatyyppi": {
+            "value": "vetinen kohta"
+        },
+        "karttaruutu-x": {
+            "value": "8"
+        },
+        "karttaruutu-y": {
+            "value": "Ä"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.671628636,
+                25.024250552,
+                1.0e-9
+            ]
+        }
+    }
+}

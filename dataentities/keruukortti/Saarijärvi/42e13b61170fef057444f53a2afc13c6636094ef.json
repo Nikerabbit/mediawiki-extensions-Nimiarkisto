@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Soidinmäki (kaski)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 156, Saarijärvi, 1980"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1980-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "156"
+        },
+        "keruukortinkuva": {
+            "value": "00000156_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Soidinmäki"
+        },
+        "paikkatyyppi": {
+            "value": "kaski"
+        },
+        "karttaruutu-x": {
+            "value": "55"
+        },
+        "karttaruutu-y": {
+            "value": "61"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rauhanen,_Sirpa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8915"
+        },
+        "coordinates": {
+            "value": [
+                62.755143049,
+                25.087300469,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Nappikivi (kivi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 594, Pylkönmäki, 1959"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Pylkönmäki"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1959-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "594"
+        },
+        "keruukortinkuva": {
+            "value": "00000002_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Nappikivi"
+        },
+        "paikkatyyppi": {
+            "value": "kivi"
+        },
+        "karttaruutu-x": {
+            "value": "D"
+        },
+        "karttaruutu-y": {
+            "value": "3"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Paananen,_Unto"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8359"
+        },
+        "coordinates": {
+            "value": [
+                62.629284549,
+                24.850412625,
+                1.0e-9
+            ]
+        }
+    }
+}

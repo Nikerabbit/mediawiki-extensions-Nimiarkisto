@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tammakivi (kivi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 470, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "470"
+        },
+        "keruukortinkuva": {
+            "value": "00000089_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tammakivi"
+        },
+        "paikkatyyppi": {
+            "value": "kivi"
+        },
+        "karttaruutu-x": {
+            "value": "25"
+        },
+        "karttaruutu-y": {
+            "value": "78"
+        },
+        "keruumerkintakartalla": {
+            "value": "6"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8897"
+        },
+        "coordinates": {
+            "value": [
+                62.889648606,
+                25.533340377,
+                1.0e-9
+            ]
+        }
+    }
+}

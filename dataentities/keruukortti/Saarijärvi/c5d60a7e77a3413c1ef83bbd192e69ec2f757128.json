@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Keskuspala (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 863, Saarijärvi, 1976"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1976-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "863"
+        },
+        "keruukortinkuva": {
+            "value": "00000577_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Keskuspala"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "69"
+        },
+        "karttaruutu-y": {
+            "value": "58"
+        },
+        "keruumerkintakartalla": {
+            "value": null
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8893"
+        },
+        "coordinates": {
+            "value": [
+                62.724079122,
+                25.355292576,
+                1.0e-9
+            ]
+        }
+    }
+}

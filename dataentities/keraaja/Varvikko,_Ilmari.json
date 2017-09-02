@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Varvikko, Ilmari"
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

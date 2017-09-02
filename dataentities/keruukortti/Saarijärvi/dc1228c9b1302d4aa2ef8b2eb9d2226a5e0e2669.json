@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Vähä Mustalampi (lampi)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1426, Saarijärvi, 1952"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1952-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1426"
+        },
+        "keruukortinkuva": {
+            "value": "00000412_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Vähä Mustalampi"
+        },
+        "paikkatyyppi": {
+            "value": "lampi"
+        },
+        "karttaruutu-x": {
+            "value": "F"
+        },
+        "karttaruutu-y": {
+            "value": "c"
+        },
+        "keruumerkintakartalla": {
+            "value": "8"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Rainio,_Jussi"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/6784"
+        },
+        "coordinates": {
+            "value": [
+                62.574944744,
+                24.963726249,
+                1.0e-9
+            ]
+        }
+    }
+}

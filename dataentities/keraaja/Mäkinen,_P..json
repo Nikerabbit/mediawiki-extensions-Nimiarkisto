@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "fi": "Mäkinen, P."
+    },
+    "descriptions": {
+        "fi": "Nimiarkiston kerääjä"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keraaja"
+        }
+    }
+}

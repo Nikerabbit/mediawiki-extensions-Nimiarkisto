@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Tupeskorpi (metsä)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 774, Saarijärvi, 1973"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1973-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "774"
+        },
+        "keruukortinkuva": {
+            "value": "00000393_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Tupeskorpi"
+        },
+        "paikkatyyppi": {
+            "value": "metsä"
+        },
+        "karttaruutu-x": {
+            "value": "26"
+        },
+        "karttaruutu-y": {
+            "value": "77"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Ollitervo,_Irma"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8897"
+        },
+        "coordinates": {
+            "value": [
+                62.886480906,
+                25.55414751,
+                1.0e-9
+            ]
+        }
+    }
+}

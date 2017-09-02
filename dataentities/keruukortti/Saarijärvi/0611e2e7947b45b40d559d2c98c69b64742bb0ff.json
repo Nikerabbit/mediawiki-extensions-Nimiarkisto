@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Halkokoski (koski)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 584, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "584"
+        },
+        "keruukortinkuva": {
+            "value": "00000160_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Halkokoski"
+        },
+        "paikkatyyppi": {
+            "value": "koski"
+        },
+        "karttaruutu-x": {
+            "value": "53"
+        },
+        "karttaruutu-y": {
+            "value": "44"
+        },
+        "keruumerkintakartalla": {
+            "value": "2"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Aromaa,_Vuokko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8902"
+        },
+        "coordinates": {
+            "value": [
+                62.604453764,
+                25.046010339,
+                1.0e-9
+            ]
+        }
+    }
+}

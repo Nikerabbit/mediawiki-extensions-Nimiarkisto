@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lahti (talo)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 563, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "563"
+        },
+        "keruukortinkuva": {
+            "value": "00000062_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lahti"
+        },
+        "paikkatyyppi": {
+            "value": "talo"
+        },
+        "karttaruutu-x": {
+            "value": "9"
+        },
+        "karttaruutu-y": {
+            "value": "Ä"
+        },
+        "keruumerkintakartalla": {
+            "value": "7"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.668828254,
+                25.044743217,
+                1.0e-9
+            ]
+        }
+    }
+}

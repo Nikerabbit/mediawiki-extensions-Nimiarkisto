@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "fi": "Pylkönmäki"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/paikka"
+        }
+    }
+}

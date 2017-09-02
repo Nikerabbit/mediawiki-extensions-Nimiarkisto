@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Valskimäki (mäki)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1071, Saarijärvi, 1962"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1962-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1071"
+        },
+        "keruukortinkuva": {
+            "value": "00000057_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Valskimäki"
+        },
+        "paikkatyyppi": {
+            "value": "mäki"
+        },
+        "karttaruutu-x": {
+            "value": "6"
+        },
+        "karttaruutu-y": {
+            "value": "Z"
+        },
+        "keruumerkintakartalla": {
+            "value": "3"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Vesisenaho,_Kaisa"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8876"
+        },
+        "coordinates": {
+            "value": [
+                62.690035768,
+                24.988098728,
+                1.0e-9
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "labels": {
+        "fi": "Lähdepelto (pelto)"
+    },
+    "descriptions": {
+        "fi": "Keruukortti 1163, Saarijärvi, 1974"
+    },
+    "statements": {
+        "instanceof": {
+            "value": "entities/items/keruumerkinta"
+        },
+        "pitaja": {
+            "value": "dataentities/pitaja/Saarijärvi"
+        },
+        "keruuhetki": {
+            "value": {
+                "time": "+1974-01-01T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            }
+        },
+        "keruukortintunnus": {
+            "value": "1163"
+        },
+        "keruukortinkuva": {
+            "value": "00000662_F.jpg"
+        },
+        "keruumerkinta": {
+            "value": "Lähdepelto"
+        },
+        "paikkatyyppi": {
+            "value": "pelto"
+        },
+        "karttaruutu-x": {
+            "value": "50"
+        },
+        "karttaruutu-y": {
+            "value": "44"
+        },
+        "keruumerkintakartalla": {
+            "value": "5"
+        },
+        "keraaja": {
+            "value": "dataentities/keraaja/Aromaa,_Vuokko"
+        },
+        "karttakuva": {
+            "value": "dataentities/karttakuva/8902"
+        },
+        "coordinates": {
+            "value": [
+                62.598488632,
+                24.978975285,
+                1.0e-9
+            ]
+        }
+    }
+}
