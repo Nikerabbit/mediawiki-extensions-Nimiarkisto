@@ -1,0 +1,36 @@
+{
+	"name": "Nimiarkisto",
+	"version": "1.0.0",
+	"author": [
+		"Niklas Laxström"
+	],
+	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
+	"description": "Code to import and display Nimiarkisto in a MediaWiki",
+	"license-name": "GPL-2.0+",
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onParserFirstCallInit",
+		"LanguageGetMagic": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onLanguageGetMagic",
+		"BeforePageDisplay": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onBeforePageDisplay"
+
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\Nimiarkisto\\Hooks": "src/Hooks.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Nimiarkisto/resources"
+	},
+	"ResourceModules": {
+		"nimiarkistokartta.styles": {
+			"styles": "nimiarkistokartta.less"
+		},
+		"nimiarkistokartta.init": {
+			"scripts": "nimiarkistokartta.init.js",
+			"dependencies": "mediawiki.api"
+		},
+		"nimiarkistokartta": {
+			"scripts": "map-component.js"
+		}
+	},
+	"manifest_version": 1
+}

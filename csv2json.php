@@ -54,6 +54,8 @@ function process( $IN, $OUT ) {
 		}
 
 		file_put_contents( "$OUT/dataentities/keruukortti/$pitäjä/template", '{{Keruumerkintä}}' );
+		file_put_contents( "$OUT/dataentities/pitaja/category", '{{Pitäjäluokka}}' );
+		file_put_contents( "$OUT/dataentities/keraaja/category", '{{Kerääjäluokka}}' );
 
 		echo [ 'O', 'o' ][ mt_rand( 0, 1 ) ];
 	}

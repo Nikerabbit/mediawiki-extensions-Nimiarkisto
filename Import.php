@@ -85,6 +85,10 @@ class NimiarkistoImport extends Maintenance {
 		$template = file_exists( $templateFilename ) ? file_get_contents( $templateFilename ) : null;
 		$data['template'] = $template;
 
+		$categoryFilename = dirname( $filename ) . '/category';
+		$category = file_exists( $categoryFilename ) ? file_get_contents( $categoryFilename ) : null;
+		$data['category'] = $category;
+
 		return $data;
 	}
 
@@ -144,6 +148,14 @@ class NimiarkistoImport extends Maintenance {
 			$page->doEditContent( $content, 'Massatuonti', false, false, $this->user );
 		}
 
+		if ( isset( $data['category'] ) ) {
+			$title = Title::newFromText( 'Category:' . $data['labels']['fi'] );
+			$content = ContentHandler::makeContent( $data['category'], $title );
+
+			$page = new WikiPage( $title );
+			$page->doEditContent( $content, 'Massatuonti', false, false, $this->user );
+		}
+
 		return $entity;
 	}
 
@@ -192,6 +204,10 @@ class NimiarkistoImport extends Maintenance {
 		if ( isset( $data['statements'] ) ) {
 			$statements = $this->createStatements( $entity, $data );
 			$entity->setStatements( $statements );
+		}
+
+		if ( isset( $data['template'] ) ) {
+			$entity->getSiteLinkList()->addNewSiteLink( 'nimiarkisto', (string)$entity->getId() );
 		}
 
 		return $entity;
