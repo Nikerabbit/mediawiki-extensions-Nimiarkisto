@@ -1,36 +1,30 @@
-<includeonly>__NOTOC__{{DISPLAYTITLE:{{#statements:P30|from={{PAGENAME}}}} – keruumerkintä {{#statements:P22|from={{PAGENAME}}}}}}</includeonly>
+<includeonly>__NOTOC____NOEDITSECTION__{{DISPLAYTITLE:{{#statements:P30|from={{PAGENAME}}}} – keruumerkintä {{#statements:P22|from={{PAGENAME}}}}}}</includeonly>
+<div class="nimiarkisto-keruubanneri">
 {{#if:{{#property:P25|from={{PAGENAME}}}}|
 <!-- Näytä kartta -->
-<div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta" style="width: 100%; height: 400px; display: flex; align-items: center; justify-content: center;">
+<div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
 Ladataan karttaa...
 <div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P25|from={{PAGENAME}}}}}}|format=float|directional=no}}###{{#statements:P30|from={{PAGENAME}}}} – keruumerkintä {{#statements:P22|from={{PAGENAME}}}}</div>
 </div>
+{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
 |
-<div class="nimiarkistokartta">
-Keruukoordinaatteja ei tiedossa.
-</div>
-}}
-'''Paikannimi:''' {{#statements:P30|from={{PAGENAME}}}} [yhdistä paikannimeen]
+<div class="nimiarkistokartta">Keruukoordinaatteja ei tiedossa.</div>
+{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
+}}</div>
+'''Keruumerkinnän paikannimi:''' {{#property:P30|from={{PAGENAME}}}}
 
-'''Paikan tyyppi:''' {{#statements:P20|from={{PAGENAME}}}} [yhdistä paikkatyyppiin]
-
-'''Sijainti:''' {{#statements:P28|from={{PAGENAME}}}}
-
-==Keruukortti==
-
-Keruukortin kuva ja linkki sen sivulle
+'''Paikan laji:''' {{#property:P20|from={{PAGENAME}}}}
 
 ==Keruutiedot==
 
-'''Kerääjä:''' {{#statements:P24|from={{PAGENAME}}}}
+'''Keruupitäjä:''' [[:Luokka:{{#property:P28|from={{PAGENAME}}}}|{{#statements:P28|from={{PAGENAME}}}}]]
 
-'''Ajankohta:''' {{#statements:P22|from={{PAGENAME}}}}
+'''Kerääjä:''' [[:Luokka:{{#property:P24|from={{PAGENAME}}}}|{{#statements:P24|from={{PAGENAME}}}}]]
+
+'''Ajankohta:''' {{#property:P22|from={{PAGENAME}}}}
 
 ==Kohteen viite==
 {{#statements:P24|from={{PAGENAME}}}}. ''[[Item:{{PAGENAME}}]]''. Nimiarkisto. Kotimaisten kielten keskus, {{#statements:P22|from={{PAGENAME}}}}.
-
-==Kommentit==
-Kommentoi keruumerkintää
 
 <includeonly>
 [[Luokka:Keruumerkintä]]

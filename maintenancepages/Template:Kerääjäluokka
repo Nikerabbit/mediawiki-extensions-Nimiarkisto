@@ -1,2 +1,10 @@
 <div class="nimiarkistokartta" id="nimiarkistokartta--luokkakartta">Ladataan karttakohteita...</div>
 <includeonly>[[Luokka:Kerääjät]]</includeonly>
+{{#ask: [[{{FULLPAGENAME}}]]
+ |format=category
+ |limit=500
+ |link=all
+ |headers=show
+ |searchlabel=… lisää tuloksia
+ |columns=3
+}}

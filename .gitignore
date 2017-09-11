@@ -1,2 +1,5 @@
 /vendor/
 /data/
+/dataentities/**/*.id
+/dataentities/**/*.guids
+/entities/**/*.guids
