@@ -9,7 +9,7 @@ $( function () {
 	// Start loading immediately
 	mw.loader.using( 'nimiarkistokartta' )
 
-	data = $map.children( '.mapdata' ).text().split( '###' );
+	data = $map.children( '.mapdata' ).html().split( '###' );
 	coords = data[0].split( ', ' );
 
 	loc = {
