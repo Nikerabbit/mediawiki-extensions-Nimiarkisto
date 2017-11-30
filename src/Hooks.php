@@ -6,6 +6,22 @@ class Hooks {
 	public static function onBeforePageDisplay( $out, $skin ) {
 		$out->addModuleStyles( 'nimiarkistokartta.styles' );
 		$skin->getOutput()->addModules( 'nimiarkistokartta.init' );
+
+		$code = $out->getLanguage()->getCode();
+		switch ( $code ) {
+			case 'en':
+			case 'fi':
+			case 'se':
+			case 'smn':
+			case 'sms':
+			case 'sv':
+				$logoClass = "na-logo--$code";
+				break;
+			default:
+				$logoClass = 'na-logo--fi';
+		}
+
+		$out->addBodyClasses( [ 'na-logo', $logoClass ] );
 	}
 
 	public static function onParserFirstCallInit( $parser ) {
