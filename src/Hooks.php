@@ -9,7 +9,6 @@ class Hooks {
 
 		$code = $out->getLanguage()->getCode();
 		switch ( $code ) {
-			case 'en':
 			case 'fi':
 			case 'se':
 			case 'smn':
