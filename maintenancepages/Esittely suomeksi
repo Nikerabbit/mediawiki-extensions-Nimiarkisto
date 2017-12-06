@@ -1,0 +1,50 @@
+__NOTOC__
+==Nimiarkisto==
+'''Kotimaisten kielten keskus on kerännyt yli sadan vuoden aikana 3 miljoonaa nimilippua, joissa kuvataan suomalaisia paikannimiä. Nyt nämä nimiliput ja kerääjien tekemät karttamerkinnät on digitoitu.'''
+<gallery mode="packed-hover" heights=350>
+Tiedosto:Kortti-en.jpg
+</gallery>
+
+==Wiki paikannimille==
+
+'''Projektin tarkoitus on toisaalta helpottaa tiedon linkittämistä ja viemistä ulkoisiin datalähteisiin, kuten Wikidataan, ja toisaalta tarjota alusta tiedon joukkoistamiselle.'''
+
+* Muistot ja tarinat paikoista ja paikannimistä
+* Tietojen korjaaminen ja täydentäminen
+
+<gallery mode="packed-hover" heights=350>
+Tiedosto:UI-merkintä-fi.png
+Tiedosto:UI-paikka.png
+</gallery>
+
+==Paikannimen rakenne==
+
+'''Paikannimet mallinnetaan erillisinä paikoista. Aineisto uudessa Nimiarkistossa koostuu keruukampanjoiden aikana kerätyistä nimilipuista, joita voi pitää paikannimien lähdeaineistona.'''
+* Rakenne poikkeaa paikan rakenteesta Wikidatassa, mutta vastaa Maanmittauslaitoksen Paikannimiarkiston tietorakennetta.
+* Historiallisen paikan mallintamisesta keskustelemiseen voi osallistua Wikiprojektissa  [https://www.wikidata.org/wiki/Wikidata:WikiProject_Historical_Place Wikiproject Historical Place Wikidatassa].
+<gallery mode="packed-hover" heights=350>
+Tiedosto:Rakenne fi.png
+</gallery>
+
+==Palvelun rakenne==
+
+'''Kartta on keskeinen elementti. Karttoja ja dataa tarjotaan GeoServerin ja PostGIS-tietokannan avulla.'''
+* Nimilippujen ja paikkojen sijainnit, keruukartat
+* [[:Luokka:Pylkönmäki|Pylkönmäen keruumerkinnät]]
+
+'''Nimilippujen kuvat piilotetaan aluksi rekisteröimättömiltä käyttäjiltä. Kun rekisteröitynyt käyttäjä on julkaissut nimilipun, kaikki käyttäjät voivat litteroida sen tekstin.'''
+* [[Q881|Esimerkkisivu, jossa on nimilipun kuva]]
+
+'''Sivusto on Wikibase-tietokanta ja wikisivusto yhdesä.'''
+* [[Item:Q881|Datakohde]]
+* [[Special:Properties|Projektissa tällä hetkellä käytössä olevat ominaisuudet]]
+
+'''Linkitettävää'''
+* Wikimedian sisältöä Wikidatan avulla: Kuvia, Wikipedia-artikkeleita, sijainti- ja muuta tietoa.
+* [https://finna.fi/ Finna.fi] kuvia
+* [http://paikkatiedot.fi/so/1000772/ Maanmittauslaitoksen Paikannimirekisteri]
+
+Ota yhteyttä mikäli olet kiinnostunut ottamaan osaa projektin kehittämiseen tai jos olet itse kehittämässä vastaavaa projektia ja haluat jakaa kokemuksiasi!
+
+susanna.anas@gmail.com
+[[Category:Nimiarkisto maintenance]]

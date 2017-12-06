@@ -1,6 +1,6 @@
 <div class="nimiarkistokartta" id="nimiarkistokartta--luokkakartta">Ladataan karttakohteita...</div>
 <includeonly>[[Luokka:Pitäjät]]</includeonly>
-{{#ask: [[{{FULLPAGENAME}}]]
+{{#ask: [[{{1}}]]
  |format=category
  |limit=500
  |link=all
@@ -8,3 +8,4 @@
  |searchlabel=… lisää tuloksia
  |columns=3
 }}
+<noinclude>[[Category:Nimiarkisto maintenance]]</noinclude>

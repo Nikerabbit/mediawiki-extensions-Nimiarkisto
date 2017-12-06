@@ -1,9 +1,0 @@
-{
-	"datatype": "time",
-	"labels": {
-		"fi": "keruuhetki"
-	},
-	"descriptions": {
-		"fi": "milloin keruukortin tiedot on kerätty"
-	}
-}

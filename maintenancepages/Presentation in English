@@ -1,0 +1,38 @@
+'''The project has been made to facilitate linking information between data sources, including importing and matching data to Wikidata, and as a platform for crowdsourcing.'''
+
+* Memories and stories of places and names
+* Correcting and complementing data
+
+<gallery mode="packed-hover" heights=350>
+Tiedosto:Kortti-en.jpg
+Tiedosto:Note.png
+Tiedosto:Paikka.png
+</gallery>
+
+'''The place names are modelled as separate entities from places. The material in the Name Archive consists of field notes, which can be considered as information sources.'''
+* The structure differs from the structure in Wikidata but ressembled the structure used by the National Land Survey Place Names Register.
+* Collaborative discussion of modelling historical geodata for Wikidata takes place in [https://www.wikidata.org/wiki/Wikidata:WikiProject_Historical_Place Wikiproject Historical Place in Wikidata].
+<gallery mode="packed-hover" heights=350>
+Tiedosto:Rakenne.png
+</gallery>
+
+'''A map is a key element. GeoServer and a PostGIS database will serve the maps and data'''
+* Locations of notes and places, maps made by the collectors
+* [[:Luokka:Pylkönmäki|Class of notes: Pylkönmäki]]
+
+'''Images of collection notes are initially hidden to guard personal information. Once published by registered users, they will be available for transcription'''
+* [[Q881|A demo page with a note image]]
+
+'''The site is a Wikibase database and a client together'''
+* [[Item:Q881|The data item]]
+* [[Special:Properties|Wikibase properties used in the project currently]]
+
+'''Sources to connect'''
+* Wikimedia content through Wikidata: Images, articles, location & other data
+* [https://finna.fi/ Finna.fi] images from Finnish GLAMs
+* [http://paikkatiedot.fi/so/1000772/ National Land Survey Place Names Register pilot]
+
+Please get in contact if you are interested in joining developing the project or have a similar project where you want to share your experiences!
+
+susanna.anas@gmail.com
+[[Category:Nimiarkisto maintenance]]

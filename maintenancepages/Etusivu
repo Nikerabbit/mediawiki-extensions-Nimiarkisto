@@ -1,0 +1,28 @@
+<includeonly>__NOTOC____NOEDITSECTION__
+{{DISPLAYTITLE:Nimiarkisto}}</includeonly><div class="nimiarkisto-keruubanneri">
+{{#if:{{#property:P25|from={{PAGENAME}}}}|
+<!-- Näytä kartta -->
+<div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
+Ladataan karttaa...
+<div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P25|from=
+{{PAGENAME}}}}}}|format=float|directional=no}}###{{#statements:P30|from={{PAGENAME}}}} (Kotus, {{#statements:P22|from={{PAGENAME}}}})<br />Merkintä {{#property:P21|from={{PAGENAME}}}} karttaruudussa {{#property:P17|from={{PAGENAME}}}} / {{#property:P18|from={{PAGENAME}}}}</div>
+</div>
+{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
+|
+<div class="nimiarkistokartta">Keruukoordinaatteja ei tiedossa.</div>
+{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
+}}</div>
+<div style="display:flex; flex-flow: row wrap; justify-content: space-between;">
+<div style="flex:1 1 auto">
+{{#mytitle:}}
+Nimiarkisto on ...
+* Etsi
+* Lisää uusi merkintä
+</div>
+<div style="flex:0 0 20em">
+==Ajankohtaista==
+* 13.12.2017 Tänään oli hyvä päivä
+* 1.12.2017 Joulukalenterin ensimmäinen luukku
+</div>
+</div>
+[[Category:Nimiarkisto maintenance]]

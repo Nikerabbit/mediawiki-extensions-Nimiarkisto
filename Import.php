@@ -7,6 +7,7 @@
 
 use DataValues\Geo\Values\GlobeCoordinateValue;
 use DataValues\Geo\Values\LatLongValue;
+use DataValues\MonolingualTextValue;
 use DataValues\StringValue;
 use DataValues\TimeValue;
 use Wikibase\DataModel\Entity\EntityDocument;
@@ -22,6 +23,9 @@ use Wikibase\DataModel\Statement\StatementList;
 use Wikibase\DataModel\Term\Fingerprint;
 use Wikibase\Repo\WikibaseRepo;
 
+require 'vendor/autoload.php';
+use Symfony\Component\Yaml\Yaml;
+
 $IP = getenv( 'MW_INSTALL_PATH' ) ?: '../..';
 require_once "$IP/maintenance/Maintenance.php";
 
@@ -31,7 +35,7 @@ class NimiarkistoImport extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Imports things to Wikibase';
-		$this->path = __DIR__;
+		$this->addArg( 'file', 'THE FILE' );
 	}
 
 	public function execute() {
@@ -42,17 +46,13 @@ class NimiarkistoImport extends Maintenance {
 		$this->guidGenerator = new GuidGenerator();
 		$this->user = User::newFromId( 1 );
 
-		// First the support stuff, then the actual data
-		foreach ( [ 'entities', 'dataentities' ] as $dir ) {
-			$iter = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( "{$this->path}/$dir" ) );
-			foreach ( $iter as $entry ) {
-				if ( !$entry->isFile() || $entry->getExtension() !== 'json' ) {
-					continue;
-				}
-
-				echo $dir . '/' . $iter->getSubPathName() . "\n";
-				$data = $this->loadEntityData( "{$this->path}/$dir/" . $iter->getSubPathName() );
-				$this->processEntityData( $data );
+		$this->data = $this->loadEntityData( __DIR__ . '/props.yaml' );
+		$data = $this->loadEntityData( $this->getArg( 0 ) );
+		foreach ( $data as $id => $entityData ) {
+			try {
+				$this->processEntityData( $id, $entityData );
+			} catch ( Exception $e ) {
+				echo $e;
 			}
 		}
 
@@ -64,93 +64,28 @@ class NimiarkistoImport extends Maintenance {
 			throw new Exception( "File $filename not readable" );
 		}
 
-		$data = json_decode( file_get_contents( $filename ), true );
+		$data = Yaml::parse( file_get_contents( $filename )  );
 		if ( !is_array( $data ) ) {
-			throw new Exception( "Invalid JSON file $filename" );
+			throw new Exception( "Invalid YAML file $filename" );
 		}
-
-		$data['filename'] = $filename;
-
-		$idFilename = preg_replace( '~\.json$~', '.id', $filename );
-		$id = file_exists( $idFilename ) ? trim( file_get_contents( $idFilename ) ) : null;
-		$data['id'] = $id;
-		$data['idFilename'] = $idFilename;
-
-		$guidsFilename = preg_replace( '~\.json$~', '.guids', $filename );
-		$guids = file_exists( $guidsFilename ) ? json_decode( file_get_contents( $guidsFilename ), true ) : [];
-		$data['guids'] = $guids;
-		$data['guidsFilename'] = $guidsFilename;
-
-		$templateFilename = dirname( $filename ) . '/template';
-		$template = file_exists( $templateFilename ) ? file_get_contents( $templateFilename ) : null;
-		$data['template'] = $template;
-
-		$categoryFilename = dirname( $filename ) . '/category';
-		$category = file_exists( $categoryFilename ) ? file_get_contents( $categoryFilename ) : null;
-		$data['category'] = $category;
 
 		return $data;
 	}
 
-	private function processEntityData( array $data ) {
-		$this->checkPrerequisites( $data );
+	private function processEntityData( $entityId, array $data ) {
+		//$this->checkPrerequisites( $data );
 
-		$isProperty = isset( $data['datatype'] );
-
-		if ( $isProperty ) {
-			$entity = Property::newFromType( $data['datatype'] );
-			if ( $data['id'] !== null ) {
-				$entity->setId( new PropertyId( $data['id'] ) );
-			}
-		} else {
-			$entity = new Item();
-			if ( $data['id'] !== null ) {
-				$entity->setId( new ItemId( $data['id'] ) );
-			}
-		}
-
-		if ( $entity->getId() === null ) {
-			$this->entityStore->assignFreshId( $entity );
-		}
-
-		$entity = $this->populateEntity( $entity, $data );
-
+		echo "$entityId\n";
+		$entity = $this->createEntity( $entityId, $data );
 		$status = $this->saveEntity( $entity, 'Massatuonti' );
 
 		if ( !$status->isOk() ) {
 			throw new Exception( $status->getMessage() );
 		}
 
-		if ( !file_exists( $data['idFilename'] ) ) {
-			file_put_contents( $data['idFilename'], $entity->getId() . "\n" );
-		}
-
-
-		$guids = [];
-		foreach ( $entity->getStatements() as $statement ) {
-			$snak = $statement->getMainSnak();
-			$guids[$snak->getPropertyId()->getNumericId()] = $statement->getGuid();
-		}
-
-		if ( $guids ) {
-			file_put_contents( $data['guidsFilename'], json_encode( $guids, JSON_PRETTY_PRINT ) );
-		}
-
-		if ( !isset( $data['root'] ) ) {
-			$this->map[$data['filename']] = $entity;
-		}
-
-		if ( isset( $data['template'] ) ) {
-			$title = Title::newFromText( (string)$entity->getId() );
-			$content = ContentHandler::makeContent( $data['template'], $title );
-
-			$page = new WikiPage( $title );
-			$page->doEditContent( $content, 'Massatuonti', false, false, $this->user );
-		}
-
-		if ( isset( $data['category'] ) ) {
-			$title = Title::newFromText( 'Category:' . $data['labels']['fi'] );
-			$content = ContentHandler::makeContent( $data['category'], $title );
+		foreach ( $data[ 'creates' ] ?? [] as $name => $text ) {
+			$title = Title::newFromText( $name );
+			$content = ContentHandler::makeContent( $text, $title );
 
 			$page = new WikiPage( $title );
 			$page->doEditContent( $content, 'Massatuonti', false, false, $this->user );
@@ -159,30 +94,22 @@ class NimiarkistoImport extends Maintenance {
 		return $entity;
 	}
 
-	private function checkPrerequisites( array $data ) {
-		if ( !isset( $data['statements'] ) ) {
-			$data['statements'] = [];
+	private function createEntity( $id, $data ) {
+		$isProperty = $id[ 0 ] === 'P';
+
+		if ( $isProperty ) {
+			if ( !isset( $data[ 'datatype' ] ) ) {
+				var_dump( $id );
+			}
+
+			$entity = Property::newFromType( $data['datatype'] );
+			$entity->setId( new PropertyId( $id ) );
+		} else {
+			$entity = new Item();
+			$entity->setId( new ItemId( $id ) );
 		}
 
-		foreach ( $data['statements'] as $name => $snakInfos ) {
-			$this->checkEntity( "entities/properties/$name" );
-			$property = $this->getEntityObject( "entities/properties/$name" );
-			if ( $property->getDataTypeId() === 'wikibase-item' ) {
-				$this->checkEntity( $snakInfos['value'] );
-			}
-
-			if ( !isset( $snakInfos['qualifiers'] ) ) {
-				continue;
-			}
-
-			foreach ( $snakInfos['qualifiers'] as $qName => $qValue ) {
-				$this->checkEntity( "entities/properties/$qName" );
-				$property = $this->getEntityObject( "entities/properties/$qName" );
-				if ( $property->getDataTypeId() === 'wikibase-item' ) {
-					$this->checkEntity( $qValue );
-				}
-			}
-		}
+		return $this->populateEntity( $entity, $data );
 	}
 
 	private function checkEntity( $name ) {
@@ -195,9 +122,9 @@ class NimiarkistoImport extends Maintenance {
 
 	private function populateEntity( EntityDocument $entity, array $data ) {
 		$fingerprint = $this->createFingerprint(
-			isset( $data['labels'] ) ? $data['labels'] : [],
-			isset( $data['descriptions'] ) ? $data['descriptions'] : [],
-			isset( $data['aliases'] ) ? $data['aliases'] : []
+			$data['labels'] ?? [],
+			$data['descriptions'] ?? [],
+			$data['aliases'] ?? []
 		);
 
 		$entity->setFingerprint( $fingerprint );
@@ -206,7 +133,7 @@ class NimiarkistoImport extends Maintenance {
 			$entity->setStatements( $statements );
 		}
 
-		if ( isset( $data['template'] ) ) {
+		if ( isset( $data[ 'creates' ] ) ) {
 			$entity->getSiteLinkList()->addNewSiteLink( 'nimiarkisto', (string)$entity->getId() );
 		}
 
@@ -233,26 +160,16 @@ class NimiarkistoImport extends Maintenance {
 	private function createStatements( EntityDocument $entity, $data ) {
 		$list = new StatementList();
 
-		foreach ( $data['statements'] as $name => $snakInfos ) {
-			$property = $this->getEntityObject( "entities/properties/$name" );
+		foreach ( $data['statements'] as $propertyId => $values ) {
+			foreach ( $values as $value ) {
+				$property = $this->createEntity( $propertyId, $this->data[ $propertyId ] );
+				$snak = $this->createSnak( $property, $value );
 
-			$snak = $this->createSnak( $property, $snakInfos['value'] );
-
-			$pnid = $property->getId()->getNumericId();
-			if ( isset( $data['guids'][$pnid] ) ) {
-				$guid = $data['guids'][$pnid];
-			} else {
+				$pnid = $property->getId()->getNumericId();
 				$guid = $this->guidGenerator->newGuid( $entity->getId() );
-			}
 
-			$qualifiers = [];
-			$qualifierInfo = isset( $snakInfos['qualifiers'] ) ? $snakInfos['qualifiers'] : [];
-			foreach ( $qualifierInfo as $qName => $qValue ) {
-				$qProperty = $this->getEntityObject( "entities/properties/$qName" );
-				$qualifiers[] = $this->createSnak( $qProperty, $qValue );
+				$list->addNewStatement( $snak, null, null, $guid );
 			}
-
-			$list->addNewStatement( $snak, $qualifiers, null, $guid );
 		}
 
 		return $list;
@@ -265,9 +182,17 @@ class NimiarkistoImport extends Maintenance {
 
 		$datatype = $property->getDataTypeId();
 		if ( $datatype === 'external-id' || $datatype === 'string' ) {
+			if ( !is_string( $value ) ) {
+				var_dump( $value, $property->getId() );
+			}
 			$datavalue = new StringValue( $value );
+		} elseif ( $datatype === 'monolingualtext' ) {
+			if ( !is_string( $value ) ) {
+				var_dump( $value, $property->getId() );
+			}
+			$datavalue = new MonolingualTextValue( $value );
 		} elseif ( $datatype === 'wikibase-item' ) {
-			$datavalue = new EntityIdValue( $this->getEntityObject( $value )->getId() );
+			$datavalue = new EntityIdValue( new ItemId( $value ) );
 		} elseif ( $datatype === 'time' ) {
 			$datavalue = TimeValue::newFromArray( $value );
 		} elseif ( $datatype === 'globe-coordinate' ) {
@@ -278,10 +203,6 @@ class NimiarkistoImport extends Maintenance {
 		}
 
 		return new PropertyValueSnak( $property->getId(), $datavalue );
-	}
-
-	private function getEntityObject( $name ) {
-		return $this->map[ "{$this->path}/$name.json"];
 	}
 
 	private function saveEntity( EntityDocument $entity, $textSummary ) {

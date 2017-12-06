@@ -1,0 +1,22 @@
+<includeonly>{{{info|query form at top}}}
+Haku on kirjainkokoherkkä. Voit käyttää jokerimerkkejä (* ja ?) paikan nimessä ja lajissa.
+
+{{{for template|Haku}}}
+{| class="formtable"
+| '''Paikan nimi'''
+| {{{field|nimi|input type=text}}}
+|-
+| '''Paikan laji'''
+| {{{field|laji|input type=text with autocomplete|values from property=Paikanlaji}}}
+|-
+| '''Pitäjä'''
+| {{{field|pitäjä|input type=text with autocomplete|values from property=Pitäjä}}}
+|-
+| '''Kerääjä'''
+| {{{field|kerääjä|input type=text with autocomplete|values from property=Kerääjä}}}
+|-
+|}
+{{{field|kartta|input type=checkbox}}} Näytä tulokset kartalla
+
+{{{end template}}}
+</includeonly><noinclude>[[Category:Nimiarkisto maintenance]]</noinclude>

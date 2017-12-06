@@ -1,0 +1,29 @@
+.na-logo #p-logo-text {
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: left;
+    height:3em;
+}
+.na-logo #p-logo-text a {
+    color: transparent;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.na-logo--fi #p-logo-text {
+	background-image: url(/logo-fi.svg);
+}
+.na-logo--se #p-logo-text {
+	background-image: url(/logo-se.svg);
+}
+.na-logo--sms #p-logo-text {
+	background-image: url(/logo-sms.svg);
+}
+.na-logo--smn #p-logo-text {
+	background-image: url(/logo-smn.svg);
+}
+.na-logo--sv #p-logo-text {
+	background-image: url(/logo-sv.svg);
+}

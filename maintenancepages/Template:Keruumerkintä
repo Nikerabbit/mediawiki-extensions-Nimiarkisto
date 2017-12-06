@@ -1,33 +1,54 @@
-<includeonly>__NOTOC____NOEDITSECTION__{{DISPLAYTITLE:{{#statements:P30|from={{PAGENAME}}}} – keruumerkintä {{#statements:P22|from={{PAGENAME}}}}}}</includeonly>
-<div class="nimiarkisto-keruubanneri">
-{{#if:{{#property:P25|from={{PAGENAME}}}}|
+<includeonly>__NOTOC____NOEDITSECTION__
+{{DISPLAYTITLE:{{#statements:P10015|from={{PAGENAME}}}} (Kotus, {{#statements:P10009|from={{PAGENAME}}}})}}</includeonly><div class="nimiarkisto-keruubanneri">
+{{#if:{{#property:P10012|from={{PAGENAME}}}}|
 <!-- Näytä kartta -->
 <div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
 Ladataan karttaa...
-<div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P25|from={{PAGENAME}}}}}}|format=float|directional=no}}###{{#statements:P30|from={{PAGENAME}}}} – keruumerkintä {{#statements:P22|from={{PAGENAME}}}}</div>
+<div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P10012|from=
+{{PAGENAME}}}}}}|format=float|directional=no}}###<div class="popupotsikko>{{#statements:P10015|from={{PAGENAME}}}} (Kotus, {{#statements:P10009|from={{PAGENAME}}}})</div><div>Merkintä {{#property:P10034|from={{PAGENAME}}}} karttaruudussa {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</div><div>{{#switch:{{#statements:P10032|from={{PAGENAME}}}}|Q14=Paikka on sijoitettu tähän pisteeseen. Voit halutessasi [[#|tarkentaa sijaintia]].|Q15=Paikka sijaitsee tämä karttaruudun alueella. Voit halutessasi [[#|tarkentaa sijaintia]].|Q16=Paikka sijaitsee useiden karttaruutujen alueella. Voit halutessasi [[#|tarkentaa sijaintia]].|Q17=Laajemmasta alueesta on merkitty vain tämä piste. Jatkossa voit [[#|tarkentaa sijaintia]].|Q14=Paikan sijaintitieto on epätarkka. Voit halutessasi [[#|tarkentaa sijaintia]].|Voit halutessasi [[#|tarkentaa sijaintia]]}}</div></div>
 </div>
 {{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
 |
 <div class="nimiarkistokartta">Keruukoordinaatteja ei tiedossa.</div>
 {{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
 }}</div>
-'''Keruumerkinnän paikannimi:''' {{#property:P30|from={{PAGENAME}}}}
+{{#mytitle:}}
+==Merkinnän tiedot==
+<ul class="listaus">
+<li> '''Paikannimi:''' {{#property:P10015|from={{PAGENAME}}}}</li>
+<li> '''Paikan laji:''' {{#property:P10016|from={{PAGENAME}}}}</li>
+<li> '''Kuvaus:''' {{#property:P10019|from={{PAGENAME}}}}</li>
+</ul>
 
-'''Paikan laji:''' {{#property:P20|from={{PAGENAME}}}}
+==Sijaintitieto==
+<ul class="listaus">
+<li> '''Karttaruutu:''' {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</li>
+<li> '''Pistesijainnin merkintä:''' {{#property:P10034|from={{PAGENAME}}}}</li>
+<li> '''Paikannuksen tarkkuus:''' {{#property:P10032|from={{PAGENAME}}}}
+</ul>
 
-==Keruutiedot==
+==Lähde==
 
-'''Keruupitäjä:''' [[:Luokka:{{#property:P28|from={{PAGENAME}}}}|{{#statements:P28|from={{PAGENAME}}}}]]
+<ul class="listaus">
+<li>  '''Keruupitäjä:''' [[:Luokka:{{#property:P10013|from={{PAGENAME}}}}|{{#statements:P10013|from={{PAGENAME}}}}]]</li>
+<li> '''Kerääjä:''' [[:Luokka:{{#property:P10017|from={{PAGENAME}}}}|{{#statements:P10017|from={{PAGENAME}}}}]]</li>
+<li> '''Ajankohta:''' {{#property:P10009|from={{PAGENAME}}}}</li>
+</ul>
 
-'''Kerääjä:''' [[:Luokka:{{#property:P24|from={{PAGENAME}}}}|{{#statements:P24|from={{PAGENAME}}}}]]
+==Jakaminen==
+{{#statements:P10017|from={{PAGENAME}}}}: ''[[{{PAGENAME}}|{{#property:P10015|from={{PAGENAME}}}}]]''. ({{#statements:P10009|from={{PAGENAME}}}}) [Paikannimiarkiston keruumerkintä]. - Helsinki : Kotimaisten kielten keskus [viitattu {{CURRENTDAY}}.{{CURRENTMONTH1}}.{{CURRENTYEAR}}]. (Sisältyy kokoelmaan Nimiarkisto). Saatavissa: {{canonicalurl:{{PAGENAME}}}}
 
-'''Ajankohta:''' {{#property:P22|from={{PAGENAME}}}}
-
-==Kohteen viite==
-{{#statements:P24|from={{PAGENAME}}}}. ''[[Item:{{PAGENAME}}]]''. Nimiarkisto. Kotimaisten kielten keskus, {{#statements:P22|from={{PAGENAME}}}}.
+==Keskustelu==
+<div class="toiminto">{{icon|speechBubbles}}{{#ifexist:{{TALKPAGENAME}} | [[{{TALKPAGENAME}}|Tästä paikasta keskustellaan! Osallistu keskusteluun!]] | [[{{TALKPAGENAME}}|Kerro tästä paikasta ja sen nimistä!]]}}</div>
 
 <includeonly>
 [[Luokka:Keruumerkintä]]
-[[Luokka:{{#property:P28|from={{PAGENAME}}}}|{{#property:P30|from={{PAGENAME}}}}]]
-[[Luokka:{{#property:P24|from={{PAGENAME}}}}|{{#property:P30|from={{PAGENAME}}}}]]
-{{#set:pistekoordinaatti={{#NAC:{{#property:P25|from={{PAGENAME}}}}}}|keruuvuosi={{#property:P22|from={{PAGENAME}}}}}}</includeonly>
+[[Luokka:{{#property:P10013|from={{PAGENAME}}}}|{{#property:P10015|from={{PAGENAME}}}}]]
+[[Luokka:{{#property:P10017|from={{PAGENAME}}}}|{{#property:P10015|from={{PAGENAME}}}}]]
+{{#set:pistekoordinaatti={{#NAC:{{#property:P10012|from={{PAGENAME}}}}}}
+|keruuvuosi={{#property:P10009|from={{PAGENAME}}}}
+|pitäjä={{#property:P10013|from={{PAGENAME}}}}
+|kerääjä={{#property:P10017|from={{PAGENAME}}}}
+|keruunimi={{#property:P10015|from={{PAGENAME}}}}
+|paikanlaji={{#property:P10016|from={{PAGENAME}}}}
+}}</includeonly><noinclude>[[Category:Nimiarkisto maintenance]]</noinclude>
