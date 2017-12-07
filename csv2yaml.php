@@ -6,6 +6,8 @@ use Symfony\Component\Yaml\Yaml;
 $IN = isset( $argv[1] ) ? $argv[1] : 'data';
 $OUT = isset( $argv[2] ) ? $argv[2] : '.';
 
+// ID,Paikannimi,Paikan laji,Kartan numero,Kerääjän kartta-numero,X,Y,Pistesij.viite,Pitäjä,Kerääjä,Vuosi,Aakkonen,Kuvatiedosto,Jatko,PEX,Muut nimet,Todellinen pitäjä,KarttaID,X_euref,Y_euref,HuomioKotus,Kokoelma,Kuvalinkki,RecID
+
 define( 'ID', 0 );
 define( 'LOCATIONNAME', 1 );
 define( 'LOCATIONTYPE', 2 );
@@ -27,7 +29,9 @@ define( 'MAPID', 17 );
 define( 'XCOORD', 18 );
 define( 'YCOORD', 19 );
 define( 'KOTUS', 20 );
-define( 'IMAGEINFO', 21 );
+define( 'COLLECTION', 21 );
+define( 'IMAGEINFO', 22 );
+define( 'RECID', 23 );
 
 process( $IN, $OUT );
 
@@ -51,18 +55,22 @@ class NimiarkistoConverter {
 		$section = [];
 		foreach ( $data as $index => $rawline ) {
 			$line = str_getcsv( $rawline );
-			if ( $index !== 0 && $line[ ID ] === 'ID' ) {
+			if ( $index !== 0 && $line[ ID ] === '1' ) {
 				yield $section;
 				$section = [];
 			}
 
 			if ( count( $line ) < 16 ) {
 				var_dump( "Skipping unparseable line:", json_encode( $line ) );
+			} elseif ( $line[ COLLECTION ] !== 'KotusNA1' ) {
+				// Not yet
 			} else {
 				$section[] = $line;
 			}
 			unset( $data[ $index ] );
 		}
+
+		yield $section;
 	}
 
 	public function preprocessSection( array $lines ) {
@@ -155,6 +163,7 @@ class NimiarkistoConverter {
 			'statements' => [
 				'P31' => [ 'Q3' ],
 				'P10045' => [ $line[ MAPNUMBER ] ],
+				'P10049' => [ $name ],
 				'P10018' => [ $line[ COLLECTORMAPNUMBER ] ],
 			],
 		];
@@ -201,7 +210,6 @@ class NimiarkistoConverter {
 				] ],
 				'P10032' => [ 'Q14' ],
 				'P10029' => $nimilippuIds,
-				'P10045' => [ $x[ MAPID ] ],
 				'P10047' => [ $x[ KOTUS ] ],
 				'P10011' => [ $mapId ],
 			],
@@ -254,14 +262,13 @@ function process( $IN, $OUT ) {
 			$localEntities = [];
 			$batch = 0;
 
-			$header = array_shift( $section );
 			$lines = $converter->preprocessSection( $section );
-			$sectionId = trim( $header[ IMAGEINFO ] );
+			$sectionId = 'XX_' . trim( $lines[ 0 ][ PITÄJÄ ] ?? 'XXXX' );
 
 			foreach ( $lines as $line ) {
 				$pitäjäName = $line[ REALPITÄJÄ ] ?: $line[ PITÄJÄ ];
 				if ( $pitäjäName === null ) {
-					echo "Did not find pitäjä for: {$line[ ID ]} {$line[ IMAGEINFO ]}\n";
+					echo "Did not find pitäjä for {$line[ RECID ]}\n";
 					continue;
 				}
 
@@ -272,7 +279,7 @@ function process( $IN, $OUT ) {
 
 
 				if ( (int)$pitäjäName > 0 || $pitäjäName === 'X' ) {
-					echo "Skipping invalid pitäjä {$line[ ID ]} {$line[ IMAGEINFO ]}\n";
+					echo "Skipping invalid pitäjä {$line[ RECID ]}\n";
 					continue;
 				}
 
@@ -287,8 +294,24 @@ function process( $IN, $OUT ) {
 
 				$nimilippuIds = [];
 				foreach ( (array)$line[ IMAGEFILE ] as $file ) {
+					// ./0001_AHLAINEN/JPG/AHLAINEN/A/kotus-201214_0001_AHLAINEN_00000001_F.jpg
+					// \\tiedostot.ds.kotus.fi\digiwork2\nadigi\GRANON LOPULLISET DIGITOINNIT\
+					// 0001_AHLAINEN\JPG\Ahlainen\A\kotus-201214_0001_AHLAINEN_00000001_F.jpg
+					$path = $line[ IMAGEINFO ];
+					$path = str_replace( '\\', '/', $path );
+					$ok = preg_match( '~([^/]+/[^/]+/[^/]+/[^/]+/[^/]+_)([0-9]+_[BF]\.jpg)$~', $path, $matches );
+					if ( !$ok ) {
+						echo "Skipping invalid imagepath for {$line[ RECID ]}: $path\n";
+						continue;
+					}
+
+					$locator = str_replace( '\\', '/', $matches[1] );
+
 					$nimilippuId = $converter->getEntityId( null );
-					$localEntities[ $nimilippuId ] = $converter->createNimilippuEntity( $file, $sectionId );
+					$localEntities[ $nimilippuId ] = $converter->createNimilippuEntity(
+						$file,
+						$locator
+					);
 					$nimilippuIds[] = $nimilippuId;
 				}
 
