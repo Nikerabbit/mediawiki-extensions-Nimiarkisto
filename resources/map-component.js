@@ -16786,7 +16786,8 @@ function initializeIcons(options) {
   L.Marker.prototype.options.icon = L.icon({
     iconUrl: __webpack_require__(24),
     shadowUrl: __webpack_require__(40),
-    iconAnchor: [12, 40]
+    iconAnchor: [12, 40],
+    popupAnchor: [0, -40]
   });
 }
 
