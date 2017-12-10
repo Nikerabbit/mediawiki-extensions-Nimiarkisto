@@ -16829,12 +16829,17 @@ function getBounds() {
   return leafletMap.getBounds().toBBoxString();
 }
 
+function getCenter() {
+  return [leafletMap.getCenter().lat, leafletMap.getCenter().lng];
+}
+
 function newLocation(options) {
   addNewLocation(options);
 }
 
 module.exports.init = init;
 module.exports.getBounds = getBounds;
+module.exports.getCenter = getCenter;
 module.exports.newLocation = newLocation;
 
 
