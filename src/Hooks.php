@@ -20,7 +20,11 @@ class Hooks {
 				$logoClass = 'na-logo--fi';
 		}
 
-		$out->addBodyClasses( [ 'na-logo', $logoClass ] );
+		$out->addBodyClasses( 'na-logo' );
+		$out->addBodyClasses( $logoClass );
+
+		$userClass = $out->getUser()->isLoggedIn() ? 'na-user--user' : 'na-user--anon';
+		$out->addBodyClasses( $userClass );
 	}
 
 	public static function onParserFirstCallInit( $parser ) {
@@ -31,6 +35,7 @@ class Hooks {
 			return [ $output, 'noparse' => true ];
 		} );
 
+		// Use JavaScript to move the title in the DOM
 		$parser->setFunctionHook( 'mytitle', function ( $parser ) {
 			$output = <<<HTML
 <div id="mytitleplaceholder"></div>
@@ -41,7 +46,9 @@ HTML;
 	}
 
 	public static function onLanguageGetMagic( &$raw ) {
+		// Convert formatted coordinates to plain coordinates
 		$raw['nac'] = [ 1, 'NAC' ];
+		// Allows moving the page title to different location
 		$raw['mytitle'] = [ 0, 'mytitle' ];
 	}
 }

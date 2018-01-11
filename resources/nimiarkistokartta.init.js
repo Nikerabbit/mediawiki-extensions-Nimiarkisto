@@ -1,5 +1,5 @@
 $( function () {
-	var data, coords, loc,
+	var data, coords, options = {}, mapid,
 		$map = $( '#nimiarkistokartta--keruumerkinta' );
 
 	if ( !$map.length ) {
@@ -7,19 +7,24 @@ $( function () {
 	}
 
 	// Start loading immediately
-	mw.loader.using( 'nimiarkistokartta' )
+	mw.loader.using( 'nimiarkistokartta' );
 
 	data = $map.children( '.mapdata' ).html().split( '###' );
 	coords = data[0].split( ', ' );
 
-	loc = {
+	options.locations = [ {
 		text: data[1],
 		lat: coords[0],
 		lon: coords[1]
-	};
+	} ];
+
+	mapid = $( '.mapdata-id' ).data( 'mapid' );
+	if ( mapid ) {
+		options.mapId = mapid;
+	}
 
 	mw.loader.using( 'nimiarkistokartta' ).done ( function () {
-		KotusMap.init( 'nimiarkistokartta--keruumerkinta', { locations: [ loc ] } );
+		KotusMap.init( 'nimiarkistokartta--keruumerkinta', options );
 	} );
 } );
 
