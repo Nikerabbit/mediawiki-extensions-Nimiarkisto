@@ -1,28 +1,37 @@
-<includeonly>__NOTOC____NOEDITSECTION__
-{{DISPLAYTITLE:Nimiarkisto}}</includeonly><div class="nimiarkisto-keruubanneri">
-{{#if:{{#property:P25|from={{PAGENAME}}}}|
-<!-- Näytä kartta -->
-<div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
-Ladataan karttaa...
-<div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P25|from=
-{{PAGENAME}}}}}}|format=float|directional=no}}###{{#statements:P30|from={{PAGENAME}}}} (Kotus, {{#statements:P22|from={{PAGENAME}}}})<br />Merkintä {{#property:P21|from={{PAGENAME}}}} karttaruudussa {{#property:P17|from={{PAGENAME}}}} / {{#property:P18|from={{PAGENAME}}}}</div>
+__NOTOC____NOEDITSECTION__[[Tiedosto:Kansibanneri.png]]{{DISPLAYTITLE:Tervetuloa Nimiarkistoon!}}<div id="etusivu"><div style="flex:1 1 auto;padding-right:2em">{{#mytitle:}}
+Nimiarkisto.fi on paikka, johon kootaan digitaalisessa muodossa Suomesta kerätyt ja arkistoidut keskeiset nimiaineistot. Palveluun lisätään aineistoja vaiheittain, aluksi paikannimiaineistoja ja myöhemmin myös muuta nimistöä.
+
+Palvelu sisältää avautuessaan 11.12.2017 pääosan, noin 2 miljoonaa nimitietoa, Kotimaisten kielten keskuksen Nimiarkistoon yli 100 vuoden aikana kootuista paikannimikokoelmista. Mukana on myös pieni pilottiaineisto Suomen ruotsinkielisistä paikannimistä Svenska litteratursällskapetin kokoelmista.
+
+Miljoonien paperisille nimilipuille kirjoitettujen tietojen käsitteleminen on iso urakka, johon jokainen voi osallistua. Kirjautuminen palveluun ja uusien tietojen lisääminen käynnistyy ensi vuoden puolella.<!--Tiedoissa olevia puutteita ja virheitä voi kommentoida, samoin tallentaa tietoa vaikkapa uusista nimistä. Kaikki mukaan!-->
+<ul class="action">
+<li> {{#queryformlink:form=Haku|link text=Etsi paikannimeä}}
+<li> [[Special:Random|Tutki satunnaista paikannimeä]]
+</ul>
+==Välkommen till Namnarkivet!==
+På webbplatsen namnarkivet.fi finns ortnamnsuppteckningar från hela Finland. Materialet har hittills varit tillgängligt i [http://www.sprakinstitutet.fi Institutet för de inhemska språkens] och de svenska namnen också i [http://www.sls.fi Svenska litteratursällskapet i Finlands] fysiska arkiv.
+Vid lanseringen publiceras 2 000 000 finska ortnamn med information om namnet, ortens art, insamlingsår och insamlingssocken. Tillhörande kartor läggs också ut.
+
+Digitaliseringen av det svenska materialet, som består av 380 000 namn, pågår fortfarande. Ett urval på 2 700 namn som ingått i ett pilotprojekt kommer att läggas ut på webbplatsen senare i december. Materialet i pilotprojektet består av ortnamn från Vörå och Oravais socknar.
+
+Materialet i Namnarkivet skiljer sig på vissa punkter från det ortnamnsmaterial som finns på [https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=sv Lantmäteriverkets grundkarta]. Namnen på grundkartan bygger i huvudsak på materialet i Namnarkivet, men är färre till antalet (ca 800 000 namn). Innan namnen förts in på kartan har de standardiserats enligt nationella principer. Materialet i Namnarkivet har däremot inte standardiserats konsekvent. Därför ska uppslagsformerna i arkivet inte ses som rekommenderade namnformer.
+
+Det är ett stort arbete att göra ett så här omfattande sedelarkiv digitalt tillgängligt. Därför tar vi gärna emot kommentarer om materialet och uppgifter om nya namn. Eftersom materialet samlats in under hundra år kan en del namn ha fallit ur bruket. Det kan också finnas felaktig eller bristfällig information om namnen.
+
+Vi kommer att utöka webbplatsen med fler svenska texter vartefter svenskt material läggs ut.
 </div>
-{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
-|
-<div class="nimiarkistokartta">Keruukoordinaatteja ei tiedossa.</div>
-{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
-}}</div>
-<div style="display:flex; flex-flow: row wrap; justify-content: space-between;">
-<div style="flex:1 1 auto">
-{{#mytitle:}}
-Nimiarkisto on ...
-* Etsi
-* Lisää uusi merkintä
-</div>
-<div style="flex:0 0 20em">
+<div id="uutiset">
 ==Ajankohtaista==
-* 13.12.2017 Tänään oli hyvä päivä
-* 1.12.2017 Joulukalenterin ensimmäinen luukku
+* Tulossa pian lisää aineistoa ja karttahaku!
+* 11.12.2017 Nimiarkisto avautuu!
+==Yhteystiedot==
+* [http://kaino.kotus.fi/nimikokoelmat/ Kotuksen paikannimikokoelmien tiedot]
+* [mailto:nadigi@kotus.fi Yhteydenotot sähköpostitse]
+==Anna palautetta!==
+[https://goo.gl/forms/zEA7ipPmHWIudPBr1 Kerro kokemuksestasi], jotta voimme tehdä Nimiarkistosta toiveittesi mukaisen!
+==Kontaktuppgifter==
+* I tekniska frågor: [mailto:nadigi@kotus.fi nadigi@kotus.fi].
+* I innehållsliga frågor: [mailto:namn@sprakinstitutet.fi namn@sprakinstitutet.fi].
 </div>
 </div>
 [[Category:Nimiarkisto maintenance]]

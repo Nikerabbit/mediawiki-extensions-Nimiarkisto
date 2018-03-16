@@ -1,25 +1,24 @@
 <includeonly>{{#ask:
 
 {{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
-{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{pitäjä}}}]]}}
+{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
 {{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
 {{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
 {{#if:{{{vuosi|}}}|[[Keruuvuosi::{{{vuosi}}}]]}}
 
- |{{#ifeq:{{{kartta|Ei}}}|Kyllä|?Pistekoordinaatti}}
+ |?Pistekoordinaatti
+ |?Paikanlaji
  |?Pitäjä
  |?Kerääjä
- |?Paikanlaji
- |default=Ei tuloksia!
- |intro=Enintään 500 tulosta näytetään kerralla!
- |format={{#ifeq:{{{kartta|Ei}}}|Kyllä|leaflet|table}}
- |link=all
- |headers=show
+ |default=<div><div class="warningbox">Ei tuloksia kartalla.</div></div>
+ |intro=Enintään 1500 tulosta näytetään kartalla. Kaikilla nimillä ei välttämättä ole sijaintia.
+ |format=leaflet
+ |link=subject
+ |headers=plain
  |searchlabel=… lisää tuloksia
  |geoservice=geonames
  |width=auto
  |height=450
- |defzoom=14
  |layer=OpenStreetMap
  |resizable=1
  |enablefullscreen=1
@@ -29,7 +28,27 @@
  |clustermaxradius=80
  |clusterspiderfy=1
  |showtitle=1
- |limit=500
-}}<includeonly><noinclude>
+ |limit=1500
+}}
+{{#ask:
+
+{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
+{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
+{{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
+{{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
+{{#if:{{{vuosi|}}}|[[Keruuvuosi::{{{vuosi}}}]]}}
+
+ |?Paikanlaji
+ |?Pitäjä
+ |?Kerääjä
+ |default=Ei tuloksia!
+ |format=table
+ |link=all
+ |headers=plain
+ |searchlabel=… lisää tuloksia
+ |showtitle=1
+ |limit=1500
+}}
+<includeonly><noinclude>
 [[Category:Nimiarkisto maintenance]]
 </noinclude>

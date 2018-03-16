@@ -1,38 +1,34 @@
-'''The project has been made to facilitate linking information between data sources, including importing and matching data to Wikidata, and as a platform for crowdsourcing.'''
+__NOTOC__
+==The Name Archive==
+The Institute for the Languages of Finland has collected 3 Million name slips and location notes depicting Finnish place names over a 100-year period. Now these name slips and map notes have been made available digitally.
 
-* Memories and stories of places and names
-* Correcting and complementing data
+==A project in a wiki way==
 
-<gallery mode="packed-hover" heights=350>
-Tiedosto:Kortti-en.jpg
-Tiedosto:Note.png
-Tiedosto:Paikka.png
-</gallery>
+The Name Archive is made in a wiki way, in many senses: First of all, it is a wiki that anyone can edit. Secondly, it takes advantage of the networked nature of wiki projects made available through linked data. And third, it is developed continually, and it's never finished!
 
-'''The place names are modelled as separate entities from places. The material in the Name Archive consists of field notes, which can be considered as information sources.'''
-* The structure differs from the structure in Wikidata but ressembled the structure used by the National Land Survey Place Names Register.
-* Collaborative discussion of modelling historical geodata for Wikidata takes place in [https://www.wikidata.org/wiki/Wikidata:WikiProject_Historical_Place Wikiproject Historical Place in Wikidata].
-<gallery mode="packed-hover" heights=350>
-Tiedosto:Rakenne.png
-</gallery>
+===Wikibase===
+The service uses the Wikibase database extension, the same one that Wikidata is built on.
 
-'''A map is a key element. GeoServer and a PostGIS database will serve the maps and data'''
-* Locations of notes and places, maps made by the collectors
-* [[:Luokka:Pylkönmäki|Class of notes: Pylkönmäki]]
+==Coming before Christmas==
+* Viewing the name slips for registered users
+* Discussing the notes
+* Creating new notes for place names
+* Correcting locations in notes
 
-'''Images of collection notes are initially hidden to guard personal information. Once published by registered users, they will be available for transcription'''
-* [[Q881|A demo page with a note image]]
+==Coming gradually==
+* Notes are being bundled into place and place name items
+* Place names are matched with established place names in the Place Name Registry of the National Land Survey of Finland as a batch as well as with the help of users.
+* Place and place name items are linked to other resources: Wikipedia and Wikidata or Finna.fi images
+* Users can complement data for place names from the name slips
 
-'''The site is a Wikibase database and a client together'''
-* [[Item:Q881|The data item]]
-* [[Special:Properties|Wikibase properties used in the project currently]]
+==The map==
+* the locations of place names can be viewed on a map
+* The maps the collectors used are shown along with the dots for locations
+* The map can be used for querying the notes
 
-'''Sources to connect'''
-* Wikimedia content through Wikidata: Images, articles, location & other data
-* [https://finna.fi/ Finna.fi] images from Finnish GLAMs
-* [http://paikkatiedot.fi/so/1000772/ National Land Survey Place Names Register pilot]
+==Participate in developing the service!==
+You can give feedback about the site or vote for important features too be developed sooner (Only in Finnish currently).
+* [https://goo.gl/forms/zEA7ipPmHWIudPBr1 Feedback]
+* [http://allourideas.org/nimiarkisto?locale=fi Vote for features]
 
-Please get in contact if you are interested in joining developing the project or have a similar project where you want to share your experiences!
-
-susanna.anas@gmail.com
 [[Category:Nimiarkisto maintenance]]

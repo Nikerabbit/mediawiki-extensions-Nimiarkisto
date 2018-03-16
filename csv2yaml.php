@@ -1,39 +1,39 @@
 <?php
 
+require 'Parish.php';
 require 'vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 
 $IN = isset( $argv[1] ) ? $argv[1] : 'data';
-$OUT = isset( $argv[2] ) ? $argv[2] : '.';
+$OUT = isset( $argv[2] ) ? $argv[2] : 'out' . date( 'c' );
 
-// ID,Paikannimi,Paikan laji,Kartan numero,Kerääjän kartta-numero,X,Y,Pistesij.viite,Pitäjä,Kerääjä,Vuosi,Aakkonen,Kuvatiedosto,Jatko,PEX,Muut nimet,Todellinen pitäjä,KarttaID,X_euref,Y_euref,HuomioKotus,Kokoelma,Kuvalinkki,RecID
+define( 'ID', 0 ); // ID
+define( 'LOCATIONNAME', 1 ); // Paikannimi
+define( 'LOCATIONTYPE', 2 ); // Paikan laji
+define( 'MAPNUMBER', 3 ); // Kartan numero
+define( 'COLLECTORMAPNUMBER', 4 ); // Kerääjän kartta-numero
+define( 'MAPX', 5 ); // X
+define( 'MAPY', 6 ); // Y
+define( 'MAPREF', 7 ); // Pistesij. viite
+define( 'PITÄJÄ', 8 ); // Pitäjä
+define( 'COLLECTOR', 9 ); // Kerääjä
+define( 'YEAR', 10 ); // Vuosi
+define( 'LETTER', 11 ); // Aakkonen
+define( 'IMAGEFILE', 12 ); // Kuvatiedosto
+define( 'CONTINUATION', 13 ); // Jatko
+define( 'PEX', 14 ); // PEX
+define( 'OTHERNAMES', 15 ); // Muut nimet
+define( 'REALPITÄJÄ', 16 ); // Todellinen pitäjä
+define( 'MAPID', 17 ); // Kartta ID
+define( 'XCOORD', 18 ); // X_euref
+define( 'YCOORD', 19 ); // Y_euref
+define( 'KOTUS', 20 ); // HuomioKotus
+define( 'COLLECTION', 21 ); // Kokoelma
+define( 'IMAGEINFO', 22 ); // Kuvalinkki
+define( 'RECSER', 23 ); // RecSer
+define( 'PARENT', 24 ); // Emolippu
 
-define( 'ID', 0 );
-define( 'LOCATIONNAME', 1 );
-define( 'LOCATIONTYPE', 2 );
-define( 'MAPNUMBER', 3 );
-define( 'COLLECTORMAPNUMBER', 4 );
-define( 'MAPX', 5 );
-define( 'MAPY', 6 );
-define( 'MAPREF', 7 );
-define( 'PITÄJÄ', 8 );
-define( 'COLLECTOR', 9 );
-define( 'YEAR', 10 );
-define( 'LETTER', 11 );
-define( 'IMAGEFILE', 12 );
-define( 'CONTINUATION', 13 );
-define( 'PEX', 14 );
-define( 'OTHERNAMES', 15 );
-define( 'REALPITÄJÄ', 16 );
-define( 'MAPID', 17 );
-define( 'XCOORD', 18 );
-define( 'YCOORD', 19 );
-define( 'KOTUS', 20 );
-define( 'SLS', 21 );
-define( 'COLLECTION', 22 );
-define( 'IMAGEINFO', 23 );
-define( 'RECSER', 24 );
-
+mkdir( $OUT );
 process( $IN, $OUT );
 
 class NimiarkistoConverter {
@@ -63,8 +63,6 @@ class NimiarkistoConverter {
 
 			if ( count( $line ) < 16 ) {
 				echo "Skipping unparseable line: $rawline\n";
-			} elseif ( $line[ COLLECTION ] !== 'KotusNA1' ) {
-				// Not yet
 			} else {
 				$section[] = $line;
 			}
@@ -89,6 +87,50 @@ class NimiarkistoConverter {
 				$lines[ $index ][ MAPID ] = $lines[ $index ][ REALPITÄJÄ ];
 				$lines[ $index ][ REALPITÄJÄ ] = null;
 			}
+
+			// Ditto
+			if ( $lines[ $index ][ XCOORD ] === null ) {
+				$lines[ $index ][ XCOORD ] = $lines[ $index ][ YCOORD ] = -1;
+			}
+
+			// Dittoo
+			if ( $lines[ $index ][ PEX ] === '<' ) {
+				$lines[ $index ][ PEX ] = null;
+			}
+
+			if ( $lines[ $index ][ REALPITÄJÄ ] === 'X' ) {
+				 $lines[ $index ][ REALPITÄJÄ ] = null;
+			}
+
+			if ( $lines[ $index ][ RECSER ] === '2014078' && $lines[ $index ][ PITÄJÄ ] === null ) {
+				$lines[ $index ][ PITÄJÄ ] = 'Vörå';
+			}
+
+			// Dittooo
+			$imageFixes = [
+				'80678'   => [ 'I00000174_F.jpg', '00000174_F.jpg' ],
+				'573568'  => [ 't00000103_F.jpg', '00000103_F.jpg' ],
+				'694220'  => [ 'I00000060_F.jpg', '00000060_F.jpg' ],
+				'847074'  => [ 'J00000002_F.jpg', '00000002_F.jpg' ],
+				'847215'  => [ 'H00000143_F.jpg', '00000143_F.jpg' ],
+				'847301'  => [ 'B00000229_F.jpg', '00000229_F.jpg' ],
+				'1000037' => [ 'E00000756_F.jpg', '00000756_F.jpg' ],
+				'1061596' => [ 'Iv00000847_F.jpg', '00000847_F.jpg' ],
+				'1851507' => [ 'I00000059_F.jpg', '00000059_F.jpg' ],
+				'2018254' => [ '00000047_F.jp', '00000047_F.jpg' ],
+				'2045108' => [ '0000000247.jpg', '00000247_F.jpg' ],
+				'2086858' => [ '00000069_F.jpgN', '00000069_F.jpg' ],
+				'2094653' => [ '00000060_F.jpg+M1045', '00000060_F.jpg' ],
+				'2104780' => [ '00000199_F.Jpg', '00000199_F.jpg' ],
+				'2207306' => [ 'SOMERNIEMI_A_r', 'SOMERNIEMI_A_00000001_F.jpg' ],
+			];
+
+			$recser = $lines[ $index ][ RECSER ];
+			if ( isset( $imageFixes[ $recser ] ) ) {
+				list( $from, $to ) = $imageFixes[ $recser ];
+				$lines[ $index ][ IMAGEFILE ] = str_replace( $from, $to, $lines[ $index ][ IMAGEFILE ] );
+				$lines[ $index ][ IMAGEINFO ] = str_replace( $from, $to, $lines[ $index ][ IMAGEINFO ] );
+			}
 		}
 
 		// Merge backsides to the main rows
@@ -97,7 +139,7 @@ class NimiarkistoConverter {
 		$lines = mergeContinuations( $lines );
 		// Re-number indexes
 		$lines = array_values( $lines );
-		// Add coordinateshttps://github.com/CSCfi/Kielipankki-palvelut/pulls
+		// Add coordinates
 		$lines = addWSG( $lines );
 
 
@@ -156,16 +198,16 @@ class NimiarkistoConverter {
 	}
 
 	public function createNimilippuEntity( $extId, $placename, $recser ) {
-		// TODO $name should contain paikannimi
 		$data = [
 			'labels' => [
 				'fi' => "$placename $recser",
 			],
 			'statements' => [
 				'P31' => [ 'Q7' ],
-				'P10030' => [ $recser ],
+				'P10030' => [ (string)$recser ],
 				'P10020' => [ $extId ],
-				'P10041' => [ 'Q26' ], // unpublished
+				// ei oletusarvoa enää? oletuksena julkinen
+				//'P10041' => [ 'Q26' ], // unpublished
 			],
 		];
 
@@ -189,6 +231,11 @@ class NimiarkistoConverter {
 			],
 		];
 
+		if ( $line[ COLLECTION ] === 'SLS' ) {
+			$data[ 'statements' ][ 'P10018' ] = $line[ MAPNUMBER ];
+			unset( $data[ 'statements' ][ 'P10045' ] );
+		}
+
 		foreach ( $data[ 'statements' ] as $index => $value ) {
 			if ( $value === [ null ] ) {
 				unset( $data[ 'statements' ][ $index ] );
@@ -198,16 +245,20 @@ class NimiarkistoConverter {
 		return $data;
 	}
 
-	public function createMerkintäEntity( $x, $merkintäId, $pitäjäId, $kerääjäId, $nimilippuIds, $mapId ) {
+	public function createMerkintäEntity(
+		array $x,
+		$merkintäId,
+		$pitäjäId,
+		$kerääjäId,
+		array $nimilippuIds,
+		$mapId
+	) {
 /*
 TODO label:  Jokienhaara-aho (alue, jolla niittyjä) – Kotus, 1972
 
 TODO uniquecheck
 
 TODO wikibase-linkki
-
-TODO if LOCATIONTYPE in H, A, M then delete and add
-      P10025           Q11,Q12,Q32
 */
 
 		$label = $x[ LOCATIONNAME ];
@@ -215,18 +266,21 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 			// TODO Kirjaimet -> aukikirjoitettu
 			$label .= " ({$x[ LOCATIONTYPE ]})";
 		}
-		// TODO YEAR
-		$label .= " – Kotus {$x[ YEAR ]}";
 
-		// TODO Tiedon tuottaja P10037 Kotus
-		// TODO ID -> P10052 (string)
+		if ( isset( $x[ YEAR ] ) ) {
+			$label .= " – Kotus, {$x[ YEAR ]}";
+		} else {
+			$label .= " – Kotus";
+		}
 
 		$data = [
-			'labels' => [],
+			'labels' => [
+				'fi' => $label,
+			],
 			'descriptions' => [
-				'fi' => "Keruumerkintä {$x[ RECSER ]}";
-				'sv' => "Fältanteckning {$x[ RECSER ]}";
-				'en' => "Field note {$x[ RECSER ]}";
+				'fi' => "Keruumerkintä {$x[ RECSER ]}",
+				'sv' => "Fältanteckning {$x[ RECSER ]}",
+				'en' => "Field note {$x[ RECSER ]}",
 			],
 			'statements' => [
 				'P31' => [ 'Q4' ],
@@ -237,14 +291,6 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 				'P10034' => [ $x[ MAPREF ] ],
 				'P10013' => [ $pitäjäId ],
 				'P10017' => [ $kerääjäId ],
-				'P10009' => [ [
-					'time' => "+{$x[ YEAR ]}-00-00T00:00:00Z",
-					'timezone' => 0,
-					'before' => 0,
-					'after' => 0,
-					'precision' => 9, // year
-					'calendarmodel' => 'http://www.wikidata.org/entity/Q1985727',
-				] ],
 				'P10029' => $nimilippuIds,
 				'P10011' => [ $mapId ],
 			],
@@ -277,7 +323,7 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 			case 'X':
 			case 'S':
 			case 'T':
-				$data[ 'statements' ][ 'P10052' ][] = "PEX: {$X[ PEX ]}";
+				$data[ 'statements' ][ 'P10052' ][] = "PEX: {$x[ PEX ]}";
 				break;
 			case 'L':
 				$data[ 'statements' ][ 'P10032' ] = [ 'Q17' ];
@@ -291,6 +337,7 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 			case 'V':
 				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				break;
+			case 'Vl':
 			case 'V,L':
 			case 'L,V':
 				$data[ 'statements' ][ 'P10032' ] = [ 'Q17' ];
@@ -308,6 +355,8 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 				$data[ 'statements' ][ 'P10032' ] = [ 'Q17', 'Q18' ];
 				break;
 			case 'K,N':
+			case 'K, N':
+			case 'N,K':
 				$data[ 'statements' ][ 'P10032' ] = [ 'Q18' ];
 				$data[ 'statements' ][ 'P10052' ][] = 'PEX: K';
 				break;
@@ -323,15 +372,14 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				$data[ 'statements' ][ 'P10052' ][] = 'PEX: I';
 				break;
-			case 'N,K':
-				$data[ 'statements' ][ 'P10032' ] = [ 'Q18' ];
-				$data[ 'statements' ][ 'P10052' ][] = 'PEX: K';
-				break;
 			case 'N,V':
 				$data[ 'statements' ][ 'P10032' ] = [ 'Q18' ];
 				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				break;
+			case null:
+				break;
 			default:
+				var_dump( $x );
 				throw new InvalidArgumentException( $x[ PEX ] );
 		}
 
@@ -346,13 +394,13 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 		if ( isset( $x['wsg'] ) ) {
 			list( $long, $lat ) = $x['wsg'];
 			$data[ 'statements' ][ 'P10012' ] = [ [ (float)$lat, (float)$long, 0.000000001 ] ];
-			$data[ 'statements' ][ 'P10050' ] = [ $X[ XCOORD ] ];
-			$data[ 'statements' ][ 'P10051' ] = [ $X[ YCOORD ] ];
+			$data[ 'statements' ][ 'P10050' ] = [ $x[ XCOORD ] ];
+			$data[ 'statements' ][ 'P10051' ] = [ $x[ YCOORD ] ];
 		}
 
 		$isMulti = function ( $x ) {
 			return $x !== null && preg_match( '/[,-]/', $x ) === 1;
-		}
+		};
 
 		if ( isset( $x['wsg'] ) && $x[ MAPREF ] !== null && $x[ MAPY ] !== null && $x[ MAPX ] !== null ) {
 			$data[ 'statements' ][ 'P10032' ] = [ 'Q14' ];
@@ -368,15 +416,9 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 			$data[ 'statements' ][ 'P10052' ][] = "HuomioKotus: {$x[ KOTUS ]}";
 		}
 
-		if ( $x[ SLS ] ) {
-			$data[ 'statements' ][ 'P10052' ][] = "Lähdetiedosto: {$x[ SLS ]}";
-		}
-
 		if ( $x[ COLLECTION ] === 'SLS' ) {
 			$data[ 'statements' ][ 'P10037' ] = [ 'Q33' ];
 			$data[ 'statements' ][ 'P10014' ] = [ 'Q41' ];
-			// TODO COLLECTORMAPNUMBER -> BY: P276
-			// sijainti P31 -> Q2
 
 			// Inventaarionumero
 			$data[ 'statements' ][ 'P217'   ] = [ $x[ LETTER ] ];
@@ -384,16 +426,32 @@ TODO if LOCATIONTYPE in H, A, M then delete and add
 				$data[ 'statements' ][ 'P10052' ][] = "Kommentar: {$x[ CONTINUATION ]}";
 			}
 
-		} elseif ( $x[ COLLECTION === 'KotusNA1' ) {
+		} elseif ( $x[ COLLECTION ] === 'KotusNA1' ) {
 			$data[ 'statements' ][ 'P10037' ] = [ 'Q23' ];
 			$data[ 'statements' ][ 'P10014' ] = [ 'Q34' ];
+		} elseif ( $x[ COLLECTION ] === 'KotusNA2' ) {
+			$data[ 'statements' ][ 'P10037' ] = [ 'Q23' ];
+			$data[ 'statements' ][ 'P10014' ] = [ 'Q43' ];
 		} else {
 			throw new InvalidArgumentException( $x[ COLLECTION ] );
 		}
 
-		// TODO raja-arvot
-		if ( $x[ YEAR ] === null ) {
-			unset( $data[ 'statements' ][ 'P10009' ] );
+		if ( $x[ YEAR ] !== null ) {
+			$year = $x[ YEAR ];
+			$after = 0;
+			if ( preg_match( '/(\d{4})-\d{2}/', $x[ YEAR ], $match ) ) {
+				$year = $match[ 1 ];
+				$after = 1;
+			}
+
+			$data[ 'statements' ][ 'P10009' ] = [ [
+				'time' => "+$year-00-00T00:00:00Z",
+				'timezone' => 0,
+				'before' => 0,
+				'after' => $after,
+				'precision' => 9, // year
+				'calendarmodel' => 'http://www.wikidata.org/entity/Q1985727',
+			] ];
 		}
 
 		foreach ( $data[ 'statements' ] as $index => $value ) {
@@ -421,10 +479,15 @@ function process( $IN, $OUT ) {
 			$lines = $converter->preprocessSection( $section );
 			$sectionId = 'XX_' . trim( $lines[ 0 ][ PITÄJÄ ] ?? 'XXXX' );
 
+			while ( file_exists( "$OUT/$sectionId-$batch.yaml" ) ) {
+				$batch += 10;
+			}
+
 			foreach ( $lines as $line ) {
 				$pitäjäName = $line[ PITÄJÄ ];
 				if ( $pitäjäName === null ) {
 					echo "Did not find pitäjä for {$line[ RECSER ]}\n";
+					#var_dump( $line );
 					continue;
 				}
 
@@ -434,6 +497,10 @@ function process( $IN, $OUT ) {
 					$converter->createPitäjäEntity( $pitäjäName );
 
 				if ( $line[ REALPITÄJÄ ] ) {
+					if ( !isset( Parish::$map[ $line[ REALPITÄJÄ ] ] ) ) {
+						echo "Funky realpitäjä\n";
+						var_dump( $line );
+					}
 					$realRealPitäjäName = Parish::$map[ $line[ REALPITÄJÄ ] ];
 					$realPitäjäId = $converter->getEntityId( "pitäjä/$realRealPitäjäName" );
 					$globalEntities[ 'pitäjä' ][ $realPitäjäId ] =
@@ -441,13 +508,6 @@ function process( $IN, $OUT ) {
 						$converter->createPitäjäEntity( $realRealPitäjäName );
 					$line[ 'ParishID' ] = $realPitäjäId;
 				}
-
-				/* TODO
-Malax → Maalahti
-Vörå → Vöyri
-Oravais → Oravainen (ei ole suomeksi)
-Oravais,Vörå → Oravainen
-				*/
 
 				if ( (int)$pitäjäName > 0 || $pitäjäName === 'X' ) {
 					echo "Skipping invalid pitäjä {$line[ RECSER ]}\n";
@@ -465,7 +525,7 @@ Oravais,Vörå → Oravainen
 
 				$nimilippuIds = [];
 				if ( !is_array( $line[ IMAGEINFO ] ) ) {
-					$line[ IMAGEINFO ] = [ $line[ RECSER ] = $line[ IMAGEINFO ] ];
+					$line[ IMAGEINFO ] = [ $line[ RECSER ] => $line[ IMAGEINFO ] ];
 				}
 
 				foreach ( $line[ IMAGEINFO ] as $recser => $path ) {
@@ -476,18 +536,31 @@ Oravais,Vörå → Oravainen
 					// SLS
 					// \\tiedostot.ds.kotus.fi\digiarkisto3\SLS namn\
 					// 971_JPG\Malax\J.Ahlbäck\kotus-201214_SLS971_Malax_J.Ahlbäck_002_1425_001.jpg
-					$path = str_replace( '\\', '/', $path );
-					$ok = preg_match( '~([^/]+/[^/]+/[^/]+/[^/]+/[^/]+_[0-9]+_[BF]\.jpg)$~', $path, $matches );
-					if ( !$ok ) {
-						echo "Skipping invalid imagepath for {$line[ RECSER ]}: $path\n";
-						continue;
-					}
 
-					$locator = str_replace( '\\', '/', $matches[1] );
+					$path = str_replace( '\\', '/', $path );
+
+					if ( $line[ COLLECTION ] === 'KotusNA1' || $line[ COLLECTION ] === 'KotusNA2' ) {
+						// RAUMA I/J is really weird
+						$ok = preg_match( '~([^/]+/[^/]+/[^/]+/[^/]+/[^/]+_[0-9]+(?:_[BFJ]|F_)\.jpg)$~', $path, $matches );
+
+						// TODO: Taivalkoski has some _ moved next to the dot.
+						if ( !$ok ) {
+							#echo "Skipping invalid imagepath for {$line[ RECSER ]}: $path\n";
+							continue;
+						}
+
+						$locator = str_replace( '\\', '/', $matches[1] );
+					} elseif ( $line[ COLLECTION ] === 'SLS' ) {
+						$locator = str_replace( '//tiedostot.ds.kotus.fi/digiarkisto3/SLS namn/', '', $path );
+					} else {
+						echo "Unknown collection {$line[ COLLECTION ]}\n";
+						exit;
+					}
 
 					$nimilippuId = $converter->getEntityId( null );
 					$localEntities[ $nimilippuId ] = $converter->createNimilippuEntity(
 						$locator,
+						$line[ LOCATIONNAME ],
 						$recser
 					);
 					$nimilippuIds[] = $nimilippuId;
@@ -527,13 +600,16 @@ Oravais,Vörå → Oravainen
 	}
 
 	foreach ( $globalEntities as $type => $entities ) {
-		file_put_contents( "$OUT/$type.yaml", Yaml::dump( $entities ) );
+		$chunks = array_chunk( $entities, 1000, true );
+		foreach ( $chunks as $chunkIndex => $chunkEntities ) {
+			file_put_contents( "$OUT/AA_$type-$chunkIndex.yaml", Yaml::dump( $chunkEntities ) );
+		}
 	}
 }
 
 function mergeBacksides( $lines ) {
 	foreach ( $lines as $index => $backside ) {
-		if ( !isBackside( $backside ) ) {
+		if ( isset( $backside[ 'parent' ] ) || !isBackside( $backside ) ) {
 			continue;
 		}
 
@@ -551,8 +627,8 @@ function mergeBacksides( $lines ) {
 			}
 		}
 
-		unset( $lines[ $index ] );
-		echo "Did not find frontside for this backside: {$backside[ RECSER ]} {$backside[ IMAGEINFO ]}\n";
+		#unset( $lines[ $index ] );
+		#echo "Did not find frontside for this backside: {$backside[ RECSER ]} {$backside[ IMAGEINFO ]} – treating as main entry\n";
 	}
 
 	return $lines;
@@ -567,6 +643,10 @@ function isBackside( $x ) {
 }
 
 function backsideMatchesFrontside( $back, $front ) {
+	if ( $back[ PARENT ] ) {
+		return $back[ PARENT ] === $front[ RECSER ];
+	}
+
 	$ok = true;
 	$ok = $ok && $back[ ID ] === $front[ ID ] + 1;
 	$ok = $ok && $back[ PITÄJÄ ] === $front[ PITÄJÄ ];
@@ -579,7 +659,13 @@ function mergeImage( array $front, array $back ) {
 		$front[ IMAGEINFO ] = [ $front[ RECSER ] => $front[ IMAGEINFO ] ];
 	}
 
-	$front[ IMAGEINFO ][ $back[ RECSER ] => $back[ IMAGEINFO ] ];
+	if ( !is_array( $back[ IMAGEINFO ] ) ) {
+		$front[ IMAGEINFO ][ $back[ RECSER ] ] = $back[ IMAGEINFO ];
+	} else {
+		foreach ( $back[ IMAGEINFO ] as $recser => $info ) {
+			$front[ IMAGEINFO ][ $recser ] = $info;
+		}
+	}
 
 	return $front;
 }
@@ -617,18 +703,21 @@ function mergeContinuations( $lines ) {
 			}
 		}
 
-		unset( $lines[ $index ] );
-		echo "Did not find main entry for continuation: {$line[ RECSER ]} {$line[ IMAGEINFO ]}\n";
+		#echo "Did not find main entry for continuation: {$line[ RECSER ]} {$line[ IMAGEINFO ]} – treating as a main entry\n";
 	}
 
 	return $lines;
 }
 
 function matchContinuation( $cont, $other ) {
+	if ( $cont[ PARENT ] ) {
+		return $cont[ PARENT ] === $other[ RECSER ];
+	}
+
 	$ok = true;
 	// Do not search arbitrarily far
 	// There can be multiple continuations.
-	$ok = $ok && $cont[ ID ] < $other[ ID ] + 10;
+	$ok = $ok && $cont[ ID ] < $other[ ID ] + 20;
 	$ok = $ok && $cont[ LOCATIONNAME ] === $other[ LOCATIONNAME ];
 	// Sanity check
 	$ok = $ok && ( $cont[ LOCATIONTYPE ] === null || $cont[ LOCATIONTYPE ] === $other[ LOCATIONTYPE ] );
@@ -647,11 +736,7 @@ function addWSG( $lines ) {
 	$epsg = [];
 
 	foreach ( $lines as $line ) {
-		if ( !isset( $line[ 18 ] ) ) {
-			var_dump( $line ); die();
-		}
-
-		$epsg[] = "{$line[18]} {$line[19]}";
+		$epsg[] = "{$line[ XCOORD ]} {$line[ YCOORD ]}";
 	}
 
 	$wsg = convertCoordinates( $epsg );

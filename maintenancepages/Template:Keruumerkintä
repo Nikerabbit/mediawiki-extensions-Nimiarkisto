@@ -4,8 +4,9 @@
 <!-- Näytä kartta -->
 <div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
 Ladataan karttaa...
+<span class="mapdata-id" data-mapid="{{#property:P10011|from={{PAGENAME}}}}"></span>
 <div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P10012|from=
-{{PAGENAME}}}}}}|format=float|directional=no}}###<div class="popupotsikko>{{#statements:P10015|from={{PAGENAME}}}} (Kotus, {{#statements:P10009|from={{PAGENAME}}}})</div><div>Merkintä {{#property:P10034|from={{PAGENAME}}}} karttaruudussa {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</div><div>{{#switch:{{#statements:P10032|from={{PAGENAME}}}}|Q14=Paikka on sijoitettu tähän pisteeseen. Voit halutessasi [[#|tarkentaa sijaintia]].|Q15=Paikka sijaitsee tämä karttaruudun alueella. Voit halutessasi [[#|tarkentaa sijaintia]].|Q16=Paikka sijaitsee useiden karttaruutujen alueella. Voit halutessasi [[#|tarkentaa sijaintia]].|Q17=Laajemmasta alueesta on merkitty vain tämä piste. Jatkossa voit [[#|tarkentaa sijaintia]].|Q14=Paikan sijaintitieto on epätarkka. Voit halutessasi [[#|tarkentaa sijaintia]].|Voit halutessasi [[#|tarkentaa sijaintia]]}}</div></div>
+{{PAGENAME}}}}}}|format=float|directional=no}}###<div class="popupotsikko>{{#statements:P10015|from={{PAGENAME}}}} (Kotus, {{#statements:P10009|from={{PAGENAME}}}})</div><div>Merkintä {{#property:P10034|from={{PAGENAME}}}} karttaruudussa {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</div><div>{{#switch:{{#property:P10032|from={{PAGENAME}}}}|piste=Kerääjä on sijoittanut merkinnän tähän pisteeseen.|ruutu=Paikka sijaitsee keruukartalla tämän karttaruudun alueella.|ruutuja=Paikka sijaitsee useiden karttaruutujen alueella.|laaja kohde=Laajempaa aluetta kuvaamaan on merkitty tämä piste.|epätarkka=Paikan sijaintitieto on epätarkka|}}</div></div>
 </div>
 {{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
 |
@@ -15,28 +16,39 @@ Ladataan karttaa...
 {{#mytitle:}}
 ==Merkinnän tiedot==
 <ul class="listaus">
-<li> '''Paikannimi:''' {{#property:P10015|from={{PAGENAME}}}}</li>
-<li> '''Paikan laji:''' {{#property:P10016|from={{PAGENAME}}}}</li>
-<li> '''Kuvaus:''' {{#property:P10019|from={{PAGENAME}}}}</li>
+<li> '''Nimi:''' {{#property:P10015|from={{PAGENAME}}}}</li>
+{{#ifexist:{{#property:P10025|from={{PAGENAME}}}}|<li> '''Nimenlaji:''' {{#property:P10025|from={{PAGENAME}}}}</li>|}}
+<li> '''Paikanlaji:''' {{#property:P10016|from={{PAGENAME}}}}</li>
+{{#ifexist:{{#property:P10019|from={{PAGENAME}}}}|<li> '''Kuvaus:''' {{#property:P10019|from={{PAGENAME}}}}</li>|}}
 </ul>
 
-==Sijaintitieto==
+==Sijaintitiedot==
 <ul class="listaus">
-<li> '''Karttaruutu:''' {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</li>
-<li> '''Pistesijainnin merkintä:''' {{#property:P10034|from={{PAGENAME}}}}</li>
-<li> '''Paikannuksen tarkkuus:''' {{#property:P10032|from={{PAGENAME}}}}
+{{#ifexist:{{#property:P131|from={{PAGENAME}}}}|<li> '''Nykyinen sijaintikunta:''' {{#property:P131|from={{PAGENAME}}}}</li>|}}
+<!--li> '''Keruukartta:''' {{#property:P10049|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
+<!--li> '''Karttalehden tunnus:''' {{#property:P10045|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
+<!--li> '''Julkaisija:''' {{#property:P10037|from={{#property:P10011|from={{PAGENAME}}}}}}{{#ifexist:{{#property:P131|from={{PAGENAME}}}}|, {{#property:P10018|from={{#property:P577|from={{PAGENAME}}}}}}|}}</li-->
+<!--li> '''Kerääjän antama kartan tunnus:''' {{#property:P10018|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
+<li> '''Keruukartan ruutu:''' {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</li>
+<li> '''Pistesijaintimerkintä:''' {{#property:P10034|from={{PAGENAME}}}}</li>
+<li> '''Koordinaatit:''' {{#property:P10012|from={{PAGENAME}}}} (WGS 84)</li>
+<li> '''Paikannuksen tarkkuus:''' {{#switch:{{#property:P10032|from={{PAGENAME}}}}|piste=Kerääjä on sijoittanut paikan tähän pisteeseen.|ruutu=Paikka sijaitsee keruukartalla tämän karttaruudun alueella.|ruutuja=Paikka sijaitsee useiden karttaruutujen alueella.|laaja kohde=Laajempaa aluetta kuvaamaan on merkitty tämä piste.|epätarkka=Paikan sijaintitieto on epätarkka|}}</li>
 </ul>
+<!--div class="toiminto">{{icon|speechBubbles}} [[#|Tarkenna sijaintia]]</div-->
 
 ==Lähde==
 
 <ul class="listaus">
-<li>  '''Keruupitäjä:''' [[:Luokka:{{#property:P10013|from={{PAGENAME}}}}|{{#statements:P10013|from={{PAGENAME}}}}]]</li>
-<li> '''Kerääjä:''' [[:Luokka:{{#property:P10017|from={{PAGENAME}}}}|{{#statements:P10017|from={{PAGENAME}}}}]]</li>
+<li> '''Kerääjä:''' {{#queryformlink:form=Haku|link text={{#property:P10017|from={{PAGENAME}}}}|tooltip=Näytä tämän kerääjän muut keruumerkinnät|query string=Haku[kerääjä]={{#property:P10017|from={{PAGENAME}}}}|wpRunQuery=true}}</li>
+<li>  '''Pitäjänkokoelma:''' {{#queryformlink:form=Haku|link text={{#property:P10013|from={{PAGENAME}}}}|tooltip=Näytä tämän pitäjän muut keruumerkinnät|query string=Haku[pitäjä]={{#property:P10013|from={{PAGENAME}}}}|wpRunQuery=true}}</li>
+{{#ifexist:{{#property:P10037|from={{PAGENAME}}}}|<li> '''Tiedon lähde:''' {{#property:P10037|from={{PAGENAME}}}}</li>|}}{{#ifexist:{{#property:P10014|from={{PAGENAME}}}}|<li> '''Kokoelma:''' {{#property:P10014|from={{PAGENAME}}}}</li>|}}
 <li> '''Ajankohta:''' {{#property:P10009|from={{PAGENAME}}}}</li>
 </ul>
 
-==Jakaminen==
-{{#statements:P10017|from={{PAGENAME}}}}: ''[[{{PAGENAME}}|{{#property:P10015|from={{PAGENAME}}}}]]''. ({{#statements:P10009|from={{PAGENAME}}}}) [Paikannimiarkiston keruumerkintä]. - Helsinki : Kotimaisten kielten keskus [viitattu {{CURRENTDAY}}.{{CURRENTMONTH1}}.{{CURRENTYEAR}}]. (Sisältyy kokoelmaan Nimiarkisto). Saatavissa: {{canonicalurl:{{PAGENAME}}}}
+==Viittaaminen==
+Huom! Nimiarkiston aineiston tunnukset eivät ole vielä pysyviä. Käytä viitettä vasta kun tämä ilmoitus on poistettu.
+
+{{#statements:P10017|from={{PAGENAME}}}}: ''[[{{PAGENAME}}|{{#property:P10015|from={{PAGENAME}}}}]]''. ({{#statements:P10009|from={{PAGENAME}}}}) [Nimiarkiston keruumerkintä]. - Helsinki : Kotimaisten kielten keskus [viitattu {{CURRENTDAY}}.{{CURRENTMONTH1}}.{{CURRENTYEAR}}]. (Sisältyy kokoelmaan Nimiarkisto). Saatavissa: {{canonicalurl:{{PAGENAME}}}}
 
 ==Keskustelu==
 <div class="toiminto">{{icon|speechBubbles}}{{#ifexist:{{TALKPAGENAME}} | [[{{TALKPAGENAME}}|Tästä paikasta keskustellaan! Osallistu keskusteluun!]] | [[{{TALKPAGENAME}}|Kerro tästä paikasta ja sen nimistä!]]}}</div>

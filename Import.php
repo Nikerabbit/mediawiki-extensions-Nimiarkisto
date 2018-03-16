@@ -99,7 +99,7 @@ class NimiarkistoImport extends Maintenance {
 
 		if ( $isProperty ) {
 			if ( !isset( $data[ 'datatype' ] ) ) {
-				var_dump( $id );
+				var_dump( $id, $data );
 			}
 
 			$entity = Property::newFromType( $data['datatype'] );
@@ -182,6 +182,10 @@ class NimiarkistoImport extends Maintenance {
 
 		$datatype = $property->getDataTypeId();
 		if ( $datatype === 'external-id' || $datatype === 'string' ) {
+			// Stupid yaml parser converts strings to ints, maybe
+			if ( is_int( $value ) ) {
+				$value = (string)$value;
+			}
 			if ( !is_string( $value ) ) {
 				var_dump( $value, $property->getId() );
 			}

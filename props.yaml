@@ -1,16 +1,5 @@
-
-# Ominaisuudet ----------------
-
-P10048:
-  datatype: string
-  labels:
-    fi: aakkoskansio
-    en: alphabet folder
-    sv: alfabetmapp
-  descriptions:
-  statements:
 P10001:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: akkusatiivi
     en: accusative case
@@ -18,19 +7,8 @@ P10001:
   descriptions:
     fi: sijamuoto, joka ilmaisee tekemisen kohdetta
   statements:
-P1549:
-  datatype: monolingualtext
-  labels:
-    fi: demonyymi
-    en: demonym
-    sv: invånarnamn
-  descriptions:
-    fi: nimitys paikan asukkaalle
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1549
 P10002:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: elatiivi / ablatiivi
     en: elative / ablative case
@@ -38,30 +16,8 @@ P10002:
   descriptions:
     fi: sijamuodot, jotka ilmaisevat sijaintia paikasta pois
   statements:
-P1889:
-  datatype: wikibase-item
-  labels:
-    fi: eri kuin
-    en: different from
-    sv: ej samma som
-  descriptions:
-    fi: kohde ei ole sama kuin toinen kohde
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1889
-P31:
-  datatype: wikibase-item
-  labels:
-    fi: esiintymä kohteesta
-    en: instance of
-    sv: instans av
-  descriptions:
-    fi: kohde on toisen kohteen esiintymä
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P31
 P10003:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: essiivi
     en: essive case
@@ -70,7 +26,7 @@ P10003:
     fi: sijamuoto, joka ilmaisee olotilaa, jonakin olemista
   statements:
 P10004:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: genetiivi
     en: genitive case
@@ -78,29 +34,8 @@ P10004:
   descriptions:
     fi: sijamuoto, joka ilmaisee omistajaa
   statements:
-P1566:
-  datatype: external-id
-  labels:
-    fi: GeoNames-tunniste
-    en: GeoNames ID
-    sv: Geonames-ID
-  descriptions:
-    fi: maantieteellisten nimien GeoNames-tunniste
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1566
-    P10043: # formatter URL
-      - http://geonames.org/$1
-P10047:
-  datatype: string
-  labels:
-    fi: huomio
-    en: extra notes
-    sv: extra notiser
-  descriptions:
-  statements:
 P10005:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: illatiivi / allatiivi
     en: illative / allative case
@@ -109,7 +44,7 @@ P10005:
     fi: sijamuodot, jotka ilmaisevat sijaintia kohti paikkaa
   statements:
 P10006:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: inessiivi / adessiivi
     en: inessive / adessive case
@@ -117,30 +52,6 @@ P10006:
   descriptions:
     fi: sijamuodot, jotka ilmaisevat siijaintia paikassa
   statements:
-P898:
-  datatype: string
-  labels:
-    fi: IPA-tarkekirjoitus
-    en: IPA transcription
-    sv: IPA-uttal
-  descriptions:
-    fi: tarkekirjoitus kansainvälisellä foneettisella aakkostolla
-    en: transcription in the International Phonetic Alphabet
-    sv: uttal enligt Internationella fonetiska alfabetet
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P898
-P577:
-  datatype: time
-  labels:
-    fi: julkaisuajankohta
-    en: publication date
-    sv: utgivningsdatum
-  descriptions:
-    fi: julkaisun julkaisemisen ajankohta
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P577
 P10007:
   datatype: string
   labels:
@@ -148,7 +59,7 @@ P10007:
     en: map grid square X
     sv: kartrut X
   descriptions:
-    fi: X-tunnus karttaruudulle, jolla kohde sijaitsee
+    fi: X-tunniste karttaruudulle, jolla kohde sijaitsee
   statements:
 P10008:
   datatype: string
@@ -157,16 +68,16 @@ P10008:
     en: map grid square Y
     sv: kartrut Y
   descriptions:
-    fi: Y-tunnus karttaruudulle, jolla kohde sijaitsee
+    fi: Y-tunniste karttaruudulle, jolla kohde sijaitsee
   statements:
 P10009:
   datatype: time
   labels:
-    fi: keruuhetki
-    en: collection date
-    sv: samlingsdatum
+    fi: leimausvuosi
+    en: stamp date
+    sv: stämpeldatum
   descriptions:
-    fi: milloin keruukortin tiedot on kerätty
+    fi: milloin keruukortin tiedot on tallennettu
   statements:
 P10010:
   datatype: wikibase-item
@@ -177,16 +88,6 @@ P10010:
   descriptions:
     fi: Kotuksen keruukampanja
   statements:
-P10045:
-  datatype: external-id
-  labels:
-    fi: keruukartan lehden tunnus
-    en: map sheet ID of the National Land Survey
-    sv: Lantmäteriverkets kart-id
-  descriptions:
-    fi: Maanmittauslaitoksen karttalehden tunnus
-    en: map sheet ID of the National Land Survey
-  statements:
 P10011:
   datatype: wikibase-item
   labels:
@@ -195,14 +96,6 @@ P10011:
     sv: kartobjekt
   descriptions:
     fi: keruukartan kohde
-  statements:
-P10049:
-  datatype: string
-  labels:
-    fi: keruukartan tunnus
-    en: map id
-    sv: kartid
-  descriptions:
   statements:
 P10012:
   datatype: globe-coordinate
@@ -216,7 +109,7 @@ P10012:
 P10013:
   datatype: wikibase-item
   labels:
-    fi: keruupitäjä
+    fi: pitäjänkokoelma
     en: collection parish
     sv: samlingssocken
   descriptions:
@@ -225,10 +118,11 @@ P10013:
 P10014:
   datatype: wikibase-item
   labels:
-    fi: keräelmä
-    en: collection set
+    fi: kokoelma
+    en: collection
     sv: samling
   descriptions:
+    fi: kokoelma, johon tieto kuuluu
   statements:
 P10015:
   datatype: string
@@ -244,7 +138,7 @@ P10015:
 P10016:
   datatype: string
   labels:
-    fi: kerätty paikan laji
+    fi: kerätty paikanlaji
     en: collected place type
     sv: platstyp i namnsedel
   descriptions:
@@ -262,124 +156,20 @@ P10017:
 P10018:
   datatype: string
   labels:
-    fi: kerääjän karttatunnus
+    fi: kerääjän karttatunniste
     en: collectors map ID
     sv: samlarens kart ID
   descriptions:
     fi: kerääjän kartalle antama oma järjestysnumero
   statements:
 P10019:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: kuvaileva teksti
     en: descriptive text
     sv: beskrivande text
   descriptions:
     fi: lainaus tai kuvailu
-  statements:
-P854:
-  datatype: URL
-  labels:
-    fi: lähde-URL
-    en: source URL
-    sv: referens-url
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P854
-P248:
-  datatype: wikibase-item
-  labels:
-    fi: lähdekohde
-    en: source item
-    sv: anges i
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P248
-P10046:
-  datatype: external-id
-  labels:
-    fi: maantieteellinen muoto
-    en: geographic shape
-    sv: geografisk form
-  descriptions:
-  statements:
-P10023:
-  datatype: monolingualtext
-  labels:
-    fi: monikko
-    en: plural
-    sv: flertalsform
-  descriptions:
-  statements:
-P10024:
-  datatype: monolingualtext
-  labels:
-    fi: murreasu
-    en: dialectical form
-    sv: dialektform
-  descriptions:
-  statements:
-P138:
-  datatype: external-id
-  labels:
-    fi: nimen alkuperä
-    en: name based on
-    sv: uppkallad efter
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P138
-    P10043: # formatter URL
-      - https://www.wikidata.org/wiki/$1
-P10025:
-  datatype: wikibase-item
-  labels:
-    fi: nimen laji
-    en: name type
-    sv: namnstyp
-  descriptions:
-  statements:
-P10026:
-  datatype: wikibase-item
-  labels:
-    fi: Nimiarkiston nimi
-    en: name in Name Archive
-    sv: namn i Namnarkivet
-  descriptions:
-  statements:
-P10027:
-  datatype: wikibase-item
-  labels:
-    fi: Nimiarkiston paikan laji
-    en: place type in Name Archive
-    sv: platstyp i Namnsarkivet
-  descriptions:
-  statements:
-P10028:
-  datatype: wikibase-item
-  labels:
-    fi: Nimiarkiston paikka
-    en: place in Name Archive
-    sv: plats i Namnarkivet
-  descriptions:
-  statements:
-P10029:
-  datatype: wikibase-item
-  labels:
-    fi: nimilippu
-    en: note image
-    sv: namnsedelns bild
-  descriptions:
-  statements:
-P10041:
-  datatype: string
-  labels:
-    fi: nimilipun julkaisustatus
-    en: note publication status
-    sv: publiseringsstatus för sedeln
-  descriptions:
   statements:
 P10020:
   datatype: external-id
@@ -400,50 +190,89 @@ P10021:
     sv: transkiptionsstatus
   descriptions:
   statements:
-P10030:
-  datatype: string
-  labels:
-    fi: nimilipun tunnus
-    en: note ID
-    sv: sedel ID
-  descriptions:
-  statements:
-P10031:
-  datatype: monolingualtext
-  labels:
-    fi: nominatiivi
-    en: nominative form
-    sv: nominativ
-  descriptions:
-  statements:
-P10044:
-  datatype: external-id
-  labels:
-    fi: OpenStreetMap-piste
-    en: OpenStreetMap node ID
-    sv: OpenStreetMap xxx-id
-  descriptions:
-  statements:
-    P10043: # formatter URL
-      - https://www.openstreetmap.org/node/$1
-P402:
-  datatype: external-id
-  labels:
-    fi: OpenStreetMap-relaatio
-    en: OpenStreetMap relation ID
-    sv: OpenStreetMap relations-id
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P402
-    P10043: # formatter URL
-      - https://www.openstreetmap.org/relation/$1
 P10022:
   datatype: quantity
   labels:
     fi: paikannuksen luotettavuus
     en: reliability of positioning
     sv: placeringens pålitlighet
+  descriptions:
+    fi: käyttäjien arvio paikannuksen tarkkuudesta
+  statements:
+P10023:
+  datatype: string
+  labels:
+    fi: monikko
+    en: plural
+    sv: flertalsform
+  descriptions:
+  statements:
+P10024:
+  datatype: string
+  labels:
+    fi: murreasu
+    en: dialectical form
+    sv: dialektform
+  descriptions:
+  statements:
+P10025:
+  datatype: wikibase-item
+  labels:
+    fi: nimenlaji
+    en: name type
+    sv: namnstyp
+  descriptions:
+    fi: nimenlajin kohde
+  statements:
+P10026:
+  datatype: wikibase-item
+  labels:
+    fi: Nimiarkiston nimi
+    en: name in Name Archive
+    sv: namn i Namnarkivet
+  descriptions:
+    fi: nimen kohde
+  statements:
+P10027:
+  datatype: wikibase-item
+  labels:
+    fi: Nimiarkiston paikan laji
+    en: place type in Name Archive
+    sv: platstyp i Namnsarkivet
+  descriptions:
+  statements:
+P10028:
+  datatype: wikibase-item
+  labels:
+    fi: Nimiarkiston paikka
+    en: place in Name Archive
+    sv: plats i Namnarkivet
+  descriptions:
+    fi: paikan kohde
+  statements:
+P10029:
+  datatype: wikibase-item
+  labels:
+    fi: nimilippu
+    en: note image
+    sv: namnsedelns bild
+  descriptions:
+    fi: nimilipun kohde
+  statements:
+P10030:
+  datatype: string
+  labels:
+    fi: nimilipun tunniste
+    en: note ID
+    sv: sedel ID
+  descriptions:
+  statements:
+P10031:
+  datatype: string
+  labels:
+    fi: nominatiivi
+    en: nominative form
+    sv: nominativ
   descriptions:
   statements:
 P10032:
@@ -453,17 +282,10 @@ P10032:
     en: positioning accuracy
     sv: placeringsbetyg
   descriptions:
-  statements:
-P10043:
-  datatype: string
-  labels:
-    fi: palvelun URL
-    en: formatter URL
-    sv: format för URL
-  descriptions:
+    fi: paikannustarkkuuden kohde
   statements:
 P10033:
-  datatype: monolingualtext
+  datatype: string
   labels:
     fi: partitiivi
     en: partitive case
@@ -473,7 +295,7 @@ P10033:
 P10034:
   datatype: string
   labels:
-    fi: pistesijainti
+    fi: pistesijaintimerkintä
     en: location id
     sv: lokaliserings ID
   descriptions:
@@ -503,26 +325,125 @@ P10036:
       - P4119
     P10043: # formatter URL
       - http://paikkatiedot.fi/so/1000772/$1
-P460:
+P10037:
   datatype: wikibase-item
   labels:
-    fi: sama kuin
-    en: same as
-    sv: samma som
+    fi: tiedon tuottaja
+    en: data provider
+    sv: data leverantör
+  descriptions:
+    fi: merkinnän tuottanut taho
+  statements:
+P10038:
+  datatype: string
+  labels:
+    fi: translatiivi
+    en: translative case
+    sv: translativ
+  descriptions:
+    fi: sijamuoto, joka ilmaisee tulemista, muuttumista joksikin
+    en: grammatical case that indicates a change in state into something
+  statements:
+P10039:
+  datatype: external-id
+  labels:
+    fi: vastaava ominaisuus Wikidatassa 
+    en: corresponding Wikidata property
+    sv: motsvarande Wikidata egenskap
+  descriptions:
+    fi: vastaava ominaisuus Wikidatassa
+  statements:
+    P10043: # formatter URL
+      - https://www.wikidata.org/wiki/Property:$1
+P10040:
+  datatype: external-id
+  labels:
+    fi: Wikidata-kohde
+    en: Wikidata item
+    sv: Wikidata objekt
+  descriptions:
+    fi: Vastaava kohde Wikidatassa
+  statements:
+    P10043: # formatter URL
+      - https://www.wikidata.org/wiki/$1
+P10041:
+  datatype: wikibase-item
+  labels:
+    fi: nimilipun julkaisustatus
+    en: note publication status
+    sv: publiseringsstatus för sedeln
+  descriptions:
+  statements:
+P10043:
+  datatype: string
+  labels:
+    fi: palvelun URL
+    en: formatter URL
+    sv: format för URL
+  descriptions:
+  statements:
+P10044:
+  datatype: external-id
+  labels:
+    fi: OpenStreetMap-piste
+    en: OpenStreetMap node ID
+    sv: OpenStreetMap punkt id
+  descriptions:
+  statements:
+    P10043: # formatter URL
+      - https://www.openstreetmap.org/node/$1
+P10045:
+  datatype: string
+  labels:
+    fi: keruukartan lehden tunniste
+    en: map sheet ID of the National Land Survey
+    sv: Lantmäteriverkets kart-id
+  descriptions:
+    fi: Maanmittauslaitoksen karttalehden tunniste
+    en: map sheet ID of the National Land Survey
+  statements:
+P10046:
+  datatype: external-id
+  labels:
+    fi: maantieteellinen muoto
+    en: geographic shape
+    sv: geografisk form
+  descriptions:
+  statements:
+P10047:
+  datatype: string
+  labels:
+    fi: Nimiarkiston julkinen huomautus
+    en: Name Archive public note
+    sv: Namnarkivets offentlig anteckning
+  descriptions:
+  statements:
+P10048:
+  datatype: string
+  labels:
+    fi: aakkoskansio
+    en: alphabet folder
+    sv: alfabetmapp
+  descriptions:
+  statements:
+P10049:
+  datatype: string
+  labels:
+    fi: keruukartan tunniste
+    en: map id
+    sv: kartid
+  descriptions:
+  statements:
+P1264:
+  datatype: external-id
+  labels:
+    fi: pätee aikavälillä
+    en: valid in period
+    sv: giltig i tidsperiod
   descriptions:
   statements:
     P10039: # corresponding Wikidata ID
-      - P460
-P276:
-  datatype: wikibase-item
-  labels:
-    fi: sijainti
-    en: location
-    sv: placering
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P276
+      - P1264
 P131:
   datatype: wikibase-item
   labels:
@@ -536,6 +457,237 @@ P131:
   statements:
     P10039: # corresponding Wikidata ID
       - P131
+P1319:
+  datatype: time
+  labels:
+    fi: aikaisin ajankohta
+    en: earliest date
+    sv: tidigaste datum
+  descriptions:
+    fi: ajanjakson alkuhetki
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1319
+P1326:
+  datatype: time
+  labels:
+    fi: myöhäisin ajankohta
+    en: latest date
+    sv: senaste datum
+  descriptions:
+    fi: ajanjakson loppuhetki
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1326
+P138:
+  datatype: external-id
+  labels:
+    fi: nimen alkuperä
+    en: name based on
+    sv: uppkallad efter
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P138
+    P10043: # formatter URL
+      - https://www.wikidata.org/wiki/$1
+P1549:
+  datatype: string
+  labels:
+    fi: demonyymi
+    en: demonym
+    sv: invånarnamn
+  descriptions:
+    fi: nimitys paikan asukkaalle
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1549
+P1566:
+  datatype: external-id
+  labels:
+    fi: GeoNames-tunniste
+    en: GeoNames ID
+    sv: Geonames-ID
+  descriptions:
+    fi: maantieteellisten nimien GeoNames-tunniste
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1566
+    P10043: # formatter URL
+      - http://geonames.org/$1
+P1667:
+  datatype: external-id
+  labels:
+    fi: TGN-tunniste
+    en: TGN ID
+    sv: TGN ID
+  descriptions:
+    fi: tunniste Getty Thesaurus of Geographic Names -tesauruksessa
+    en: identifier in the Getty Thesaurus of Geographic Names
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1667
+    P10043: # formatter URL
+      - http://vocab.getty.edu/page/tgn/$1
+P1813:
+  datatype: monolingualtext
+  labels:
+    fi: lyhyt nimi
+    en: short name
+    sv: kort namn
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1813
+P1889:
+  datatype: wikibase-item
+  labels:
+    fi: eri kuin
+    en: different from
+    sv: ej samma som
+  descriptions:
+    fi: kohde ei ole sama kuin toinen kohde
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1889
+P206:
+  datatype: wikibase-item
+  labels:
+    fi: sijaitsee vesistön äärellä
+    en: located next to body of water
+    sv: ligger vid sjö eller vattendrag
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P206
+P2347:
+  datatype: external-id
+  labels:
+    fi: YSO-paikat -tunniste
+    en: YSO ID
+    sv: ALLFO-ID
+  descriptions:
+    fi: Yleisen suomalaisen ontologian (YSO) käsitteen tunniste
+    en: identifier for a concept in the General Finnish Upper Ontology YSO
+    sv: Begrepps-ID för Allmän finländsk ontologi (ALLFO)
+  statements:
+    P10043: # formatter URL
+      - http://finto.fi/yso-paikat/fi/page/$1
+P248:
+  datatype: wikibase-item
+  labels:
+    fi: lähdekohde
+    en: source item
+    sv: anges i
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P248
+P276:
+  datatype: wikibase-item
+  labels:
+    fi: sijainti
+    en: location
+    sv: placering
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P276
+P31:
+  datatype: wikibase-item
+  labels:
+    fi: esiintymä kohteesta 
+    en: instance of
+    sv: instans av
+  descriptions:
+    fi: kohde on toisen kohteen esiintymä
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P31
+P3415:
+  datatype: external-id
+  labels:
+    fi: alkuajanjakso
+    en: start period
+    sv: startperiod
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P3415
+P3416:
+  datatype: external-id
+  labels:
+    fi: päättymisajanjakso
+    en: end period
+    sv: slutperiod
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P3416
+P402:
+  datatype: external-id
+  labels:
+    fi: OpenStreetMap-relaatio
+    en: OpenStreetMap relation ID
+    sv: OpenStreetMap relations-id
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P402
+    P10043: # formatter URL
+      - https://www.openstreetmap.org/relation/$1
+P460:
+  datatype: wikibase-item
+  labels:
+    fi: sama kuin
+    en: same as
+    sv: samma som
+  descriptions:
+    fi: vastaavan merkinnän kohde
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P460
+P577:
+  datatype: time
+  labels:
+    fi: julkaisuajankohta
+    en: publication date
+    sv: utgivningsdatum
+  descriptions:
+    fi: julkaisun julkaisemisen ajankohta
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P577
+P580:
+  datatype: time
+  labels:
+    fi: alkamisajankohta
+    en: start time
+    sv: end time
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P580
+P582:
+  datatype: time
+  labels:
+    fi: päättymisajankohta
+    en: end time
+    sv: slutdatum
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P582
+P585:
+  datatype: time
+  labels:
+    fi: ajankohta
+    en: point in time
+    sv: tidpunkt
+  descriptions:
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P585
 P706:
   datatype: wikibase-item
   labels:
@@ -560,59 +712,6 @@ P795:
   statements:
     P10039: # corresponding Wikidata ID
       - P795
-P206:
-  datatype: wikibase-item
-  labels:
-    fi: sijaitsee vesistön äärellä
-    en: located next to body of water
-    sv: ligger vid sjö eller vattendrag
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P206
-P1667:
-  datatype: external-id
-  labels:
-    fi: TGN-tunniste
-    en: TGN ID
-    sv: TGN ID
-  descriptions:
-    fi: tunniste Getty Thesaurus of Geographic Names -tesauruksessa
-    en: identifier in the Getty Thesaurus of Geographic Names
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1667
-    P10043: # formatter URL
-      - http://vocab.getty.edu/page/tgn/$1
-P10037:
-  datatype: wikibase-item
-  labels:
-    fi: tiedon tuottaja
-    en: data provider
-    sv: data leverantör
-  descriptions:
-  statements:
-P10038:
-  datatype: monolingualtext
-  labels:
-    fi: translatiivi
-    en: translative case
-    sv: translativ
-  descriptions:
-    fi: sijamuoto, joka ilmaisee tulemista, muuttumista joksikin
-    en: grammatical case that indicates a change in state into something
-  statements:
-P10039:
-  datatype: external-id
-  labels:
-    fi: vastaava ominaisuus Wikidatassa
-    en: corresponding Wikidata property
-    sv: motsvarande Wikidata egenskap
-  descriptions:
-    fi: vastaava ominaisuus Wikidatassa
-  statements:
-    P10043: # formatter URL
-      - https://www.wikidata.org/wiki/Property:$1
 P813:
   datatype: time
   labels:
@@ -626,366 +725,99 @@ P813:
   statements:
     P10039: # corresponding Wikidata ID
       - P813
-P10040:
-  datatype: external-id
+P854:
+  datatype: URL
   labels:
-    fi: Wikidata-kohde
-    en: Wikidata item
-    sv: Wikidata objekt
+    fi: lähde-URL
+    en: source URL
+    sv: referens-url
   descriptions:
-    fi: Vastaava kohde Wikidatassa
-  statements:
-    P10043: # formatter URL
-      - https://www.wikidata.org/wiki/$1
-P2347:
-  datatype: external-id
-  labels:
-    fi: YSO-paikat -tunniste
-    en: YSO ID
-    sv: ALLFO-ID
-  descriptions:
-    fi: Yleisen suomalaisen ontologian (YSO) käsitteen tunniste
-    en: identifier for a concept in the General Finnish Upper Ontology YSO
-    sv: Begrepps-ID för Allmän finländsk ontologi (ALLFO)
-  statements:
-    P10043: # formatter URL
-      - http://finto.fi/yso-paikat/fi/page/$1
-P585:
-  datatype: time
-  labels:
-    fi: ajankohta
-    en: point in time
-    sv: tidpunkt
-  descriptions:
+    fi: lähdeviittauksen url
   statements:
     P10039: # corresponding Wikidata ID
-      - P585
-P580:
-  datatype: time
+      - P854
+P898:
+  datatype: string
   labels:
-    fi: alkamisajankohta
-    en: start time
-    sv: end time
+    fi: IPA-tarkekirjoitus
+    en: IPA transcription
+    sv: IPA-uttal
   descriptions:
+    fi: tarkekirjoitus kansainvälisellä foneettisella aakkostolla
+    en: transcription in the International Phonetic Alphabet
+    sv: uttal enligt Internationella fonetiska alfabetet
   statements:
     P10039: # corresponding Wikidata ID
-      - P580
-P582:
-  datatype: time
+      - P898
+P10050:
+  datatype: string
   labels:
-    fi: päättymisajankohta
-    en: end time
-    sv: slutdatum
+    fi: EUREF-FIN pituuskoordinaatti X
+    en: EUREF-FIN longitude X
+    sv: EUREF-FIN longitud X
   descriptions:
+    fi: alkuperäinen EUREF-FIN pituuskoordinaatt
+P10051:
+  datatype: string
+  labels:
+    fi: EUREF-FIN leveyskoordinaatti Y
+    en: EUREF-FIN latitude X
+    sv: EUREF-FIN latitud Y
+  descriptions:
+    fi: alkuperäinen EUREF-FIN leveyskoordinaatti
+P10052:
+  datatype: string
+  labels:
+    fi: Nimiarkiston sisäinen huomautus
+    en: Name Archive internal note
+    sv: Namnarkivets invärtes anteckning
+  descriptions:
+    fi: huomautuksia Kotuksen sisäiseen käyttöön
+P217:
+  datatype: string
+  labels:
+    fi: inventaarionumero
+    en: inventory number
+    sv: inventarienummer
+  descriptions:
+    fi: kohteen inventaarionumero kokoelmassa
   statements:
     P10039: # corresponding Wikidata ID
-      - P582
-P3415:
-  datatype: external-id
+      - P217
+P10053:
+  datatype: string
   labels:
-    fi: alkuajanjakso
-    en: start period
-    sv: startperiod
+    fi: keruumerkinnän tunniste
+    en: field note id
+    sv: feltanteckings id
+P10054:
+  datatype: string
+  labels:
+    fi: etunimi
+    en: given name
+    sv: förnamn
+P10055:
+  datatype: string
+  labels:
+    fi: sukunimi
+    en: family name
+    sv: efternamn
+P2561:
+  datatype: string
+  labels:
+    fi: nimi
+    en: name
+    sv: namn
   descriptions:
+    fi: nimi, jos ei ole mahdollista tuottaa erillistä nimikohdetta Nimiarkistoon
   statements:
     P10039: # corresponding Wikidata ID
-      - P3415
-P3416:
-  datatype: external-id
+      - P2561
+P279:
+  datatype: wikibase-item
   labels:
-    fi: päättymisajanjakso
-    en: end period
-    sv: slutperiod
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P3416
-P1264:
-  datatype: external-id
+    fi: nimiarkiston kohdetyyppi
+P10056:
+  datatype: wikibase-item
   labels:
-    fi: pätee aikavälillä
-    en: valid in period
-    sv: giltig i tidsperiod
-  descriptions:
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1264
-P1319:
-  datatype: time
-  labels:
-    fi: aikaisin ajankohta
-    en: earliest date
-    sv: tidigaste datum
-  descriptions:
-    fi: Käyteään ominaisuuden P1264 tarkenteena
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1319
-P1326:
-  datatype: time
-  labels:
-    fi: myöhäisin ajankohta
-    en: latest date
-    sv: senaste datum
-  descriptions:
-    fi: Käyteään ominaisuuden P1264 tarkenteena
-  statements:
-    P10039: # corresponding Wikidata ID
-      - P1326
-
-# Kohteet -------------
-
-
-Q1: # Nimiarkiston kohdetyyppi
-  labels:
-    fi: Nimiarkiston kohdetyyppi
-  descriptions:
-  statements:
-      P31: #
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q2: # paikka
-  labels:
-    fi: paikka
-    en: place
-    sv: plats
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q3: # keruukartta
-  labels:
-    fi: keruukartta
-    en: collector's map
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q4: # keruumerkintä
-  labels:
-    fi: keruumerkintä
-    en: field note
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q5: # keruukampanja
-  labels:
-    fi: keruukampanja
-    en: collection campaign
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q6: # keruupitäjä
-  labels:
-    fi: keruupitäjä
-    en: collection parish
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q7: # nimilippu
-  labels:
-    fi: nimilippu
-    en: name slip
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q8: # kerääjä
-  labels:
-    fi: kerääjä
-    en: collector
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q9: # Nimiarkiston nimen laji
-  labels:
-    fi: Nimiarkiston nimen laji
-    en: name type in Name Archive
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q10: # toponyymi
-  labels:
-    fi: toponyymi
-    en: toponym
-    sv: toponym
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q9 # Nimiarkiston nimen laji
-
-Q11: # henkilönnimi
-  labels:
-    fi: henkilönnimi
-    en: person name
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q9 # Nimiarkiston nimen laji
-
-Q12: # yleisnimi
-  labels:
-    fi: yleisnimi
-    en: general name
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q9 # Nimiarkiston nimen laji
-
-Q13: # Nimiarkiston paikannustarkkuuden arvo
-  labels:
-    fi: Nimiarkiston paikannustarkkuuden arvo
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q14: # piste
-  labels:
-    fi: piste
-    en: node
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q13 # NImiarkiston paikannustarkkuuden arvo
-
-Q15: # ruutu
-  labels:
-    fi: ruutu
-    en: grid square
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q13 # NImiarkiston paikannustarkkuuden arvo
-
-Q16: # ruutuja
-  labels:
-    fi: ruutuja
-    en: grid squares
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q13 # NImiarkiston paikannustarkkuuden arvo
-
-Q17: # laaja kohde
-  labels:
-    fi: laaja kohde
-    en: broader location
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q13 # NImiarkiston paikannustarkkuuden arvo
-
-Q18: # epätarkka
-  labels:
-    fi: epätarkka
-    en: inaccurate location
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q13 # NImiarkiston paikannustarkkuuden arvo
-
-Q19: # Nimiarkiston paikan laji
-  labels:
-    fi: Nimiarkiston paikan laji
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q20: # nimilipun litteroinnin status
-  labels:
-    fi: nimilipun litteroinnin status
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q21: # nimiä poimimatta
-  labels:
-    fi: nimiä poimimatta
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q20 # nimilipun litteroinnin status
-
-Q22: # organisaatio
-  labels:
-    fi: organisaatio
-  descriptions:
-  statements:
-      P31: #
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q23: # Kotus
-  labels:
-    fi: Kotus
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q22 # organisaatio
-
-Q24: # Maanmittauslaitos
-  labels:
-    fi: Maanmittauslaitos
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q22 # organisaatio
-
-Q25: # nimilipun julkaisustatus
-  labels:
-    fi: nimilipun julkaisustatus
-  descriptions:
-  statements:
-      P31: #
-      - Q1 # Nimiarkiston kohdetyyppi
-
-Q26: # julkaisematon
-  labels:
-    fi: julkaisematon
-    en: unpublished
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q25 # nimilipun julkaisustatus
-
-Q27: # julkaistu
-  labels:
-    fi: julkaistu
-    en: published
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q25 # nimilipun julkaisustatus
-
-Q28: # vedetty pois
-  labels:
-    fi: vedetty pois
-    en: withdrawn
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q25 # nimilipun julkaisustatus
-
-Q29: # ilmiannettu
-  labels:
-    fi: ilmiannettu
-    en: reported
-  descriptions:
-  statements:
-      P31: # instance of
-      - Q25 # nimilipun julkaisustatus
+    fi: pitäjänkokoelman lisämääritelmä

@@ -1,15 +1,15 @@
 .na-logo #p-logo-text {
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: left;
-    height:3em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: left;
+	height:4em;
 }
 .na-logo #p-logo-text a {
-    color: transparent;
-    padding: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
+	color: transparent;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .na-logo--fi #p-logo-text {
@@ -26,4 +26,8 @@
 }
 .na-logo--sv #p-logo-text {
 	background-image: url(/logo-sv.svg);
+}
+
+body.ns-special #mw-page-header-links {
+	display: none;
 }
