@@ -29,10 +29,9 @@ class Hooks {
 
 	public static function onParserFirstCallInit( $parser ) {
 		$parser->setFunctionHook( 'nac', function ( $parser, $param1 = '' ) {
-			$output = html_entity_decode( $param1 );
-			// Some sanitization
-			$output = preg_replace( '/[<>&:]/', '', $output );
-			return [ $output, 'noparse' => true ];
+			$output = \Sanitizer::decodeCharReferences( $param1 );
+			$output = str_replace( [ "'", '"' ], [ '′', '″' ], $output );
+			return [ $output ];
 		} );
 
 		// Use JavaScript to move the title in the DOM
