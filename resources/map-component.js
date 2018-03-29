@@ -16802,14 +16802,14 @@ function createKotusLayer(options, withBorders) {
   if (options.years) {
     wmsOptions['time'] = options.years[0] + '-1-1/' + options.years[1] + '-1-1';
   } else {
-    wmsOptions['time'] = '1900-1-1/2000-1-1';
+    wmsOptions['time'] = '1750-1-1/2000-1-1';
   }
 
   return L.tileLayer.wms('https://avaa.tdata.fi/geoserver/kotus/wms', wmsOptions);
 }
 
 function createMarkers(locations) {
-  var markerLayer = L.markerClusterGroup({ maxClusterRadius: 40 });
+  var markerLayer = L.markerClusterGroup({ maxClusterRadius: 50 });
 
   locations.forEach(function(location) {
     var marker = L.marker([ location.lat, location.lon ]).addTo(markerLayer);
@@ -16830,7 +16830,7 @@ function getBounds() {
 }
 
 function getCenter() {
-  return [leafletMap.getCenter().lat, leafletMap.getCenter().lng];
+  return [leafletMap.getCenter().lat, leafletMap.getCenter().lng, leafletMap.getZoom()];
 }
 
 function newLocation(options) {
