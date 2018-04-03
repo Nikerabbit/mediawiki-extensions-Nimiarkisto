@@ -252,14 +252,6 @@ Q28: # poistettu näkyvistä
   statements:
     P31: # esiintymä kohteesta
       - Q25 # nimilipun julkaisustatus
-Q29: # ilmiannettu
-  labels:
-    fi: ilmiannettu
-    en: reported
-    sv: rapporterad
-  statements:
-    P31: # esiintymä kohteesta
-      - Q25 # nimilipun julkaisustatus
 Q29: # kokoelma
   labels:
     fi: kokoelma
