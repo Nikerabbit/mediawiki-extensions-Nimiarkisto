@@ -10,6 +10,7 @@ service memcached restart
 echo "DROP DATABASE $DBNAME; CREATE DATABASE $DBNAME;" | mysql "$DBNAME" -u "$DBUSER" -p --host "$DBHOST"
 mysql narkisto -u "$DBUSER" -p --host "$DBHOST" < narkisto-empty.sql
 export MW_INSTALL_PATH=/srv/mediawiki/workdir
+# shellcheck disable=SC2016
 php ../../maintenance/addSite.php --language=fi --pagepath='https://nimiarkisto.fi/wiki/$1' --wiki="nimiarkisto.fi" nimiarkisto special
 php ../../maintenance/populateContentModel.php --wiki="nimiarkisto.fi" --ns=1 --table="revision"
 php ../../maintenance/populateContentModel.php --wiki="nimiarkisto.fi" --ns=1 --table="archive"
