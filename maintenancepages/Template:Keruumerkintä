@@ -1,5 +1,5 @@
 <includeonly>__NOTOC____NOEDITSECTION__
-{{DISPLAYTITLE:{{#statements:P10015|from={{PAGENAME}}}} (Kotus, {{#statements:P10009|from={{PAGENAME}}}})}}</includeonly><div class="nimiarkisto-keruubanneri">
+{{DISPLAYTITLE:{{#statements:P10015|from={{PAGENAME}}}} ({{#statements:P10037|from={{PAGENAME}}}}, {{#statements:P10009|from={{PAGENAME}}}})}}</includeonly><div class="nimiarkisto-keruubanneri">
 {{#if:{{#property:P10012|from={{PAGENAME}}}}|
 <!-- Näytä kartta -->
 <div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
@@ -17,7 +17,7 @@ Ladataan karttaa...
 ==Merkinnän tiedot==
 <ul class="listaus">
 <li> '''Nimi:''' {{#property:P10015|from={{PAGENAME}}}}</li>
-{{#ifexist:{{#property:P10025|from={{PAGENAME}}}}|<li> '''Nimenlaji:''' {{#property:P10025|from={{PAGENAME}}}}</li>|}}
+<li> '''Nimenlaji:''' {{#property:P10025|from={{PAGENAME}}}}</li>
 <li> '''Paikanlaji:''' {{#property:P10016|from={{PAGENAME}}}}</li>
 {{#ifexist:{{#property:P10019|from={{PAGENAME}}}}|<li> '''Kuvaus:''' {{#property:P10019|from={{PAGENAME}}}}</li>|}}
 </ul>
@@ -26,13 +26,13 @@ Ladataan karttaa...
 <ul class="listaus">
 {{#ifexist:{{#property:P131|from={{PAGENAME}}}}|<li> '''Nykyinen sijaintikunta:''' {{#property:P131|from={{PAGENAME}}}}</li>|}}
 <!--li> '''Keruukartta:''' {{#property:P10049|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
-<!--li> '''Karttalehden tunnus:''' {{#property:P10045|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
 <!--li> '''Julkaisija:''' {{#property:P10037|from={{#property:P10011|from={{PAGENAME}}}}}}{{#ifexist:{{#property:P131|from={{PAGENAME}}}}|, {{#property:P10018|from={{#property:P577|from={{PAGENAME}}}}}}|}}</li-->
 <!--li> '''Kerääjän antama kartan tunnus:''' {{#property:P10018|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
 <li> '''Keruukartan ruutu:''' {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</li>
 <li> '''Pistesijaintimerkintä:''' {{#property:P10034|from={{PAGENAME}}}}</li>
+<li> '''Karttalehden tunnus:''' {{#property:P10011|from={{PAGENAME}}}}</li>
 <li> '''Koordinaatit:''' {{#property:P10012|from={{PAGENAME}}}} (WGS 84)</li>
-<li> '''Paikannuksen tarkkuus:''' {{#switch:{{#property:P10032|from={{PAGENAME}}}}|piste=Kerääjä on sijoittanut paikan tähän pisteeseen.|ruutu=Paikka sijaitsee keruukartalla tämän karttaruudun alueella.|ruutuja=Paikka sijaitsee useiden karttaruutujen alueella.|laaja kohde=Laajempaa aluetta kuvaamaan on merkitty tämä piste.|epätarkka=Paikan sijaintitieto on epätarkka|}}</li>
+<li> '''Paikannuksen tarkkuus:''' {{#property:P10032|from={{PAGENAME}}}}</li>
 </ul>
 <!--div class="toiminto">{{icon|speechBubbles}} [[#|Tarkenna sijaintia]]</div-->
 
@@ -46,13 +46,12 @@ Ladataan karttaa...
 </ul>
 
 ==Viittaaminen==
-Huom! Nimiarkiston aineiston tunnukset eivät ole vielä pysyviä. Käytä viitettä vasta kun tämä ilmoitus on poistettu.
 
-{{#statements:P10017|from={{PAGENAME}}}}: ''[[{{PAGENAME}}|{{#property:P10015|from={{PAGENAME}}}}]]''. ({{#statements:P10009|from={{PAGENAME}}}}) [Nimiarkiston keruumerkintä]. - Helsinki : Kotimaisten kielten keskus [viitattu {{CURRENTDAY}}.{{CURRENTMONTH1}}.{{CURRENTYEAR}}]. (Sisältyy kokoelmaan Nimiarkisto). Saatavissa: {{canonicalurl:{{PAGENAME}}}}
-
+Nimiarkisto: ''{{#property:P10015|from={{PAGENAME}}}}'' ({{#statements:P10037|from={{PAGENAME}}}}, {{#statements:P10009|from={{PAGENAME}}}}). {{#property:P10017|from={{PAGENAME}}}}. Kotimaisten kielten keskus. {{canonicalurl:{{PAGENAME}}}}. Viitattu {{CURRENTDAY}}.{{CURRENTMONTH1}}.{{CURRENTYEAR}}.
+<!--
 ==Keskustelu==
 <div class="toiminto">{{icon|speechBubbles}}{{#ifexist:{{TALKPAGENAME}} | [[{{TALKPAGENAME}}|Tästä paikasta keskustellaan! Osallistu keskusteluun!]] | [[{{TALKPAGENAME}}|Kerro tästä paikasta ja sen nimistä!]]}}</div>
-
+-->
 <includeonly>
 [[Luokka:Keruumerkintä]]
 [[Luokka:{{#property:P10013|from={{PAGENAME}}}}|{{#property:P10015|from={{PAGENAME}}}}]]
@@ -63,4 +62,5 @@ Huom! Nimiarkiston aineiston tunnukset eivät ole vielä pysyviä. Käytä viite
 |kerääjä={{#property:P10017|from={{PAGENAME}}}}
 |keruunimi={{#property:P10015|from={{PAGENAME}}}}
 |paikanlaji={{#property:P10016|from={{PAGENAME}}}}
+|nimenlaji={{#property:P10025|from={{PAGENAME}}}}
 }}</includeonly><noinclude>[[Category:Nimiarkisto maintenance]]</noinclude>

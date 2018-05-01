@@ -82,6 +82,12 @@ class NimiarkistoConverter {
 				}
 			}
 
+			if ( $lines[ $index ][ RECSER ] === null ) {
+				echo "Skipping line without recser\n";
+				unset( $lines[ $index ] );
+				continue;
+			}
+
 			// Manual correction to known issue with the data
 			if ( (int)$lines[ $index ][ REALPITÄJÄ ] > 0 ) {
 				$lines[ $index ][ MAPID ] = $lines[ $index ][ REALPITÄJÄ ];
@@ -267,10 +273,16 @@ TODO wikibase-linkki
 			$label .= " ({$x[ LOCATIONTYPE ]})";
 		}
 
-		if ( isset( $x[ YEAR ] ) ) {
-			$label .= " – Kotus, {$x[ YEAR ]}";
+		if ( $x[ COLLECTION ] === 'SLS' ) {
+			$makerName = 'SLS';
 		} else {
-			$label .= " – Kotus";
+			$makerName = 'Kotus';
+		}
+
+		if ( isset( $x[ YEAR ] ) ) {
+			$label .= " – $makerName, {$x[ YEAR ]}";
+		} else {
+			$label .= " – $makerName";
 		}
 
 		$data = [
@@ -314,7 +326,10 @@ TODO wikibase-linkki
 			$data[ 'statements' ][ 'P10025' ] = [ 'Q10' ];
 		}
 
-		// TODO label
+		// This is not a general rule, but rather an exception
+		if ( $x[ PEX ] === 'M' ) {
+			$x[ PEX ] = 'X';
+		}
 
 		switch ( $x[ PEX ] ) {
 			case 'K':
@@ -379,8 +394,8 @@ TODO wikibase-linkki
 			case null:
 				break;
 			default:
+				echo "Unknown value for PEX: {$x[ PEX ]}\n";
 				var_dump( $x );
-				throw new InvalidArgumentException( $x[ PEX ] );
 		}
 
 		if ( $x[ OTHERNAMES ] ) {
@@ -480,15 +495,15 @@ function process( $IN, $OUT ) {
 			$sectionId = 'XX_' . trim( $lines[ 0 ][ PITÄJÄ ] ?? 'XXXX' );
 
 			while ( file_exists( "$OUT/$sectionId-$batch.yaml" ) ) {
-				$batch += 10;
+				$batch += 100;
 			}
 
 			foreach ( $lines as $line ) {
 				$pitäjäName = $line[ PITÄJÄ ];
 				if ( $pitäjäName === null ) {
 					echo "Did not find pitäjä for {$line[ RECSER ]}\n";
-					#var_dump( $line );
-					continue;
+					var_dump( $line );
+					$pitäjäName = 'Pitäjä ei tiedossa';
 				}
 
 				$pitäjäId = $converter->getEntityId( "pitäjä/$pitäjäName" );
@@ -554,6 +569,7 @@ function process( $IN, $OUT ) {
 						$locator = str_replace( '//tiedostot.ds.kotus.fi/digiarkisto3/SLS namn/', '', $path );
 					} else {
 						echo "Unknown collection {$line[ COLLECTION ]}\n";
+						var_dump( $line );
 						exit;
 					}
 

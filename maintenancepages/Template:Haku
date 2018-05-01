@@ -1,17 +1,27 @@
-<includeonly>{{#ask:
+<includeonly>Hakutuloksia yhteensä: {{#ask:
 
-{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
-{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
 {{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
 {{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
-{{#if:{{{vuosi|}}}|[[Keruuvuosi::{{{vuosi}}}]]}}
+{{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
+{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
+{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
+ |format=count
+}}
+{{#ask:
+
+{{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
+{{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
+{{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
+{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
+{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
 
  |?Pistekoordinaatti
  |?Paikanlaji
+ |?Nimenlaji
  |?Pitäjä
  |?Kerääjä
  |default=<div><div class="warningbox">Ei tuloksia kartalla.</div></div>
- |intro=Enintään 1500 tulosta näytetään kartalla. Kaikilla nimillä ei välttämättä ole sijaintia.
+ |intro=Enintään 500 tulosta näytetään kartalla. Kaikilla nimillä ei välttämättä ole sijaintia.
  |format=leaflet
  |link=subject
  |headers=plain
@@ -28,17 +38,18 @@
  |clustermaxradius=80
  |clusterspiderfy=1
  |showtitle=1
- |limit=1500
+ |limit=500
 }}
 {{#ask:
 
-{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
-{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
 {{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
 {{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
-{{#if:{{{vuosi|}}}|[[Keruuvuosi::{{{vuosi}}}]]}}
+{{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
+{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
+{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
 
  |?Paikanlaji
+ |?Nimenlaji
  |?Pitäjä
  |?Kerääjä
  |default=Ei tuloksia!
@@ -47,7 +58,7 @@
  |headers=plain
  |searchlabel=… lisää tuloksia
  |showtitle=1
- |limit=1500
+ |limit=500
 }}
 <includeonly><noinclude>
 [[Category:Nimiarkisto maintenance]]

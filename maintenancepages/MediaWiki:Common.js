@@ -28,3 +28,9 @@ mw.hook( 'wikibase.entityPage.entityLoaded' ).add( function ( item ) {
 		location.href = location.href.replace( /Item:/, '' );
 	}
 } );
+
+$( function () {
+	$( '#p-navigation li a' )
+		.filter( "[href^='http://'], [href^='https://']" )
+		.prop( 'target', '_blank' );
+} );
