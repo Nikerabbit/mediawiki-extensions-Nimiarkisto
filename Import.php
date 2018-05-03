@@ -191,10 +191,12 @@ class NimiarkistoImport extends Maintenance {
 			}
 			$datavalue = new StringValue( $value );
 		} elseif ( $datatype === 'monolingualtext' ) {
-			if ( !is_string( $value ) ) {
+			if ( !is_array( $value ) || count( $value ) !== 1 ) {
 				var_dump( $value, $property->getId() );
 			}
-			$datavalue = new MonolingualTextValue( $value );
+			$text = current( $value );
+			$code = key( $value );
+			$datavalue = new MonolingualTextValue( $code, $text );
 		} elseif ( $datatype === 'wikibase-item' ) {
 			$datavalue = new EntityIdValue( new ItemId( $value ) );
 		} elseif ( $datatype === 'time' ) {
