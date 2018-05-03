@@ -539,6 +539,17 @@ P1813:
   statements:
     P10039: # corresponding Wikidata ID
       - P1813
+P1448:
+  datatype: monolingualtext
+  labels:
+    fi: virallinen nimi
+    en: official name
+    sv: officiell namn
+  descriptions:
+    fi: organisaation pitkä, virallinen nimi
+  statements:
+    P10039: # corresponding Wikidata ID
+      - P1448
 P1889:
   datatype: wikibase-item
   labels:
