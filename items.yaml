@@ -186,42 +186,56 @@ Q22: # organisaatio
   statements:
     P279: # alaluokka kohteelle
       - Q1 # Nimiarkiston kohdetyyppi
-Q23: # Kotimaisten kielten keskus
+ 
+Q23: # Kotus
   labels:
-    fi: Kotimaisten kielten keskus
+    fi: Kotus
     en: The Institute for the Languages of Finland
     sv: Institutet för de inhemska språken
   statements:
     P31: # esiintymä kohteesta
       - Q22 # organisaatio
-    #P1813: # lyhyt nimi
-      #- fi: Kotus
-      #- en: Kotus
-      #- sv: Kotus
-Q24: # Maanmittauslaitos
+    P1813: # lyhyt nimi
+      - fi: Kotus
+      - en: Kotus
+      - sv: Kotus
+    P1448: # pitkä nimi
+      - fi: Kotimaisten kielten keskus
+      - en: The Institute for the Languages of Finland
+      - sv: Institutet för de inhemska språken
+Q24: # MML
   labels:
-    fi: Maanmittauslaitos
-    en: National Land Survey of Finland
-    sv: Lantmäteriverket
+    fi: MML
+    en: NLS
+    sv: LMV
   statements:
     P31: # esiintymä kohteesta
       - Q22 # organisaatio
-    #P1813: # lyhyt nimi
-      #- fi: MML
-      #- en: NLS
-      #- sv: LMV
-Q33: # Svenska litteratursällskapet i Finland
+    P1813: # lyhyt nimi
+      - fi: MML
+      - en: NLS
+      - sv: LMV
+    P1448: # pitkä nimi
+      - fi: Maanmittauslaitos
+      - en: National Land Survey of Finland
+      - sv: Lantmäteriverket
+Q33: # SLS
   labels:
-    fi: Svenska litteratursällskapet i Finland
+    fi: SLS
     en: The Society of Swedish Literature in Finland
     sv: Svenska litteratursällskapet i Finland
   statements:
     P31: # esiintymä kohteesta
       - Q22 # organisaatio
-    #P1813: # lyhyt nimi
-      #- fi: SLS
-      #- en: SLS
-      #- sv: SLS
+    P1813: # lyhyt nimi
+      - fi: SLS
+      - en: SLS
+      - sv: SLS
+    P1448: # pitkä nimi
+      - fi: Svenska litteratursällskapet i Finland
+      - en: The Society of Swedish Literature in Finland
+      - sv: Svenska litteratursällskapet i Finland
+
 Q25: # nimilipun julkaisustatus
   labels:
     fi: nimilipun julkaisustatus
