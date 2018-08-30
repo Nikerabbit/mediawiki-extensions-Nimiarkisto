@@ -1,4 +1,5 @@
-<includeonly>Hakutuloksia yhteensä: {{#ask:
+<includeonly>
+Hakutuloksia yhteensä: {{#ask:
 
 {{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
 {{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
@@ -21,7 +22,7 @@
  |?Pitäjä
  |?Kerääjä
  |default=<div><div class="warningbox">Ei tuloksia kartalla.</div></div>
- |intro=Enintään 500 tulosta näytetään kartalla. Kaikilla nimillä ei välttämättä ole sijaintia.
+ |intro=Kartalla näytetään enintään 1500 tulosta. Kaikilla nimillä ei välttämättä ole sijaintia.
  |format=leaflet
  |link=subject
  |headers=plain
@@ -38,7 +39,7 @@
  |clustermaxradius=80
  |clusterspiderfy=1
  |showtitle=1
- |limit=500
+ |limit=1500
 }}
 {{#ask:
 

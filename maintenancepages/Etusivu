@@ -1,18 +1,19 @@
 __NOTOC____NOEDITSECTION__[[Tiedosto:Kansibanneri.png]]{{DISPLAYTITLE:Tervetuloa Nimiarkistoon!}}<div id="etusivu"><div style="flex:1 1 auto;padding-right:2em">{{#mytitle:}}
-Nimiarkisto.fi on paikka, johon kootaan digitaalisessa muodossa Suomesta kerätyt ja arkistoidut keskeiset nimiaineistot. Palveluun lisätään aineistoja vaiheittain, aluksi paikannimiaineistoja ja myöhemmin myös muuta nimistöä.
+Nimiarkisto.fi on paikka, johon kootaan digitaalisessa muodossa Suomesta kerätyt ja arkistoidut keskeiset nimiaineistot. Palvelu on avattu joulukuussa 2017 ja siihen lisätään aineistoja vaiheittain, aluksi paikannimiaineistoja ja myöhemmin myös muuta nimistöä.
 
-Palvelu sisältää avautuessaan 11.12.2017 pääosan, noin 2 miljoonaa nimitietoa, Kotimaisten kielten keskuksen Nimiarkistoon yli 100 vuoden aikana kootuista paikannimikokoelmista. Mukana on myös pieni pilottiaineisto Suomen ruotsinkielisistä paikannimistä Svenska litteratursällskapetin kokoelmista.
+Palvelu sisältää yli 2,3 miljoonaa nimitietoa Kotimaisten kielten keskuksen Nimiarkistoon yli 100 vuoden aikana kootuista paikannimikokoelmista. Mukana on myös pieni pilottiaineisto Suomen ruotsinkielisistä paikannimistä (keruupitäjät Malax, Vörå, Oravais) Svenska litteratursällskapetin kokoelmista. Arkistoiduista nimitiedoista on tietokantaan siirretty paikannimen lisäksi paikanlaji, sijainti- ja kerääjätiedot.
 
-Miljoonien paperisille nimilipuille kirjoitettujen tietojen käsitteleminen on iso urakka, johon jokainen voi osallistua. Kirjautuminen palveluun ja uusien tietojen lisääminen käynnistyy ensi vuoden puolella.<!--Tiedoissa olevia puutteita ja virheitä voi kommentoida, samoin tallentaa tietoa vaikkapa uusista nimistä. Kaikki mukaan!-->
+Miljoonien paperisille nimilipuille kirjoitettujen tietojen käsitteleminen on iso urakka, johon jokainen voi osallistua. Kirjautuminen palveluun käynnistyy loppuvuodesta 2018.<!--Tiedoissa olevia puutteita ja virheitä voi kommentoida, samoin tallentaa tietoa vaikkapa uusista nimistä. Kaikki mukaan!-->
 <ul class="action">
 <li> {{#queryformlink:form=Haku|link text=Etsi paikannimeä}}
 <li> [[Special:Random|Tutki satunnaista paikannimeä]]
+<li> [[Ohjeet]]
 </ul>
 ==Välkommen till Namnarkivet!==
 På webbplatsen namnarkivet.fi finns ortnamnsuppteckningar från hela Finland. Materialet har hittills varit tillgängligt i [http://www.sprakinstitutet.fi Institutet för de inhemska språkens] och de svenska namnen också i [http://www.sls.fi Svenska litteratursällskapet i Finlands] fysiska arkiv.
 Vid lanseringen publiceras 2 000 000 finska ortnamn med information om namnet, ortens art, insamlingsår och insamlingssocken. Tillhörande kartor läggs också ut.
 
-Digitaliseringen av det svenska materialet, som består av 380 000 namn, pågår fortfarande. Ett urval på 2 700 namn som ingått i ett pilotprojekt kommer att läggas ut på webbplatsen senare i december. Materialet i pilotprojektet består av ortnamn från Vörå och Oravais socknar.
+Det svenska materialet består av 380 000 namn. Vi har genomfört ett pilotprojekt av de svenska namnen och lagt ut ett urval på 2 700 namn på webbplatsen. Materialet i pilotprojektet består av ortnamn från Malax, Vörå och Oravais socknar.
 
 Materialet i Namnarkivet skiljer sig på vissa punkter från det ortnamnsmaterial som finns på [https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=sv Lantmäteriverkets grundkarta]. Namnen på grundkartan bygger i huvudsak på materialet i Namnarkivet, men är färre till antalet (ca 800 000 namn). Innan namnen förts in på kartan har de standardiserats enligt nationella principer. Materialet i Namnarkivet har däremot inte standardiserats konsekvent. Därför ska uppslagsformerna i arkivet inte ses som rekommenderade namnformer.
 
@@ -22,13 +23,17 @@ Vi kommer att utöka webbplatsen med fler svenska texter vartefter svenskt mater
 </div>
 <div id="uutiset">
 ==Ajankohtaista==
-* Tulossa pian lisää aineistoa ja karttahaku!
-* 11.12.2017 Nimiarkisto avautuu!
+* 12−13.9.2018 Nimiarkisto mukana Kuntamarkkinoilla (Kotuksen ständi S.53). Paikka: Kuntatalo, Helsinki.
+
+==Tärkeitä linkkejä==
+* [http://kaino.kotus.fi/nimikokoelmat/ Paikannimikokoelmien metatiedot]
+* [https://www.kotus.fi/aineistot/nimiaineistot/sahkoiset_nimiaineistot_kootusti/ Kotuksen sähköisiä nimiaineistoja]
+* [https://www.kotus.fi/sanakirjat/suomen_murteiden_sanakirja/ Suomen murteiden sanakirja]
+
 ==Yhteystiedot==
-* [http://kaino.kotus.fi/nimikokoelmat/ Kotuksen paikannimikokoelmien tiedot]
 * [mailto:nadigi@kotus.fi Yhteydenotot sähköpostitse]
-==Anna palautetta!==
-[https://goo.gl/forms/zEA7ipPmHWIudPBr1 Kerro kokemuksestasi], jotta voimme tehdä Nimiarkistosta toiveittesi mukaisen!
+* [http://www.kotus.fi/ Kotimaisten kielten keskuksen verkkosivut]
+
 ==Kontaktuppgifter==
 * I tekniska frågor: [mailto:nadigi@kotus.fi nadigi@kotus.fi].
 * I innehållsliga frågor: [mailto:namn@sprakinstitutet.fi namn@sprakinstitutet.fi].

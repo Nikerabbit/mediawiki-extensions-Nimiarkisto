@@ -227,7 +227,9 @@ ul.action {
 /*yli 1100 */
 
 @media screen and (min-width: 1100px) {
-	#mw-site-navigation .sidebar-chunk, #mw-related-navigation .sidebar-chunk, #personal-inner {
+	#mw-site-navigation .sidebar-chunk,
+	#mw-related-navigation .sidebar-chunk,
+	#personal-inner {
 		background: white;
 		border: none;
 		border-width: 0;
@@ -239,12 +241,7 @@ ul.action {
 	}
 
 	#mw-site-navigation {
-		padding: 2em 2em 0 0;
-	}
-
-	#mw-related-navigation {
-		margin-top: 0;
-		padding: 0 2em 0 0;
+		padding: 2em 1em 0 0;
 	}
 
 	#mw-site-navigation .sidebar-chunk ul, #mw-related-navigation .sidebar-chunk ul {
@@ -266,6 +263,10 @@ ul.action {
 	#mw-content {
 		margin-left: 15em;
 	}
+
+	#mw-related-navigation {
+		margin-top: 0;
+	}
 }
 
 /* yli 1340 */
@@ -273,6 +274,10 @@ ul.action {
 	#mw-content {
 		margin-left: 15em;
 		margin-right: 15em;
+	}
+
+	#mw-related-navigation {
+		padding-left: 2em;
 	}
 }
 
@@ -423,6 +428,15 @@ sup {
 
 #mw-site-navigation {
 	line-height: 1.2em;
+}
+
+/* Hakusivu */
+
+.page-Toiminnot_Semanttinen_kysely_Haku #pfForm .createboxInput {
+	width: 300px !important;
+	box-sizing: border-box;
+	border-radius: 0;
+	margin: 0;
 }
 
 /* [[Category:Nimiarkisto maintenance]] */

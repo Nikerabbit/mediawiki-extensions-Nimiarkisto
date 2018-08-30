@@ -5,11 +5,19 @@
 
 	& > .nimiarkistokartta {
 		width: auto;
+
+	}
+
+	> * {
+		height: 400px;
 	}
 }
 
+.na-user--anon .nimiarkisto-keruubanneri > img {
+	display: none;
+}
+
 .nimiarkistokartta {
-	height: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -17,5 +25,4 @@
 	z-index: 0;
 	min-width: 200px;
 	flex-grow: 1;
-	width: 100%;
 }

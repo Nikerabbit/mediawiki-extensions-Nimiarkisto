@@ -1,40 +1,46 @@
-Nimiarkiston paikannimiaineisto perustuu ensi sijassa haastattelumenetelmin kerättyyn suulliseen perimätietoon. Alkuperäisaineiston paikannimet on järjestetty pitäjänkokoelmiin, joka on muutamia poikkeuksia lukuun ottamatta vuoden 1938 pitäjäjaon mukainen. Usein pitäjät vastaavat nykyisiä kuntia. Suuri osa nimistä on paikannettu keruukartoille. Yhdestä nimestä voi olla useampi tieto, jotka ovat eri kerääjiltä. Toisaalta yhdellä paikalla voi olla monta nimeä.
+Nimiarkiston paikannimiaineisto perustuu ensi sijassa haastattelumenetelmin kerättyyn suulliseen perimätietoon. Alkuperäisaineiston paikannimet on järjestetty pitäjänkokoelmiin, jotka noudattavat muutamia poikkeuksia lukuun ottamatta vuoden 1938 pitäjäjakoa. Usein pitäjät vastaavat nykyisiä kuntia. Suuri osa nimistä on paikannettu keruukartoille. Yhdestä, samaan paikkaan viittaavasta nimestä voi olla useampi tieto, jotka ovat eri kerääjiltä. Toisaalta yhdellä paikalla voi olla monta nimeä, joko samanaikaisia tai käytöstä jääneitä nimiä.
 
-Palvelu toimii parhaiten Firefoxilla.
+Aineistoon sisältyy myös jonkin verran paikannimikeruiden yhteydessä saatuja henkilönnimiä, yleisnimiä, asiakirjoissa esiintyviä nimiä, ns. slanginimiä ja muita nimitietoja. Henkilönnimet ovat lähinnä lisänimiä. Muihin nimitietoihin on luokiteltu virheellisiksi ilmoitettuja karttanimiä, paikannimissä esiintyviä nimenosia (esimerkiksi Sarkasenmotti, josta jälkiosa motti), hyvin puutteellisia nimitietoja sekä muita viitetietoja (esimerkiksi lammennimi Iso-Musta, josta muuna nimitietona Musta).
+
+Moniin nimiin sisältyy murteissa esiintyviä sanoja. Niiden merkityksiä voi etsiä mm. Suomen murteiden sanakirjasta (Ks.   http://kaino.kotus.fi/sms/).
+
+Palvelun ominaisuuksia parannetaan edelleen. Haku toimii parhaiten Firefox-selaimella.
 
 ===== Tietokannasta hakeminen =====
 
 Hakea voi
 
-* paikannimellä (esim. ''Vuohiluomanahde'')
-* paikanlajilla (esim. järvi, tie)
+* paikannimellä (esim. Vuohiluomanahde)
+* paikanlajilla (esim. järvi)
 * keruupitäjän nimellä (esim. Pielavesi)
 * kerääjän nimellä (esim. Nissilä, Viljo)
 
-Jokerimerkillä * voi korvata yhden tai useamman kirjaimen haettavasta nimestä tai paikanlajista. Jos esimerkiksi haluaa etsiä ''Vuohi''-alkuisia nimiä, hakukenttään kirjoitetaan ''Vuohi''*. Vastaavasti hakusanalla *''ahde'' löytyy ''ahde''-loppuiset nimet ja hakusanalla *''luoma''* sellaiset nimet, joiden keskellä on sana ''luoma''. Hakusanalla ''Vuo''*''ahde'' löytyy kaikki ''Vuo''-alkuiset ja ''ahde''-sanaan päättyvät nimet (mm. ''Vuohiluomanahde'', ''Vuorenahde'', ''Vuotavanahde'').
+Jokerimerkillä * voi korvata yhden tai useamman kirjaimen haettavasta nimestä tai paikanlajista. Jos esimerkiksi haluaa etsiä ''Vuohi''-alkuisia nimiä, hakukenttään kirjoitetaan ''Vuohi''*. Vastaavasti hakusanalla *''ahde'' löytyvät ''ahde''-loppuiset nimet ja hakusanalla *''luoma''* sellaiset nimet, joiden keskellä on sana ''luoma''. Hakusanalla ''Vuo''*''ahde'' löytyvät kaikki ''Vuo''-alkuiset ja ''ahde''-sanaan päättyvät nimet (mm. ''Vuohiluomanahde'', ''Vuorenahde'', ''Vuotavanahde'').
 
-Jokerimerkillä ? voi korvata yhden kirjaimen haettavasta nimestä tai sanasta. Esimerkiksi hakusanalla ''Mäk''?''lä'' löytyy nimet ''Mäkelä'', ''Mäkilä'' ja ''Mäkylä'' ja hakusanalla ''niitt''* kaikki ne nimet, joiden paikanlaji on niitty tai niittu.
+Huom. tällä hetkellä nimen jälkiosan tai nimen keskellä olevan elementin haku on tietokannalle liian raskas, ellei hakujoukkoa pienennetä keruupitäjän tai kerääjän avulla.
+
+Jokerimerkillä ? voi korvata yhden kirjaimen haettavasta nimestä tai sanasta. Esimerkiksi hakusanalla ''Mäk''?''lä'' löytyvät nimet ''Mäkelä'', ''Mäkilä'' ja ''Mäkylä'' ja hakusanalla ''niitt''* kaikki ne nimet, joiden paikanlaji on niitty tai niittu.
 
 Haku on kirjainkokoherkkä. Hakuja tehdessä on siis muistettava käyttää isoa alkukirjainta nimien alussa ja pientä alkukirjainta paikanlaji-kentässä. Hakua on mahdollista rajata käyttämällä useampaa hakuehtoa.
 
 ===== Haun tulokset =====
 
-Haun tulokset näkyvät sekä listana että kartalla.
+Haun tulokset näkyvät sekä kartalla että listana. Listalla nimen perässä on lyhenne, joka viittaa alkuperäiskokoelmaan (Kotus tarkoittaa Kotimaisten kielten keskuksen alkuperäiskokoelmia ja SLS Svenska litteratursällskapetin paikannimikokoelmia) ja vuosi, jolloin nimi on tallennettu arkistoon.
 
-Listana näytetään enintään 10 000 hakutulosta, ja yhdellä sivulla niistä näkyy 1 500. Seuraavalle sivulle pääsee ensimmäisen sivun alalaidassa olevasta linkistä ja seuraavilta sivuilta eteenpäin hakutuloslistan yläpuolella olevasta linkistä. Hakutulosten järjestystä yhden sivun osalta voi listalla muuttaa otsikkorivin nuolista. Paikannimeä klikkaamalla pääsee yksittäisen nimitiedon sivulle (Keruumerkintä-sivu).
+Listana näytetään enintään 10 000 hakutulosta, ja yhdellä sivulla niistä näkyy 500. Seuraavalle sivulle pääsee ensimmäisen sivun alalaidan linkistä ja seuraavilta sivuilta eteenpäin hakutuloslistan yläpuolella olevasta linkistä. Hakutulosten järjestystä sivulla voi muuttaa listan otsikkorivin nuolista. Esimerkiksi klikkaamalla Pitäjä-sarakkeen nuolia saa kyseisen sivun nimet pitäjittäin aakkosjärjestykseen. Paikannimeä klikkaamalla pääsee yksittäisen nimitiedon sivulle (Keruumerkintä-sivu).
 
-Kartalla näytetään enintään 1 500 hakutulosta. Jos tuloksia on paljon, ne näkyvät nimiryppäinä, joita klikkaamalla kartta tarkentuu. Yksittäistä pinniä klikkaamalla tulee näkyviin paikannimi, ja sitä klikkaamalla pääsee yksittäisen nimitiedon sivulle (Keruumerkintä-sivu). On huomioitava, että kaikkiin nimiin ei liity sijaintitietoja, joten kaikki nimet eivät myöskään näy kartan hakutuloksissa.
+Kartalla näytetään enintään 1 500 hakutulosta. Jos tuloksia on paljon, ne näkyvät nimiryppäinä, joita klikkaamalla kartta tarkentuu. Yksittäistä pinniä klikkaamalla tulee näkyviin paikannimi, ja sitä klikkaamalla pääsee yksittäisen nimitiedon sivulle (Keruumerkintä-sivu). Ihan kaikkiin nimiin ei liity sijaintitietoja, joten kaikki nimet eivät myöskään näy kartan hakutuloksissa.
 
 ===== Keruumerkintä =====
 
 Keruumerkintä-sivulla näytetään tiedot yksittäisestä nimestä.
 
+'''Kartalla''' näytetään paikan sijainti, jos kerääjä on merkinnyt sijaintitiedon. Oletuksena näkyy alkuperäinen keruukartta. Kartan oikean yläkulman kuvaketta klikkaamalla voi vaihtaa näytettävää karttapohjaa. Poistamalla ruksin keruukartan kohdalta näkee paikan sijainnin nykyisellä kartalla. On myös mahdollista valita reunallinen keruukartta, josta voi tarkistaa kartan tiedot.
+
 '''Merkinnän tiedot''' -otsikon alla on paikannimi yleiskielisessä kirjoitusasussa, nimenlaji ja paikanlaji. Joskus nimi voi viitata useampaan paikkaan (esim. Saarijärvi talon ja järven nimenä). Tällöin paikanlajiksi on tavallisesti merkitty se, joka on nimilipussa mainittu ensimmäisenä.
 
-'''Sijaintiedot'''-otsikon alla on nimien kerääjän sijaintimerkinnät eli keruukartan ruutu, pistesijaintimerkintä ja keruukartan tunnus. Lisäksi otsikon alla on paikan koordinaatit (WGS 84) ja paikannuksen tarkkuus. Joskus kerääjä on merkinnyt sijainnin vain karttaruudun tarkkuudella (usein kyseessä kartalle painettu nimi). Tällöin paikannus on tehty kyseisen karttaruudun keskelle. Kerääjä on voinut myös ilmoittaa paikannuksen useamman ruudun tarkkuudella. Tällöin paikannus on tehty ns. ensimmäiseen ruutuun. Jos siis sijaintimerkintä on esimerkiksi 8‒9/C‒E, on paikannus tehty ruudun 8/C keskelle. Joskus taas paikannus voi olla varsinaisen paikan vieressä, koska kerääjä on tehnyt pistesijaintimerkinnän esimerkiksi lammen viereen ja verkkopalveluun paikannukset on tehty kerääjän merkintöjen mukaan.
+'''Sijaintitiedot'''-otsikon alla on nimien kerääjän merkitsemät paikkojen sijainnit eli keruukartan ruutu, pistesijaintimerkintä ja karttalehden (= keruukartta) tunnus. Lisäksi otsikon alla on paikan koordinaatit (WGS 84) ja paikannuksen tarkkuus. Joskus kerääjä on merkinnyt sijainnin vain karttaruudun tarkkuudella (usein kyseessä kartalle painettu nimi). Tällöin paikannus on tehty kyseisen karttaruudun keskelle. Kerääjä on voinut myös ilmoittaa paikannuksen useamman ruudun tarkkuudella. Tällöin paikannus on tehty ns. ensimmäiseen ruutuun. Jos siis sijaintimerkintä on esimerkiksi 8‒9/C‒E, on paikannus tehty ruudun 8/C keskelle. Joskus taas paikannus voi olla varsinaisen paikan vieressä, koska kerääjä on tehnyt pistesijaintimerkinnän esimerkiksi lammen viereen. Paikannukset on siis pääsääntöisesti tehty kerääjän merkintöjen mukaan.
 
 '''Lähde'''-otsikon alla on nimen kerääjä, pitäjä, josta nimi on kerätty, ja alkuperäisen nimilipun leimausvuosi. Leimausvuosi kertoo, milloin tieto on tallennettu arkistoon. Usein se on sama kuin keruuvuosi tai hyvin lähellä sitä, mutta joissain tapauksissa keruun ja arkistoinnin välillä voi olla jopa kymmeniä vuosia. (Ks. [http://kaino.kotus.fi/nimikokoelmat/ Kotuksen paikannimikokoelmien metatiedot].)
 
 '''Viittaaminen'''-otsikon alla kerrotaan, kuinka kyseiseen Keruumerkintä-sivuun viitataan esimerkiksi tieteellisissä teoksissa, julkaisuissa tai muissa yhteyksissä.
-
-'''Kartalla''' näytetään paikan sijainti, jos kerääjä on merkinnyt sijaintitiedon. Oletuksena näkyy alkuperäinen keruukartta. Kartan oikean yläkulman kuvaketta klikkaamalla voi vaihtaa näytettävää karttapohjaa. Poistamalla ruksin keruukartan kohdalta, näkee paikan sijainnin nykykartalla. On myös mahdollista valita reunallinen keruukartta, josta voi tarkistaa kartan tiedot.

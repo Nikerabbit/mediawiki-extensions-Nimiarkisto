@@ -1,10 +1,14 @@
-.na-logo #p-logo-text {
+#mw-content-text .flow-ui-newTopicWidget-editor textarea {
+	border: 1px solid #ccc;
+}
+
+#p-logo-text {
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: left;
-	height:4em;
+	height: 4em;
 }
-.na-logo #p-logo-text a {
+#p-logo-text a {
 	color: transparent;
 	padding: 0;
 	display: block;
@@ -12,22 +16,23 @@
 	height: 100%;
 }
 
-.na-logo--fi #p-logo-text {
+#p-logo-text {
 	background-image: url(/logo-fi.svg);
 }
-.na-logo--se #p-logo-text {
+#p-logo-text:lang(se) {
 	background-image: url(/logo-se.svg);
 }
-.na-logo--sms #p-logo-text {
+#p-logo-text:lang(sms) {
 	background-image: url(/logo-sms.svg);
 }
-.na-logo--smn #p-logo-text {
+#p-logo-text:lang(smn) {
 	background-image: url(/logo-smn.svg);
 }
-.na-logo--sv #p-logo-text {
+#p-logo-text:lang(sv) {
 	background-image: url(/logo-sv.svg);
 }
 
+/* Can be removed when Timeless is updated https://phabricator.wikimedia.org/T182533 */
 body.ns-special #mw-page-header-links {
 	display: none;
 }

@@ -1,5 +1,6 @@
 <includeonly>__NOTOC____NOEDITSECTION__
-{{DISPLAYTITLE:{{#statements:P10015|from={{PAGENAME}}}} ({{#statements:P10037|from={{PAGENAME}}}}, {{#statements:P10009|from={{PAGENAME}}}})}}</includeonly><div class="nimiarkisto-keruubanneri">
+{{#if:{{#property:P10009|from={{PAGENAME}}}}|{{DISPLAYTITLE:{{#property:P10015|from={{PAGENAME}}}} ({{#property:P10037|from={{PAGENAME}}}}, {{#property:P10009|from={{PAGENAME}}}})}}|{{DISPLAYTITLE:{{#property:P10015|from={{PAGENAME}}}} ({{#property:P10037|from={{PAGENAME}}}})}}}}
+</includeonly><div class="nimiarkisto-keruubanneri">
 {{#if:{{#property:P10012|from={{PAGENAME}}}}|
 <!-- Näytä kartta -->
 <div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
@@ -8,10 +9,10 @@ Ladataan karttaa...
 <div style="display:none;" class=mapdata>{{#coordinates:{{#NAC:{{#property:P10012|from=
 {{PAGENAME}}}}}}|format=float|directional=no}}###<div class="popupotsikko>{{#statements:P10015|from={{PAGENAME}}}} (Kotus, {{#statements:P10009|from={{PAGENAME}}}})</div><div>Merkintä {{#property:P10034|from={{PAGENAME}}}} karttaruudussa {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</div><div>{{#switch:{{#property:P10032|from={{PAGENAME}}}}|piste=Kerääjä on sijoittanut merkinnän tähän pisteeseen.|ruutu=Paikka sijaitsee keruukartalla tämän karttaruudun alueella.|ruutuja=Paikka sijaitsee useiden karttaruutujen alueella.|laaja kohde=Laajempaa aluetta kuvaamaan on merkitty tämä piste.|epätarkka=Paikan sijaintitieto on epätarkka|}}</div></div>
 </div>
-{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
+{{#nimilippukuvat:{{PAGENAME}}}}{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
 |
 <div class="nimiarkistokartta">Keruukoordinaatteja ei tiedossa.</div>
-{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
+{{#nimilippukuvat:{{PAGENAME}}}}{{#if:{{{kuvanimi|}}}|<div>[[File:Koekuva.jpg|x400px]]</div>}}
 }}</div>
 {{#mytitle:}}
 ==Merkinnän tiedot==
@@ -48,10 +49,11 @@ Ladataan karttaa...
 ==Viittaaminen==
 
 Nimiarkisto: ''{{#property:P10015|from={{PAGENAME}}}}'' ({{#statements:P10037|from={{PAGENAME}}}}, {{#statements:P10009|from={{PAGENAME}}}}). {{#property:P10017|from={{PAGENAME}}}}. Kotimaisten kielten keskus. {{canonicalurl:{{PAGENAME}}}}. Viitattu {{CURRENTDAY}}.{{CURRENTMONTH1}}.{{CURRENTYEAR}}.
-<!--
+
 ==Keskustelu==
-<div class="toiminto">{{icon|speechBubbles}}{{#ifexist:{{TALKPAGENAME}} | [[{{TALKPAGENAME}}|Tästä paikasta keskustellaan! Osallistu keskusteluun!]] | [[{{TALKPAGENAME}}|Kerro tästä paikasta ja sen nimistä!]]}}</div>
--->
+<div class="toiminto">{{icon|speechBubbles}}{{#ifexist:{{TALKPAGENAME}} | [[{{TALKPAGENAME}}|Tästä paikasta keskustellaan! Osallistu keskusteluun!]] | [[{{TALKPAGENAME}}|Kerro tästä paikasta!]]}}</div>
+
+Kotus pidättää oikeuden moderoida kommentteja.
 <includeonly>
 [[Luokka:Keruumerkintä]]
 [[Luokka:{{#property:P10013|from={{PAGENAME}}}}|{{#property:P10015|from={{PAGENAME}}}}]]
