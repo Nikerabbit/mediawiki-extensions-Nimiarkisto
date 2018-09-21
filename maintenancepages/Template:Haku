@@ -6,6 +6,7 @@ Hakutuloksia yhteensä: {{#ask:
 {{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
 {{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
 {{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
+{{#if:{{{kartantunnus|}}}|[[Kartan tunnus::{{{kartantunnus}}}]]}}
  |format=count
 }}
 {{#ask:
@@ -15,6 +16,7 @@ Hakutuloksia yhteensä: {{#ask:
 {{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
 {{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
 {{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
+{{#if:{{{kartantunnus|}}}|[[Kartan tunnus::{{{kartantunnus}}}]]}}
 
  |?Pistekoordinaatti
  |?Paikanlaji
@@ -48,6 +50,7 @@ Hakutuloksia yhteensä: {{#ask:
 {{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
 {{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
 {{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
+{{#if:{{{kartantunnus|}}}|[[Kartan tunnus::{{{kartantunnus}}}]]}}
 
  |?Paikanlaji
  |?Nimenlaji

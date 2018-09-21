@@ -4,9 +4,10 @@ Haku on kirjainkokoherkkä. Hakuja tehdessä on siis muistettava käyttää isoa
 {{{for template|Haku}}}
 <div><div>'''Paikannimi'''</div>{{{field|nimi|input type=text with autocomplete|values from property=Keruunimi}}}</div>
 <div><div>'''Paikanlaji'''</div>{{{field|laji|input type=text with autocomplete|values from property=Paikanlaji}}}</div>
-<div><div>'''Nimenlaji'''</div>{{{field|nimenlaji|input type=dropdown|delimiter=;|values=paikannimi;henkilönnimi;yleisnimi;Nimen jälkiosa, virheellinen karttanimi tai muu nimitieto.|mapping template=L10n/nimenlaji}}}</div>
+<div><div>'''Nimenlaji'''</div>{{{field|nimenlaji|input type=dropdown|delimiter=;|values=paikannimi;henkilönnimi;yleisnimi;Nimenosa, virheellinen karttanimi tai muu nimitieto.|mapping template=L10n/nimenlaji}}}</div>
 <div><div>'''Keruupitäjä'''</div>{{{field|pitäjä|input type=text with autocomplete|values from property=Pitäjä}}}</div>
 <div><div>'''Kerääjä'''</div>{{{field|kerääjä|input type=text with autocomplete|values from property=Kerääjä}}}</div>
+<div><div>'''Karttalehden tunnus'''</div>{{{field|kartantunnus|input type=text with autocomplete|values from property=Kartan tunnus}}}</div>
 {{{end template}}}
 
 {{{standard input|run query|label=Hae}}}

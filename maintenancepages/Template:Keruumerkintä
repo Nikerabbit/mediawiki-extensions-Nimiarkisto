@@ -1,6 +1,4 @@
-<includeonly>__NOTOC____NOEDITSECTION__
-{{#if:{{#property:P10009|from={{PAGENAME}}}}|{{DISPLAYTITLE:{{#property:P10015|from={{PAGENAME}}}} ({{#property:P10037|from={{PAGENAME}}}}, {{#property:P10009|from={{PAGENAME}}}})}}|{{DISPLAYTITLE:{{#property:P10015|from={{PAGENAME}}}} ({{#property:P10037|from={{PAGENAME}}}})}}}}
-</includeonly><div class="nimiarkisto-keruubanneri">
+<includeonly>__NOTOC____NOEDITSECTION__{{#if:{{#property:P10009|from={{PAGENAME}}}}|{{DISPLAYTITLE:{{#property:P10015|from={{PAGENAME}}}} ({{#property:P10037|from={{PAGENAME}}}}, {{#property:P10009|from={{PAGENAME}}}})}}|{{DISPLAYTITLE:{{#property:P10015|from={{PAGENAME}}}} ({{#property:P10037|from={{PAGENAME}}}})}}}}</includeonly><div class="nimiarkisto-keruubanneri">
 {{#if:{{#property:P10012|from={{PAGENAME}}}}|
 <!-- Näytä kartta -->
 <div class="nimiarkistokartta" id="nimiarkistokartta--keruumerkinta">
@@ -65,4 +63,5 @@ Kotus pidättää oikeuden moderoida kommentteja.
 |keruunimi={{#property:P10015|from={{PAGENAME}}}}
 |paikanlaji={{#property:P10016|from={{PAGENAME}}}}
 |nimenlaji={{#property:P10025|from={{PAGENAME}}}}
+|kartan tunnus={{#property:P10011|from={{PAGENAME}}}}
 }}</includeonly><noinclude>[[Category:Nimiarkisto maintenance]]</noinclude>

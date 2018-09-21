@@ -1,8 +1,8 @@
 Nimiarkiston paikannimiaineisto perustuu ensi sijassa haastattelumenetelmin kerättyyn suulliseen perimätietoon. Alkuperäisaineiston paikannimet on järjestetty pitäjänkokoelmiin, jotka noudattavat muutamia poikkeuksia lukuun ottamatta vuoden 1938 pitäjäjakoa. Usein pitäjät vastaavat nykyisiä kuntia. Suuri osa nimistä on paikannettu keruukartoille. Yhdestä, samaan paikkaan viittaavasta nimestä voi olla useampi tieto, jotka ovat eri kerääjiltä. Toisaalta yhdellä paikalla voi olla monta nimeä, joko samanaikaisia tai käytöstä jääneitä nimiä.
 
-Aineistoon sisältyy myös jonkin verran paikannimikeruiden yhteydessä saatuja henkilönnimiä, yleisnimiä, asiakirjoissa esiintyviä nimiä, ns. slanginimiä ja muita nimitietoja. Henkilönnimet ovat lähinnä lisänimiä. Muihin nimitietoihin on luokiteltu virheellisiksi ilmoitettuja karttanimiä, paikannimissä esiintyviä nimenosia (esimerkiksi Sarkasenmotti, josta jälkiosa motti), hyvin puutteellisia nimitietoja sekä muita viitetietoja (esimerkiksi lammennimi Iso-Musta, josta muuna nimitietona Musta).
+Aineistoon sisältyy myös jonkin verran paikannimikeruiden yhteydessä saatuja henkilönnimiä (lähinnä lisänimiä ja sukunimiä), yleisnimiä, asiakirjoissa esiintyviä nimiä, ns. slanginimiä, virheellisiksi ilmoitettuja karttanimiä, paikannimissä esiintyviä nimenosia (esimerkiksi Sarkasenmotti, josta jälkiosa motti; lammennimi Iso-Musta, josta nimenosa Musta) ja hyvin puutteellisia nimitietoja.
 
-Moniin nimiin sisältyy murteissa esiintyviä sanoja. Niiden merkityksiä voi etsiä mm. Suomen murteiden sanakirjasta (Ks.   http://kaino.kotus.fi/sms/).
+Moniin nimiin sisältyy murteissa esiintyviä sanoja. Niiden merkityksiä voi etsiä mm. [http://kaino.kotus.fi/sms/ Suomen murteiden sanakirjasta].
 
 Palvelun ominaisuuksia parannetaan edelleen. Haku toimii parhaiten Firefox-selaimella.
 
@@ -14,6 +14,11 @@ Hakea voi
 * paikanlajilla (esim. järvi)
 * keruupitäjän nimellä (esim. Pielavesi)
 * kerääjän nimellä (esim. Nissilä, Viljo)
+* karttalehden tunnuksella (esim. 2059)
+
+Karttalehden tunnus tarkoittaa kerääjän keruukartan ID-numeroa, jonka löytää [http://kaino.kotus.fi/nimikokoelmat/?a=hakulomake/ Nimiarkiston metatiedoista] keruutietojen yhteydestä. Tämän haun tuloksena saa siis kaikki kyseiselle keruukartalle sijoitetut paikannimet.
+
+Hakua on mahdollista rajata hakulomakkeen Nimenlaji-kentän avulla. Nimenlajeja ovat henkilönnimi, paikannimi, yleisnimi sekä nimenosa, virheellinen karttanimi tai muu nimitieto. Nimenlaji tulee näkyviin myös hakutuloslistauksessa.
 
 Jokerimerkillä * voi korvata yhden tai useamman kirjaimen haettavasta nimestä tai paikanlajista. Jos esimerkiksi haluaa etsiä ''Vuohi''-alkuisia nimiä, hakukenttään kirjoitetaan ''Vuohi''*. Vastaavasti hakusanalla *''ahde'' löytyvät ''ahde''-loppuiset nimet ja hakusanalla *''luoma''* sellaiset nimet, joiden keskellä on sana ''luoma''. Hakusanalla ''Vuo''*''ahde'' löytyvät kaikki ''Vuo''-alkuiset ja ''ahde''-sanaan päättyvät nimet (mm. ''Vuohiluomanahde'', ''Vuorenahde'', ''Vuotavanahde'').
 
@@ -44,3 +49,6 @@ Keruumerkintä-sivulla näytetään tiedot yksittäisestä nimestä.
 '''Lähde'''-otsikon alla on nimen kerääjä, pitäjä, josta nimi on kerätty, ja alkuperäisen nimilipun leimausvuosi. Leimausvuosi kertoo, milloin tieto on tallennettu arkistoon. Usein se on sama kuin keruuvuosi tai hyvin lähellä sitä, mutta joissain tapauksissa keruun ja arkistoinnin välillä voi olla jopa kymmeniä vuosia. (Ks. [http://kaino.kotus.fi/nimikokoelmat/ Kotuksen paikannimikokoelmien metatiedot].)
 
 '''Viittaaminen'''-otsikon alla kerrotaan, kuinka kyseiseen Keruumerkintä-sivuun viitataan esimerkiksi tieteellisissä teoksissa, julkaisuissa tai muissa yhteyksissä.
+
+
+Lue myös [[Nimiarkisto:Tietosuojakäytäntö|Käyttöehdot]] ja [[Nimiarkisto:Tietoja|Tietoja Nimiarkistosta]], jossa kerrotaan mm. Nimiarkiston aineiston luonteesta suhteessa Maanmittauslaitoksen Paikannimirekisteriin.

@@ -85,6 +85,23 @@ HTML;
 		if ( $producer !== 'Q23' ) {
 			return [];
 		}
+
+		$P10025 = new PropertyId( 'P10025' );
+		$nameTypeStatements = $klEntity->getStatements()->getByPropertyId( $P10025 )->toArray();
+		if ( $nameTypeStatements === [] ) {
+			return [];
+		}
+
+		$type = $nameTypeStatements[ 0 ]
+			->getMainSnak()
+			->getDataValue()
+			->getEntityId()
+			->getLocalPart();
+		// Q111 is "person name"
+		if ( $type !== 'Q11' ) {
+			return [];
+		}
+
 		$group = 'Kotus';
 		$images = [];
 
@@ -137,7 +154,7 @@ HTML;
 	 * @param String &$lcKey message key to check and possibly convert
 	 */
 	public static function onMessageCacheGet( &$lcKey ) {
-		$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ) );
+		$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
 
 		$overrideKey = "nimiarkisto-override-$lcKey";
 		if ( isset( $keys[ $overrideKey ] ) ) {
