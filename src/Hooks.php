@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Niklas Laxström
+ * @license GPL-2.0-or-later
+ * @file
+ */
 
 namespace MediaWiki\Extension\Nimiarkisto;
 
@@ -10,11 +15,14 @@ use Wikibase\DataModel\Entity\PropertyId;
 
 class Hooks {
 	public static function onBeforePageDisplay( $out, $skin ) {
-		$out->addModuleStyles( 'nimiarkistokartta.styles' );
-		$skin->getOutput()->addModules( 'nimiarkistokartta.init' );
+		$user = $out->getUser();
 
-		$userClass = $out->getUser()->isLoggedIn() ? 'na-user--user' : 'na-user--anon';
-		$out->addBodyClasses( $userClass );
+		$out->addModuleStyles( [ 'nimiarkisto', 'nimiarkistokartta.styles' ] );
+		$out->addModules( 'nimiarkistokartta.init' );
+
+		if ( $user->isAnon() || !$user->isAllowed( 'alledit' ) ) {
+			$out->addBodyClasses( 'na-user--anon' );
+		}
 	}
 
 	public static function onParserFirstCallInit( $parser ) {
@@ -28,7 +36,10 @@ class Hooks {
 		$parser->setFunctionHook( 'mytitle', function ( $parser ) {
 			$output = <<<HTML
 <div id="mytitleplaceholder"></div>
-<script>document.getElementById( 'mytitleplaceholder' ).appendChild( document.getElementById( 'firstHeading' ) );</script>
+<script>
+document.getElementById( 'mytitleplaceholder' )
+	.appendChild( document.getElementById( 'firstHeading' ) );
+</script>
 HTML;
 			return [ $output, 'noparse' => true, 'isHTML' => true ];
 		} );
@@ -65,7 +76,11 @@ HTML;
 			return [];
 		}
 
-		$producer = $producerStatements[ 0 ]->getMainSnak()->getDataValue()->getEntityId()->getLocalPart();
+		$producer = $producerStatements[ 0 ]
+			->getMainSnak()
+			->getDataValue()
+			->getEntityId()
+			->getLocalPart();
 		// Q23 is Kotus
 		if ( $producer !== 'Q23' ) {
 			return [];
@@ -106,7 +121,6 @@ HTML;
 		return $images;
 	}
 
-
 	public static function onLanguageGetMagic( &$raw ) {
 		// Convert formatted coordinates to plain coordinates
 		$raw['nac'] = [ 1, 'NAC' ];
@@ -114,5 +128,20 @@ HTML;
 		$raw['mytitle'] = [ 0, 'mytitle' ];
 
 		$raw['nimilippukuvat'] = [ 0, 'nimilippukuvat' ];
+	}
+
+	/**
+	 * When core requests certain messages, change the key to a custom version.
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/MessageCache::get
+	 * @param String &$lcKey message key to check and possibly convert
+	 */
+	public static function onMessageCacheGet( &$lcKey ) {
+		$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ) );
+
+		$overrideKey = "nimiarkisto-override-$lcKey";
+		if ( isset( $keys[ $overrideKey ] ) ) {
+			$lcKey = $overrideKey;
+		}
 	}
 }

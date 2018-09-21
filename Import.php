@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Niklas Laxström
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  * @file
  */
 
@@ -64,7 +64,7 @@ class NimiarkistoImport extends Maintenance {
 			throw new Exception( "File $filename not readable" );
 		}
 
-		$data = Yaml::parse( file_get_contents( $filename )  );
+		$data = Yaml::parse( file_get_contents( $filename ) );
 		if ( !is_array( $data ) ) {
 			throw new Exception( "Invalid YAML file $filename" );
 		}
@@ -73,7 +73,7 @@ class NimiarkistoImport extends Maintenance {
 	}
 
 	private function processEntityData( $entityId, array $data ) {
-		//$this->checkPrerequisites( $data );
+		// $this->checkPrerequisites( $data );
 
 		echo "$entityId\n";
 		$entity = $this->createEntity( $entityId, $data );
@@ -146,7 +146,7 @@ class NimiarkistoImport extends Maintenance {
 			$fingerprint->setLabel( $code, $value );
 		}
 
-		foreach( $descriptions as $code => $value ) {
+		foreach ( $descriptions as $code => $value ) {
 			$fingerprint->setDescription( $code, $value );
 		}
 

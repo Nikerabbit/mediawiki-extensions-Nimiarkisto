@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"author": "Niklas Laxström"
+	},
+	"nimiarkisto-override-createacct-realname": "Same as core real name without the optional part",
+	"nimiarkisto-override-prefs-help-realname": "Must be empty"
+}

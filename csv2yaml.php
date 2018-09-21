@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Niklas Laxström
+ * @license GPL-2.0-or-later
+ * @file
+ */
 
 require 'Parish.php';
 require 'vendor/autoload.php';
@@ -31,7 +36,7 @@ define( 'KOTUS', 20 ); // HuomioKotus
 define( 'COLLECTION', 21 ); // Kokoelma
 define( 'IMAGEINFO', 22 ); // Kuvalinkki
 define( 'RECSER', 23 ); // RecSer
-define( 'PARENT', 24 ); // Emolippu
+define( 'PARENTT', 24 ); // Emolippu
 
 mkdir( $OUT );
 process( $IN, $OUT );
@@ -148,7 +153,6 @@ class NimiarkistoConverter {
 		// Add coordinates
 		$lines = addWSG( $lines );
 
-
 		return $lines;
 	}
 
@@ -213,7 +217,7 @@ class NimiarkistoConverter {
 				'P10030' => [ (string)$recser ],
 				'P10020' => [ $extId ],
 				// ei oletusarvoa enää? oletuksena julkinen
-				//'P10041' => [ 'Q26' ], // unpublished
+				// 'P10041' => [ 'Q26' ], // unpublished
 			],
 		];
 
@@ -556,11 +560,12 @@ function process( $IN, $OUT ) {
 
 					if ( $line[ COLLECTION ] === 'KotusNA1' || $line[ COLLECTION ] === 'KotusNA2' ) {
 						// RAUMA I/J is really weird
-						$ok = preg_match( '~([^/]+/[^/]+/[^/]+/[^/]+/[^/]+_[0-9]+(?:_[BFJ]|F_)\.jpg)$~', $path, $matches );
+						$regexp = '~([^/]+/[^/]+/[^/]+/[^/]+/[^/]+_[0-9]+(?:_[BFJ]|F_)\.jpg)$~';
+						$ok = preg_match( $regexp, $path, $matches );
 
 						// TODO: Taivalkoski has some _ moved next to the dot.
 						if ( !$ok ) {
-							#echo "Skipping invalid imagepath for {$line[ RECSER ]}: $path\n";
+							# echo "Skipping invalid imagepath for {$line[ RECSER ]}: $path\n";
 							continue;
 						}
 
@@ -603,14 +608,14 @@ function process( $IN, $OUT ) {
 				);
 
 				if ( count( $localEntities ) > 1000 ) {
-					#echo "$OUT/$sectionId-$batch.yaml\n";
+					# echo "$OUT/$sectionId-$batch.yaml\n";
 					file_put_contents( "$OUT/$sectionId-$batch.yaml", Yaml::dump( $localEntities ) );
 					$batch++;
 					$localEntities = [];
 				}
 			}
 
-			#echo "$OUT/$sectionId-$batch.yaml\n";
+			# echo "$OUT/$sectionId-$batch.yaml\n";
 			file_put_contents( "$OUT/$sectionId-$batch.yaml", Yaml::dump( $localEntities ) );
 		}
 	}
@@ -625,7 +630,7 @@ function process( $IN, $OUT ) {
 
 function mergeBacksides( $lines ) {
 	foreach ( $lines as $index => $backside ) {
-		if ( isset( $backside[ 'parent' ] ) || !isBackside( $backside ) ) {
+		if ( isset( $backside[ PARENTT ] ) || !isBackside( $backside ) ) {
 			continue;
 		}
 
@@ -643,8 +648,9 @@ function mergeBacksides( $lines ) {
 			}
 		}
 
-		#unset( $lines[ $index ] );
-		#echo "Did not find frontside for this backside: {$backside[ RECSER ]} {$backside[ IMAGEINFO ]} – treating as main entry\n";
+		# unset( $lines[ $index ] );
+		# echo "Did not find frontside for this backside: {$backside[ RECSER ]} {$backside[ IMAGEINFO ]}
+		#  – treating as main entry\n";
 	}
 
 	return $lines;
@@ -652,6 +658,7 @@ function mergeBacksides( $lines ) {
 
 /**
  * Whether this row represents a scan of the backside of nimilippu.
+ * @param array $x
  * @return bool
  */
 function isBackside( $x ) {
@@ -659,8 +666,8 @@ function isBackside( $x ) {
 }
 
 function backsideMatchesFrontside( $back, $front ) {
-	if ( $back[ PARENT ] ) {
-		return $back[ PARENT ] === $front[ RECSER ];
+	if ( $back[ PARENTT ] ) {
+		return $back[ PARENTT ] === $front[ RECSER ];
 	}
 
 	$ok = true;
@@ -700,8 +707,8 @@ function mergeContinuations( $lines ) {
 		$shouldBeEmpty = [ MAPNUMBER, COLLECTORMAPNUMBER, MAPX, MAPY, MAPREF ];
 		foreach ( $shouldBeEmpty as $type ) {
 			if ( $line[ $type ] !== null ) {
-				#var_dump( "Unexpected value $type in continuation", implode( ', ', $line  ) );
-				//exit( 1 );
+				# var_dump( "Unexpected value $type in continuation", implode( ', ', $line  ) );
+				// exit( 1 );
 			}
 		}
 
@@ -719,15 +726,16 @@ function mergeContinuations( $lines ) {
 			}
 		}
 
-		#echo "Did not find main entry for continuation: {$line[ RECSER ]} {$line[ IMAGEINFO ]} – treating as a main entry\n";
+		# echo "Did not find main entry for continuation: {$line[ RECSER ]} {$line[ IMAGEINFO ]}
+		#  – treating as a main entry\n";
 	}
 
 	return $lines;
 }
 
 function matchContinuation( $cont, $other ) {
-	if ( $cont[ PARENT ] ) {
-		return $cont[ PARENT ] === $other[ RECSER ];
+	if ( $cont[ PARENTT ] ) {
+		return $cont[ PARENTT ] === $other[ RECSER ];
 	}
 
 	$ok = true;
@@ -736,7 +744,8 @@ function matchContinuation( $cont, $other ) {
 	$ok = $ok && $cont[ ID ] < $other[ ID ] + 20;
 	$ok = $ok && $cont[ LOCATIONNAME ] === $other[ LOCATIONNAME ];
 	// Sanity check
-	$ok = $ok && ( $cont[ LOCATIONTYPE ] === null || $cont[ LOCATIONTYPE ] === $other[ LOCATIONTYPE ] );
+	$ok = $ok && ( $cont[ LOCATIONTYPE ] === null ||
+		$cont[ LOCATIONTYPE ] === $other[ LOCATIONTYPE ] );
 	$ok = $ok && $cont[ PITÄJÄ ] === $other[ PITÄJÄ ];
 	$ok = $ok && $cont[ COLLECTOR ] === $other[ COLLECTOR ];
 	$ok = $ok && $cont[ YEAR ] === $other[ YEAR ];
@@ -747,6 +756,8 @@ function matchContinuation( $cont, $other ) {
 
 /**
  * Convert coordinates from EPSG:3067 to WGS84
+ * @param array[] $lines
+ * @return array[]
  */
 function addWSG( $lines ) {
 	$epsg = [];
@@ -756,7 +767,8 @@ function addWSG( $lines ) {
 	}
 
 	$wsg = convertCoordinates( $epsg );
-	for ( $i = 0; $i < count( $lines ); $i++ ) {
+	$n = count( $lines );
+	for ( $i = 0; $i < $n; $i++ ) {
 		if ( $epsg[$i] !== '-1 -1' ) {
 			$lines[$i]['wsg'] = $wsg[$i];
 		}
@@ -770,7 +782,8 @@ function convertCoordinates( array $list ) {
 	file_put_contents( '__input.txt', $input );
 
 	// tarkkuus > 1m
-	$command = "sh -c 'cs2cs -f %.9f +proj=utm +zone=35 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs < __input.txt'";
+	$command = "sh -c 'cs2cs -f %.9f +proj=utm +zone=35 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 " .
+		"+units=m +no_defs < __input.txt'";
 	$output = null;
 	exec( $command, $output );
 	unlink( '__input.txt' );

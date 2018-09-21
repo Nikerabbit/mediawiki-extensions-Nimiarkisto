@@ -1,5 +1,8 @@
 /vendor/
+/node_modules/
 /data/
 /dataentities/**/*.id
 /dataentities/**/*.guids
 /entities/**/*.guids
+composer.lock
+package-lock.json
