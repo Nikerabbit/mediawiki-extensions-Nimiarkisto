@@ -97,8 +97,8 @@ HTML;
 			->getDataValue()
 			->getEntityId()
 			->getLocalPart();
-		// Q111 is "person name"
-		if ( $type !== 'Q11' ) {
+		// Q11 is "person name"
+		if ( $type === 'Q11' ) {
 			return [];
 		}
 
