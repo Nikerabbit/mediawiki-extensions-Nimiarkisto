@@ -20,7 +20,11 @@ class Hooks {
 		$out->addModuleStyles( [ 'nimiarkisto', 'nimiarkistokartta.styles' ] );
 		$out->addModules( 'nimiarkistokartta.init' );
 
-		if ( $user->isAnon() || !$user->isAllowed( 'alledit' ) ) {
+		if ( !$user->isAllowed( 'alledit' ) ) {
+			$out->addBodyClasses( 'na-user--limited' );
+		}
+
+		if ( $user->isAnon() ) {
 			$out->addBodyClasses( 'na-user--anon' );
 		}
 	}
