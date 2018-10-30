@@ -62,7 +62,28 @@ Hakutuloksia yhteensä: {{#ask:
  |headers=plain
  |searchlabel=… lisää tuloksia
  |showtitle=1
- |limit=500
+ |limit=100
+}}
+{{#ask:
+
+{{#if:{{{nimi|}}}|[[Keruunimi::~{{{nimi}}}]]}}
+{{#if:{{{laji|}}}|[[Paikanlaji::~{{{laji}}}]]}}
+{{#if:{{{nimenlaji|}}}|[[Nimenlaji::{{{nimenlaji}}}]]}}
+{{#if:{{{pitäjä|}}}|[[Pitäjä::{{{pitäjä}}}]]}}
+{{#if:{{{kerääjä|}}}|[[Kerääjä::{{{kerääjä}}}]]}}
+{{#if:{{{kartantunnus|}}}|[[Kartan tunnus::{{{kartantunnus}}}]]}}
+
+ |?Keruunimi
+ |?Paikanlaji
+ |?Nimenlaji
+ |?Pitäjä
+ |?Kerääjä
+ |?Keruuvuosi
+ |format=csv
+ |limit=2500
+ |offset=0
+ |default=
+ |searchlabel=<span class="mw-ui-button">Lataa tulokset (enintään 2500) CSV-muodossa</span>
 }}
 <includeonly><noinclude>
 [[Category:Nimiarkisto maintenance]]

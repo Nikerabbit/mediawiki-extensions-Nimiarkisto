@@ -29,7 +29,7 @@ Ladataan karttaa...
 <!--li> '''Kerääjän antama kartan tunnus:''' {{#property:P10018|from={{#property:P10011|from={{PAGENAME}}}}}}</li-->
 <li> '''Keruukartan ruutu:''' {{#property:P10007|from={{PAGENAME}}}} / {{#property:P10008|from={{PAGENAME}}}}</li>
 <li> '''Pistesijaintimerkintä:''' {{#property:P10034|from={{PAGENAME}}}}</li>
-<li> '''Karttalehden tunnus:''' {{#property:P10011|from={{PAGENAME}}}}</li>
+<li> '''Karttalehden tunnus:''' {{#queryformlink:form=Haku|link text={{#property:P10011|from={{PAGENAME}}}}|tooltip=Näytä tämän karttalehden muut keruumerkinnät|query string=Haku[kartantunnus]={{#property:P10011|from={{PAGENAME}}}}|wpRunQuery=true}}</li>
 <li> '''Koordinaatit:''' {{#property:P10012|from={{PAGENAME}}}} (WGS 84)</li>
 <li> '''Paikannuksen tarkkuus:''' {{#property:P10032|from={{PAGENAME}}}}</li>
 </ul>
