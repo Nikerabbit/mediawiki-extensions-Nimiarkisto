@@ -16495,7 +16495,7 @@ var names = ["Extended_Transverse_Mercator", "Extended Transverse Mercator", "et
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 *   MML layers for Leaflet. https://github.com/jleh/Leaflet.MML-layers
-*   Copyright (c) 2013-2016 Juuso Lehtinen
+*   Copyright (c) 2013-2018 Juuso Lehtinen
 */
 
 (function (factory, window) {
@@ -16592,7 +16592,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
     L.tileLayer.mml_wmts = function (options) {
         var layer = options.layer || "taustakartta";
-        var url = "http://avoindata.maanmittauslaitos.fi/mapcache/wmts/1.0.0/" + layer + "/default/"
+        var url = "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/" + layer + "/default/"
                 + "ETRS-TM35FIN/{z}/{y}/{x}.png";
 
         return new L.TileLayer.MML_WMTS(url, options);
@@ -16777,8 +16777,8 @@ function init(divId, options) {
   }
 
   L.control.layers(LAYERS, {
-    Keruukartta: kotusLayer1,
-    'Reunallinen keruukartta': kotusLayer2
+    Keruukartat: kotusLayer1,
+    'Keruukartat reunoilla': kotusLayer2
   }).addTo(leafletMap);
 }
 
@@ -18492,7 +18492,7 @@ Point.prototype.toMGRS = function(accuracy) {
 /* 64 */
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[[{"raw":"proj4@^2.3.14","scope":null,"escapedName":"proj4","name":"proj4","rawSpec":"^2.3.14","spec":">=2.3.14 <3.0.0","type":"range"},"D:\\projects\\nadigi\\node_modules\\proj4leaflet"]],"_from":"proj4@>=2.3.14 <3.0.0","_id":"proj4@2.4.4","_inCache":true,"_location":"/proj4","_nodeVersion":"8.2.1","_npmOperationalInternal":{"host":"s3://npm-registry-packages","tmp":"tmp/proj4-2.4.4.tgz_1502418137878_0.6641639927402139"},"_npmUser":{"name":"ahocevar","email":"andreas.hocevar@gmail.com"},"_npmVersion":"5.3.0","_phantomChildren":{},"_requested":{"raw":"proj4@^2.3.14","scope":null,"escapedName":"proj4","name":"proj4","rawSpec":"^2.3.14","spec":">=2.3.14 <3.0.0","type":"range"},"_requiredBy":["/proj4leaflet"],"_resolved":"https://registry.npmjs.org/proj4/-/proj4-2.4.4.tgz","_shasum":"c03d825e380f6850a4a7af5d20d365f6b72c4042","_shrinkwrap":null,"_spec":"proj4@^2.3.14","_where":"D:\\projects\\nadigi\\node_modules\\proj4leaflet","author":"","bugs":{"url":"https://github.com/proj4js/proj4js/issues"},"contributors":[{"name":"Mike Adair","email":"madair@dmsolutions.ca"},{"name":"Richard Greenwood","email":"rich@greenwoodmap.com"},{"name":"Calvin Metcalf","email":"calvin.metcalf@gmail.com"},{"name":"Richard Marsden","url":"http://www.winwaed.com"},{"name":"T. Mittan"},{"name":"D. Steinwand"},{"name":"S. Nelson"}],"dependencies":{"mgrs":"1.0.0","wkt-parser":"^1.2.0"},"description":"Proj4js is a JavaScript library to transform point coordinates from one coordinate system to another, including datum transformations.","devDependencies":{"chai":"~1.8.1","curl":"git://github.com/cujojs/curl.git","grunt":"^1.0.1","grunt-cli":"~0.1.13","grunt-contrib-connect":"~0.6.0","grunt-contrib-jshint":"~1.1.0","grunt-contrib-uglify":"~0.11.1","grunt-mocha-phantomjs":"~0.4.0","grunt-rollup":"^1.0.1","istanbul":"~0.2.4","mocha":"~1.17.1","rollup":"^0.41.4","rollup-plugin-json":"^2.0.1","rollup-plugin-node-resolve":"^2.0.0","tin":"~0.4.0"},"directories":{"test":"test","doc":"docs"},"dist":{"integrity":"sha512-yo6qTpBQXnxhcPopKJeVwwOBRzUpEa3vzSFlr38f5mF4Jnfb6NOL/ePIomefWiZmPgkUblHpcwnWVMB8FS3GKw==","shasum":"c03d825e380f6850a4a7af5d20d365f6b72c4042","tarball":"https://registry.npmjs.org/proj4/-/proj4-2.4.4.tgz"},"gitHead":"e0fc90bb256d5b296c2ec9af923158d0fee847c5","homepage":"https://github.com/proj4js/proj4js#readme","license":"MIT","main":"dist/proj4-src.js","maintainers":[{"name":"cwmma","email":"calvin.metcalf@gmail.com"},{"name":"ahocevar","email":"andreas.hocevar@gmail.com"}],"module":"lib/index.js","name":"proj4","optionalDependencies":{},"readme":"ERROR: No README data found!","repository":{"type":"git","url":"git://github.com/proj4js/proj4js.git"},"scripts":{"build":"grunt","build:tmerc":"grunt build:tmerc","test":"npm run build && istanbul test _mocha test/test.js"},"version":"2.4.4"}
+module.exports = {"_from":"proj4@^2.3.14","_id":"proj4@2.4.4","_inBundle":false,"_integrity":"sha512-yo6qTpBQXnxhcPopKJeVwwOBRzUpEa3vzSFlr38f5mF4Jnfb6NOL/ePIomefWiZmPgkUblHpcwnWVMB8FS3GKw==","_location":"/proj4","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"proj4@^2.3.14","name":"proj4","escapedName":"proj4","rawSpec":"^2.3.14","saveSpec":null,"fetchSpec":"^2.3.14"},"_requiredBy":["/proj4leaflet"],"_resolved":"https://registry.npmjs.org/proj4/-/proj4-2.4.4.tgz","_shasum":"c03d825e380f6850a4a7af5d20d365f6b72c4042","_spec":"proj4@^2.3.14","_where":"/Users/jleh/projects/kotus-kartta/node_modules/proj4leaflet","author":"","bugs":{"url":"https://github.com/proj4js/proj4js/issues"},"bundleDependencies":false,"contributors":[{"name":"Mike Adair","email":"madair@dmsolutions.ca"},{"name":"Richard Greenwood","email":"rich@greenwoodmap.com"},{"name":"Calvin Metcalf","email":"calvin.metcalf@gmail.com"},{"name":"Richard Marsden","url":"http://www.winwaed.com"},{"name":"T. Mittan"},{"name":"D. Steinwand"},{"name":"S. Nelson"}],"dependencies":{"mgrs":"1.0.0","wkt-parser":"^1.2.0"},"deprecated":false,"description":"Proj4js is a JavaScript library to transform point coordinates from one coordinate system to another, including datum transformations.","devDependencies":{"chai":"~1.8.1","curl":"git://github.com/cujojs/curl.git","grunt":"^1.0.1","grunt-cli":"~0.1.13","grunt-contrib-connect":"~0.6.0","grunt-contrib-jshint":"~1.1.0","grunt-contrib-uglify":"~0.11.1","grunt-mocha-phantomjs":"~0.4.0","grunt-rollup":"^1.0.1","istanbul":"~0.2.4","mocha":"~1.17.1","rollup":"^0.41.4","rollup-plugin-json":"^2.0.1","rollup-plugin-node-resolve":"^2.0.0","tin":"~0.4.0"},"directories":{"test":"test","doc":"docs"},"homepage":"https://github.com/proj4js/proj4js#readme","license":"MIT","main":"dist/proj4-src.js","module":"lib/index.js","name":"proj4","repository":{"type":"git","url":"git://github.com/proj4js/proj4js.git"},"scripts":{"build":"grunt","build:tmerc":"grunt build:tmerc","test":"npm run build && istanbul test _mocha test/test.js"},"version":"2.4.4"}
 
 /***/ }),
 /* 65 */
@@ -22682,7 +22682,7 @@ exports = module.exports = __webpack_require__(23)(undefined);
 
 
 // module
-exports.push([module.i, ".red {\r\n  color: red;\r\n}\r\n\r\n.green {\r\n  color: green;\r\n}\r\n\r\n.confirm-marker {\r\n  font-size: 1.5em;\r\n  width: 1em;\r\n  height: 0.5em;\r\n  display: inline-block;\r\n}\r\n\r\n.confirm-label {\r\n  cursor: pointer;\r\n}\r\n\r\n.relocation-dialog {\r\n  position: absolute;\r\n  bottom: 0;\r\n  z-index: 1000;\r\n  min-height: 7em;\r\n  padding: 1em;\r\n  background-color: #fff;\r\n  cursor: initial;\r\n}\r\n\r\n.add-comment {\r\n  margin-top: 1em;\r\n  margin-bottom: 1em;\r\n  cursor: pointer;\r\n}\r\n\r\n.comment-text {\r\n  display: none;\r\n}\r\n\r\n.cancel-button {\r\n  border: 2px solid #0066cc;\r\n  background: #fff;\r\n  padding: 0.5em 1.5em 0.5em 1.5em;\r\n  cursor: pointer;\r\n}\r\n\r\n.save-button {\r\n  border: 2px solid #0066cc;\r\n  background: #0066cc;\r\n  color: #fff;\r\n  padding: 0.5em 1.5em 0.5em 1.5em;\r\n  cursor: pointer;\r\n}\r\n\r\n.new-location-form-control {\r\n  padding-top: 0.5em;\r\n  padding-bottom: 0.5em;\r\n}\r\n\r\n.new-location-form-control label {\r\n  display: block;\r\n}\r\n\r\n.new-location-map {\r\n  height: 400px;\r\n  width: 100%;\r\n}\r\n", ""]);
+exports.push([module.i, ".red {\n  color: red;\n}\n\n.green {\n  color: green;\n}\n\n.confirm-marker {\n  font-size: 1.5em;\n  width: 1em;\n  height: 0.5em;\n  display: inline-block;\n}\n\n.confirm-label {\n  cursor: pointer;\n}\n\n.relocation-dialog {\n  position: absolute;\n  bottom: 0;\n  z-index: 1000;\n  min-height: 7em;\n  padding: 1em;\n  background-color: #fff;\n  cursor: initial;\n}\n\n.add-comment {\n  margin-top: 1em;\n  margin-bottom: 1em;\n  cursor: pointer;\n}\n\n.comment-text {\n  display: none;\n}\n\n.cancel-button {\n  border: 2px solid #0066cc;\n  background: #fff;\n  padding: 0.5em 1.5em 0.5em 1.5em;\n  cursor: pointer;\n}\n\n.save-button {\n  border: 2px solid #0066cc;\n  background: #0066cc;\n  color: #fff;\n  padding: 0.5em 1.5em 0.5em 1.5em;\n  cursor: pointer;\n}\n\n.new-location-form-control {\n  padding-top: 0.5em;\n  padding-bottom: 0.5em;\n}\n\n.new-location-form-control label {\n  display: block;\n}\n\n.new-location-map {\n  height: 400px;\n  width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -22800,7 +22800,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 
   return "<div>"
     + ((stack1 = ((helper = (helper = helpers.markerText || (depth0 != null ? depth0.markerText : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"markerText","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "</div>\r\n<div class=\"edit-controls\">\r\n  <div class=\"correct-location confirm-label\">\r\n    <div class=\"green confirm-marker\">&#10003;</div>\r\n    Oikea sijainti\r\n  </div>\r\n  <div class=\"incorrect-location confirm-label\">\r\n    <div class=\"red confirm-marker\">&#215;</div>\r\n    Virheellinen sijainti\r\n  </div>\r\n</div>\r\n";
+    + "</div>\n<div class=\"edit-controls\">\n  <div class=\"correct-location confirm-label\">\n    <div class=\"green confirm-marker\">&#10003;</div>\n    Oikea sijainti\n  </div>\n  <div class=\"incorrect-location confirm-label\">\n    <div class=\"red confirm-marker\">&#215;</div>\n    Virheellinen sijainti\n  </div>\n</div>\n";
 },"useData":true});
 
 /***/ }),
@@ -23747,7 +23747,7 @@ module.exports = g;
 var Handlebars = __webpack_require__(15);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div>Olet merkinnyt sijainnin oikeaksi.</div>\r\n<div class=\"incorrect-location confirm-label\">\r\n  <div class=\"red confirm-marker\">&#215;</div>\r\n  Korjaa merkint&auml;&auml;\r\n</div>\r\n";
+    return "<div>Olet merkinnyt sijainnin oikeaksi.</div>\n<div class=\"incorrect-location confirm-label\">\n  <div class=\"red confirm-marker\">&#215;</div>\n  Korjaa merkint&auml;&auml;\n</div>\n";
 },"useData":true});
 
 /***/ }),
@@ -23757,7 +23757,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,"
 var Handlebars = __webpack_require__(15);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div>\r\n  Voit halutessasi raahata merkinn&auml;n oikeaan kohtaan. \r\n</div>\r\n<div class=\"add-comment\">\r\n  <div class=\"enable-comment\">&#128172; Lis&auml;&auml; kommentti.</div>\r\n  <textarea class=\"comment-text\"></textarea>\r\n</div>\r\n<div>\r\n  <button class=\"cancel-button\">Peru</button>\r\n  <button class=\"save-button\">Tallenna</button>\r\n</div>\r\n";
+    return "<div>\n  Voit halutessasi raahata merkinn&auml;n oikeaan kohtaan. \n</div>\n<div class=\"add-comment\">\n  <div class=\"enable-comment\">&#128172; Lis&auml;&auml; kommentti.</div>\n  <textarea class=\"comment-text\"></textarea>\n</div>\n<div>\n  <button class=\"cancel-button\">Peru</button>\n  <button class=\"save-button\">Tallenna</button>\n</div>\n";
 },"useData":true});
 
 /***/ }),
@@ -23840,8 +23840,9 @@ module.exports = init;
 var Handlebars = __webpack_require__(15);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"new-location-form\">\r\n  <div class=\"new-location-map\"></div>\r\n  <div>\r\n    <h3>Lis&auml;&auml; paikannimi</h3>\r\n    <div>\r\n      Merkitse paikka kartalle ja kerro paikannimest&auml;.\r\n    </div>\r\n\r\n    <div class=\"new-location-form-control\">\r\n      <label class=\"new-location-name-label\">Kirjoita uusi paikannimi</label>\r\n      <input type=\"text\" class=\"new-location-name\">\r\n    </div>\r\n\r\n    <div class=\"new-location-form-control\">\r\n      <label>Kirjoita paikan laji</label>\r\n      <input type=\"text\" class=\"new-location-type\">\r\n    </div>\r\n\r\n    <div class=\"new-location-form-control\">\r\n      <label>Kerro paikannimest&auml;</label>\r\n      <textarea class=\"new-location-description\"></textarea>\r\n    </div>\r\n\r\n    <button class=\"new-location-cancel save-button\">Peruuta</button>\r\n    <button class=\"new-location-save cancel-button\">Tallenna</button>\r\n  </div>\r\n</div>\r\n";
+    return "<div class=\"new-location-form\">\n  <div class=\"new-location-map\"></div>\n  <div>\n    <h3>Lis&auml;&auml; paikannimi</h3>\n    <div>\n      Merkitse paikka kartalle ja kerro paikannimest&auml;.\n    </div>\n\n    <div class=\"new-location-form-control\">\n      <label class=\"new-location-name-label\">Kirjoita uusi paikannimi</label>\n      <input type=\"text\" class=\"new-location-name\">\n    </div>\n\n    <div class=\"new-location-form-control\">\n      <label>Kirjoita paikan laji</label>\n      <input type=\"text\" class=\"new-location-type\">\n    </div>\n\n    <div class=\"new-location-form-control\">\n      <label>Kerro paikannimest&auml;</label>\n      <textarea class=\"new-location-description\"></textarea>\n    </div>\n\n    <button class=\"new-location-cancel save-button\">Peruuta</button>\n    <button class=\"new-location-save cancel-button\">Tallenna</button>\n  </div>\n</div>\n";
 },"useData":true});
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=map-component.js.map
