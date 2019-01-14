@@ -16777,7 +16777,7 @@ function init(divId, options) {
   }
 
   L.control.layers(LAYERS, {
-    Keruukartat: kotusLayer1,
+    Keruukartta: kotusLayer1,
     'Reunallinen keruukartta': kotusLayer2
   }).addTo(leafletMap);
 }
