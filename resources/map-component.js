@@ -6536,7 +6536,7 @@ var LineUtil = (Object.freeze || Object)({
  * Clips the polygon geometry defined by the given `points` by the given bounds (using the [Sutherland-Hodgeman algorithm](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm)).
  * Used by Leaflet to only show polygon points that are on the screen or near, increasing
  * performance. Note that polygon points needs different algorithm for clipping
- * than polyline, so there's a seperate method for it.
+ * than polyline, so there's a separate method for it.
  */
 function clipPolygon(points, bounds, round) {
 	var clippedPoints,
