@@ -74,6 +74,10 @@ HTML;
 		// kl = keruulippu, nl = nimilippu
 		$klEntityId = $wbc->getEntityIdParser()->parse( $input );
 		$klEntity = $wbc->getStore()->getEntityLookup()->getEntity( $klEntityId );
+		if ( !$klEntity ) {
+			return [];
+		}
+
 		$P10037 = new PropertyId( 'P10037' );
 		$producerStatements = $klEntity->getStatements()->getByPropertyId( $P10037 )->toArray();
 		if ( $producerStatements === [] ) {
