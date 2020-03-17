@@ -16802,7 +16802,7 @@ function createKotusLayer(options, withBorders) {
   if (options.years) {
     wmsOptions['time'] = options.years[0] + '-1-1/' + options.years[1] + '-1-1';
   } else {
-    wmsOptions['time'] = '1750-1-1/2000-1-1';
+    wmsOptions['time'] = '1750-1-1/2020-1-1';
   }
 
   return L.tileLayer.wms('https://avaa.tdata.fi/geoserver/kotus/wms', wmsOptions);
