@@ -6,7 +6,7 @@
 	],
 	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
 	"description": "Code to import and display Nimiarkisto in a MediaWiki",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"MessagesDirs": {
 		"Nimiarkisto": [
 			"i18n"
