@@ -252,9 +252,13 @@ body.skin-timeless {
 			padding: 0;
 		}
 
-		#mw-related-navigation .sidebar-inner,
-		#mw-site-navigation .sidebar-inner {
-			top: 1.5em !important;
+		#mw-content {
+			padding-top: 1.2em;
+		}
+
+		#mw-related-navigation .sidebar-chunk,
+		#mw-site-navigation .sidebar-chunk {
+			top: 2.5em !important;
 		}
 	}
 
@@ -285,8 +289,8 @@ body.skin-timeless {
 			}
 		}
 
-		#mw-content {
-			padding: 0;
+		#mw-content-block {
+			padding-top: 1em;
 		}
 	}
 
@@ -303,11 +307,6 @@ body.skin-timeless {
 
 	/* yli 1340 */
 	@media screen and ( min-width: 1340px ) {
-		#mw-content {
-			margin-left: 15em;
-			margin-right: 15em;
-		}
-
 		#mw-related-navigation {
 			padding-left: 2em;
 		}
@@ -437,6 +436,7 @@ sup {
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 4em;
+	position: absolute;
 
 	a {
 		color: transparent;
