@@ -2,6 +2,7 @@
 
 $( function () {
 	var data, coords, options = {}, mapid,
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$map = $( '#nimiarkistokartta--keruumerkinta' );
 
 	if ( !$map.length ) {
@@ -20,6 +21,7 @@ $( function () {
 		lon: coords[ 1 ]
 	} ];
 
+	// eslint-disable-next-line no-jquery/no-global-selector
 	mapid = $( '.mapdata-id' ).data( 'mapid' );
 	if ( mapid ) {
 		options.mapId = mapid;
@@ -32,6 +34,7 @@ $( function () {
 
 $( function () {
 	var api, query,
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$map = $( '#nimiarkistokartta--luokkakartta' );
 
 	if ( !$map.length ) {
@@ -52,7 +55,7 @@ $( function () {
 		action: 'ask',
 		query: query
 	} ).done( function ( res ) {
-		var locations = $.map( res.query.results, function ( value ) {
+		var locations = ( res.query.results || [] ).map( function ( value ) {
 			return {
 				text: $( '<a>' ).prop( 'href', value.fullurl ).text( value.displaytitle )[ 0 ],
 				lat: value.printouts.Pistekoordinaatti[ 0 ].lat,

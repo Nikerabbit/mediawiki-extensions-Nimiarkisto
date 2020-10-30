@@ -7,14 +7,16 @@
 
 namespace MediaWiki\Extension\Nimiarkisto;
 
-use RuntimeException;
-use SpecialPage;
 use Html;
+use OutputPage;
+use RuntimeException;
+use Sanitizer;
+use SpecialPage;
 use Wikibase\Client\WikibaseClient;
 use Wikibase\DataModel\Entity\PropertyId;
 
 class Hooks {
-	public static function onBeforePageDisplay( $out, $skin ) {
+	public static function onBeforePageDisplay( OutputPage $out ) {
 		$user = $out->getUser();
 
 		$out->addModuleStyles( [ 'nimiarkisto', 'nimiarkistokartta.styles' ] );
@@ -31,13 +33,13 @@ class Hooks {
 
 	public static function onParserFirstCallInit( $parser ) {
 		$parser->setFunctionHook( 'nac', function ( $parser, $param1 = '' ) {
-			$output = \Sanitizer::decodeCharReferences( $param1 );
+			$output = Sanitizer::decodeCharReferences( $param1 );
 			$output = str_replace( [ "'", '"' ], [ '′', '″' ], $output );
 			return [ $output ];
 		} );
 
 		// Use JavaScript to move the title in the DOM
-		$parser->setFunctionHook( 'mytitle', function ( $parser ) {
+		$parser->setFunctionHook( 'mytitle', function () {
 			$output = <<<HTML
 <div id="mytitleplaceholder"></div>
 <script>
@@ -159,9 +161,9 @@ HTML;
 	 * When core requests certain messages, change the key to a custom version.
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/MessageCache::get
-	 * @param String &$lcKey message key to check and possibly convert
+	 * @param string &$lcKey message key to check and possibly convert
 	 */
-	public static function onMessageCacheGet( &$lcKey ) {
+	public static function onMessageCacheGet( string &$lcKey ) {
 		$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
 
 		$overrideKey = "nimiarkisto-override-$lcKey";

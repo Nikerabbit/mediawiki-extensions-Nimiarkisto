@@ -4,5 +4,4 @@
 /dataentities/**/*.id
 /dataentities/**/*.guids
 /entities/**/*.guids
-composer.lock
-package-lock.json
+.eslintcache

@@ -3,44 +3,37 @@ module.exports = function ( grunt ) {
 	'use strict';
 
 	var conf = grunt.file.readJSON( 'extension.json' );
+
 	grunt.loadNpmTasks( 'grunt-eslint' );
-	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 
 	grunt.initConfig( {
 		eslint: {
+			options: {
+				cache: true,
+				fix: grunt.option( 'fix' )
+			},
 			all: [
-				'**/*.js',
-				'!lib/**',
-				'!node_modules/**',
-				'!vendor/**',
+				'**/*.{js,json}',
+				'!{vendor,node_modules,lib}/**',
 				'!resources/map-component.js'
 			]
 		},
 		stylelint: {
-			options: {
-				syntax: 'less'
-			},
 			src: [
-				'**/*.css',
-				'**/*.less',
-				'!lib/**',
-				'!node_modules/**',
-				'!vendor/**'
+				'**/*.{css,less}',
+				'!{vendor,node_modules,lib}/**'
 			]
 		},
-		banana: conf.MessagesDirs,
-		jsonlint: {
-			all: [
-				'**/*.json',
-				'!node_modules/**',
-				'!vendor/**'
-			]
-		}
+		// eslint-disable-next-line es/no-object-assign
+		banana: Object.assign( conf.MessagesDirs, {
+			options: {
+				requireLowerCase: 'initial'
+			}
+		} )
 	} );
 
-	grunt.registerTask( 'lint', [ 'eslint', 'jsonlint', 'stylelint', 'banana' ] );
-	grunt.registerTask( 'test', [ 'lint' ] );
+	grunt.registerTask( 'test', [ 'eslint', 'banana', 'stylelint' ] );
 	grunt.registerTask( 'default', 'test' );
 };

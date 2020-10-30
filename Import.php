@@ -5,6 +5,7 @@
  * @file
  */
 
+// FIXME: this is no longer compatible with 1.33
 use DataValues\Geo\Values\GlobeCoordinateValue;
 use DataValues\Geo\Values\LatLongValue;
 use DataValues\MonolingualTextValue;
@@ -21,16 +22,24 @@ use Wikibase\DataModel\Snak\PropertyNoValueSnak;
 use Wikibase\DataModel\Snak\PropertyValueSnak;
 use Wikibase\DataModel\Statement\StatementList;
 use Wikibase\DataModel\Term\Fingerprint;
+use Wikibase\Repo\EditEntity\MediawikiEditEntityFactory;
 use Wikibase\Repo\WikibaseRepo;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 
 $IP = getenv( 'MW_INSTALL_PATH' ) ?: '../..';
 require_once "$IP/maintenance/Maintenance.php";
 
 class NimiarkistoImport extends Maintenance {
-	private $map = [];
+	/** @var User */
+	private $user;
+	/** @var array */
+	private $data;
+	/** @var MediawikiEditEntityFactory */
+	private $editEntityFactory;
+	/** @var GuidGenerator */
+	private $guidGenerator;
 
 	public function __construct() {
 		parent::__construct();
@@ -39,10 +48,9 @@ class NimiarkistoImport extends Maintenance {
 	}
 
 	public function execute() {
-		// Autoloader is not yet available on __constuct
+		// Autoloader is not yet available on __construct
 		$repo = WikibaseRepo::getDefaultInstance();
 		$this->editEntityFactory = $repo->newEditEntityFactory();
-		$this->entityStore = $repo->getEntityStore();
 		$this->guidGenerator = new GuidGenerator();
 		$this->user = User::newFromId( 1 );
 
@@ -112,14 +120,6 @@ class NimiarkistoImport extends Maintenance {
 		return $this->populateEntity( $entity, $data );
 	}
 
-	private function checkEntity( $name ) {
-		$filename = "{$this->path}/$name.json";
-		if ( !isset( $this->map[$filename] ) ) {
-			$data = $this->loadEntityData( $filename );
-			$this->processEntityData( $data );
-		}
-	}
-
 	private function populateEntity( EntityDocument $entity, array $data ) {
 		$fingerprint = $this->createFingerprint(
 			$data['labels'] ?? [],
@@ -165,7 +165,6 @@ class NimiarkistoImport extends Maintenance {
 				$property = $this->createEntity( $propertyId, $this->data[ $propertyId ] );
 				$snak = $this->createSnak( $property, $value );
 
-				$pnid = $property->getId()->getNumericId();
 				$guid = $this->guidGenerator->newGuid( $entity->getId() );
 
 				$list->addNewStatement( $snak, null, null, $guid );
@@ -213,9 +212,7 @@ class NimiarkistoImport extends Maintenance {
 
 	private function saveEntity( EntityDocument $entity, $textSummary ) {
 		$editEntity = $this->editEntityFactory->newEditEntity( $this->user, $entity->getId(), false );
-		$status = $editEntity->attemptSave( $entity, $textSummary, 0, false );
-
-		return $status;
+		return $editEntity->attemptSave( $entity, $textSummary, 0, false );
 	}
 }
 

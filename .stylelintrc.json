@@ -1,10 +1,9 @@
 {
 	"extends": "stylelint-config-wikimedia",
 	"rules": {
-		"no-unknown-animations": null,
+		"declaration-no-important": null,
 		"no-descending-specificity": null,
 		"selector-max-id": null,
-		"declaration-no-important": null,
 		"selector-no-vendor-prefix": null
 	}
 }

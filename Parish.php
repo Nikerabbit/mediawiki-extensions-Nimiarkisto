@@ -1,6 +1,10 @@
 <?php
+/**
+ * @author Niklas Laxström
+ */
 
 class Parish {
+	/** @var string[] */
 	public static $map = [
 		'Akaa' => 'Akaa',
 		'Alast' => 'Alastaro',

@@ -1,3 +1,13 @@
+.nimiarkistokartta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ddd;
+	z-index: 0;
+	min-width: 200px;
+	flex-grow: 1;
+}
+
 .nimiarkisto-keruubanneri {
 	display: flex;
 	flex-wrap: wrap;
@@ -5,7 +15,6 @@
 
 	& > .nimiarkistokartta {
 		width: auto;
-
 	}
 
 	> * {
@@ -15,14 +24,4 @@
 
 .na-user--anon .nimiarkisto-keruubanneri > img {
 	display: none;
-}
-
-.nimiarkistokartta {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #ddd;
-	z-index: 0;
-	min-width: 200px;
-	flex-grow: 1;
 }

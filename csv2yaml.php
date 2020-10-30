@@ -6,7 +6,7 @@
  */
 
 require 'Parish.php';
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 
 $IN = isset( $argv[1] ) ? $argv[1] : 'data';
@@ -156,8 +156,11 @@ class NimiarkistoConverter {
 		return $lines;
 	}
 
+	/** @var array */
 	private $entityMap = [];
+	/** @var int */
 	private $freeId = 5000000;
+
 	public function getEntityId( $ref = null ) {
 		if ( $ref !== null && isset( $this->entityMap[ $ref ] ) ) {
 			return $this->entityMap[ $ref ];
@@ -173,7 +176,7 @@ class NimiarkistoConverter {
 	}
 
 	public function createPitäjäEntity( $name ) {
-		$data = [
+		return [
 			'labels' => [
 				'fi' => $name,
 			],
@@ -187,15 +190,13 @@ class NimiarkistoConverter {
 				'P460' => [ 'Q2' ],
 			],
 		];
-
-		return $data;
 	}
 
 	public function createKerääjäEntity( $name ) {
 		// TODO label Susannan tiedostosta
 		// https://drive.google.com/file/d/1OfmA2hdF1xLQFtT0N_UJOyVs3bSeC_QD/view
 		// etunimi ja sukunimi jos on (P10054 + P10055)
-		$data = [
+		return [
 			'labels' => [
 				'fi' => $name,
 			],
@@ -203,12 +204,10 @@ class NimiarkistoConverter {
 				'P31' => [ 'Q8' ],
 			],
 		];
-
-		return $data;
 	}
 
 	public function createNimilippuEntity( $extId, $placename, $recser ) {
-		$data = [
+		return [
 			'labels' => [
 				'fi' => "$placename $recser",
 			],
@@ -220,8 +219,6 @@ class NimiarkistoConverter {
 				// 'P10041' => [ 'Q26' ], // unpublished
 			],
 		];
-
-		return $data;
 	}
 
 	public function createMapEntity( $name, $line ) {
@@ -363,10 +360,7 @@ TODO wikibase-linkki
 				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				break;
 			case 'V,N':
-				$data[ 'statements' ][ 'P10032' ] = [ 'Q18' ];
-				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
-				break;
-			case 'V,N':
+			case 'N,V':
 				$data[ 'statements' ][ 'P10032' ] = [ 'Q18' ];
 				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				break;
@@ -390,10 +384,6 @@ TODO wikibase-linkki
 			case 'V,I':
 				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				$data[ 'statements' ][ 'P10052' ][] = 'PEX: I';
-				break;
-			case 'N,V':
-				$data[ 'statements' ][ 'P10032' ] = [ 'Q18' ];
-				$data[ 'statements' ][ 'P10047' ][] = 'Q31';
 				break;
 			case null:
 				break;
@@ -661,7 +651,7 @@ function mergeBacksides( $lines ) {
  * @param array $x
  * @return bool
  */
-function isBackside( $x ) {
+function isBackside( array $x ): bool {
 	return preg_match( '/_B.jpg$/', $x[ IMAGEFILE ] ) === 1;
 }
 
@@ -702,14 +692,6 @@ function mergeContinuations( $lines ) {
 		if ( !$line[ CONTINUATION ] === 'J' ) {
 			echo "Unknown continuation value in {$line[ RECSER ]}\n";
 			exit( 1 );
-		}
-
-		$shouldBeEmpty = [ MAPNUMBER, COLLECTORMAPNUMBER, MAPX, MAPY, MAPREF ];
-		foreach ( $shouldBeEmpty as $type ) {
-			if ( $line[ $type ] !== null ) {
-				# var_dump( "Unexpected value $type in continuation", implode( ', ', $line  ) );
-				// exit( 1 );
-			}
 		}
 
 		for ( $i = $index - 1; $i > -1; $i-- ) {
@@ -759,7 +741,7 @@ function matchContinuation( $cont, $other ) {
  * @param array[] $lines
  * @return array[]
  */
-function addWSG( $lines ) {
+function addWSG( array $lines ): array {
 	$epsg = [];
 
 	foreach ( $lines as $line ) {
@@ -788,14 +770,12 @@ function convertCoordinates( array $list ) {
 	exec( $command, $output );
 	unlink( '__input.txt' );
 
-	$ret = array_map(
+	return array_map(
 		function ( $line ) {
 			// $output = [ "24.8085103565     62.7632414174 0.0000000000"];
-			list( $x, $y, $z ) = preg_split( '~\s+~', $line );
+			list( $x, $y, ) = preg_split( '~\s+~', $line );
 			return [ $x, $y ];
 		},
 		$output
 	);
-
-	return $ret;
 }

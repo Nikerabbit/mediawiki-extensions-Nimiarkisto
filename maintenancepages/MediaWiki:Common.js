@@ -30,6 +30,7 @@ mw.hook( 'wikibase.entityPage.entityLoaded' ).add( function ( item ) {
 } );
 
 $( function () {
+	// eslint-disable-next-line no-jquery/no-global-selector
 	$( '#p-navigation li a' )
 		.filter( "[href^='http://'], [href^='https://']" )
 		.prop( 'target', '_blank' );
