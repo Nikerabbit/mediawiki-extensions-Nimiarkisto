@@ -7,6 +7,9 @@
 	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
 	"description": "Code to import and display Nimiarkisto in a MediaWiki",
 	"license-name": "GPL-2.0-or-later",
+	"ExtensionMessagesFiles": {
+		"NimiarkistoMagic": "Nimiarkisto.magic.php"
+	},
 	"MessagesDirs": {
 		"Nimiarkisto": [
 			"i18n"
@@ -14,7 +17,6 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onParserFirstCallInit",
-		"LanguageGetMagic": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onLanguageGetMagic",
 		"BeforePageDisplay": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onBeforePageDisplay",
 		"MessageCache::get": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onMessageCacheGet"
 	},

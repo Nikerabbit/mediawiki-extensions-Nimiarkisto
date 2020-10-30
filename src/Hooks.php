@@ -148,15 +148,6 @@ HTML;
 		return $images;
 	}
 
-	public static function onLanguageGetMagic( &$raw ) {
-		// Convert formatted coordinates to plain coordinates
-		$raw['nac'] = [ 1, 'NAC' ];
-		// Allows moving the page title to different location
-		$raw['mytitle'] = [ 0, 'mytitle' ];
-
-		$raw['nimilippukuvat'] = [ 0, 'nimilippukuvat' ];
-	}
-
 	/**
 	 * When core requests certain messages, change the key to a custom version.
 	 *
@@ -164,7 +155,10 @@ HTML;
 	 * @param string &$lcKey message key to check and possibly convert
 	 */
 	public static function onMessageCacheGet( string &$lcKey ) {
-		$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
+		static $keys = null;
+		if ( $keys === null ) {
+			$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
+		}
 
 		$overrideKey = "nimiarkisto-override-$lcKey";
 		if ( isset( $keys[ $overrideKey ] ) ) {
