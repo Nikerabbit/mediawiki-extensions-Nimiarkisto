@@ -1,6 +1,6 @@
 {
 	"name": "Nimiarkisto",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"author": [
 		"Niklas Laxström"
 	],
@@ -16,12 +16,12 @@
 		]
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onParserFirstCallInit",
-		"BeforePageDisplay": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onBeforePageDisplay",
-		"MessageCache::get": "MediaWiki\\Extension\\Nimiarkisto\\Hooks::onMessageCacheGet"
+		"ParserFirstCallInit": "MediaWiki\\Extensions\\Nimiarkisto\\Hooks::onParserFirstCallInit",
+		"BeforePageDisplay": "MediaWiki\\Extensions\\Nimiarkisto\\Hooks::onBeforePageDisplay",
+		"MessageCache::get": "MediaWiki\\Extensions\\Nimiarkisto\\Hooks::onMessageCacheGet"
 	},
-	"AutoloadClasses": {
-		"MediaWiki\\Extension\\Nimiarkisto\\Hooks": "src/Hooks.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extensions\\Nimiarkisto\\": "src/"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",

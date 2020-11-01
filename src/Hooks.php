@@ -5,7 +5,7 @@
  * @file
  */
 
-namespace MediaWiki\Extension\Nimiarkisto;
+namespace MediaWiki\Extensions\Nimiarkisto;
 
 use Html;
 use OutputPage;
