@@ -16549,12 +16549,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         },
 
         urls: {
-            "peruskartta" : 'http://tiles.kartat.kapsi.fi/peruskartta/{z}/{x}/{y}.jpg',
-            "taustakartta" : 'http://tiles.kartat.kapsi.fi/taustakartta/{z}/{x}/{y}.jpg',
-            "ortokuva" : 'http://tiles.kartat.kapsi.fi/ortokuva/{z}/{x}/{y}.jpg',
-            "peruskartta_3067" : 'http://tiles.kartat.kapsi.fi/peruskartta_3067/{z}/{x}/{y}.jpg',
-            "taustakartta_3067" : 'http://tiles.kartat.kapsi.fi/taustakartta_3067/{z}/{x}/{y}.jpg',
-            "ortokuva_3067" : 'http://tiles.kartat.kapsi.fi/ortokuva_3067/{z}/{x}/{y}.jpg'
+            "peruskartta" : 'https://tiles.kartat.kapsi.fi/peruskartta/{z}/{x}/{y}.jpg',
+            "taustakartta" : 'https://tiles.kartat.kapsi.fi/taustakartta/{z}/{x}/{y}.jpg',
+            "ortokuva" : 'https://tiles.kartat.kapsi.fi/ortokuva/{z}/{x}/{y}.jpg',
+            "peruskartta_3067" : 'https://tiles.kartat.kapsi.fi/peruskartta_3067/{z}/{x}/{y}.jpg',
+            "taustakartta_3067" : 'https://tiles.kartat.kapsi.fi/taustakartta_3067/{z}/{x}/{y}.jpg',
+            "ortokuva_3067" : 'https://tiles.kartat.kapsi.fi/ortokuva_3067/{z}/{x}/{y}.jpg'
         },
 
         initialize: function (type, options) {
