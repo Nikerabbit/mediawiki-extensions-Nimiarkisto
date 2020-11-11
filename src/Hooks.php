@@ -1,13 +1,10 @@
 <?php
-/**
- * @author Niklas Laxström
- * @license GPL-2.0-or-later
- * @file
- */
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use Html;
+use MediaWiki\MediaWikiServices;
 use OutputPage;
 use RuntimeException;
 use Sanitizer;
@@ -15,6 +12,10 @@ use SpecialPage;
 use Wikibase\Client\WikibaseClient;
 use Wikibase\DataModel\Entity\PropertyId;
 
+/**
+ * @author Niklas Laxström
+ * @license GPL-2.0-or-later
+ */
 class Hooks {
 	public static function onBeforePageDisplay( OutputPage $out ) {
 		$user = $out->getUser();
@@ -22,7 +23,8 @@ class Hooks {
 		$out->addModuleStyles( [ 'nimiarkisto', 'nimiarkistokartta.styles' ] );
 		$out->addModules( 'nimiarkistokartta.init' );
 
-		if ( !$user->isAllowed( 'alledit' ) ) {
+		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
+		if ( !$permissionManager->userHasRight( $user, 'alledit' ) ) {
 			$out->addBodyClasses( 'na-user--limited' );
 		}
 
@@ -70,7 +72,7 @@ HTML;
 		} );
 	}
 
-	private static function getImages( $input ) {
+	private static function getImages( string $input ): array {
 		$wbc = WikibaseClient::getDefaultInstance();
 
 		// kl = keruulippu, nl = nimilippu

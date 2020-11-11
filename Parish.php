@@ -1,8 +1,10 @@
 <?php
+declare( strict_types = 1 );
+
 /**
  * @author Niklas Laxström
+ * @license GPL-2.0-or-later
  */
-
 class Parish {
 	/** @var string[] */
 	public static $map = [
