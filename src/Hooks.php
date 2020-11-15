@@ -31,6 +31,27 @@ class Hooks {
 		if ( $user->isAnon() ) {
 			$out->addBodyClasses( 'na-user--anon' );
 		}
+
+		$overrides = [
+			'sv' => 'sv',
+			'sms' => 'sms',
+			'smn' => 'smn',
+			'se' => 'se',
+		];
+
+		$userLang = $out->getLanguage()->getCode();
+		$lang = $overrides[ $userLang ] ?? 'fi';
+
+		global $wgTimelessWordmark, $wgTimelessLogo;
+		$wgTimelessWordmark = [
+			'1x' => "/logo-$lang.svg",
+			'height' => 35,
+		];
+
+		$wgTimelessLogo= [
+			'1x' => "/logo-$lang.svg",
+			'width' => 160,
+		];
 	}
 
 	public static function onParserFirstCallInit( $parser ) {

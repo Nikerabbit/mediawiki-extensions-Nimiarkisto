@@ -68,3 +68,10 @@ $( function () {
 		} );
 	} );
 } );
+
+// https://github.com/SemanticMediaWiki/SemanticMediaWiki/issues/4882
+$( function () {
+	if ( $( '.maps-leaflet' ).length ) {
+		mw.loader.load( 'ext.maps.leaflet.loader' )
+	}
+} );

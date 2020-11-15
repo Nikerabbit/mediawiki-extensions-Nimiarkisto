@@ -1,16 +1,5 @@
-body.skin-timeless {
-	font-family: 'Helvetica Neue', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
-	color: #333;
-	background: #6b98c2;
-}
-
-.skin-timeless {
-	#searchButton {
-		min-width: 0;
-		right: 0;
-	}
-
-	#mw-content a > img {
+#mw-content {
+	a > img {
 		height: auto !important;
 		max-width: 100% !important;
 	}
@@ -27,26 +16,6 @@ body.skin-timeless {
 
 	.popupotsikko {
 		font-size: 1.3em;
-	}
-
-	.pokey {
-		top: 1em;
-	}
-
-	#searchInput::placeholder {
-		color: #ccc;
-	}
-
-	#searchInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		color: #ccc;
-	}
-
-	#searchInput::-moz-placeholder { /* Firefox 19+ */
-		color: #ccc;
-	}
-
-	#searchInput:-ms-input-placeholder { /* IE 10+ */
-		color: #ccc;
 	}
 
 	input[ type='submit' ] {
@@ -87,380 +56,224 @@ body.skin-timeless {
 		}
 	}
 
-	#mw-page-header-links li {
-		margin: 0.2em 0 0.6em 1em;
-		border-bottom: solid 3px transparent;
-
-		&.selected {
-			border-bottom-color: #0075d6;
-		}
-	}
-
-	#simpleSearch {
-		box-shadow: inset 0 2px 4px 0 rgba( 0, 0, 0, 0.05 );
-		background: transparent;
-		position: relative;
-		border: solid 1px #ccc;
-		border-radius: 3px;
-		top: 0.35em;
-	}
-
-	#searchInput {
-		height: inherit;
-		padding: 0.7em 1em;
-	}
-
-	#p-pageactions {
-		padding-bottom: 1em;
-	}
-
-	h1#firstHeading.firstHeading {
-		font-family: 'Helvetica Neue', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
-		border-bottom: 0;
-	}
-
-	#mw-content h1,
-	#mw-content h2,
-	#mw-content h3,
-	#mw-content h5,
-	#mw-content h6,
-	#mw-content dt {
+	h1,
+	h2,
+	h3,
+	h5,
+	h6,
+	dt {
 		font-family: 'Helvetica Neue', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
 		margin: 1em 0 0.5em;
 		font-weight: 300;
 		letter-spacing: 0.02em;
 	}
 
-	#mw-content-container {
-		border-bottom: 0;
-		background: #fff;
+	padding: 0.2em 2em 3em;
+	border: 0;
+
+	h1:after {
+		border-bottom: none;
 	}
 
-	#mw-content {
-		padding: 0.2em 2em 3em;
-		border: 0;
+	h2 {
+		font-size: 1.6em;
 
-		h1 {
-			border-bottom: 0;
-		}
-
-		h2 {
+		&::after {
 			border-bottom: 3px solid #a2b9cc;
-			font-size: 1.6em;
-		}
-
-		h3 {
-			border-bottom: 2px solid #bdccd6;
-			font-size: 1.4em;
-		}
-
-		h4 {
-			font-size: 1.2em;
-			font-family: 'Helvetica Neue', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
-			font-weight: 500;
-		}
-
-		h5 {
-			border-bottom: 1px solid #bdccd6;
 		}
 	}
 
-	/* alle 850 */
+	h3 {
+		border-bottom: 2px solid #bdccd6;
+		font-size: 1.4em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+		font-family: 'Helvetica Neue', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+		font-weight: 500;
+	}
+
+	h5 {
+		border-bottom: 1px solid #bdccd6;
+	}
+
 	@media screen and ( max-width: 850px ) {
-		#mw-header-container {
-			background: #fff;
-			padding: 4.75em 2em 0.35em;
-		}
-
-		#user-tools h2,
-		.sidebar-chunk h2 {
-			top: 2.6em;
-		}
-
-		#simpleSearch {
-			top: 0;
-		}
-
-		#p-logo-text {
-			top: 1em;
-			left: 2em;
-			right: inherit;
-		}
-
 		#etusivu {
 			flex-flow: wrap;
 		}
-
-		#site-navigation h2 {
-			right: 5.5em;
-			left: inherit;
-		}
-
-		#site-tools h2 {
-			right: 8.5em;
-		}
-
-		#site-navigation .sidebar-inner {
-			left: auto;
-			right: 0;
-		}
 	}
 
-	/* yli 850 */
-	@media screen and ( min-width: 851px ) {
-		#mw-header-container {
-			min-height: 5em;
-			padding: 1em 0 0;
-		}
-
-		#mw-content-container {
-			margin-top: 5em;
-			padding-bottom: 2em;
-		}
-
-		#personal h2 {
-			font-family: 'Helvetica Neue', 'Helvetica', 'Noto Sans', 'Arial', sans-serif;
-			font-size: 0.8em;
-			text-transform: uppercase;
-		}
-
-		#user-tools {
-			width: unset;
-			float: right;
-		}
-
-		#personal .dropdown {
-			top: 2em;
-		}
-
-		#personal .pokey {
-			top: 1.7em;
-		}
-
-		.ts-inner {
-			padding: 0 2em;
-		}
+	.toiminto {
+		margin: 1.1em 0.5em 0 0;
 	}
 
-	/* 850-1100 */
-	@media screen and ( max-width: 1099px ) and ( min-width: 851px ) {
-		#mw-site-navigation h2,
-		#mw-related-navigation h2 {
-			font-family: 'Helvetica Neue', 'Helvetica', 'Noto Sans', 'Arial', sans-serif;
-			font-size: 0.8em;
-			text-transform: uppercase;
-			padding: 0;
-		}
-
-		#mw-content {
-			padding-top: 1.2em;
-		}
-
-		#mw-related-navigation .sidebar-chunk,
-		#mw-site-navigation .sidebar-chunk {
-			top: 2.5em !important;
-		}
+	sup,
+	sub {
+		line-height: 1;
 	}
 
-	/* yli 1100 */
-	@media screen and ( min-width: 1100px ) {
-		#mw-site-navigation .sidebar-chunk,
-		#mw-related-navigation .sidebar-chunk {
-			background: #fff;
-			border: 0;
-			padding: 0 0 1em 0;
-			box-shadow: none;
-			overflow: auto;
-			margin: 0;
-			line-height: 1em;
-		}
+	sup {
+		vertical-align: super;
+		font-size: smaller;
+	}
 
-		#mw-site-navigation {
-			padding: 2em 1em 0 0;
-		}
+	/* Hakusivu */
+	.page-Toiminnot_Semanttinen_kysely_Haku & #pfForm .createboxInput {
+		width: 300px !important;
+		box-sizing: border-box;
+		border-radius: 0;
+		margin: 0;
+	}
 
-		#mw-site-navigation .sidebar-chunk ul,
-		#mw-related-navigation .sidebar-chunk ul {
-			margin-bottom: 0;
+	ul.listaus,
+	ul.maarittely {
+		margin: 0.8em 0 1em 0;
+	}
 
-			li {
-				margin: 0 0 0.5em;
+	.listaus li,
+	.maarittely li {
+		list-style: none;
+		margin: 0.3em 0 0.3em 0;
+	}
+
+	.maarittely {
+		font-style: italic;
+	}
+
+	a,
+	a:visited,
+	.mw-body-content a.external,
+	.leaflet-container a {
+		color: #0075d6;
+	}
+
+	a:hover,
+	.mw-body-content a.external:hover,
+	.leaflet-container a:hover {
+		color: #008dff;
+	}
+
+	.merkinta {
+		margin: 1em 0 0 2em;
+		counter-reset: li; /* Initiate a counter */
+		padding-left: 0; /* Remove the default left padding */
+
+		> li {
+			margin: 0.5em 0 0.5em 0;
+			position: relative;
+			list-style: none;
+
+			&:before {
+				content: counter( li );
+				counter-increment: li;
+				position: absolute;
+				top: -2px;
+				left: -2em;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				width: 25px;
+				height: 25px;
+				text-align: center;
+				border-radius: 50%;
+				color: #6b98c2;
+				border: 2px solid #6b98c2;
 			}
 		}
-
-		#mw-content-block {
-			padding-top: 1em;
-		}
 	}
+}
 
-	/* 1100-1340 */
-	@media screen and ( max-width: 1339px ) and ( min-width: 1100px ) {
-		#mw-content {
-			margin-left: 15em;
-		}
+.skin-timeless {
+	font-family: 'Helvetica Neue', 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+	color: #333;
+	background: #6b98c2;
 
-		#mw-related-navigation {
-			margin-top: 0;
-		}
-	}
-
-	/* yli 1340 */
-	@media screen and ( min-width: 1340px ) {
-		#mw-related-navigation {
-			padding-left: 2em;
-		}
-	}
-
-	#p-namespaces li {
-		margin: 0.2em 1em 0.5em 0;
-	}
-
+	/* Valikoiden ynnä muun siistiminen */
+	#p-navigation-label,
+	#other-languages,
 	#p-logo,
-	#mw-header-hack,
-	#mw-header-nav-hack,
-	#menus-cover {
+	#ca-languages, /* other languages icon menu */
+	&.na-user--limited #mw-page-header-links, /* icon menus */
+	&.na-user--limited #ca-more, /* other tools */
+	&.na-user--limited #mw-related-navigation,
+	&.na-user--limited #site-tools,
+	&.na-user--limited #p-views {
 		display: none;
 	}
-}
 
-ul.listaus,
-ul.maarittely {
-	margin: 0.8em 0 1em 0;
-}
+	/* Piilota anonyymi teksti */
+	&.na-user--anon #personal h2 span {
+		display: none;
+	}
 
-.listaus li,
-.maarittely li {
-	list-style: none;
-	margin: 0.3em 0 0.3em 0;
-}
+	/* Taustavärien, rajojen ja varjojen poistot */
 
-.maarittely {
-	font-style: italic;
-}
+	.color-bar div {
+		background: #fff;
+	}
 
-a,
-a:visited,
-.mw-body-content a.external,
-.leaflet-container a {
-	color: #0075d6;
-}
+	#mw-content-container {
+		background: #fff;
+		border: none;
+	}
 
-a:hover,
-.mw-body-content a.external:hover,
-.leaflet-container a:hover {
-	color: #008dff;
-}
+	#mw-header-nav-hack,
+	#mw-header-hack,
+	#mw-content,
+	#mw-footer-container {
+		border: none;
+		box-shadow: none;
+	}
 
-.toiminto {
-	margin: 1.1em 0.5em 0 0;
-}
+	/* Specificty override */
+	#mw-content-container .sidebar-chunk {
+		border: none;
+		box-shadow: none;
+		background: #fff;
+	}
+	/* </> */
 
-.inset {
-	margin-left: 1.5em;
-}
+	@media screen and ( max-width: 320px ) {
+		#p-logo-text {
+			position: static;
+		}
 
-.merkinta {
-	margin: 1em 0 0 2em;
-	counter-reset: li; /* Initiate a counter */
-	padding-left: 0; /* Remove the default left padding */
+		/* Remove search completely */
+		&.na-user--limited #p-search {
+			display: none;
+		}
+	}
 
-	> li {
-		margin: 0.5em 0 0.5em 0;
-		position: relative;
-		list-style: none;
-
-		&:before {
-			content: counter( li );
-			counter-increment: li;
+	@media screen and ( min-width: 321px ) and ( max-width: 850px ) {
+		#p-logo-text {
 			position: absolute;
-			top: -2px;
-			left: -2em;
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			width: 25px;
-			height: 25px;
-			text-align: center;
-			border-radius: 50%;
-			color: #6b98c2;
-			border: 2px solid #6b98c2;
+		}
+
+		/* Remove search completely */
+		&.na-user--limited #p-search {
+			display: none;
+		}
+	}
+
+	@media screen and ( min-width: 851px ) {
+		/* Hide search but occupy space */
+		&.na-user--limited #p-search {
+			visibility: hidden;
+		}
+	}
+
+	@media screen and ( min-width: 1100px ) {
+		#p-logo {
+			display: block;
+		}
+
+		#p-logo-text {
+			display: none;
 		}
 	}
 }
 
-.merkintaotsikko {
-	font-size: 1.1em;
-}
-
-sup,
-sub {
-	line-height: 1;
-}
-
-sup {
-	vertical-align: super;
-	font-size: smaller;
-}
-
-/* Valikoiden ynnä muun siistiminen */
-#p-search,
-#p-navigation-label,
-#other-languages,
-.na-user--limited #mw-related-navigation,
-.na-user--limited #site-tools,
-.na-user--limited #p-views {
-	display: none;
-}
-
-#mw-site-navigation {
-	line-height: 1.2em;
-}
-
-/* Hakusivu */
-.page-Toiminnot_Semanttinen_kysely_Haku #pfForm .createboxInput {
-	width: 300px !important;
-	box-sizing: border-box;
-	border-radius: 0;
-	margin: 0;
-}
-
-/* Fix flow editor on talk pages */
-#mw-content-text .flow-ui-newTopicWidget-editor textarea {
-	border: 1px solid #ccc;
-}
-
-/* Logo */
-.skin-timeless #p-logo-text {
-	background-image: url( /logo-fi.svg );
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 4em;
-	position: absolute;
-
-	a {
-		color: transparent;
-		padding: 0;
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
-
-	&:lang( se ) {
-		background-image: url( /logo-se.svg );
-	}
-
-	&:lang( sms ) {
-		background-image: url( /logo-sms.svg );
-	}
-
-	&:lang( smn ) {
-		background-image: url( /logo-smn.svg );
-	}
-
-	&:lang( sv ) {
-		background-image: url( /logo-sv.svg );
-	}
-}
 
 body.mw-special-CreateAccount .mw-createacct-benefits-container {
 	display: none;
