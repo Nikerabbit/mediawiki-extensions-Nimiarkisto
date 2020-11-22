@@ -45,12 +45,14 @@ class Hooks {
 		global $wgTimelessWordmark, $wgTimelessLogo;
 		$wgTimelessWordmark = [
 			'1x' => "/logo-$lang.svg",
+			'width' => null,
 			'height' => 35,
 		];
 
 		$wgTimelessLogo= [
 			'1x' => "/logo-$lang.svg",
 			'width' => 160,
+			'height' => null,
 		];
 	}
 
