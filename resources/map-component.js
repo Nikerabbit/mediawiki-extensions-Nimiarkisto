@@ -14719,7 +14719,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 		// See discussion in https://github.com/kartena/Proj4Leaflet/pull/147
 		proj4 = proj4.default;
 	}
- 
+
 	L.Proj = {};
 
 	L.Proj._isProj4Obj = function(a) {
@@ -16567,10 +16567,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                     throw "Use of EPSG:3067 layers requires Proj4Leaflet plugin.";
                 }
             }
-            
+
             L.TileLayer.prototype.initialize.call(this, url, options);
         },
-        
+
     });
 
     L.tileLayer.mml = function (type, options) {
@@ -16580,7 +16580,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // WMTS Layer
 
     L.TileLayer.MML_WMTS = L.TileLayer.extend({
-        
+
         options: {
             style: "default",
             maxZoom: 15,
@@ -16592,8 +16592,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
     L.tileLayer.mml_wmts = function (options) {
         var layer = options.layer || "taustakartta";
-        var url = "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/" + layer + "/default/"
-                + "ETRS-TM35FIN/{z}/{y}/{x}.png";
+        var url = "/wiki/Special:MapProxy?z={z}&y={y}&x={x}&layer=" + layer;
 
         return new L.TileLayer.MML_WMTS(url, options);
     };
@@ -16982,7 +16981,7 @@ function testObj(code){
 function testDef(code){
   return code in __WEBPACK_IMPORTED_MODULE_0__defs__["a" /* default */];
 }
- var codeWords = ['PROJECTEDCRS', 'PROJCRS', 'GEOGCS','GEOCCS','PROJCS','LOCAL_CS', 'GEODCRS', 'GEODETICCRS', 'GEODETICDATUM', 'ENGCRS', 'ENGINEERINGCRS']; 
+ var codeWords = ['PROJECTEDCRS', 'PROJCRS', 'GEOGCS','GEOCCS','PROJCS','LOCAL_CS', 'GEODCRS', 'GEODETICCRS', 'GEODETICDATUM', 'ENGCRS', 'ENGINEERINGCRS'];
 function testWKT(code){
   return codeWords.some(function (word) {
     return code.indexOf(word) > -1;

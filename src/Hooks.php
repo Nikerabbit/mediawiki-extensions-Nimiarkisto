@@ -49,7 +49,7 @@ class Hooks {
 			'height' => 35,
 		];
 
-		$wgTimelessLogo= [
+		$wgTimelessLogo = [
 			'1x' => "/logo-$lang.svg",
 			'width' => 160,
 			'height' => null,

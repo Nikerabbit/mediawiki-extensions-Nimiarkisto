@@ -7,6 +7,14 @@
 	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
 	"description": "Code to import and display Nimiarkisto in a MediaWiki",
 	"license-name": "GPL-2.0-or-later",
+	"config": {
+		"NimiarkistoMapProxy": {
+			"value": {
+				"key": "",
+				"url": "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/{layer}/default/ETRS-TM35FIN/{z}/{y}/{x}.png"
+			}
+		}
+	},
 	"ExtensionMessagesFiles": {
 		"NimiarkistoMagic": "Nimiarkisto.magic.php"
 	},
@@ -22,6 +30,9 @@
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extensions\\Nimiarkisto\\": "src/"
+	},
+	"SpecialPages": {
+		"MapProxy": "MediaWiki\\Extensions\\Nimiarkisto\\MapProxySpecialPage"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
@@ -42,5 +53,5 @@
 			"scripts": "map-component.js"
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
