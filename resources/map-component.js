@@ -16804,7 +16804,7 @@ function createKotusLayer(options, withBorders) {
     wmsOptions['time'] = '1750-1-1/2020-1-1';
   }
 
-  return L.tileLayer.wms('https://avaa.tdata.fi/geoserver/kotus/wms', wmsOptions);
+  return L.tileLayer.wms('https://paituli.csc.fi/geoserver/kotus/wms', wmsOptions);
 }
 
 function createMarkers(locations) {
