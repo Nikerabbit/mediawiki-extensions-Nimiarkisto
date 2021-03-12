@@ -24,7 +24,7 @@ $( function () {
 	// eslint-disable-next-line no-jquery/no-global-selector
 	mapid = $( '.mapdata-id' ).data( 'mapid' );
 	if ( mapid ) {
-		options.mapId = mapid.replace( '_', '.' );
+		options.mapId = ( '' + mapid ).replace( '_', '.' );
 	}
 
 	mw.loader.using( 'nimiarkistokartta' ).done( function () {
