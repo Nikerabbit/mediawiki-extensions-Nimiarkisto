@@ -26,8 +26,11 @@ jobs:
 
     - name: Install dependencies
       uses: php-actions/composer@v6
+      with:
+        php_version: 7.3
 
     - name: Run tests
       uses: php-actions/composer@v6
       with:
+        php_version: 7.3
         command: run-script test
