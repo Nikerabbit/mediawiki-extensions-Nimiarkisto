@@ -57,14 +57,14 @@ class Hooks {
 	}
 
 	public static function onParserFirstCallInit( $parser ) {
-		$parser->setFunctionHook( 'nac', function ( $parser, $param1 = '' ) {
+		$parser->setFunctionHook( 'nac', static function ( $parser, $param1 = '' ) {
 			$output = Sanitizer::decodeCharReferences( $param1 );
 			$output = str_replace( [ "'", '"' ], [ '′', '″' ], $output );
 			return [ $output ];
 		} );
 
 		// Use JavaScript to move the title in the DOM
-		$parser->setFunctionHook( 'mytitle', function () {
+		$parser->setFunctionHook( 'mytitle', static function () {
 			$output = <<<HTML
 <div id="mytitleplaceholder"></div>
 <script>

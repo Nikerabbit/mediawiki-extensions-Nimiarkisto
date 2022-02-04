@@ -5,6 +5,8 @@
  * @file
  */
 
+// phpcs:disable MediaWiki.NamingConventions.PrefixedGlobalFunctions.allowedPrefix
+
 require 'Parish.php';
 require __DIR__ . '/vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
@@ -407,7 +409,7 @@ TODO wikibase-linkki
 			$data[ 'statements' ][ 'P10051' ] = [ $x[ YCOORD ] ];
 		}
 
-		$isMulti = function ( $x ) {
+		$isMulti = static function ( $x ) {
 			return $x !== null && preg_match( '/[,-]/', $x ) === 1;
 		};
 
@@ -771,7 +773,7 @@ function convertCoordinates( array $list ) {
 	unlink( '__input.txt' );
 
 	return array_map(
-		function ( $line ) {
+		static function ( $line ) {
 			// $output = [ "24.8085103565     62.7632414174 0.0000000000"];
 			list( $x, $y, ) = preg_split( '~\s+~', $line );
 			return [ $x, $y ];
