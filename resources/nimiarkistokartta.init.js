@@ -24,7 +24,7 @@ $( function () {
 	// eslint-disable-next-line no-jquery/no-global-selector
 	mapid = $( '.mapdata-id' ).data( 'mapid' );
 	if ( mapid ) {
-		options.mapId = ( '' + mapid ).replace( '_', '.' );
+		options.mapId = String( mapid ).replace( '_', '.' );
 	}
 
 	mw.loader.using( 'nimiarkistokartta' ).done( function () {
@@ -71,7 +71,8 @@ $( function () {
 
 // https://github.com/SemanticMediaWiki/SemanticMediaWiki/issues/4882
 $( function () {
+	// eslint-disable-next-line no-jquery/no-global-selector
 	if ( $( '.maps-leaflet' ).length ) {
-		mw.loader.load( 'ext.maps.leaflet.loader' )
+		mw.loader.load( 'ext.maps.leaflet.loader' );
 	}
 } );

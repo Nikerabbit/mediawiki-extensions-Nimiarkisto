@@ -1,8 +1,8 @@
+'use strict';
+
 /* eslint-env node */
 module.exports = function ( grunt ) {
-	'use strict';
-
-	var conf = grunt.file.readJSON( 'extension.json' );
+	const conf = grunt.file.readJSON( 'extension.json' );
 
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
@@ -16,8 +16,9 @@ module.exports = function ( grunt ) {
 			},
 			all: [
 				'**/*.{js,json}',
-				'!{vendor,node_modules,lib}/**',
-				'!resources/map-component.js'
+				'!{vendor,node_modules,lib,maintenancepages}/**',
+				'!resources/map-component.js',
+				'!package-lock.json'
 			]
 		},
 		stylelint: {
@@ -26,7 +27,7 @@ module.exports = function ( grunt ) {
 				'!{vendor,node_modules,lib}/**'
 			]
 		},
-		// eslint-disable-next-line es/no-object-assign
+		// eslint-disable-next-line compat/compat
 		banana: Object.assign( conf.MessagesDirs, {
 			options: {
 				requireLowerCase: 'initial'

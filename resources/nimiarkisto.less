@@ -1,4 +1,7 @@
 #mw-content {
+	padding: 0.2em 2em 3em;
+	border: 0;
+
 	a > img {
 		height: auto !important;
 		max-width: 100% !important;
@@ -67,17 +70,14 @@
 		letter-spacing: 0.02em;
 	}
 
-	padding: 0.2em 2em 3em;
-	border: 0;
-
 	h1:after {
-		border-bottom: none;
+		border-bottom: 0;
 	}
 
 	h2 {
 		font-size: 1.6em;
 
-		&::after {
+		&:after {
 			border-bottom: 3px solid #a2b9cc;
 		}
 	}
@@ -200,20 +200,20 @@
 
 	#mw-content-container {
 		background: #fff;
-		border: none;
+		border: 0;
 	}
 
 	#mw-header-nav-hack,
 	#mw-header-hack,
 	#mw-content,
 	#mw-footer-container {
-		border: none;
+		border: 0;
 		box-shadow: none;
 	}
 
-	/* Specificty override */
+	/* Specificity override */
 	#mw-content-container .sidebar-chunk {
-		border: none;
+		border: 0;
 		box-shadow: none;
 		background: #fff;
 	}
@@ -258,7 +258,6 @@
 		}
 	}
 }
-
 
 body.mw-special-CreateAccount .mw-createacct-benefits-container {
 	display: none;
