@@ -137,6 +137,17 @@ HTML;
 			return [];
 		}
 
+		$P10014 = new PropertyId( 'P10014' );
+		$collectionStatements = $klEntity->getStatements()->getByPropertyId( $P10014 )->toArray();
+		if ( $collectionStatements === [] ) {
+			return [];
+		}
+		$collection = $collectionStatements[ 0 ]
+			->getMainSnak()
+			->getDataValue()
+			->getEntityId()
+			->getLocalPart();
+
 		$group = 'Kotus';
 		$images = [];
 
@@ -160,9 +171,12 @@ HTML;
 			$nlStatements = $nlEntity->getStatements()->getByPropertyId( $P10020 );
 			foreach ( $nlStatements as $nlStatement ) {
 				$name = $nlStatement->getMainSnak()->getDataValue()->getValue();
-				$name = mb_strtoupper( $name );
-				$name = str_replace( 'KOTUS-', 'kotus-', $name );
-				$name = str_replace( '.JPG', '.jpg', $name );
+				if ( $collection === 'Q34' ) {
+					// 1-kokoelma
+					$name = mb_strtoupper( $name );
+					$name = str_replace( 'KOTUS-', 'kotus-', $name );
+					$name = str_replace( '.JPG', '.jpg', $name );
+				}
 				$images[] = [
 					'group' => $group,
 					'file' => $name,
