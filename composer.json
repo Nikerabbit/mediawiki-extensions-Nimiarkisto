@@ -1,4 +1,10 @@
 {
+	"config": {
+		"optimize-autoloader": true,
+		"platform": {
+			"php": "7.4.30"
+		}
+	},
 	"require": {
 		"php": ">=7.4",
 		"wikibase/data-model": "^9.0.1",
