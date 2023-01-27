@@ -53,5 +53,8 @@
 			"scripts": "map-component.js"
 		}
 	},
+	"APIModules": {
+		"nimiarkistolookup": "MediaWiki\\Extensions\\Nimiarkisto\\NimiarkistoLookupActionApi"
+	},
 	"manifest_version": 2
 }
