@@ -1,8 +1,8 @@
 <?php
 
-namespace MediaWiki\Extension\Nimiarkisto;
+namespace MediaWiki\Extensions\Nimiarkisto;
 
-use MediaWiki\Extensions\Nimiarkisto\SMWPropertyValueLookup;
+use Maintenance;
 
 $env = getenv( 'MW_INSTALL_PATH' );
 $IP = $env !== false ? $env : __DIR__ . '/../../..';
