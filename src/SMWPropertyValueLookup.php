@@ -30,21 +30,12 @@ class SMWPropertyValueLookup {
 	public function searchProperties( string $propertyName, string $query ): array {
 		$cache = $this->cache;
 		$key = $cache->makeKey( 'Nimiarkisto', 'PropertyValues', $propertyName );
-		$haystack = $cache->getWithSetCallback(
-			$key,
-			ExpirationAwareness::TTL_WEEK,
-			function () use ( $propertyName ): string {
-				return $this->getPropertyValues( $propertyName );
-			},
-			[
-				// Avoid querying cache servers multiple times in a web request
-				'pcTTL' => ExpirationAwareness::TTL_PROC_LONG,
-				// Enable pre-emptive updates after a day
-				'lowTTL' => ExpirationAwareness::TTL_DAY * 6,
-			]
-		);
+		$haystack = $cache->get( $key );
+		if ( $haystack === false ) {
+			$haystack = $this->getPropertyValues( $propertyName );
+			$cache->set( $key, $haystack, ExpirationAwareness::TTL_WEEK );
+		}
 
-		$results = [];
 		$anything = '.';
 		$query = preg_quote( $query, '/' );
 		// Prefix match
