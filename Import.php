@@ -211,7 +211,7 @@ class NimiarkistoImport extends Maintenance {
 	}
 
 	private function saveEntity( EntityDocument $entity, $textSummary ) {
-		$editEntity = $this->editEntityFactory->newEditEntity( $this->user, $entity->getId(), false );
+		$editEntity = $this->editEntityFactory->newEditEntity( $this->user, $entity->getId() );
 		return $editEntity->attemptSave( $entity, $textSummary, 0, false );
 	}
 }
