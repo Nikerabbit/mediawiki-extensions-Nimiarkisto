@@ -22,7 +22,7 @@ use Wikibase\DataModel\Snak\PropertyNoValueSnak;
 use Wikibase\DataModel\Snak\PropertyValueSnak;
 use Wikibase\DataModel\Statement\StatementList;
 use Wikibase\DataModel\Term\Fingerprint;
-use Wikibase\Repo\EditEntity\MediawikiEditEntityFactory;
+use Wikibase\Repo\EditEntity\MediaWikiEditEntityFactory;
 use Wikibase\Repo\WikibaseRepo;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -36,7 +36,7 @@ class NimiarkistoImport extends Maintenance {
 	private $user;
 	/** @var array */
 	private $data;
-	/** @var MediawikiEditEntityFactory */
+	/** @var MediaWikiEditEntityFactory */
 	private $editEntityFactory;
 	/** @var GuidGenerator */
 	private $guidGenerator;
