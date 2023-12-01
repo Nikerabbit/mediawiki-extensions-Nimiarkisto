@@ -4,6 +4,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use MediaWiki\MediaWikiServices;
+use SMW\DIProperty;
 use SMW\DIWikiPage;
 use SMW\StoreFactory;
 use WANObjectCache;
@@ -17,14 +18,18 @@ class SMWPropertyValueLookup {
 	private const FIELD_DELIMITER = "\x7F";
 	private const ROW_DELIMITER = "\n";
 
-	/** @var WANObjectCache */
-	private $cache;
-	/** @var StoreFactory */
-	private $store;
+	private WANObjectCache $cache;
+	private StoreFactory $store;
 
 	public function __construct() {
 		$this->cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$this->store = smwfGetStore();
+	}
+
+	public function recache( string $propertyName ) {
+		$haystack = $this->getPropertyValues( $propertyName );
+		$key = $this->cache->makeKey( 'Nimiarkisto', 'PropertyValues', $propertyName );
+		$this->cache->set( $key, $haystack, ExpirationAwareness::TTL_WEEK );
 	}
 
 	public function searchProperties( string $propertyName, string $query ): array {
@@ -32,9 +37,9 @@ class SMWPropertyValueLookup {
 		$key = $cache->makeKey( 'Nimiarkisto', 'PropertyValues', $propertyName );
 		$haystack = $cache->get( $key );
 		if ( $haystack === false ) {
-			$haystack = $this->getPropertyValues( $propertyName );
-			$cache->set( $key, $haystack, ExpirationAwareness::TTL_WEEK );
+			$this->recache( $propertyName );
 		}
+		$haystack = $cache->get( $key ) ?? '';
 
 		$anything = '.';
 		$query = preg_quote( $query, '/' );
@@ -52,8 +57,7 @@ class SMWPropertyValueLookup {
 	}
 
 	public function getPropertyValues( string $propertyName ): string {
-		$property = new \SMW\DIProperty( $propertyName );
-		$type = $property->findPropertyValueType();
+		$property = new DIProperty( $propertyName );
 
 		$values = $this->store->getPropertyValues( null, $property );
 		$output = '';

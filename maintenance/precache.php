@@ -24,7 +24,7 @@ class Precache extends Maintenance {
 		$names = array_map( 'trim', explode( ',', $this->getOption( 'properties' ) ) );
 		$lookup = new SMWPropertyValueLookup();
 		foreach ( $names as $name ) {
-			$lookup->searchProperties( $name, '!' );
+			$lookup->recache( $name );
 		}
 	}
 }
