@@ -20,7 +20,7 @@ class NimiarkistoLookupActionApi extends \ApiBase {
 		};
 		$matches = array_map( $formatter, $matches );
 		$result = $this->getResult();
-		$result->addValue( null, 'pf_autocomplete', $matches );
+		$result->addValue( null, 'pfautocomplete', $matches );
 	}
 
 	/** @inheritDoc */
