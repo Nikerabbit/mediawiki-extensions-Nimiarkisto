@@ -15,10 +15,12 @@ class NimiarkistoLookupActionApi extends \ApiBase {
 		$params = $this->extractRequestParams();
 		$matches = ( new SMWPropertyValueLookup() )->searchProperties( $params['property'], $params['query'] );
 		$matches = array_slice( $matches, 0, 50 );
+		$formatter = static function ( $m ) {
+			return [ 'title' => $m ];
+		};
+		$matches = array_map( $formatter, $matches );
 		$result = $this->getResult();
-		foreach ( $matches as $match ) {
-			$result->addValue( 'pfautocomplete', null, [ 'title' => $match ] );
-		}
+		$result->addValue( null, 'pf_autocomplete', $matches );
 	}
 
 	/** @inheritDoc */
