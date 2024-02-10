@@ -140,7 +140,7 @@ class NimiarkistoConverter {
 
 			$recser = $lines[ $index ][ RECSER ];
 			if ( isset( $imageFixes[ $recser ] ) ) {
-				list( $from, $to ) = $imageFixes[ $recser ];
+				[ $from, $to ] = $imageFixes[ $recser ];
 				$lines[ $index ][ IMAGEFILE ] = str_replace( $from, $to, $lines[ $index ][ IMAGEFILE ] );
 				$lines[ $index ][ IMAGEINFO ] = str_replace( $from, $to, $lines[ $index ][ IMAGEINFO ] );
 			}
@@ -403,7 +403,7 @@ TODO wikibase-linkki
 		}
 
 		if ( isset( $x['wsg'] ) ) {
-			list( $long, $lat ) = $x['wsg'];
+			[ $long, $lat ] = $x['wsg'];
 			$data[ 'statements' ][ 'P10012' ] = [ [ (float)$lat, (float)$long, 0.000000001 ] ];
 			$data[ 'statements' ][ 'P10050' ] = [ $x[ XCOORD ] ];
 			$data[ 'statements' ][ 'P10051' ] = [ $x[ YCOORD ] ];
@@ -775,7 +775,7 @@ function convertCoordinates( array $list ) {
 	return array_map(
 		static function ( $line ) {
 			// $output = [ "24.8085103565     62.7632414174 0.0000000000"];
-			list( $x, $y, ) = preg_split( '~\s+~', $line );
+			[ $x, $y, ] = preg_split( '~\s+~', $line );
 			return [ $x, $y ];
 		},
 		$output
