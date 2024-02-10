@@ -6,7 +6,8 @@ namespace MediaWiki\Extensions\Nimiarkisto;
 use MediaWiki\MediaWikiServices;
 use SMW\DIProperty;
 use SMW\DIWikiPage;
-use SMW\SQLStore\SQLStore;
+use SMWDIBlob;
+use SMWStore;
 use WANObjectCache;
 use Wikimedia\LightweightObjectStore\ExpirationAwareness;
 
@@ -15,18 +16,15 @@ use Wikimedia\LightweightObjectStore\ExpirationAwareness;
  * @license GPL-2.0-or-later
  */
 class SMWPropertyValueLookup {
-	private const FIELD_DELIMITER = "\x7F";
-	private const ROW_DELIMITER = "\n";
-
 	private WANObjectCache $cache;
-	private SQLStore $store;
+	private SMWStore $store;
 
 	public function __construct() {
 		$this->cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$this->store = smwfGetStore();
 	}
 
-	public function recache( string $propertyName ) {
+	public function recache( string $propertyName ): void {
 		$haystack = $this->getPropertyValues( $propertyName );
 		$key = $this->cache->makeKey( 'Nimiarkisto', 'PropertyValues', $propertyName );
 		$this->cache->set( $key, $haystack, ExpirationAwareness::TTL_WEEK );

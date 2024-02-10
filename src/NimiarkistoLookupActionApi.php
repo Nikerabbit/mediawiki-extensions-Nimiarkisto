@@ -3,15 +3,16 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extensions\Nimiarkisto;
 
+use ApiBase;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
  * @author Niklas Laxström
  * @license GPL-2.0-or-later
  */
-class NimiarkistoLookupActionApi extends \ApiBase {
+class NimiarkistoLookupActionApi extends ApiBase {
 	/** @inheritDoc */
-	public function execute() {
+	public function execute(): void {
 		$params = $this->extractRequestParams();
 		$matches = ( new SMWPropertyValueLookup() )->searchProperties( $params['property'], $params['query'] );
 		$matches = array_slice( $matches, 0, 50 );
@@ -24,7 +25,7 @@ class NimiarkistoLookupActionApi extends \ApiBase {
 	}
 
 	/** @inheritDoc */
-	public function getAllowedParams() {
+	public function getAllowedParams(): array {
 		return [
 			'property' => [
 				ParamValidator::PARAM_REQUIRED => true

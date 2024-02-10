@@ -16,7 +16,7 @@ class MapProxySpecialPage extends SpecialPage {
 		parent::__construct( 'MapProxy' );
 	}
 
-	public function execute( $subPage ) {
+	public function execute( $subPage ): void {
 		$output = $this->getOutput();
 		$output->disable();
 

@@ -96,11 +96,11 @@ HTML;
 	}
 
 	private static function getImages( string $input ): array {
-		$wbc = WikibaseClient::getDefaultInstance();
+		$entityLookup = WikibaseClient::getStore()->getEntityLookup();
 
 		// kl = keruulippu, nl = nimilippu
-		$klEntityId = $wbc->getEntityIdParser()->parse( $input );
-		$klEntity = $wbc->getStore()->getEntityLookup()->getEntity( $klEntityId );
+		$klEntityId = WikibaseClient::getEntityIdParser()->parse( $input );
+		$klEntity = $entityLookup->getEntity( $klEntityId );
 		if ( !$klEntity ) {
 			return [];
 		}
@@ -155,7 +155,7 @@ HTML;
 		$klStatements = $klEntity->getStatements()->getByPropertyId( $P10029 );
 		foreach ( $klStatements as $klStatement ) {
 			$nlEntityId = $klStatement->getMainSnak()->getDataValue()->getEntityId();
-			$nlEntity = $wbc->getStore()->getEntityLookup()->getEntity( $nlEntityId );
+			$nlEntity = $entityLookup->getEntity( $nlEntityId );
 
 			// Whether image is hidden or not
 			$P10041 = new PropertyId( 'P10041' );
