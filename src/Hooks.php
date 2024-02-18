@@ -10,7 +10,7 @@ use RuntimeException;
 use Sanitizer;
 use SpecialPage;
 use Wikibase\Client\WikibaseClient;
-use Wikibase\DataModel\Entity\PropertyId;
+use Wikibase\DataModel\Entity\NumericPropertyId;
 
 /**
  * @author Niklas Laxström
@@ -105,7 +105,7 @@ HTML;
 			return [];
 		}
 
-		$P10037 = new PropertyId( 'P10037' );
+		$P10037 = new NumericPropertyId( 'P10037' );
 		$producerStatements = $klEntity->getStatements()->getByPropertyId( $P10037 )->toArray();
 		if ( $producerStatements === [] ) {
 			return [];
@@ -121,7 +121,7 @@ HTML;
 			return [];
 		}
 
-		$P10025 = new PropertyId( 'P10025' );
+		$P10025 = new NumericPropertyId( 'P10025' );
 		$nameTypeStatements = $klEntity->getStatements()->getByPropertyId( $P10025 )->toArray();
 		if ( $nameTypeStatements === [] ) {
 			return [];
@@ -137,7 +137,7 @@ HTML;
 			return [];
 		}
 
-		$P10014 = new PropertyId( 'P10014' );
+		$P10014 = new NumericPropertyId( 'P10014' );
 		$collectionStatements = $klEntity->getStatements()->getByPropertyId( $P10014 )->toArray();
 		if ( $collectionStatements === [] ) {
 			return [];
@@ -151,14 +151,14 @@ HTML;
 		$group = 'Kotus';
 		$images = [];
 
-		$P10029 = new PropertyId( 'P10029' );
+		$P10029 = new NumericPropertyId( 'P10029' );
 		$klStatements = $klEntity->getStatements()->getByPropertyId( $P10029 );
 		foreach ( $klStatements as $klStatement ) {
 			$nlEntityId = $klStatement->getMainSnak()->getDataValue()->getEntityId();
 			$nlEntity = $entityLookup->getEntity( $nlEntityId );
 
 			// Whether image is hidden or not
-			$P10041 = new PropertyId( 'P10041' );
+			$P10041 = new NumericPropertyId( 'P10041' );
 			$jsStatements = $nlEntity->getStatements()->getByPropertyId( $P10041 );
 			foreach ( $jsStatements as $jsStatement ) {
 				$status = $jsStatement->getMainSnak()->getDataValue()->getEntityId()->getLocalPart();
@@ -167,7 +167,7 @@ HTML;
 				}
 			}
 
-			$P10020 = new PropertyId( 'P10020' );
+			$P10020 = new NumericPropertyId( 'P10020' );
 			$nlStatements = $nlEntity->getStatements()->getByPropertyId( $P10020 );
 			foreach ( $nlStatements as $nlStatement ) {
 				$name = $nlStatement->getMainSnak()->getDataValue()->getValue();
