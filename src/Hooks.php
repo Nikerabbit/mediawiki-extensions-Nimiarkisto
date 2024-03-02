@@ -4,8 +4,10 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use Html;
-use MediaWiki\MediaWikiServices;
-use OutputPage;
+use MediaWiki\Cache\Hook\MessageCache__getHook;
+use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Permissions\PermissionManager;
 use RuntimeException;
 use Sanitizer;
 use SpecialPage;
@@ -16,15 +18,20 @@ use Wikibase\DataModel\Entity\NumericPropertyId;
  * @author Niklas Laxström
  * @license GPL-2.0-or-later
  */
-class Hooks {
-	public static function onBeforePageDisplay( OutputPage $out ) {
+class Hooks implements BeforePageDisplayHook, MessageCache__getHook, ParserFirstCallInitHook {
+	public function __construct(
+		private readonly PermissionManager $permissionManager
+	) {
+	}
+
+	/** @inheritDoc */
+	public function onBeforePageDisplay( $out, $skin ): void {
 		$user = $out->getUser();
 
 		$out->addModuleStyles( [ 'nimiarkisto', 'nimiarkistokartta.styles' ] );
 		$out->addModules( 'nimiarkistokartta.init' );
 
-		$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
-		if ( !$permissionManager->userHasRight( $user, 'alledit' ) ) {
+		if ( !$this->permissionManager->userHasRight( $user, 'alledit' ) ) {
 			$out->addBodyClasses( 'na-user--limited' );
 		}
 
@@ -56,7 +63,7 @@ class Hooks {
 		];
 	}
 
-	public static function onParserFirstCallInit( $parser ) {
+	public function onParserFirstCallInit( $parser ): void {
 		$parser->setFunctionHook( 'nac', static function ( $parser, $param1 = '' ) {
 			$output = Sanitizer::decodeCharReferences( $param1 );
 			$output = str_replace( [ "'", '"' ], [ '′', '″' ], $output );
@@ -187,21 +194,16 @@ HTML;
 		return $images;
 	}
 
-	/**
-	 * When core requests certain messages, change the key to a custom version.
-	 *
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/MessageCache::get
-	 * @param string &$lcKey message key to check and possibly convert
-	 */
-	public static function onMessageCacheGet( string &$lcKey ) {
+	/** @inheritDoc */
+	public function onMessageCache__get( &$key ): void {
 		static $keys = null;
 		if ( $keys === null ) {
 			$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
 		}
 
-		$overrideKey = "nimiarkisto-override-$lcKey";
+		$overrideKey = "nimiarkisto-override-$key";
 		if ( isset( $keys[ $overrideKey ] ) ) {
-			$lcKey = $overrideKey;
+			$key = $overrideKey;
 		}
 	}
 }
