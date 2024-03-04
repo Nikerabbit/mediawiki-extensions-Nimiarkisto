@@ -27,7 +27,12 @@
 		]
 	},
 	"HookHandlers": {
-		"main": "MediaWiki\\Extensions\\Nimiarkisto\\Hooks"
+		"main": {
+			"class": "MediaWiki\\Extensions\\Nimiarkisto\\Hooks",
+			"services": [
+				"PermissionManager"
+			]
+		}
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "main",
