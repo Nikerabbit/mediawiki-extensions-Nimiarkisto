@@ -163,6 +163,9 @@ HTML;
 		foreach ( $klStatements as $klStatement ) {
 			$nlEntityId = $klStatement->getMainSnak()->getDataValue()->getEntityId();
 			$nlEntity = $entityLookup->getEntity( $nlEntityId );
+			if ( !$nlEntity ) {
+				continue;
+			}
 
 			// Whether image is hidden or not
 			$P10041 = new NumericPropertyId( 'P10041' );
