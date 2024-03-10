@@ -12,7 +12,11 @@ use RuntimeException;
 use Sanitizer;
 use SpecialPage;
 use Wikibase\Client\WikibaseClient;
+use Wikibase\DataModel\Entity\EntityIdValue;
+use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\NumericPropertyId;
+use Wikibase\DataModel\Snak\PropertyValueSnak;
+use Wikibase\DataModel\Statement\Statement;
 
 /**
  * @author Niklas Laxström
@@ -108,7 +112,7 @@ HTML;
 		// kl = keruulippu, nl = nimilippu
 		$klEntityId = WikibaseClient::getEntityIdParser()->parse( $input );
 		$klEntity = $entityLookup->getEntity( $klEntityId );
-		if ( !$klEntity ) {
+		if ( !$klEntity instanceof Item ) {
 			return [];
 		}
 
@@ -118,13 +122,8 @@ HTML;
 			return [];
 		}
 
-		$producer = $producerStatements[ 0 ]
-			->getMainSnak()
-			->getDataValue()
-			->getEntityId()
-			->getLocalPart();
 		// Q23 is Kotus
-		if ( $producer !== 'Q23' ) {
+		if ( self::getPropertyValueQid( $producerStatements[0] ) !== 'Q23' ) {
 			return [];
 		}
 
@@ -134,13 +133,8 @@ HTML;
 			return [];
 		}
 
-		$type = $nameTypeStatements[ 0 ]
-			->getMainSnak()
-			->getDataValue()
-			->getEntityId()
-			->getLocalPart();
 		// Q11 is "person name"
-		if ( $type === 'Q11' ) {
+		if ( self::getPropertyValueQid( $nameTypeStatements[0] ) === 'Q11' ) {
 			return [];
 		}
 
@@ -149,11 +143,7 @@ HTML;
 		if ( $collectionStatements === [] ) {
 			return [];
 		}
-		$collection = $collectionStatements[ 0 ]
-			->getMainSnak()
-			->getDataValue()
-			->getEntityId()
-			->getLocalPart();
+		$collection = self::getPropertyValueQid( $collectionStatements[0] );
 
 		$group = 'Kotus';
 		$images = [];
@@ -161,9 +151,18 @@ HTML;
 		$P10029 = new NumericPropertyId( 'P10029' );
 		$klStatements = $klEntity->getStatements()->getByPropertyId( $P10029 );
 		foreach ( $klStatements as $klStatement ) {
-			$nlEntityId = $klStatement->getMainSnak()->getDataValue()->getEntityId();
+			$klSnak = $klStatement->getMainSnak();
+			if ( !$klSnak instanceof PropertyValueSnak ) {
+				continue;
+			}
+			$klValue = $klSnak->getDataValue();
+			if ( !$klValue instanceof EntityIdValue ) {
+				continue;
+			}
+			$nlEntityId = $klValue->getEntityId();
+
 			$nlEntity = $entityLookup->getEntity( $nlEntityId );
-			if ( !$nlEntity ) {
+			if ( !$nlEntity instanceof Item ) {
 				continue;
 			}
 
@@ -171,8 +170,7 @@ HTML;
 			$P10041 = new NumericPropertyId( 'P10041' );
 			$jsStatements = $nlEntity->getStatements()->getByPropertyId( $P10041 );
 			foreach ( $jsStatements as $jsStatement ) {
-				$status = $jsStatement->getMainSnak()->getDataValue()->getEntityId()->getLocalPart();
-				if ( $status === 'Q28' ) {
+				if ( self::getPropertyValueQid( $jsStatement ) === 'Q28' ) {
 					continue 2;
 				}
 			}
@@ -180,7 +178,8 @@ HTML;
 			$P10020 = new NumericPropertyId( 'P10020' );
 			$nlStatements = $nlEntity->getStatements()->getByPropertyId( $P10020 );
 			foreach ( $nlStatements as $nlStatement ) {
-				$name = $nlStatement->getMainSnak()->getDataValue()->getValue();
+				$nlSnak = $nlStatement->getMainSnak();
+				$name = $nlSnak->getDataValue()->getValue();
 				if ( $collection === 'Q34' ) {
 					// 1-kokoelma
 					$name = mb_strtoupper( $name );
@@ -195,6 +194,20 @@ HTML;
 		}
 
 		return $images;
+	}
+
+	private static function getPropertyValueQid( Statement $statement ): ?string {
+		$snak = $statement->getMainSnak();
+		if ( !$snak instanceof PropertyValueSnak ) {
+			return null;
+		}
+
+		$value = $snak->getDataValue();
+		if ( $value instanceof EntityIdValue ) {
+			return $value->getEntityId()->getSerialization();
+		}
+
+		return null;
 	}
 
 	/** @inheritDoc */
