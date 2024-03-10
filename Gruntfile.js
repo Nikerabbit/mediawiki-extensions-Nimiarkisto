@@ -1,6 +1,5 @@
 'use strict';
 
-/* eslint-env node */
 module.exports = function ( grunt ) {
 	const conf = grunt.file.readJSON( 'extension.json' );
 
@@ -27,7 +26,6 @@ module.exports = function ( grunt ) {
 				'!{vendor,node_modules,lib}/**'
 			]
 		},
-		// eslint-disable-next-line compat/compat
 		banana: Object.assign( conf.MessagesDirs, {
 			options: {
 				requireLowerCase: 'initial'

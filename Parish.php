@@ -7,7 +7,7 @@ declare( strict_types = 1 );
  */
 class Parish {
 	/** @var string[] */
-	public static $map = [
+	public static array $map = [
 		'Akaa' => 'Akaa',
 		'Alast' => 'Alastaro',
 		'Bergö' => 'Bergö',

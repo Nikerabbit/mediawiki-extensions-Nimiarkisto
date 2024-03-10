@@ -11,8 +11,8 @@ require 'Parish.php';
 require __DIR__ . '/vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 
-$IN = isset( $argv[1] ) ? $argv[1] : 'data';
-$OUT = isset( $argv[2] ) ? $argv[2] : 'out' . date( 'c' );
+$IN = $argv[1] ?? 'data';
+$OUT = $argv[2] ?? 'out' . date( 'c' );
 
 define( 'ID', 0 ); // ID
 define( 'LOCATIONNAME', 1 ); // Paikannimi

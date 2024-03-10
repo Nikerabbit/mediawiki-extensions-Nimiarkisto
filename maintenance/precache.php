@@ -20,7 +20,7 @@ class Precache extends Maintenance {
 		);
 	}
 
-	public function execute() {
+	public function execute(): void {
 		$names = array_map( 'trim', explode( ',', $this->getOption( 'properties' ) ) );
 		$lookup = new SMWPropertyValueLookup();
 		foreach ( $names as $name ) {

@@ -4,7 +4,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use Html;
-use MediaWiki\Cache\Hook\MessageCache__getHook;
+use MediaWiki\Cache\Hook\MessageCacheFetchOverridesHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Permissions\PermissionManager;
@@ -18,7 +18,7 @@ use Wikibase\DataModel\Entity\NumericPropertyId;
  * @author Niklas Laxström
  * @license GPL-2.0-or-later
  */
-class Hooks implements BeforePageDisplayHook, MessageCache__getHook, ParserFirstCallInitHook {
+class Hooks implements BeforePageDisplayHook, MessageCacheFetchOverridesHook, ParserFirstCallInitHook {
 	public function __construct(
 		private readonly PermissionManager $permissionManager
 	) {
@@ -198,15 +198,14 @@ HTML;
 	}
 
 	/** @inheritDoc */
-	public function onMessageCache__get( &$key ): void {
-		static $keys = null;
-		if ( $keys === null ) {
-			$keys = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
+	public function onMessageCacheFetchOverrides( &$overrides ): void {
+		static $locals = null;
+		if ( $locals === null ) {
+			$locals = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
 		}
 
-		$overrideKey = "nimiarkisto-override-$key";
-		if ( isset( $keys[ $overrideKey ] ) ) {
-			$key = $overrideKey;
+		foreach ( array_keys( $locals ) as $key ) {
+			$overrides[$key] = "nimiarkisto-override-$key";
 		}
 	}
 }

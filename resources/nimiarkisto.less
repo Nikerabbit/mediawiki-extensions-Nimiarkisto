@@ -70,14 +70,14 @@
 		letter-spacing: 0.02em;
 	}
 
-	h1:after {
+	h1::after {
 		border-bottom: 0;
 	}
 
 	h2 {
 		font-size: 1.6em;
 
-		&:after {
+		&::after {
 			border-bottom: 3px solid #a2b9cc;
 		}
 	}
@@ -149,14 +149,12 @@
 			position: relative;
 			list-style: none;
 
-			&:before {
+			&::before {
 				content: counter( li );
 				counter-increment: li;
 				position: absolute;
 				top: -2px;
 				left: -2em;
-				-moz-box-sizing: border-box;
-				-webkit-box-sizing: border-box;
 				box-sizing: border-box;
 				width: 25px;
 				height: 25px;

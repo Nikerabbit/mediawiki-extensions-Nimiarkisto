@@ -1,11 +1,11 @@
 {
 	"name": "Nimiarkisto",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"author": [
 		"Niklas Laxström"
 	],
 	"requires": {
-		"MediaWiki": ">= 1.40.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
 	"description": "Code to import and display Nimiarkisto in a MediaWiki",
@@ -37,7 +37,7 @@
 	"Hooks": {
 		"ParserFirstCallInit": "main",
 		"BeforePageDisplay": "main",
-		"MessageCache::get": "main"
+		"MessageCacheFetchOverrides": "main"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extensions\\Nimiarkisto\\": "src/"
