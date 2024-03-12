@@ -5,10 +5,7 @@
 		"Niklas Laxström"
 	],
 	"requires": {
-		"MediaWiki": ">= 1.41.0",
-		"extensions": {
-			"Wikibase": "*"
-		}
+		"MediaWiki": ">= 1.41.0"
 	},
 	"url": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
 	"description": "Code to import and display Nimiarkisto in a MediaWiki",
