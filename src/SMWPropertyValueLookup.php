@@ -35,9 +35,8 @@ class SMWPropertyValueLookup {
 		$key = $cache->makeKey( 'Nimiarkisto', 'PropertyValues', $propertyName );
 		$haystack = $cache->get( $key );
 		if ( $haystack === false ) {
-			$this->recache( $propertyName );
+			return [];
 		}
-		$haystack = $cache->get( $key ) ?? '';
 
 		$anything = '.';
 		$query = preg_quote( $query, '/' );
