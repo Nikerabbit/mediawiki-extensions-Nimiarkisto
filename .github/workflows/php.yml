@@ -7,13 +7,16 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Cache vendor
       id: composer-cache
@@ -24,12 +27,7 @@ jobs:
         restore-keys: ${{ runner.os }}-php-
 
     - name: Install dependencies
-      uses: php-actions/composer@v6
-      with:
-        php_version: 8.1
+      run: composer install --prefer-dist --no-progress
 
-    - name: Run tests
-      uses: php-actions/composer@v6
-      with:
-        php_version: 8.1
-        command: run-script test
+    - name: Run test suite
+      run: composer run-script test
