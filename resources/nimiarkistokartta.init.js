@@ -1,6 +1,6 @@
 /* globals KotusMap */
 
-$( function () {
+$( () => {
 	// eslint-disable-next-line no-jquery/no-global-selector
 	const $map = $( '#nimiarkistokartta--keruumerkinta' );
 
@@ -26,12 +26,12 @@ $( function () {
 		options.mapId = String( mapid ).replace( '_', '.' );
 	}
 
-	mw.loader.using( 'nimiarkistokartta' ).done( function () {
+	mw.loader.using( 'nimiarkistokartta' ).done( () => {
 		KotusMap.init( 'nimiarkistokartta--keruumerkinta', options );
 	} );
 } );
 
-$( function () {
+$( () => {
 	// eslint-disable-next-line no-jquery/no-global-selector
 	const $map = $( '#nimiarkistokartta--luokkakartta' );
 
@@ -52,23 +52,21 @@ $( function () {
 	api.get( {
 		action: 'ask',
 		query: query
-	} ).done( function ( res ) {
-		const locations = ( res.query.results || [] ).map( function ( value ) {
-			return {
-				text: $( '<a>' ).prop( 'href', value.fullurl ).text( value.displaytitle )[ 0 ],
-				lat: value.printouts.Pistekoordinaatti[ 0 ].lat,
-				lon: value.printouts.Pistekoordinaatti[ 0 ].lon
-			};
-		} );
+	} ).done( ( res ) => {
+		const locations = ( res.query.results || [] ).map( ( value ) => ( {
+			text: $( '<a>' ).prop( 'href', value.fullurl ).text( value.displaytitle )[ 0 ],
+			lat: value.printouts.Pistekoordinaatti[ 0 ].lat,
+			lon: value.printouts.Pistekoordinaatti[ 0 ].lon
+		} ) );
 
-		mw.loader.using( 'nimiarkistokartta' ).done( function () {
+		mw.loader.using( 'nimiarkistokartta' ).done( () => {
 			KotusMap.init( 'nimiarkistokartta--luokkakartta', { locations: locations } );
 		} );
 	} );
 } );
 
 // https://github.com/SemanticMediaWiki/SemanticMediaWiki/issues/4882
-$( function () {
+$( () => {
 	// eslint-disable-next-line no-jquery/no-global-selector
 	if ( $( '.maps-leaflet' ).length ) {
 		mw.loader.load( 'ext.maps.leaflet.loader' );
