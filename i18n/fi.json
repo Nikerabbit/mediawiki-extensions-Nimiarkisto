@@ -2,5 +2,11 @@
 	"@metadata": {
 		"author": "Niklas Laxström"
 	},
-	"nimiarkisto-override-createacct-realname": "Oikea nimi"
+	"nimiarkisto-override-createacct-realname": "Oikea nimi",
+	"requestvanish": "Pyydä tilin anonymisointia",
+	"requestvanish-summary": "Ole hyvä ja selitä, miksi haluat tilisi anonymisoitavan alla. Huomaa, että tätä pyyntöä ei voida peruuttaa.",
+	"requestvanish-explanation-label": "Selitä, miksi haluat tilisi anonymisoitavan:",
+	"requestvanish-submit": "Lähetä",
+	"requestvanish-submit-success": "Pyyntösi on lähetetty onnistuneesti.",
+	"requestvanish-submit-error": "Virhe pyyntöä lähetettäessä. Yritä uudelleen myöhemmin."
 }
