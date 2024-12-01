@@ -16,6 +16,9 @@
 				"key": "",
 				"url": "https://avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/{layer}/default/ETRS-TM35FIN/{z}/{y}/{x}.png"
 			}
+		},
+		"AccountVanishNotificationEmail": {
+			"value": "root@localhost"
 		}
 	},
 	"ExtensionMessagesFiles": {
@@ -43,7 +46,8 @@
 		"MediaWiki\\Extensions\\Nimiarkisto\\": "src/"
 	},
 	"SpecialPages": {
-		"MapProxy": "MediaWiki\\Extensions\\Nimiarkisto\\MapProxySpecialPage"
+		"MapProxy": "MediaWiki\\Extensions\\Nimiarkisto\\MapProxySpecialPage",
+		"RequestVanish": "MediaWiki\\Extensions\\Nimiarkisto\\RequestVanishSpecialPage"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",

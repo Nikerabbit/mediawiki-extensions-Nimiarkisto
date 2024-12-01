@@ -3,5 +3,11 @@
 		"author": "Niklas Laxström"
 	},
 	"nimiarkisto-override-createacct-realname": "Real name",
-	"nimiarkisto-override-prefs-help-realname": ""
+	"nimiarkisto-override-prefs-help-realname": "",
+	"requestvanish": "Request account anonymization",
+	"requestvanish-summary": "Please explain why you want your account to be anonymized below. Note that this request cannot be undone.",
+	"requestvanish-explanation-label": "Explain why you want your account to be anonymized:",
+	"requestvanish-submit": "Submit",
+	"requestvanish-submit-success": "Your request has been submitted successfully.",
+	"requestvanish-submit-error": "There was an error submitting your request. Please try again later."
 }
