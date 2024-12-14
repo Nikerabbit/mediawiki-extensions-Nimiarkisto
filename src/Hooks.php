@@ -8,6 +8,7 @@ use MediaWiki\Cache\Hook\MessageCacheFetchOverridesHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use RuntimeException;
 use Sanitizer;
 use SpecialPage;
@@ -22,7 +23,12 @@ use Wikibase\DataModel\Statement\Statement;
  * @author Niklas Laxström
  * @license GPL-2.0-or-later
  */
-class Hooks implements BeforePageDisplayHook, MessageCacheFetchOverridesHook, ParserFirstCallInitHook {
+class Hooks implements
+	BeforePageDisplayHook,
+	MessageCacheFetchOverridesHook,
+	ParserFirstCallInitHook,
+	GetPreferencesHook
+{
 	public function __construct(
 		private readonly PermissionManager $permissionManager
 	) {
@@ -220,5 +226,19 @@ HTML;
 		foreach ( array_keys( $locals ) as $key ) {
 			$overrides[$key] = "nimiarkisto-override-$key";
 		}
+	}
+
+	public function onGetPreferences( $user, &$preferences ): void {
+		$preferences['requestvanish-link'] = [
+			'type' => 'info',
+			'raw' => true,
+			'default' => \MediaWiki\Html\Html::element(
+				'a',
+				[ 'href' => SpecialPage::getTitleFor( 'RequestVanish' )->getLocalURL() ],
+				wfMessage( 'requestvanish-preferences-link' )->text()
+			),
+			'label-message' => 'requestvanish-preferences-label',
+			'section' => 'personal/info',
+		];
 	}
 }

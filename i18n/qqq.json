@@ -9,5 +9,7 @@
 	"requestvanish-explanation-label": "This label prompts users to provide a reason for their request.",
 	"requestvanish-submit": "This is a button label for submitting the anonymization request form.",
 	"requestvanish-submit-success": "This message informs users that their anonymization request was successfully received.",
-	"requestvanish-submit-error": "his error message appears when the submission of the anonymization request fails."
+	"requestvanish-submit-error": "his error message appears when the submission of the anonymization request fails.",
+	"requestvanish-preferences-label": "Label in Special:Preferences for a link.",
+	"requestvanish-preferences-link": "Link text in Special:Preferences"
 }

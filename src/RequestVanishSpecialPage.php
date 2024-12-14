@@ -5,16 +5,16 @@ namespace MediaWiki\Extensions\Nimiarkisto;
 
 use HTMLForm;
 use MailAddress;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Config\Config;
 use SpecialPage;
 use UserMailer;
 
 class RequestVanishSpecialPage extends SpecialPage {
-	public function __construct() {
+	public function __construct( private readonly Config $config ) {
 		parent::__construct( 'RequestVanish' );
 	}
 
-	public function execute( $par ) {
+	public function execute( $par ): void {
 		$this->setHeaders();
 		$request = $this->getRequest();
 		$output = $this->getOutput();
@@ -49,14 +49,13 @@ class RequestVanishSpecialPage extends SpecialPage {
 	}
 
 	private function handleSubmit( $explanation ) {
-		$config = MediaWikiServices::getInstance()->getMainConfig();
-		$emailRecipient = $config->get( 'AccountVanishNotificationEmail' );
+		$emailRecipient = $this->config->get( 'AccountVanishNotificationEmail' );
 		$currentUser = $this->getUser();
 		$subject = $this->msg( 'requestvanish-subject', $currentUser->getName() )->plain();
 		$body = $this->msg( 'requestvanish-body', $currentUser->getName(), $explanation )->plain();
 
 		$to = new MailAddress( $emailRecipient );
-		$from = new MailAddress( $config->get( 'PasswordSender' ) );
+		$from = new MailAddress( $this->config->get( 'PasswordSender' ) );
 		$status = UserMailer::send( $to, $from, $subject, $body );
 
 		if ( $status->isOK() ) {

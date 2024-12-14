@@ -40,14 +40,20 @@
 	"Hooks": {
 		"ParserFirstCallInit": "main",
 		"BeforePageDisplay": "main",
-		"MessageCacheFetchOverrides": "main"
+		"MessageCacheFetchOverrides": "main",
+		"GetPreferences": "main"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extensions\\Nimiarkisto\\": "src/"
 	},
 	"SpecialPages": {
 		"MapProxy": "MediaWiki\\Extensions\\Nimiarkisto\\MapProxySpecialPage",
-		"RequestVanish": "MediaWiki\\Extensions\\Nimiarkisto\\RequestVanishSpecialPage"
+		"RequestVanish": {
+			"class": "MediaWiki\\Extensions\\Nimiarkisto\\RequestVanishSpecialPage",
+			"services": [
+				"MainConfig"
+			]
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",

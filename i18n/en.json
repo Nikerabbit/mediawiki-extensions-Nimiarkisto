@@ -9,5 +9,7 @@
 	"requestvanish-explanation-label": "Explain why you want your account to be anonymized:",
 	"requestvanish-submit": "Submit",
 	"requestvanish-submit-success": "Your request has been submitted successfully.",
-	"requestvanish-submit-error": "There was an error submitting your request. Please try again later."
+	"requestvanish-submit-error": "There was an error submitting your request. Please try again later.",
+	"requestvanish-preferences-label": "Vanishing",
+	"requestvanish-preferences-link": "Vanishing request form"
 }
