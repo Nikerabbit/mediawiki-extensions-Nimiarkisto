@@ -42,7 +42,7 @@ class RequestVanishSpecialPage extends SpecialPage {
 		HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() )
 			->setMethod( 'post' )
 			->setId( 'mw-requestvanish-form' )
-			->setWrapperLegend( null )
+			->setWrapperLegend( false )
 			->setSubmitTextMsg( 'requestvanish-submit' )
 			->prepareForm()
 			->displayForm( false );
@@ -52,8 +52,8 @@ class RequestVanishSpecialPage extends SpecialPage {
 		$config = MediaWikiServices::getInstance()->getMainConfig();
 		$emailRecipient = $config->get( 'AccountVanishNotificationEmail' );
 		$currentUser = $this->getUser();
-		$subject = $this->msg( 'requestvanish-subject', $currentUser->getName() )->text();
-		$body = $this->msg( 'requestvanish-body', $currentUser->getName(), $explanation )->text();
+		$subject = $this->msg( 'requestvanish-subject', $currentUser->getName() )->plain();
+		$body = $this->msg( 'requestvanish-body', $currentUser->getName(), $explanation )->plain();
 
 		$to = new MailAddress( $emailRecipient );
 		$from = new MailAddress( $config->get( 'PasswordSender' ) );
