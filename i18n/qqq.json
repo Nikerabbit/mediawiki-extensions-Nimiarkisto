@@ -5,7 +5,7 @@
 	"nimiarkisto-override-createacct-realname": "Same as core real name without the optional part",
 	"nimiarkisto-override-prefs-help-realname": "Must be empty",
 	"requestvanish": "Special page name",
-	"requestvanish-summary": "This paragraph provides instructions and a warning for users when requesting account anonymization.",
+	"requestvanish-description": "This paragraph provides instructions and a warning for users when requesting account anonymization.",
 	"requestvanish-explanation-label": "This label prompts users to provide a reason for their request.",
 	"requestvanish-submit": "This is a button label for submitting the anonymization request form.",
 	"requestvanish-submit-success": "This message informs users that their anonymization request was successfully received.",

@@ -3,10 +3,10 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extensions\Nimiarkisto;
 
-use Html;
 use MediaWiki\Cache\Hook\MessageCacheFetchOverridesHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use RuntimeException;
@@ -224,7 +224,10 @@ HTML;
 		}
 
 		foreach ( array_keys( $locals ) as $key ) {
-			$overrides[$key] = "nimiarkisto-override-$key";
+			if ( str_starts_with( $key, 'nimiarkisto-override-' ) ) {
+				$original = substr( $key, strlen( 'nimiarkisto-override-' ) );
+				$overrides[$original] = $key;
+			}
 		}
 	}
 
@@ -232,7 +235,7 @@ HTML;
 		$preferences['requestvanish-link'] = [
 			'type' => 'info',
 			'raw' => true,
-			'default' => \MediaWiki\Html\Html::element(
+			'default' => Html::element(
 				'a',
 				[ 'href' => SpecialPage::getTitleFor( 'RequestVanish' )->getLocalURL() ],
 				wfMessage( 'requestvanish-preferences-link' )->text()
