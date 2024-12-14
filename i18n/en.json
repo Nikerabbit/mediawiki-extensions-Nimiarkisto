@@ -11,5 +11,7 @@
 	"requestvanish-submit-success": "Your request has been submitted successfully.",
 	"requestvanish-submit-error": "There was an error submitting your request. Please try again later.",
 	"requestvanish-preferences-label": "Vanishing",
-	"requestvanish-preferences-link": "Vanishing request form"
+	"requestvanish-preferences-link": "Vanishing request form",
+	"requestvanish-subject": "Vanish request from $1",
+	"requestvanish-body": "Reason provided by user $1:\n$2"
 }

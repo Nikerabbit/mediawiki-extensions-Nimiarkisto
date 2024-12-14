@@ -10,5 +10,7 @@
 	"requestvanish-submit-success": "Pyyntösi on lähetetty onnistuneesti.",
 	"requestvanish-submit-error": "Virhe pyyntöä lähetettäessä. Yritä uudelleen myöhemmin.",
 	"requestvanish-preferences-label": "Tilin anonymisointi",
-	"requestvanish-preferences-link": "Anonymisointipyyntölomake"
+	"requestvanish-preferences-link": "Anonymisointipyyntölomake",
+	"requestvanish-subject": "Anonymisointipyyntö käyttäjältä $1",
+	"requestvanish-body": "Käyttäjän $1 antama syy:\n$2"
 }

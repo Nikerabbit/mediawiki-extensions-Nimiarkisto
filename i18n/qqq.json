@@ -11,5 +11,7 @@
 	"requestvanish-submit-success": "This message informs users that their anonymization request was successfully received.",
 	"requestvanish-submit-error": "his error message appears when the submission of the anonymization request fails.",
 	"requestvanish-preferences-label": "Label in Special:Preferences for a link.",
-	"requestvanish-preferences-link": "Link text in Special:Preferences"
+	"requestvanish-preferences-link": "Link text in Special:Preferences",
+	"requestvanish-subject": "Email subject",
+	"requestvanish-body": "Email body"
 }
