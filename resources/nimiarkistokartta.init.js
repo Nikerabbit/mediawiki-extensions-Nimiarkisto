@@ -26,7 +26,7 @@ $( () => {
 		options.mapId = String( mapid ).replace( '_', '.' );
 	}
 
-	mw.loader.using( 'nimiarkistokartta' ).done( () => {
+	mw.loader.using( 'nimiarkistokartta' ).then( () => {
 		KotusMap.init( 'nimiarkistokartta--keruumerkinta', options );
 	} );
 } );
@@ -52,14 +52,14 @@ $( () => {
 	api.get( {
 		action: 'ask',
 		query: query
-	} ).done( ( res ) => {
+	} ).then( ( res ) => {
 		const locations = ( res.query.results || [] ).map( ( value ) => ( {
 			text: $( '<a>' ).prop( 'href', value.fullurl ).text( value.displaytitle )[ 0 ],
 			lat: value.printouts.Pistekoordinaatti[ 0 ].lat,
 			lon: value.printouts.Pistekoordinaatti[ 0 ].lon
 		} ) );
 
-		mw.loader.using( 'nimiarkistokartta' ).done( () => {
+		mw.loader.using( 'nimiarkistokartta' ).then( () => {
 			KotusMap.init( 'nimiarkistokartta--luokkakartta', { locations: locations } );
 		} );
 	} );
