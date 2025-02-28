@@ -3,14 +3,14 @@
 		"author": "Niklas Laxström"
 	},
 	"nimiarkisto-override-createacct-realname": "Oikea nimi",
-	"requestvanish": "Pyydä tilin anonymisointia",
-	"requestvanish-description": "Ole hyvä ja selitä, miksi haluat tilisi anonymisoitavan alla. Huomaa, että tätä pyyntöä ei voida peruuttaa.",
-	"requestvanish-explanation-label": "Selitä, miksi haluat tilisi anonymisoitavan:",
+	"requestvanish": "Pyydä tilin poistamista",
+	"requestvanish-description": "Jos tililläsi on muokkauksia, ne anonymisoidaan. Muussa tapauksessa tilisi poistetaan.",
+	"requestvanish-explanation-label": "Kerro, miksi haluat poistaa tilisi:",
 	"requestvanish-submit": "Lähetä",
 	"requestvanish-submit-success": "Pyyntösi on lähetetty onnistuneesti.",
-	"requestvanish-submit-error": "Virhe pyyntöä lähetettäessä. Yritä uudelleen myöhemmin.",
-	"requestvanish-preferences-label": "Tilin anonymisointi",
-	"requestvanish-preferences-link": "Anonymisointipyyntölomake",
-	"requestvanish-subject": "Anonymisointipyyntö käyttäjältä $1",
+	"requestvanish-submit-error": "Pyynnön lähettäminen epäonnistui. Yritä uudelleen myöhemmin.",
+	"requestvanish-preferences-label": "Tilin poistaminen",
+	"requestvanish-preferences-link": "Pyydä poistoa",
+	"requestvanish-subject": "Tilin poistopyyntö käyttäjältä $1",
 	"requestvanish-body": "Käyttäjän $1 antama syy:\n$2"
 }
