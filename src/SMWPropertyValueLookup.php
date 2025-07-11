@@ -6,8 +6,8 @@ namespace MediaWiki\Extensions\Nimiarkisto;
 use MediaWiki\MediaWikiServices;
 use SMW\DIProperty;
 use SMW\DIWikiPage;
+use SMW\Store;
 use SMWDIBlob;
-use SMWStore;
 use WANObjectCache;
 use Wikimedia\LightweightObjectStore\ExpirationAwareness;
 
@@ -16,8 +16,8 @@ use Wikimedia\LightweightObjectStore\ExpirationAwareness;
  * @license GPL-2.0-or-later
  */
 class SMWPropertyValueLookup {
-	private WANObjectCache $cache;
-	private SMWStore $store;
+	private readonly WANObjectCache $cache;
+	private readonly Store $store;
 
 	public function __construct() {
 		$this->cache = MediaWikiServices::getInstance()->getMainWANObjectCache();

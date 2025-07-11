@@ -73,6 +73,7 @@ class Hooks implements
 		];
 	}
 
+	/** @inheritDoc */
 	public function onParserFirstCallInit( $parser ): void {
 		$parser->setFunctionHook( 'nac', static function ( $parser, $param1 = '' ) {
 			$output = Sanitizer::decodeCharReferences( $param1 );
@@ -231,6 +232,7 @@ HTML;
 		}
 	}
 
+	/** @inheritDoc */
 	public function onGetPreferences( $user, &$preferences ): void {
 		$preferences['requestvanish-link'] = [
 			'type' => 'info',

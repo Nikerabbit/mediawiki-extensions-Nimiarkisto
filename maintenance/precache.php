@@ -14,9 +14,10 @@ class Precache extends Maintenance {
 		$this->addDescription( 'Caches property lookup values' );
 
 		$this->addOption(
-			'properties',
-			'Comma-separated list of property names',
-			true, /*required*/ true /*has arg*/
+			name: 'properties',
+			description: 'Comma-separated list of property names',
+			required: true,
+			withArg: true,
 		);
 	}
 

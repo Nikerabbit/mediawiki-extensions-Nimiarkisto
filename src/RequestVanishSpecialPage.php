@@ -14,7 +14,8 @@ class RequestVanishSpecialPage extends SpecialPage {
 		parent::__construct( 'RequestVanish' );
 	}
 
-	public function execute( $par ): void {
+	/** @inheritDoc */
+	public function execute( $subPage ): void {
 		$this->setHeaders();
 		$request = $this->getRequest();
 		$output = $this->getOutput();
@@ -29,7 +30,7 @@ class RequestVanishSpecialPage extends SpecialPage {
 		}
 	}
 
-	private function displayForm() {
+	private function displayForm(): void {
 		$formDescriptor = [
 			'explanation' => [
 				'type' => 'textarea',
@@ -48,7 +49,7 @@ class RequestVanishSpecialPage extends SpecialPage {
 			->displayForm( false );
 	}
 
-	private function handleSubmit( $explanation ) {
+	private function handleSubmit( string $explanation ): void {
 		$emailRecipient = $this->config->get( 'AccountVanishNotificationEmail' );
 		$currentUser = $this->getUser();
 		$subject = $this->msg( 'requestvanish-subject', $currentUser->getName() )->plain();

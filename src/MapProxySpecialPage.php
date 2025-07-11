@@ -1,5 +1,5 @@
 <?php
-declare( strict_types=1 );
+declare( strict_types = 1 );
 
 namespace MediaWiki\Extensions\Nimiarkisto;
 
@@ -16,6 +16,7 @@ class MapProxySpecialPage extends SpecialPage {
 		parent::__construct( 'MapProxy' );
 	}
 
+	/** @inheritDoc */
 	public function execute( $subPage ): void {
 		$output = $this->getOutput();
 		$output->disable();
