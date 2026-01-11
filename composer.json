@@ -3,13 +3,10 @@
 		"optimize-autoloader": true,
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true
-		},
-		"platform": {
-			"php": "8.1.27"
 		}
 	},
 	"require": {
-		"php": ">=8.1",
+		"php": ">=8.3",
 		"ext-json": "*"
 	},
 	"require-dev": {
