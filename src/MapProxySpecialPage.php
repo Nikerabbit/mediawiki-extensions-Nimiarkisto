@@ -5,6 +5,7 @@ namespace MediaWiki\Extensions\Nimiarkisto;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
+use Override;
 use SpecialPage;
 
 /**
@@ -16,7 +17,12 @@ class MapProxySpecialPage extends SpecialPage {
 		parent::__construct( 'MapProxy' );
 	}
 
-	/** @inheritDoc */
+	/**
+	 * Proxy a map tile request.
+	 *
+	 * @param string|null $subPage
+	 */
+	#[Override]
 	public function execute( $subPage ): void {
 		$output = $this->getOutput();
 		$output->disable();
@@ -56,13 +62,14 @@ class MapProxySpecialPage extends SpecialPage {
 					$webResponse->header( "$headerName: $headerValue" );
 				}
 			}
-			echo $proxyResponse->getBody();
+			echo $proxyResponse->getBody()->getContents();
 		} catch ( GuzzleException $e ) {
 			$output->setStatusCode( 502 );
 			$webResponse->header( "X-Error: {$e->getMessage()}" );
 		}
 	}
 
+	#[Override]
 	public function isListed(): bool {
 		return false;
 	}

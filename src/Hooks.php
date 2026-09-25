@@ -9,6 +9,7 @@ use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Html\Html;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use Override;
 use RuntimeException;
 use Sanitizer;
 use SpecialPage;
@@ -34,7 +35,13 @@ class Hooks implements
 	) {
 	}
 
-	/** @inheritDoc */
+	/**
+	 * Add Nimiarkisto modules and branding before displaying a page.
+	 *
+	 * @param \MediaWiki\Output\OutputPage $out
+	 * @param \MediaWiki\Skin\Skin $skin
+	 */
+	#[Override]
 	public function onBeforePageDisplay( $out, $skin ): void {
 		$user = $out->getUser();
 
@@ -73,16 +80,21 @@ class Hooks implements
 		];
 	}
 
-	/** @inheritDoc */
+	/**
+	 * Register Nimiarkisto parser functions.
+	 *
+	 * @param \MediaWiki\Parser\Parser $parser
+	 */
+	#[Override]
 	public function onParserFirstCallInit( $parser ): void {
-		$parser->setFunctionHook( 'nac', static function ( $parser, $param1 = '' ) {
+		$parser->setFunctionHook( 'nac', static function ( $parser, $param1 = '' ): array {
 			$output = Sanitizer::decodeCharReferences( $param1 );
 			$output = str_replace( [ "'", '"' ], [ '′', '″' ], $output );
 			return [ $output ];
 		} );
 
 		// Use JavaScript to move the title in the DOM
-		$parser->setFunctionHook( 'mytitle', static function () {
+		$parser->setFunctionHook( 'mytitle', static function (): array {
 			$output = <<<HTML
 <div id="mytitleplaceholder"></div>
 <script>
@@ -93,11 +105,11 @@ HTML;
 			return [ $output, 'noparse' => true, 'isHTML' => true ];
 		} );
 
-		$parser->setFunctionHook( 'nimilippukuvat', function ( $parser, $param1 = '' ) {
+		$parser->setFunctionHook( 'nimilippukuvat', function ( $parser, string $param1 = '' ): array {
 			$out = '';
 
 			try {
-				$images = self::getImages( $param1 );
+				$images = $this->getImages( $param1 );
 				$sp = SpecialPage::getTitleFor( 'FSIS' );
 				foreach ( $images as $x ) {
 					$out .= Html::element(
@@ -113,7 +125,7 @@ HTML;
 		} );
 	}
 
-	private static function getImages( string $input ): array {
+	private function getImages( string $input ): array {
 		$entityLookup = WikibaseClient::getStore()->getEntityLookup();
 
 		// kl = keruulippu, nl = nimilippu
@@ -130,7 +142,7 @@ HTML;
 		}
 
 		// Q23 is Kotus
-		if ( self::getPropertyValueQid( $producerStatements[0] ) !== 'Q23' ) {
+		if ( $this->getPropertyValueQid( $producerStatements[0] ) !== 'Q23' ) {
 			return [];
 		}
 
@@ -141,7 +153,7 @@ HTML;
 		}
 
 		// Q11 is "person name"
-		if ( self::getPropertyValueQid( $nameTypeStatements[0] ) === 'Q11' ) {
+		if ( $this->getPropertyValueQid( $nameTypeStatements[0] ) === 'Q11' ) {
 			return [];
 		}
 
@@ -150,7 +162,7 @@ HTML;
 		if ( $collectionStatements === [] ) {
 			return [];
 		}
-		$collection = self::getPropertyValueQid( $collectionStatements[0] );
+		$collection = $this->getPropertyValueQid( $collectionStatements[0] );
 
 		$group = 'Kotus';
 		$images = [];
@@ -177,7 +189,7 @@ HTML;
 			$P10041 = new NumericPropertyId( 'P10041' );
 			$jsStatements = $nlEntity->getStatements()->getByPropertyId( $P10041 );
 			foreach ( $jsStatements as $jsStatement ) {
-				if ( self::getPropertyValueQid( $jsStatement ) === 'Q28' ) {
+				if ( $this->getPropertyValueQid( $jsStatement ) === 'Q28' ) {
 					continue 2;
 				}
 			}
@@ -203,7 +215,7 @@ HTML;
 		return $images;
 	}
 
-	private static function getPropertyValueQid( Statement $statement ): ?string {
+	private function getPropertyValueQid( Statement $statement ): ?string {
 		$snak = $statement->getMainSnak();
 		if ( !$snak instanceof PropertyValueSnak ) {
 			return null;
@@ -217,12 +229,15 @@ HTML;
 		return null;
 	}
 
-	/** @inheritDoc */
-	public function onMessageCacheFetchOverrides( &$overrides ): void {
+	/**
+	 * Provide Nimiarkisto message overrides.
+	 *
+	 * @param array<string, mixed> &$overrides
+	 */
+	#[Override]
+	public function onMessageCacheFetchOverrides( array &$overrides ): void {
 		static $locals = null;
-		if ( $locals === null ) {
-			$locals = json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
-		}
+		$locals ??= (array)json_decode( file_get_contents( __DIR__ . '/../i18n/en.json' ), true );
 
 		foreach ( array_keys( $locals ) as $key ) {
 			if ( str_starts_with( $key, 'nimiarkisto-override-' ) ) {
@@ -232,7 +247,13 @@ HTML;
 		}
 	}
 
-	/** @inheritDoc */
+	/**
+	 * Add a link to the account-vanishing request page to user preferences.
+	 *
+	 * @param \MediaWiki\User\User $user
+	 * @param array<string, mixed> &$preferences
+	 */
+	#[Override]
 	public function onGetPreferences( $user, &$preferences ): void {
 		$preferences['requestvanish-link'] = [
 			'type' => 'info',

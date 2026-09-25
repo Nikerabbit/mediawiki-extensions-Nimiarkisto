@@ -1,6 +1,19 @@
 {
+	"name": "mediawiki/nimiarkisto",
+	"description": "MediaWiki extension for importing and displaying Nimiarkisto data",
+	"type": "mediawiki-extension",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/Nikerabbit/mediawiki-extensions-Nimiarkisto",
+	"authors": [
+		{
+			"name": "Niklas Laxström"
+		}
+	],
 	"config": {
 		"optimize-autoloader": true,
+		"platform": {
+			"php": "8.3.0"
+		},
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
@@ -14,18 +27,20 @@
 		"mediawiki/mediawiki-phan-config": "0.20.0",
 		"mediawiki/minus-x": "2.0.1",
 		"php-parallel-lint/php-console-highlighter": "1.0.0",
-		"php-parallel-lint/php-parallel-lint": "1.4.0"
+		"php-parallel-lint/php-parallel-lint": "1.4.0",
+		"rector/rector": "^2.1"
 	},
 	"scripts": {
 		"fix": [
-			"phpcbf",
-			"minus-x fix ."
+			"minus-x fix .",
+			"phpcbf"
 		],
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"phpcs -p -s",
 			"minus-x check ."
 		],
-		"phan": "phan -d . --long-progress-bar"
+		"phan": "phan -d . --long-progress-bar",
+		"rector": "rector"
 	}
 }
