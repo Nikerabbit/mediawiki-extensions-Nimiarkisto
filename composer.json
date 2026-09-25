@@ -23,6 +23,7 @@
 		"ext-json": "*"
 	},
 	"require-dev": {
+		"data-values/data-values": "^3.1",
 		"mediawiki/mediawiki-codesniffer": "v52.0.1",
 		"mediawiki/mediawiki-phan-config": "0.20.0",
 		"mediawiki/minus-x": "2.0.1",
