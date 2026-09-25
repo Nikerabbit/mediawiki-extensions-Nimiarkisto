@@ -124,13 +124,16 @@ jobs:
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
       with:
         path: ${{ steps.composer-cache-dir.outputs.dir }}
-        key: ${{ runner.os }}-php${{ matrix.php }}-mw${{ matrix.mediawiki }}-composer-${{ hashFiles('mediawiki/composer.lock', 'mediawiki/extensions/Nimiarkisto/composer.lock') }}
+        key: ${{ runner.os }}-php${{ matrix.php }}-mw${{ matrix.mediawiki }}-composer-${{ hashFiles('mediawiki/composer.lock', 'mediawiki/extensions/Nimiarkisto/composer.lock', 'mediawiki/extensions/Wikibase/composer.json') }}
         restore-keys: |
           ${{ runner.os }}-php${{ matrix.php }}-composer-
           ${{ runner.os }}-composer-
 
     - name: Install MediaWiki dependencies
       run: composer install --working-dir mediawiki --prefer-dist --no-dev --no-progress
+
+    - name: Install Wikibase dependencies
+      run: composer install --working-dir mediawiki/extensions/Wikibase --prefer-dist --no-dev --no-progress
 
     - name: Install extension dependencies
       run: composer install --working-dir mediawiki/extensions/Nimiarkisto --prefer-dist --no-progress

@@ -9,6 +9,7 @@ $cfg['directory_list'] = array_merge(
 	[
 		'../SemanticMediaWiki',
 		'../Wikibase',
+		'../Wikibase/vendor/data-values/data-values/src',
 	]
 );
 
@@ -18,7 +19,11 @@ $cfg['exclude_analysis_directory_list'] = array_merge(
 		'vendor',
 		'../SemanticMediaWiki',
 		'../Wikibase',
+		'../Wikibase/vendor/data-values/data-values/src',
 	]
 );
+
+// Wikibase's other production dependencies overlap with MediaWiki core's vendor directory.
+$cfg['exclude_file_regex'] = '@^\.\./Wikibase/vendor/(?!data-values/)@';
 
 return $cfg;

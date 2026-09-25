@@ -10,6 +10,14 @@ use Override;
 use SpecialPage;
 use UserMailer;
 
+/**
+ * Handle account-vanishing requests.
+ *
+ * The SecurityCheck-XSS suppression is needed only on some MediaWiki versions.
+ *
+ * @phan-file-suppress UnusedPluginSuppression,UnusedPluginFileSuppression
+ */
+
 class RequestVanishSpecialPage extends SpecialPage {
 	public function __construct( private readonly Config $config ) {
 		parent::__construct( 'RequestVanish' );

@@ -39,7 +39,7 @@ class Hooks implements
 	 * Add Nimiarkisto modules and branding before displaying a page.
 	 *
 	 * @param \MediaWiki\Output\OutputPage $out
-	 * @param \MediaWiki\Skin\Skin $skin
+	 * @param mixed $skin Skin object; the class namespace depends on the MediaWiki version
 	 */
 	#[Override]
 	public function onBeforePageDisplay( $out, $skin ): void {
@@ -198,6 +198,9 @@ HTML;
 			$nlStatements = $nlEntity->getStatements()->getByPropertyId( $P10020 );
 			foreach ( $nlStatements as $nlStatement ) {
 				$nlSnak = $nlStatement->getMainSnak();
+				if ( !$nlSnak instanceof PropertyValueSnak ) {
+					continue;
+				}
 				$name = $nlSnak->getDataValue()->getValue();
 				if ( $collection === 'Q34' ) {
 					// 1-kokoelma
