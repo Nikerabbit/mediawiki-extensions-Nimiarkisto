@@ -6,15 +6,29 @@ namespace MediaWiki\Extensions\Nimiarkisto;
 use HTMLForm;
 use MailAddress;
 use MediaWiki\Config\Config;
+use Override;
 use SpecialPage;
 use UserMailer;
+
+/**
+ * Handle account-vanishing requests.
+ *
+ * The SecurityCheck-XSS suppression is needed only on some MediaWiki versions.
+ *
+ * @phan-file-suppress UnusedPluginSuppression,UnusedPluginFileSuppression
+ */
 
 class RequestVanishSpecialPage extends SpecialPage {
 	public function __construct( private readonly Config $config ) {
 		parent::__construct( 'RequestVanish' );
 	}
 
-	/** @inheritDoc */
+	/**
+	 * Display or process the account-vanishing request form.
+	 *
+	 * @param string|null $subPage
+	 */
+	#[Override]
 	public function execute( $subPage ): void {
 		$this->setHeaders();
 		$request = $this->getRequest();
@@ -57,6 +71,7 @@ class RequestVanishSpecialPage extends SpecialPage {
 
 		$to = new MailAddress( $emailRecipient );
 		$from = new MailAddress( $this->config->get( 'PasswordSender' ) );
+		// @phan-suppress-next-line SecurityCheck-XSS Email body intentionally contains user-provided plain text
 		$status = UserMailer::send( $to, $from, $subject, $body );
 
 		if ( $status->isOK() ) {

@@ -3,6 +3,7 @@
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use Maintenance;
+use Override;
 
 $env = getenv( 'MW_INSTALL_PATH' );
 $IP = $env !== false ? $env : __DIR__ . '/../../..';
@@ -21,8 +22,9 @@ class Precache extends Maintenance {
 		);
 	}
 
+	#[Override]
 	public function execute(): void {
-		$names = array_map( 'trim', explode( ',', $this->getOption( 'properties' ) ) );
+		$names = array_map( trim( ... ), explode( ',', $this->getOption( 'properties' ) ) );
 		$lookup = new SMWPropertyValueLookup();
 		foreach ( $names as $name ) {
 			$lookup->recache( $name );

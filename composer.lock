@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eddbf947a56dea75cf9e51cb33b9d1bd",
+    "content-hash": "e2a8f04bbe8ae1f64f74e51ce4d50ef1",
     "packages": [],
     "packages-dev": [
         {
@@ -356,6 +356,72 @@
                 "source": "https://github.com/danog/php-advanced-json-rpc/tree/v3.2.3"
             },
             "time": "2026-01-12T21:07:10+00:00"
+        },
+        {
+            "name": "data-values/data-values",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataValues/DataValues.git",
+                "reference": "45aca708da1f7d39c4fca9e6c7373404627e083b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataValues/DataValues/zipball/45aca708da1f7d39c4fca9e6c7373404627e083b",
+                "reference": "45aca708da1f7d39c4fca9e6c7373404627e083b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "replace": {
+                "mediawiki/data-values": "*"
+            },
+            "require-dev": {
+                "mediawiki/mediawiki-codesniffer": "^38",
+                "phpunit/phpunit": "~8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DataValues\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen De Dauw",
+                    "email": "jeroendedauw@gmail.com",
+                    "homepage": "http://jeroendedauw.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Defines the DataValue interface and some trivial implementations",
+            "homepage": "https://github.com/DataValues/DataValues",
+            "keywords": [
+                "datavalues",
+                "wikibase",
+                "wikidata"
+            ],
+            "support": {
+                "issues": "https://github.com/DataValues/DataValues/issues",
+                "source": "https://github.com/DataValues/DataValues/tree/3.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JeroenDeDauw",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-04T13:26:44+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -1523,6 +1589,70 @@
             "time": "2025-08-30T15:50:23+00:00"
         },
         {
+            "name": "phpstan/phpstan",
+            "version": "2.2.15",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b158556ffd26825cf615a1c1f72fb5157a2301b7",
+                "reference": "b158556ffd26825cf615a1c1f72fb5157a2301b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Mirtes"
+                },
+                {
+                    "name": "Markus Staab"
+                },
+                {
+                    "name": "Vincent Langlet"
+                }
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-09-23T12:23:07+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "2.0.2",
             "source": {
@@ -1624,6 +1754,63 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "rector/rector",
+            "version": "2.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector.git",
+                "reference": "f4aa224edb9b0630fb43826d4cb6a49b62e48d4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/f4aa224edb9b0630fb43826d4cb6a49b62e48d4c",
+                "reference": "f4aa224edb9b0630fb43826d4cb6a49b62e48d4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phpstan/phpstan": "^2.2.14"
+            },
+            "conflict": {
+                "rector/rector-doctrine": "*",
+                "rector/rector-downgrade-php": "*",
+                "rector/rector-phpunit": "*",
+                "rector/rector-symfony": "*"
+            },
+            "bin": [
+                "bin/rector"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "homepage": "https://getrector.com/",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
+            "support": {
+                "issues": "https://github.com/rectorphp/rector/issues",
+                "source": "https://github.com/rectorphp/rector/tree/2.6.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-09-13T20:17:44+00:00"
         },
         {
             "name": "sabre/event",
@@ -2521,5 +2708,8 @@
         "ext-json": "*"
     },
     "platform-dev": {},
+    "platform-overrides": {
+        "php": "8.3.0"
+    },
     "plugin-api-version": "2.9.0"
 }

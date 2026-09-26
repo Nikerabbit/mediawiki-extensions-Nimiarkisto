@@ -4,6 +4,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use ApiBase;
+use Override;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
@@ -11,20 +12,18 @@ use Wikimedia\ParamValidator\ParamValidator;
  * @license GPL-2.0-or-later
  */
 class NimiarkistoLookupActionApi extends ApiBase {
-	/** @inheritDoc */
+	#[Override]
 	public function execute(): void {
 		$params = $this->extractRequestParams();
 		$matches = ( new SMWPropertyValueLookup() )->searchProperties( $params['property'], $params['query'] );
 		$matches = array_slice( $matches, 0, 50 );
-		$formatter = static function ( $m ) {
-			return [ 'title' => $m ];
-		};
+		$formatter = ( static fn ( $m ): array => [ 'title' => $m ] );
 		$matches = array_map( $formatter, $matches );
 		$result = $this->getResult();
 		$result->addValue( null, 'pfautocomplete', $matches );
 	}
 
-	/** @inheritDoc */
+	#[Override]
 	public function getAllowedParams(): array {
 		return [
 			'property' => [
