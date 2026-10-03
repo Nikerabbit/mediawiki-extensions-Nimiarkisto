@@ -5,8 +5,8 @@ namespace MediaWiki\Extensions\Nimiarkisto;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
+use MediaWiki\SpecialPage\SpecialPage;
 use Override;
-use SpecialPage;
 
 /**
  * @author Niklas Laxström

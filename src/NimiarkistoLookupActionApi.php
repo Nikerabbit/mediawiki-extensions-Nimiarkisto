@@ -3,7 +3,7 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extensions\Nimiarkisto;
 
-use ApiBase;
+use MediaWiki\Api\ApiBase;
 use Override;
 use Wikimedia\ParamValidator\ParamValidator;
 
