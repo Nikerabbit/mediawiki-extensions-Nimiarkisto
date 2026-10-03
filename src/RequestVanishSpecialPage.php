@@ -3,11 +3,11 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extensions\Nimiarkisto;
 
-use HTMLForm;
 use MailAddress;
 use MediaWiki\Config\Config;
+use MediaWiki\HTMLForm\HTMLForm;
+use MediaWiki\SpecialPage\SpecialPage;
 use Override;
-use SpecialPage;
 use UserMailer;
 
 /**

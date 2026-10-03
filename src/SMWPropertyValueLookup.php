@@ -4,12 +4,12 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extensions\Nimiarkisto;
 
 use MediaWiki\MediaWikiServices;
-use SMW\DIProperty;
-use SMW\DIWikiPage;
+use SMW\DataItems\Blob;
+use SMW\DataItems\Property;
+use SMW\DataItems\WikiPage;
 use SMW\Store;
-use SMWDIBlob;
-use WANObjectCache;
 use Wikimedia\LightweightObjectStore\ExpirationAwareness;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 /**
  * @author Niklas Laxström
@@ -20,8 +20,9 @@ class SMWPropertyValueLookup {
 	private readonly Store $store;
 
 	public function __construct() {
-		$this->cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$this->store = smwfGetStore();
+		$services = MediaWikiServices::getInstance();
+		$this->cache = $services->getMainWANObjectCache();
+		$this->store = $services->getService( 'SMW.Store' );
 	}
 
 	public function recache( string $propertyName ): void {
@@ -54,14 +55,14 @@ class SMWPropertyValueLookup {
 	}
 
 	public function getPropertyValues( string $propertyName ): string {
-		$property = new DIProperty( $propertyName );
+		$property = new Property( $propertyName );
 
 		$values = $this->store->getPropertyValues( null, $property );
 		$output = '';
 		foreach ( $values as $value ) {
-			if ( $value instanceof DIWikiPage ) {
+			if ( $value instanceof WikiPage ) {
 				$output .= $value->getTitle()->getPrefixedText() . "\n";
-			} elseif ( $value instanceof SMWDIBlob ) {
+			} elseif ( $value instanceof Blob ) {
 				$output .= $value->getString() . "\n";
 			} else {
 				$output .= $value->getSerialization() . "\n";
