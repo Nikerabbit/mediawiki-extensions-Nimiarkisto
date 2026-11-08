@@ -117,8 +117,8 @@ HTML;
 						[ 'src' => $sp->getLocalUrl( [ 'g' => $x[ 'group' ], 'f' => $x[ 'file' ] ] ) ]
 					);
 				}
-			} catch ( RuntimeException $e ) {
-				$out = htmlspecialchars( "ERROR: {$e->getMessage()}" );
+			} catch ( RuntimeException $runtimeException ) {
+				$out = htmlspecialchars( "ERROR: {$runtimeException->getMessage()}" );
 			}
 
 			return [ $out, 'isHTML' => true ];
@@ -162,6 +162,7 @@ HTML;
 		if ( $collectionStatements === [] ) {
 			return [];
 		}
+
 		$collection = $this->getPropertyValueQid( $collectionStatements[0] );
 
 		$group = 'Kotus';
@@ -174,10 +175,12 @@ HTML;
 			if ( !$klSnak instanceof PropertyValueSnak ) {
 				continue;
 			}
+
 			$klValue = $klSnak->getDataValue();
 			if ( !$klValue instanceof EntityIdValue ) {
 				continue;
 			}
+
 			$nlEntityId = $klValue->getEntityId();
 
 			$nlEntity = $entityLookup->getEntity( $nlEntityId );
@@ -201,6 +204,7 @@ HTML;
 				if ( !$nlSnak instanceof PropertyValueSnak ) {
 					continue;
 				}
+
 				$name = $nlSnak->getDataValue()->getValue();
 				if ( $collection === 'Q34' ) {
 					// 1-kokoelma
@@ -208,6 +212,7 @@ HTML;
 					$name = str_replace( 'KOTUS-', 'kotus-', $name );
 					$name = str_replace( '.JPG', '.jpg', $name );
 				}
+
 				$images[] = [
 					'group' => $group,
 					'file' => $name,

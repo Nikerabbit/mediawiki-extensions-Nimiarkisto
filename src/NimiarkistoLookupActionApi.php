@@ -17,6 +17,7 @@ class NimiarkistoLookupActionApi extends ApiBase {
 		$params = $this->extractRequestParams();
 		$matches = ( new SMWPropertyValueLookup() )->searchProperties( $params['property'], $params['query'] );
 		$matches = array_slice( $matches, 0, 50 );
+
 		$formatter = ( static fn ( $m ): array => [ 'title' => $m ] );
 		$matches = array_map( $formatter, $matches );
 		$result = $this->getResult();
