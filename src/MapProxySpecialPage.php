@@ -62,10 +62,11 @@ class MapProxySpecialPage extends SpecialPage {
 					$webResponse->header( "$headerName: $headerValue" );
 				}
 			}
+
 			echo $proxyResponse->getBody()->getContents();
-		} catch ( GuzzleException $e ) {
+		} catch ( GuzzleException $guzzleException ) {
 			$output->setStatusCode( 502 );
-			$webResponse->header( "X-Error: {$e->getMessage()}" );
+			$webResponse->header( "X-Error: {$guzzleException->getMessage()}" );
 		}
 	}
 
