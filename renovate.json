@@ -6,5 +6,14 @@
 	],
 	"constraints": {
 		"php": ">=8.3"
-	}
+	},
+	"packageRules": [
+		{
+			"matchDatasources": [
+				"npm"
+			],
+			"minimumReleaseAge": "1 day",
+			"internalChecksFilter": "strict"
+		}
+	]
 }
